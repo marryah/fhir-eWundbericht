@@ -1,0 +1,60 @@
+﻿{
+  "resourceType": "ValueSet",
+  "url": "https://posithera.de/ValueSet/Debridement",
+  "name": "PosiThera - Debridement",
+  "status": "draft",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "email",
+          "value": "m.przysucha@hs-osnabrueck.de"
+        }
+      ],
+      "name": "Mareike Przysucha"
+    }
+  ],
+  "compose": {
+    "include": [
+      {
+        "system": "https://posithera.de/CodeSystem/NKDUC",
+        "concept": [
+          {
+            "code": "C06010101",
+            "display": "mechanisches Debridement"
+          },
+          {
+            "code": "C06010102",
+            "display": "chirurgisches Debridement"
+          },
+          {
+            "code": "C06010103",
+            "display": "Debridement mit Ultraschall"
+          },
+          {
+            "code": "C06010104",
+            "display": "autolytisches Debridement"
+          },
+          {
+            "code": "C06010105",
+            "display": "enzymatisches Debridement"
+          },
+          {
+            "code": "C06010106",
+            "display": "Debridement mit Biochirurgie (Maden)"
+          },
+          {
+            "code": "C06010107",
+            "display": "Sonstiges Debridement"
+          }
+        ]
+      }
+    ]
+  },
+  "description": "Debridement",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>PosiThera - Debridement</h2><tt>https://posithera.de/ValueSet/Debridement</tt><p>Debridement</p></div>"
+  },
+  "publisher": "Forschungsgruppe Informatik im Gesundheitswesen, Hochschule Osnabrück, Deutschland"
+}

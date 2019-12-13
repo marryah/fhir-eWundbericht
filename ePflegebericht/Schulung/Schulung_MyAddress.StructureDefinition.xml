@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <url value="https://eNursingSummary.de/fhir/StructureDefinition/MyAddress" />
+  <name value="MyAddress" />
+  <status value="draft" />
+  <experimental value="true" />
+  <publisher value="Mareike Przysucha - FHIR Schulung" />
+  <fhirVersion value="4.0.0" />
+  <mapping>
+    <identity value="v2" />
+    <uri value="http://hl7.org/v2" />
+    <name value="HL7 v2 Mapping" />
+  </mapping>
+  <mapping>
+    <identity value="rim" />
+    <uri value="http://hl7.org/v3" />
+    <name value="RIM Mapping" />
+  </mapping>
+  <mapping>
+    <identity value="servd" />
+    <uri value="http://www.omg.org/spec/ServD/1.0/" />
+    <name value="ServD" />
+  </mapping>
+  <mapping>
+    <identity value="vcard" />
+    <uri value="http://w3.org/vcard" />
+    <name value="vCard Mapping" />
+  </mapping>
+  <kind value="complex-type" />
+  <abstract value="false" />
+  <type value="Address" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Address" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Address.extension">
+      <path value="Address.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="Address.extension:planet">
+      <path value="Address.extension" />
+      <sliceName value="planet" />
+      <min value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://fhir.ufp/StructureDefinition/planet" />
+      </type>
+    </element>
+    <element id="Address.extension:quadrant">
+      <path value="Address.extension" />
+      <sliceName value="quadrant" />
+      <min value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="https://eNursingSummary.de/fhir/StructureDefinition/QuadrantExtension" />
+      </type>
+    </element>
+    <element id="Address.line">
+      <path value="Address.line" />
+      <min value="1" />
+    </element>
+    <element id="Address.city">
+      <path value="Address.city" />
+      <min value="1" />
+    </element>
+  </differential>
+</StructureDefinition>

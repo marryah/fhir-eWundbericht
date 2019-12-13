@@ -1,0 +1,52 @@
+﻿{
+  "resourceType": "ValueSet",
+  "url": "https://posithera.de/ValueSet/VWDurchfuehrendeProfession",
+  "name": "PosiThera - Verbandswechsel-durchführende Profession",
+  "status": "draft",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "email",
+          "value": "m.przysucha@hs-osnabrueck.de"
+        }
+      ],
+      "name": "Mareike Przysucha"
+    }
+  ],
+  "compose": {
+    "include": [
+      {
+        "system": "https://posithera.de/CodeSystem/NKDUC",
+        "concept": [
+          {
+            "code": "C060301",
+            "display": "Pflegefachkraft"
+          },
+          {
+            "code": "C060302",
+            "display": "Arzt/Ärtzin"
+          },
+          {
+            "code": "C060303",
+            "display": "medizinische/r Fachangestellte/r"
+          },
+          {
+            "code": "C060304",
+            "display": "Lymphtherapeut/in"
+          },
+          {
+            "code": "C060305",
+            "display": "Sonstige Profession"
+          }
+        ]
+      }
+    ]
+  },
+  "description": "Verbandswechsel-durchführende Profession",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>PosiThera - Verbandswechsel-durchführende Profession</h2><tt>https://posithera.de/ValueSet/VWDurchfuehrendeProfession</tt><p>Verbandswechsel-durchführende Profession</p></div>"
+  },
+  "publisher": "Forschungsgruppe Informatik im Gesundheitswesen, Hochschule Osnabrück, Deutschland"
+}

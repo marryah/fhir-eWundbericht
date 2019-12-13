@@ -1,0 +1,43 @@
+﻿{
+  "resourceType": "ValueSet",
+  "url": "https://posithera.de/ValueSet/Granulation",
+  "name": "PosiThera - Granulation",
+  "status": "draft",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "email",
+          "value": "m.przysucha@hs-osnabrueck.de"
+        }
+      ],
+      "name": "Mareike Przysucha"
+    }
+  ],
+  "compose": {
+    "include": [
+      {
+        "system": "https://posithera.de/CodeSystem/NKDUC",
+        "concept": [
+          {
+            "code": "C040400",
+            "display": "keine Granulation"
+          },
+          {
+            "code": "C040401",
+            "display": "teilweise Granulation"
+          },
+          {
+            "code": "C040402",
+            "display": "vollständige Granulation"
+          }        ]
+      }
+    ]
+  },
+  "description": "Granulation",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>PosiThera - Granulation</h2><tt>https://posithera.de/ValueSet/Granulation</tt><p>Granulation</p></div>"
+  },
+  "publisher": "Forschungsgruppe Informatik im Gesundheitswesen, Hochschule Osnabrück, Deutschland"
+}

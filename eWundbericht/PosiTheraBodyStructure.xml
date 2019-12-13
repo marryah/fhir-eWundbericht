@@ -1,0 +1,35 @@
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <url value="https://posithera.de/fhir/StructureDefinition/BodyStructure" />
+  <name value="PosiTheraBodyStructure" />
+  <status value="draft" />
+  <fhirVersion value="4.0.0" />
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="BodyStructure" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/BodyStructure" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="BodyStructure.location">
+      <path value="BodyStructure.location" />
+      <binding>
+        <strength value="extensible" />
+        <valueSet value="https://posithera.de/ValueSet/Lower-leg-body-structure" />
+      </binding>
+    </element>
+    <element id="BodyStructure.locationQualifier">
+      <path value="BodyStructure.locationQualifier" />
+      <binding>
+        <strength value="extensible" />
+        <valueSet value="https://posithera.de/ValueSet/Laterality" />
+      </binding>
+    </element>
+    <element id="BodyStructure.patient">
+      <path value="BodyStructure.patient" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Patient" />
+        <targetProfile value="http://fhir.de/StructureDefinition/patient-de-basis/0.2" />
+      </type>
+    </element>
+  </differential>
+</StructureDefinition>

@@ -1,0 +1,60 @@
+﻿{
+  "resourceType": "ValueSet",
+  "url": "https://posithera.de/ValueSet/woundType",
+  "name": "PosiThera - Wundart",
+  "status": "draft",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "email",
+          "value": "m.przysucha@hs-osnabrueck.de"
+        }
+      ],
+      "name": "Mareike Przysucha"
+    }
+  ],
+  "compose": {
+    "include": [
+      {
+        "system": "https://posithera.de/CodeSystem/NKDUC",
+        "concept": [
+          {
+            "code": "C030201",
+            "display": "Ulcus cruris venosum"
+          },
+          {
+            "code": "C030202",
+            "display": "Ulcus cruris arteriosum"
+          },
+          {
+            "code": "C030203",
+            "display": "Ulcus cruris mixtum"
+          },
+          {
+            "code": "C030204",
+            "display": "vaskulitisch/immunologisch"
+          },
+          {
+            "code": "C030205",
+            "display": "medikamentös"
+          },
+          {
+            "code": "C030206",
+            "display": "maligne"
+          },
+          {
+            "code": "C030207",
+            "display": "sonstige Wundart"
+          }
+        ]
+      }
+    ]
+  },
+  "description": "Wundart",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>PosiThera - Wundart</h2><tt>https://posithera.de/ValueSet/woundType</tt><p>Wundart</p></div>"
+  },
+  "publisher": "Forschungsgruppe Informatik im Gesundheitswesen, Hochschule Osnabrück, Deutschland"
+}

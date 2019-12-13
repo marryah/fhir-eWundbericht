@@ -1,0 +1,64 @@
+﻿{
+  "resourceType": "ValueSet",
+  "url": "https://posithera.de/ValueSet/Kausaltherapie",
+  "name": "PosiThera - Kausaltherapie",
+  "status": "draft",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "email",
+          "value": "m.przysucha@hs-osnabrueck.de"
+        }
+      ],
+      "name": "Mareike Przysucha"
+    }
+  ],
+  "compose": {
+    "include": [
+      {
+        "system": "https://posithera.de/CodeSystem/NKDUC",
+        "concept": [
+          {
+            "code": "C060201",
+            "display": "Kompression"
+          },
+          {
+            "code": "C060202",
+            "display": "operative Therapie"
+          },
+          {
+            "code": "C060203",
+            "display": "Immunsuppresive Therapie"
+          },
+          {
+            "code": "C060204",
+            "display": "Lymphdrainage"
+          },
+          {
+            "code": "C060205",
+            "display": "physikalische Therapie"
+          },
+          {
+            "code": "C060206",
+            "display": "interventionelle Therapie"
+          },
+          {
+            "code": "C060207",
+            "display": "rheologische Therapie"
+          },
+          {
+            "code": "C060208",
+            "display": "Sonstige kausal orientierte Therapie"
+          }
+        ]
+      }
+    ]
+  },
+  "description": "Kausaltherapie",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>PosiThera - Kausaltherapie</h2><tt>https://posithera.de/ValueSet/Kausaltherapie</tt><p>Kausaltherapie</p></div>"
+  },
+  "publisher": "Forschungsgruppe Informatik im Gesundheitswesen, Hochschule Osnabrück, Deutschland"
+}

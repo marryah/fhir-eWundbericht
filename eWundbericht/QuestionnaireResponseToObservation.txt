@@ -1,0 +1,51 @@
+//
+// PLEASE NOTE: THIS FILE HAS NOT BEEN VALIDATED. CURRENTLY IT'S HERE AS A PLACEHOLDER
+//
+
+// metadata
+map "https://posithera.de/fhir/Mapping/PosiTheraQuestionnaireResponseToObservation" = "Response to Observation Mapping"
+
+// sources and target
+uses "http://hl7.org/fhir/StructureDefinition/Questionnaire" alias Questionnaire as source     // Questionnaire as source
+uses "http://hl7.org/fhir/StructureDefinition/QuestionnaireResponse" alias Response as source  // Response to a Questionnaire as source
+uses "http://hl7.org/fhir/StructureDefinition/Observation" alias Observation as target         // Observation as target
+
+
+// group
+group mapping (source src : Response, source quest : Questionnaire, target tgt: Observation)
+{
+    // code of the observation
+    quest.code as q_code -> tgt.code as tgt_code then {
+        tgt_code.coding = q_code;
+    } "code";
+
+    // codes of the components
+    quest.item as q_item -> tgt.component as tgt_component then {
+        q_item.code -> q_code -> tgt_component.valueCodeableConcept as tgt_value then {
+            tgt_value.coding = q_code;
+        }
+    } "item_code";
+
+    // value of the components
+    src.item as s_item -> tgt.component as tgt_component then {
+        s_item.answer -> s_answer -> tgt_component.valueCodeableConcept as tgt_value then {
+            s_answer.valueCoding as s_coding -> tgt_value.coding -> tgt_coding then {
+                tgt_coding = s_coding;
+            }
+        }
+    } "item_answer";
+
+    // further fields:
+    // * derived from
+    // * subject
+    // * encounter
+    // * author
+    // * date
+    // * basedOn
+    src.id as s_id -> tgt_derived = s_id "derivedFrom";
+    src.subject as s_sub -> tgt.subject = s_sub "subject";
+    src.encounter as s_enc -> tgt.encoutner = s_enc "encounter";
+    src.author as s_author -> tgt.performer = s_author "author";
+    src.authored as s_date -> tgt.effectiveDateTime = s_date "date";
+    src.basedOn as s_basedOn -> tgt.basedOn = s_basedOn "basedOn";
+}

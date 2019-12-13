@@ -1,0 +1,362 @@
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="ad8cf332-0409-4a14-8099-6b7685b8e0c4" />
+  <meta>
+    <lastUpdated value="2019-05-06T16:51:55.3643729+00:00" />
+  </meta>
+  <url value="https://posithera.de/fhir/StructureDefinition/WoundSize" />
+  <name value="PosiTheraWoundSize" />
+  <status value="draft" />
+  <date value="2019-05-06T16:51:55.2746455+00:00" />
+  <description value="Captures the size of the wound by components width, length, depth and area where width and length are mandatory." />
+  <fhirVersion value="4.0.0" />
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="Observation" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Observation" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Observation">
+      <path value="Observation" />
+      <definition value="Measurements and simple assertions made about a patient, device or other subject.&#xD;&#xA;---&#xD;&#xA;A draft on observation WoundSize&#xD;&#xA;&#xD;&#xA;It supports two elements of WoundSize. First length of wound and second width of wound.&#xD;&#xA;&#xD;&#xA;LOINC codes are used to encode data.&#xD;&#xA;&#xD;&#xA;---&#xD;&#xA;&#xD;&#xA;Timestamp has to be available for measure." />
+    </element>
+    <element id="Observation.category.coding.system">
+      <path value="Observation.category.coding.system" />
+      <fixedUri value="http://hl7.org/fhir/ValueSet/observation-category" />
+    </element>
+    <element id="Observation.category.coding.code">
+      <path value="Observation.category.coding.code" />
+      <fixedCode value="exam" />
+    </element>
+    <element id="Observation.code.coding">
+      <path value="Observation.code.coding" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="code" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="Observation.code.coding:loinc">
+      <path value="Observation.code.coding" />
+      <sliceName value="loinc" />
+      <min value="1" />
+      <max value="1" />
+    </element>
+    <element id="Observation.code.coding:loinc.system">
+      <path value="Observation.code.coding.system" />
+      <fixedUri value="http://loinc.org" />
+    </element>
+    <element id="Observation.code.coding:loinc.code">
+      <path value="Observation.code.coding.code" />
+      <fixedCode value="72287-6" />
+    </element>
+    <element id="Observation.subject">
+      <path value="Observation.subject" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Patient" />
+      </type>
+    </element>
+    <element id="Observation.focus">
+      <path value="Observation.focus" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Resource" />
+        <targetProfile value="https://posithera.de/fhir/StructureDefinition/BodyStructure" />
+        <targetProfile value="https://posithera.de/fhir/StructureDefinition/Wound" />
+        <aggregation value="referenced" />
+      </type>
+    </element>
+    <element id="Observation.effective[x]">
+      <path value="Observation.effective[x]" />
+      <slicing>
+        <discriminator>
+          <type value="type" />
+          <path value="$this" />
+        </discriminator>
+        <rules value="closed" />
+      </slicing>
+      <type>
+        <code value="dateTime" />
+      </type>
+    </element>
+    <element id="Observation.effective[x]:effectiveDateTime">
+      <path value="Observation.effective[x]" />
+      <sliceName value="effectiveDateTime" />
+      <definition value="A timestamp of the examination date when wound size was assessed." />
+      <min value="1" />
+      <type>
+        <code value="dateTime" />
+      </type>
+    </element>
+    <element id="Observation.value[x]">
+      <path value="Observation.value[x]" />
+      <max value="0" />
+    </element>
+    <element id="Observation.component">
+      <path value="Observation.component" />
+      <slicing>
+        <discriminator>
+          <type value="pattern" />
+          <path value="code.coding" />
+        </discriminator>
+        <rules value="closed" />
+      </slicing>
+    </element>
+    <element id="Observation.component:WoundLength">
+      <path value="Observation.component" />
+      <sliceName value="WoundLength" />
+      <min value="1" />
+      <max value="1" />
+    </element>
+    <element id="Observation.component:WoundLength.code.coding">
+      <path value="Observation.component.code.coding" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="system" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+      <min value="1" />
+    </element>
+    <element id="Observation.component:WoundLength.code.coding:loinc">
+      <path value="Observation.component.code.coding" />
+      <sliceName value="loinc" />
+      <min value="1" />
+      <max value="1" />
+    </element>
+    <element id="Observation.component:WoundLength.code.coding:loinc.system">
+      <path value="Observation.component.code.coding.system" />
+      <min value="1" />
+      <fixedUri value="http://loinc.org" />
+    </element>
+    <element id="Observation.component:WoundLength.code.coding:loinc.code">
+      <path value="Observation.component.code.coding.code" />
+      <min value="1" />
+      <fixedCode value="39126-8" />
+    </element>
+    <element id="Observation.component:WoundLength.value[x]">
+      <path value="Observation.component.value[x]" />
+      <slicing>
+        <discriminator>
+          <type value="type" />
+          <path value="$this" />
+        </discriminator>
+        <rules value="closed" />
+      </slicing>
+      <type>
+        <code value="Quantity" />
+      </type>
+    </element>
+    <element id="Observation.component:WoundLength.value[x]:valueQuantity">
+      <path value="Observation.component.value[x]" />
+      <sliceName value="valueQuantity" />
+      <min value="1" />
+      <type>
+        <code value="Quantity" />
+      </type>
+    </element>
+    <element id="Observation.component:WoundLength.value[x]:valueQuantity.value">
+      <path value="Observation.component.value[x].value" />
+      <min value="1" />
+    </element>
+    <element id="Observation.component:WoundLength.value[x]:valueQuantity.unit">
+      <path value="Observation.component.value[x].unit" />
+      <min value="1" />
+      <fixedString value="cm" />
+    </element>
+    <element id="Observation.component:WoundLength.value[x]:valueQuantity.system">
+      <path value="Observation.component.value[x].system" />
+      <min value="1" />
+      <fixedUri value="http://unitsofmeasure.org" />
+    </element>
+    <element id="Observation.component:WoundLength.value[x]:valueQuantity.code">
+      <path value="Observation.component.value[x].code" />
+      <min value="1" />
+      <fixedCode value="cm" />
+    </element>
+    <element id="Observation.component:WoundWidth">
+      <path value="Observation.component" />
+      <sliceName value="WoundWidth" />
+      <min value="1" />
+      <max value="1" />
+    </element>
+    <element id="Observation.component:WoundWidth.code.coding">
+      <path value="Observation.component.code.coding" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="system" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+      <min value="1" />
+    </element>
+    <element id="Observation.component:WoundWidth.code.coding:loinc">
+      <path value="Observation.component.code.coding" />
+      <sliceName value="loinc" />
+      <min value="1" />
+      <max value="1" />
+    </element>
+    <element id="Observation.component:WoundWidth.code.coding:loinc.system">
+      <path value="Observation.component.code.coding.system" />
+      <min value="1" />
+      <fixedUri value="http://loinc.org" />
+    </element>
+    <element id="Observation.component:WoundWidth.code.coding:loinc.code">
+      <path value="Observation.component.code.coding.code" />
+      <min value="1" />
+      <fixedCode value="39125-0" />
+    </element>
+    <element id="Observation.component:WoundWidth.value[x]">
+      <path value="Observation.component.value[x]" />
+      <slicing>
+        <discriminator>
+          <type value="type" />
+          <path value="$this" />
+        </discriminator>
+        <rules value="closed" />
+      </slicing>
+      <type>
+        <code value="Quantity" />
+      </type>
+    </element>
+    <element id="Observation.component:WoundWidth.value[x]:valueQuantity">
+      <path value="Observation.component.value[x]" />
+      <sliceName value="valueQuantity" />
+      <min value="1" />
+      <type>
+        <code value="Quantity" />
+      </type>
+    </element>
+    <element id="Observation.component:WoundWidth.value[x]:valueQuantity.value">
+      <path value="Observation.component.value[x].value" />
+      <min value="1" />
+    </element>
+    <element id="Observation.component:WoundWidth.value[x]:valueQuantity.unit">
+      <path value="Observation.component.value[x].unit" />
+      <min value="1" />
+      <fixedString value="cm" />
+    </element>
+    <element id="Observation.component:WoundWidth.value[x]:valueQuantity.system">
+      <path value="Observation.component.value[x].system" />
+      <min value="1" />
+      <fixedUri value="http://unitsofmeasure.org" />
+    </element>
+    <element id="Observation.component:WoundWidth.value[x]:valueQuantity.code">
+      <path value="Observation.component.value[x].code" />
+      <fixedCode value="cm" />
+    </element>
+    <element id="Observation.component:WoundDepth">
+      <path value="Observation.component" />
+      <sliceName value="WoundDepth" />
+      <max value="1" />
+    </element>
+    <element id="Observation.component:WoundDepth.code.coding">
+      <path value="Observation.component.code.coding" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="system" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+      <min value="1" />
+    </element>
+    <element id="Observation.component:WoundDepth.code.coding:loinc">
+      <path value="Observation.component.code.coding" />
+      <sliceName value="loinc" />
+      <min value="1" />
+      <max value="1" />
+    </element>
+    <element id="Observation.component:WoundDepth.code.coding:loinc.system">
+      <path value="Observation.component.code.coding.system" />
+      <min value="1" />
+      <fixedUri value="http://loinc.org" />
+    </element>
+    <element id="Observation.component:WoundDepth.code.coding:loinc.code">
+      <path value="Observation.component.code.coding.code" />
+      <min value="1" />
+      <fixedCode value="39114-4" />
+    </element>
+    <element id="Observation.component:WoundDepth.value[x]">
+      <path value="Observation.component.value[x]" />
+      <type>
+        <code value="Quantity" />
+      </type>
+      <type>
+        <code value="CodeableConcept" />
+      </type>
+      <type>
+        <code value="string" />
+      </type>
+    </element>
+    <element id="Observation.component:WoundArea">
+      <path value="Observation.component" />
+      <sliceName value="WoundArea" />
+      <min value="1" />
+      <max value="1" />
+    </element>
+    <element id="Observation.component:WoundArea.code.coding">
+      <path value="Observation.component.code.coding" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="system" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+      <min value="1" />
+    </element>
+    <element id="Observation.component:WoundArea.code.coding:loinc">
+      <path value="Observation.component.code.coding" />
+      <sliceName value="loinc" />
+      <min value="1" />
+      <max value="1" />
+    </element>
+    <element id="Observation.component:WoundArea.code.coding:loinc.system">
+      <path value="Observation.component.code.coding.system" />
+      <min value="1" />
+      <fixedUri value="http://loinc.org" />
+    </element>
+    <element id="Observation.component:WoundArea.code.coding:loinc.code">
+      <path value="Observation.component.code.coding.code" />
+      <min value="1" />
+      <fixedCode value="89260-4" />
+    </element>
+    <element id="Observation.component:WoundArea.value[x]">
+      <path value="Observation.component.value[x]" />
+      <slicing>
+        <discriminator>
+          <type value="type" />
+          <path value="$this" />
+        </discriminator>
+        <rules value="closed" />
+      </slicing>
+      <type>
+        <code value="Quantity" />
+      </type>
+    </element>
+    <element id="Observation.component:WoundArea.value[x]:valueQuantity">
+      <path value="Observation.component.value[x]" />
+      <sliceName value="valueQuantity" />
+      <type>
+        <code value="Quantity" />
+      </type>
+    </element>
+    <element id="Observation.component:WoundArea.value[x]:valueQuantity.unit">
+      <path value="Observation.component.value[x].unit" />
+      <fixedString value="cm2" />
+    </element>
+    <element id="Observation.component:WoundArea.value[x]:valueQuantity.system">
+      <path value="Observation.component.value[x].system" />
+      <fixedUri value="http://unitsofmeasure.org" />
+    </element>
+    <element id="Observation.component:WoundArea.value[x]:valueQuantity.code">
+      <path value="Observation.component.value[x].code" />
+      <fixedCode value="cm2" />
+    </element>
+  </differential>
+</StructureDefinition>

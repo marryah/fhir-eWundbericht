@@ -1,0 +1,731 @@
+{
+  "resourceType": "CodeSystem",
+  "name": "PosiThera - German National Consensus for documentation of leg ulcera",
+  "url": "https://posithera.de/CodeSystem/NKDUC",
+  "status": "draft",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "email",
+          "value": "m.przysucha@hs-osnabrueck.de"
+        }
+      ],
+      "name": "Mareike Przysucha"
+    }
+  ],
+  "description": "German National Consensus for documentation of leg ulcera",
+  "compositional": false,
+  "content": "complete",
+  "concept": [
+    {
+      "display": "Schulbildung",
+      "code": "C0106"
+    },
+    {
+      "code": "C010601",
+      "display": "ohne Abschluss"
+    },
+    {
+      "code": "C010602",
+      "display": "Hauptschulabschluss"
+    },
+    {
+      "code": "C010603",
+      "display": "Realschulabschluss (mittlere Reife)"
+    },
+    {
+      "code": "C010604",
+      "display": "Fachhochschulreife"
+    },
+    {
+      "code": "C010605",
+      "display": "Allgemeine Hochschulreife (Abitur)"
+    },
+    {
+      "code": "C010606",
+      "display": "anderer Schulabschluss"
+    },
+    {
+      "code": "C0107",
+      "display": "Berufstätigkeit"
+    },
+    {
+      "code": "C010701",
+      "display": "erwerbstätig"
+    },
+    {
+      "code": "C010702",
+      "display": "längere Beurlaubung, Freistellung (z.B. Elternzeit)"
+    },
+    {
+      "code": "C010703",
+      "display": "Auszubildende/r (Azubi), freiwillige/r Zivildienstleistende/r oder Wehrdienstleistender, freiwilliges soziales Jahr"
+    },
+    {
+      "code": "C010704",
+      "display": "in Rente, Pension, Vorruhestand (nicht aufgrund der Erkrankung)"
+    },
+    {
+      "code": "C010705",
+      "display": "in Frührente, erwerbsunfähig (wegen der Erkrankung)"
+    },
+    {
+      "code": "C010706",
+      "display": "Hausfrau/Hausmann"
+    },
+    {
+      "code": "C010707",
+      "display": "Schüler/in, Student/in"
+    },
+    {
+      "code": "C010708",
+      "display": "Empfänger von Arbeitslosengeld I oder II"
+    },
+    {
+      "code": "C010709",
+      "display": "Sonstige Berufstätigkeit"
+    },
+    {
+      "code": "C0302",
+      "display": "Wundart"
+    },
+    {
+      "code": "C030201",
+      "display": "Ulcus cruris venosum"
+    },
+    {
+      "code": "C030202",
+      "display": "Ulcus cruris arteriosum"
+    },
+    {
+      "code": "C030203",
+      "display": "Ulcus cruris mixtum"
+    },
+    {
+      "code": "C030204",
+      "display": "vaskulitisch/immunologisch"
+    },
+    {
+      "code": "C030205",
+      "display": "medikamentös"
+    },
+    {
+      "code": "C030206",
+      "display": "maligne"
+    },
+    {
+      "code": "C030207",
+      "display": "sonstige Wundart"
+    },
+    {
+      "code": "C0303",
+      "display": "Wundlokalisation"
+    },
+    {
+      "code": "C030301",
+      "display": "Oberschenkel rechts"
+    },
+    {
+      "code": "C030302",
+      "display": "Oberschenkel links"
+    },
+    {
+      "code": "C030303",
+      "display": "Knie rechts"
+    },
+    {
+      "code": "C030304",
+      "display": "Knie links"
+    },
+    {
+      "code": "C030305",
+      "display": "Unterschenkel rechts"
+    },
+    {
+      "code": "C030306",
+      "display": "Unterschenkel links"
+    },
+    {
+      "code": "C030307",
+      "display": "Sprunggelenk rechts"
+    },
+    {
+      "code": "C030308",
+      "display": "Sprunggelenk links"
+    },
+    {
+      "code": "C030309",
+      "display": "Fußrücken rechts"
+    },
+    {
+      "code": "C030310",
+      "display": "Fußrücken links"
+    },
+    {
+      "code": "C030311",
+      "display": "Ferse rechts (nicht Fußsohle)"
+    },
+    {
+      "code": "C030312",
+      "display": "Ferse links (nicht Fußsohle)"
+    },
+    {
+      "code": "C030313",
+      "display": "Fußsohle rechts"
+    },
+    {
+      "code": "C030314",
+      "display": "Fußsohle links"
+    },
+    {
+      "code": "C030315",
+      "display": "Zehen rechts"
+    },
+    {
+      "code": "C030316",
+      "display": "Zehen links"
+    },
+    {
+      "code": "C030317",
+      "display": "Sonstige Lokalisation"
+    },
+    {
+      "code": "C0402",
+      "display": "Wundbelag"
+    },
+    {
+      "code": "C040200",
+      "display": "kein Wundbelag"
+    },
+    {
+      "code": "C040201",
+      "display": "Nekrose"
+    },
+    {
+      "code": "C040202",
+      "display": "Fibrin"
+    },
+    {
+      "code": "C040203",
+      "display": "Nekrose und Fibrin"
+    },
+    {
+      "code": "C0403",
+      "display": "Wundgrund"
+    },
+    {
+      "code": "C040301",
+      "display": "Sehne"
+    },
+    {
+      "code": "C040302",
+      "display": "Knochen"
+    },
+    {
+      "code": "C040303",
+      "display": "Muskel"
+    },
+    {
+      "code": "C040304",
+      "display": "Fettgewebe"
+    },
+    {
+      "code": "C040305",
+      "display": "Dermis"
+    },
+    {
+      "code": "C0404",
+      "display": "Granulation"
+    },
+    {
+      "code": "C040400",
+      "display": "keine Granulation"
+    },
+    {
+      "code": "C040401",
+      "display": "teilweise Granulation"
+    },
+    {
+      "code": "C040402",
+      "display": "komplette Granulation"
+    },
+    {
+      "code": "C0405",
+      "display": "Epithelisierung"
+    },
+    {
+      "code": "C040500",
+      "display": "keine Epithelisierung"
+    },
+    {
+      "code": "C040501",
+      "display": "teilweise Epithelisierung"
+    },
+    {
+      "code": "C040502",
+      "display": "komplette Epithelisierung"
+    },
+    {
+      "code": "C0406",
+      "display": "Exsudatmenge"
+    },
+    {
+      "code": "C040600",
+      "display": "kein Exsudat"
+    },
+    {
+      "code": "C040601",
+      "display": "mäßige Exsudatmenge"
+    },
+    {
+      "code": "C040602",
+      "display": "viel Exsudat"
+    },
+    {
+      "code": "C0407",
+      "display": "Beschaffenheit des Exsudats"
+    },
+    {
+      "code": "C040701",
+      "display": "klares Exsudat"
+    },
+    {
+      "code": "C040702",
+      "display": "blutiges Exsudat"
+    },
+    {
+      "code": "C040703",
+      "display": "grünes/braunes/gelbes Exsudat"
+    },
+    {
+      "code": "C0409",
+      "display": "Abheilungsstatus"
+    },
+    {
+      "code": "C040901",
+      "display": "geheilt"
+    },
+    {
+      "code": "C040902",
+      "display": "verbessert"
+    },
+    {
+      "code": "C040903",
+      "display": "unverändert"
+    },
+    {
+      "code": "C040904",
+      "display": "verschlechtert"
+    },
+    {
+      "code": "C0410",
+      "display": "Wundrand / Hautumgebung"
+    },
+    {
+      "code": "C041001",
+      "display": "reizlos"
+    },
+    {
+      "code": "C041002",
+      "display": "gerötet"
+    },
+    {
+      "code": "C041003",
+      "display": "ödematös"
+    },
+    {
+      "code": "C041004",
+      "display": "mazeriert"
+    },
+    {
+      "code": "C041005",
+      "display": "livide"
+    },
+    {
+      "code": "C041006",
+      "display": "nekrotisch"
+    },
+    {
+      "code": "C041007",
+      "display": "schuppend, hyperkeratotisch/terminiert"
+    },
+    {
+      "code": "C0601",
+      "display": "Lokaltherapie"
+    },
+    {
+      "code": "C060101",
+      "display": "Debridement"
+    },
+    {
+      "code": "C060102",
+      "display": "Wundspülung"
+    },
+    {
+      "code": "C060103",
+      "display": "Wundantiseptik"
+    },
+    {
+      "code": "C060104",
+      "display": "Wundumgebungsschutz"
+    },
+    {
+      "code": "C060105",
+      "display": "primärer Wundverband"
+    },
+    {
+      "code": "C060106",
+      "display": "sekundärer Wundverband"
+    },
+    {
+      "code": "C060107",
+      "display": "lokale Unterdrucktherapie"
+    },
+    {
+      "code": "C060108",
+      "display": "Elektrostimulation"
+    },
+    {
+      "code": "C060109",
+      "display": "Sonstige Lokaltherapie"
+    },
+    {
+      "code": "C06010101",
+      "display": "mechanisches Debridement"
+    },
+    {
+      "code": "C06010102",
+      "display": "chirurgisches Debridement"
+    },
+    {
+      "code": "C06010103",
+      "display": "Debridement mit Ultraschall"
+    },
+    {
+      "code": "C06010104",
+      "display": "autolytisches Debridement"
+    },
+    {
+      "code": "C06010105",
+      "display": "enzymatisches Debridement"
+    },
+    {
+      "code": "C06010106",
+      "display": "Debridement mit Biochirurgie (Maden)"
+    },
+    {
+      "code": "C06010107",
+      "display": "Sonstiges Debridement"
+    },
+    {
+      "code": "C06010201",
+      "display": "keine Wundspülung"
+    },
+    {
+      "code": "C06010202",
+      "display": "Ringer-Lösung"
+    },
+    {
+      "code": "C06010203",
+      "display": "NaCl 0,9%"
+    },
+    {
+      "code": "C06010204",
+      "display": "Polyhexanid als Wundspülung"
+    },
+    {
+      "code": "C06010205",
+      "display": "Octenidin als Wundspülung"
+    },
+    {
+      "code": "C06010206",
+      "display": "nasszierender Sauerstoff"
+    },
+    {
+      "code": "C06010207",
+      "display": "Sonstige Wundspülung"
+    },
+    {
+      "code": "C06010301",
+      "display": "keine Wundantiseptik"
+    },
+    {
+      "code": "C06010302",
+      "display": "Octenidin als Wundantiseptik"
+    },
+    {
+      "code": "C06010303",
+      "display": "PVP-Jod"
+    },
+    {
+      "code": "C06010304",
+      "display": "Polyhexanid als Wundantiseptik"
+    },
+    {
+      "code": "C0602",
+      "display": "Kausal orientierte Therapie"
+    },
+    {
+      "code": "C060201",
+      "display": "Kompression"
+    },
+    {
+      "code": "C060202",
+      "display": "operative Therapie"
+    },
+    {
+      "display": "Immunsuppresive Therapie",
+      "code": "C060203"
+    },
+    {
+      "code": "C060204",
+      "display": "Lymphdrainage"
+    },
+    {
+      "code": "C060205",
+      "display": "physikalische Therapie"
+    },
+    {
+      "code": "C060206",
+      "display": "interventionelle Therapie"
+    },
+    {
+      "code": "C060207",
+      "display": "rheologische Therapie"
+    },
+    {
+      "code": "C060208",
+      "display": "Sonstige kausal orientierte Therapie"
+    },
+    {
+      "code": "C06020101",
+      "display": "Kompressionsmaterial"
+    },
+    {
+      "code": "C0602010101",
+      "display": "Kurzzugbinden"
+    },
+    {
+      "code": "C0602010102",
+      "display": "Langzugbinden"
+    },
+    {
+      "code": "C0602010103",
+      "display": "Strumpf"
+    },
+    {
+      "code": "C0602010104",
+      "display": "Mehrkomponentensysteme"
+    },
+    {
+      "code": "C0602010105",
+      "display": "Sonstige Kompressionsmaterialien"
+    },
+    {
+      "code": "C060201010301",
+      "display": "Ulkusstrumpf"
+    },
+    {
+      "code": "C060201010302",
+      "display": "Kompressionsstrumpf nach Maß"
+    },
+    {
+      "code": "C06020108",
+      "display": "Anziehhilfe"
+    },
+    {
+      "code": "C06020201",
+      "display": "Varizenstripping V. saphena magna oder parva"
+    },
+    {
+      "code": "C06020202",
+      "display": "Seitenaststripping"
+    },
+    {
+      "code": "C06020203",
+      "display": "interventionelle Venenoperation, Laser oder Schaumsklerosierung der V. saphena magna oder parva"
+    },
+    {
+      "code": "C06020204",
+      "display": "sonstige Venenverfahren, z.B. Heiß-Dampf-Therapie"
+    },
+    {
+      "code": "C06020205",
+      "display": "Bypass bei pAVK"
+    },
+    {
+      "code": "C06020206",
+      "display": "Stenteinlage bei pAVK"
+    },
+    {
+      "code": "C06020207",
+      "display": "chirurgisches Debridement als operative Therapie"
+    },
+    {
+      "code": "C06020208",
+      "display": "Fasziektomie"
+    },
+    {
+      "code": "C06020209",
+      "display": "Mesh-/Spalthauttransplantation"
+    },
+    {
+      "code": "C06020210",
+      "display": "Spalthaut / Stanztransplantat / Keratinozytentransplantation"
+    },
+    {
+      "code": "C06020211",
+      "display": "Sonstige Wunddeckungsverfahren"
+    },
+    {
+      "code": "C060202001",
+      "display": "Setting Chrirugisches Debridement"
+    },
+    {
+      "code": "C060202002",
+      "display": "Narkose Chirurgisches Debridement"
+    },
+    {
+      "code": "C0602020011",
+      "display": "stationäres chirurgisches Debridement"
+    },
+    {
+      "code": "C0602020012",
+      "display": "ambulantes chirurgisches Debridement"
+    },
+    {
+      "code": "C0603",
+      "display": "Den Verbandswechsel durchführende Profession"
+    },
+    {
+      "code": "C060301",
+      "display": "Pflegefachkraft"
+    },
+    {
+      "code": "C060302",
+      "display": "Arzt/Ärztin"
+    },
+    {
+      "code": "C060303",
+      "display": "medizinische/r Fachangestellte/r"
+    },
+    {
+      "code": "C060304",
+      "display": "Lymphtherapeut/in"
+    },
+    {
+      "code": "C060305",
+      "display": "Sonstige Profession"
+    },
+    {
+      "code": "C0604",
+      "display": "Behandlungsziele"
+    },
+    {
+      "code": "C060401",
+      "display": "beschleunigter Wundschluss"
+    },
+    {
+      "code": "C060402",
+      "display": "Wundbettkonditionierung für die Defektabdeckung"
+    },
+    {
+      "code": "C060403",
+      "display": "Vermeidung von Wundinfektion"
+    },
+    {
+      "code": "C060404",
+      "display": "verbesserte Wundreinigung"
+    },
+    {
+      "code": "C060405",
+      "display": "Exsudatmanagement"
+    },
+    {
+      "code": "C060406",
+      "display": "Wundschutz"
+    },
+    {
+      "code": "C060407",
+      "display": "Volumen-/Flächenreduktion"
+    },
+    {
+      "code": "C060408",
+      "display": "Transplantatsicherung"
+    },
+    {
+      "display": "Reduktion von Wundödemen",
+      "code": "C060409"
+    },
+    {
+      "code": "C060410",
+      "display": "Förderung von Granulation und Epithelisierung"
+    },
+    {
+      "code": "C060411",
+      "display": "Föderung der Angiogenesen"
+    },
+    {
+      "code": "C060412",
+      "display": "Schmerzreduktion"
+    },
+    {
+      "code": "C060413",
+      "display": "Geruchsminimierung"
+    },
+    {
+      "code": "C060414",
+      "display": "Sonstige Behandlungsziele"
+    },
+    {
+      "code": "C0702",
+      "display": "Zufriedenheit (Versorgung, Therapie)"
+    },
+    {
+      "code": "C070201",
+      "display": "Wie zufrieden sind Sie insgesamt mit der Versorgung Ihrer Erkrankung"
+    },
+    {
+      "code": "C07020101",
+      "display": "sehr zufrieden"
+    },
+    {
+      "code": "C07020102",
+      "display": "eher zufrieden"
+    },
+    {
+      "code": "C07020103",
+      "display": "teils, teils"
+    },
+    {
+      "code": "C07020104",
+      "display": "eher unzufrieden"
+    },
+    {
+      "code": "C07020105",
+      "display": "sehr unzufrieden"
+    },
+    {
+      "code": "C090101",
+      "display": "Patientenedukation"
+    },
+    {
+      "code": "C09010101",
+      "display": "Bedarf nach Unterstützung"
+    },
+    {
+      "code": "C09010102",
+      "display": "Patient ausreichend Informationen übermittelt"
+    }
+  ],
+  "count": 177,
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>PosiThera - German National Consensus for documentation of leg ulcera</h2><tt>https://posithera.de/CodeSystem/NKDUC</tt><p>German National Consensus for documentation of leg ulcera</p></div>"
+  },
+  "caseSensitive": false,
+  "hierarchyMeaning": "grouped-by",
+  "versionNeeded": false,
+  "publisher": "Forschungsgruppe Informatik im Gesundheitswesen, Hochschule Osnabrück, Deutschland"
+}

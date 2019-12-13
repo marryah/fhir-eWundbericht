@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeSystem xmlns="http://hl7.org/fhir">
+    <url value="https://eNursingSummary.de/fhir/CodeSystem/SchulungQuadrant"/>
+    <content value="example"/> 
+    <status value="draft"/>
+    <experimental value="true"/>
+    <concept>
+        <code value="alpha" />
+        <display value="Alpha Quadrant"/>
+    </concept>
+    <concept>
+        <code value="beta" />
+        <display value="Beta Quadrant"/>
+    </concept>
+    <concept>
+        <code value="gamma" />
+        <display value="Gamma Quadrant"/>
+    </concept>
+    <concept>
+        <code value="delta" />
+        <display value="Delta Quadrant"/>
+    </concept>
+</CodeSystem>

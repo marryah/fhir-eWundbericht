@@ -1,0 +1,76 @@
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <url value="https://posithera.de/fhir/StructureDefinition/PosiTheraABPI" />
+  <name value="ABPI" />
+  <status value="draft" />
+  <description value="An Profile on the Ankle Brachial Pressure Index (ABPI) which is a clinical performance indicator of lower leg blood supply.&#xD;&#xA;The indicator is often used as a diagnostic test to detect peripheral arterial disease (PAD) (German: PAVK).&#xD;&#xA;" />
+  <fhirVersion value="4.0.0" />
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="Observation" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Observation" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Observation.category">
+      <path value="Observation.category" />
+      <definition value="A code that classifies the general type of observation being made.&#xD;&#xA;http://hl7.org/fhir/ValueSet/observation-category" />
+    </element>
+    <element id="Observation.category.coding.system">
+      <path value="Observation.category.coding.system" />
+      <fixedUri value="http://hl7.org/fhir/ValueSet/observation-category" />
+    </element>
+    <element id="Observation.category.coding.code">
+      <path value="Observation.category.coding.code" />
+      <fixedCode value="exam" />
+    </element>
+    <element id="Observation.category.text">
+      <path value="Observation.category.text" />
+      <fixedString value="Exam" />
+    </element>
+    <element id="Observation.code.coding">
+      <path value="Observation.code.coding" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="code" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="Observation.code.coding:loinc">
+      <path value="Observation.code.coding" />
+      <sliceName value="loinc" />
+      <min value="1" />
+      <max value="1" />
+    </element>
+    <element id="Observation.code.coding:loinc.system">
+      <path value="Observation.code.coding.system" />
+      <fixedUri value="http://loinc.org" />
+    </element>
+    <element id="Observation.code.coding:loinc.code">
+      <path value="Observation.code.coding.code" />
+      <fixedCode value="77194-9" />
+    </element>
+    <element id="Observation.code.coding:snomed">
+      <path value="Observation.code.coding" />
+      <sliceName value="snomed" />
+      <min value="1" />
+      <max value="1" />
+    </element>
+    <element id="Observation.code.coding:snomed.system">
+      <path value="Observation.code.coding.system" />
+      <fixedUri value="http://snomed.info/sct" />
+    </element>
+    <element id="Observation.code.coding:snomed.code">
+      <path value="Observation.code.coding.code" />
+      <fixedCode value="446841001" />
+    </element>
+    <element id="Observation.derivedFrom.reference">
+      <path value="Observation.derivedFrom.reference" />
+      <fixedString value="http://posithera.de/fhir/StructureDefinition/BloodPressure" />
+      <binding>
+        <strength value="extensible" />
+        <description value="Blood Pressure Measure" />
+      </binding>
+    </element>
+  </differential>
+</StructureDefinition>

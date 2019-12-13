@@ -1,0 +1,191 @@
+<Questionnaire xmlns="http://hl7.org/fhir">
+    <meta>
+        <profile value="http://hl7.org/fhir/StructureDefinition/Questionnaire" />
+    </meta>
+    <identifier>
+        <use value="usual" />
+        <system value="..." />
+        <value value="1" />
+        <period>
+            <start value="2019-09-04"/>
+        </period>
+    </identifier>
+    <name value="Wound-QoL" />
+    <title value="Wound-Quality of Life" />
+    <status value="active" />
+    <code>
+        <system value="https://posithera.de/fhir/codesystem/WoundQoL" />
+        <code value="00001" />
+        <value value="Wound Quality of Life" />
+    </code>
+    <item>
+        <linkId value="Q01" />
+        <code>
+            <system value="https://posithera.de/fhir/codesystem/WoundQoL"/>
+            <code value="Q0001"/>
+            <display value="In den letzten 7 Tagen hatte ich Schmerzen an der Wunde."/>
+        </code>
+        <type value="choice" />
+        <answerValueSet value="https://posithera.de/fhir/valueSet/woundqol-answer-set" />
+    </item>
+    <item>
+        <linkId value="Q02" />
+        <code>
+            <system value="https://posithera.de/fhir/codesystem/WoundQoL"/>
+            <code value="Q0002"/>
+            <display value="In den letzten 7 Tagen hatte ich einen unangenehmen Geruch an der Wunde."/>
+        </code>
+        <type value="choice" />
+        <answerValueSet value="https://posithera.de/fhir/valueSet/woundqol-answer-set" />
+    </item>
+    <item>
+        <linkId value="Q03" />
+        <code>
+            <system value="https://posithera.de/fhir/codesystem/WoundQoL"/>
+            <code value="Q0003"/>
+            <display value="In den letzten 7 Tagen hatte ich störenden Wundausfluss."/>
+        </code>
+        <type value="choice" />
+        <answerValueSet value="https://posithera.de/fhir/valueSet/woundqol-answer-set" />
+    </item>
+    <item>
+        <linkId value="Q04" />
+        <code>
+            <system value="https://posithera.de/fhir/codesystem/WoundQoL"/>
+            <code value="Q0004"/>
+            <display value="In den letzten 7 Tagen war mein Schlaf durch die Wunde beeinträchtigt."/>
+        </code>
+        <type value="choice" />
+        <answerValueSet value="https://posithera.de/fhir/valueSet/woundqol-answer-set" />
+    </item>
+    <item>
+        <linkId value="Q05" />
+        <code>
+            <system value="https://posithera.de/fhir/codesystem/WoundQoL"/>
+            <code value="Q0005"/>
+            <display value="In den letzten 7 Tagen war die Behandlung der Wunde für mich belastend."/>
+        </code>
+        <type value="choice" />
+        <answerValueSet value="https://posithera.de/fhir/valueSet/woundqol-answer-set" />
+    </item>
+    <item>
+        <linkId value="Q06" />
+        <code>
+            <system value="https://posithera.de/fhir/codesystem/WoundQoL"/>
+            <code value="Q0006"/>
+            <display value="In den letzten 7 Tagen war ich wegen der Wunde niedergeschlagen."/>
+        </code>
+        <type value="choice" />
+        <answerValueSet value="https://posithera.de/fhir/valueSet/woundqol-answer-set" />
+    </item>
+    <item>
+        <linkId value="Q07" />
+        <code>
+            <system value="https://posithera.de/fhir/codesystem/WoundQoL"/>
+            <code value="Q0007"/>
+            <display value="In den letzten 7 Tagen hat es mich frustriert, dass die Heilung so lange dauert."/>
+        </code>
+        <type value="choice" />
+        <answerValueSet value="https://posithera.de/fhir/valueSet/woundqol-answer-set" />
+    </item>
+    <item>
+        <linkId value="Q08" />
+        <code>
+            <system value="https://posithera.de/fhir/codesystem/WoundQoL"/>
+            <code value="Q0008"/>
+            <display value="In den letzten 7 Tagen habe ich mir Sorgen wegen meiner Wunde gemacht."/>
+        </code>
+        <type value="choice" />
+        <answerValueSet value="https://posithera.de/fhir/valueSet/woundqol-answer-set" />
+    </item>
+    <item>
+        <linkId value="Q09" />
+        <code>
+            <system value="https://posithera.de/fhir/codesystem/WoundQoL"/>
+            <code value="Q0009"/>
+            <display value="In den letzten 7 Tagen hatte ich Angst vor einer Verschlechterung oder vor neuen Wunden."/>
+        </code>
+        <type value="choice" />
+        <answerValueSet value="https://posithera.de/fhir/valueSet/woundqol-answer-set" />
+    </item>
+    <item>
+        <linkId value="Q10" />
+        <code>
+            <system value="https://posithera.de/fhir/codesystem/WoundQoL"/>
+            <code value="Q0010"/>
+            <display value="In den letzten 7 Tagen hatte ich Angst, mich an der Wunde zu stoßen."/>
+        </code>
+        <type value="choice" />
+        <answerValueSet value="https://posithera.de/fhir/valueSet/woundqol-answer-set" />
+    </item>
+    <item>
+        <linkId value="Q11" />
+        <code>
+            <system value="https://posithera.de/fhir/codesystem/WoundQoL"/>
+            <code value="Q0011"/>
+            <display value="In den letzten 7 Tagen konnte ich mich wegen der Wunde schlecht fortbewegen."/>
+        </code>
+        <type value="choice" />
+        <answerValueSet value="https://posithera.de/fhir/valueSet/woundqol-answer-set" />
+    </item>
+    <item>
+        <linkId value="Q12" />
+        <code>
+            <system value="https://posithera.de/fhir/codesystem/WoundQoL"/>
+            <code value="Q0012"/>
+            <display value="In den letzten 7 Tagen war das Treppensteigen wegen der Wunde mühsam."/>
+        </code>
+        <type value="choice" />
+        <answerValueSet value="https://posithera.de/fhir/valueSet/woundqol-answer-set" />
+    </item>
+    <item>
+        <linkId value="Q13" />
+        <code>
+            <system value="https://posithera.de/fhir/codesystem/WoundQoL"/>
+            <code value="Q0013"/>
+            <display value="In den letzten 7 Tagen hatte ich wegen der Wunde Probleme mit Alltagstätigkeiten."/>
+        </code>
+        <type value="choice" />
+        <answerValueSet value="https://posithera.de/fhir/valueSet/woundqol-answer-set" />
+    </item>
+    <item>
+        <linkId value="Q14" />
+        <code>
+            <system value="https://posithera.de/fhir/codesystem/WoundQoL"/>
+            <code value="Q0014"/>
+            <display value="In den letzten 7 Tagen waren meine Freizeitaktivitäten wegen der Wunde eingeschränkte."/>
+        </code>
+        <type value="choice" />
+        <answerValueSet value="https://posithera.de/fhir/valueSet/woundqol-answer-set" />
+    </item>
+    <item>
+        <linkId value="Q15" />
+        <code>
+            <system value="https://posithera.de/fhir/codesystem/WoundQoL"/>
+            <code value="Q0015"/>
+            <display value="In den letzten 7 Tagen musste ich wegen der Wunde Aktivitäten mit Anderen einschränken."/>
+        </code>
+        <type value="choice" />
+        <answerValueSet value="https://posithera.de/fhir/valueSet/woundqol-answer-set" />
+    </item>
+    <item>
+        <linkId value="Q16" />
+        <code>
+            <system value="https://posithera.de/fhir/codesystem/WoundQoL"/>
+            <code value="Q0016"/>
+            <display value="In den letzten 7 Tagen fühlte ich mich wegen der Wunde abhängig von der Hilfe Anderer."/>
+        </code>
+        <type value="choice" />
+        <answerValueSet value="https://posithera.de/fhir/valueSet/woundqol-answer-set" />
+    </item>
+    <item>
+        <linkId value="Q17" />
+        <code>
+            <system value="https://posithera.de/fhir/codesystem/WoundQoL"/>
+            <code value="Q0017"/>
+            <display value="In den letzten 7 Tagen war die Wunde für mich eine finanzielle Belastung."/>
+        </code>
+        <type value="choice" />
+        <answerValueSet value="https://posithera.de/fhir/valueSet/woundqol-answer-set" />
+    </item>
+</Questionnaire>

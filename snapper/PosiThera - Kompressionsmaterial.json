@@ -1,0 +1,60 @@
+﻿{
+  "resourceType": "ValueSet",
+  "url": "https://posithera.de/ValueSet/Kompressionsmaterial",
+  "name": "PosiThera - Kompressionsmaterial",
+  "status": "draft",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "email",
+          "value": "m.przysucha@hs-osnabrueck.de"
+        }
+      ],
+      "name": "Mareike Przysucha"
+    }
+  ],
+  "compose": {
+    "include": [
+      {
+        "system": "https://posithera.de/CodeSystem/NKDUC",
+        "concept": [
+          {
+            "code": "C0602010101",
+            "display": "Kurzzugbinden"
+          },
+          {
+            "code": "C0602010102",
+            "display": "Langzugbinden"
+          },
+          {
+            "code": "C0602010103",
+            "display": "Strumpf"
+          },
+          {
+            "code": "C060201010301",
+            "display": "Ulkusstrumpf"
+          },
+          {
+            "code": "C060201010302",
+            "display": "Kompressionsstrumpf nach Maß"
+          },
+          {
+            "code": "C0602010104",
+            "display": "Mehrkomponentensystem"
+          },
+          {
+            "code": "C0602010105",
+            "display": "Sonstige Kompressionsmaterialien"
+          }
+        ]
+      }
+    ]
+  },
+  "description": "Kompressionsmaterial",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>PosiThera - Kompressionsmaterial</h2><tt>https://posithera.de/ValueSet/Kompressionsmaterial</tt><p>Kompressionsmaterial</p></div>"
+  },
+  "publisher": "Forschungsgruppe Informatik im Gesundheitswesen, Hochschule Osnabrück, Deutschland"
+}

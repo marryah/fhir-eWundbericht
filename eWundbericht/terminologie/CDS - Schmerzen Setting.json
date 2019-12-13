@@ -1,0 +1,40 @@
+﻿{
+  "resourceType": "ValueSet",
+  "url": "https://posithera.de/fhir/valueSet/CDS_Schmerzsetting",
+  "name": "CDS - Schmerzsetting",
+  "status": "draft",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "email"
+        }
+      ]
+    }
+  ],
+  "compose": {
+    "include": [
+      {
+      "code": "P04150201",
+      "display": "in Ruhe"
+    },
+    {
+      "code": "P04150202",
+      "display": "bei Hochlagerung der Beine"
+    },
+    {
+      "code": "P04150203",
+      "display": "Wadenschmerzen nach kurzer Gehstrecke"
+    },
+    {
+      "code": "P04150204",
+      "display": "Wadenkrämpfe nach kurzer Gehstrecke"
+    }
+         ]
+  },
+  "description": "ValueSet für das Setting, in dem Schmerz auftritt",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>CDS - Schmerzsetting</h2><tt>https://posithera.de/fhir/valueSet/CDS_Schmerzsetting</tt><p>ValueSet für das Setting, in dem Schmerz auftritt</p></div>"
+  }
+}

@@ -1,0 +1,168 @@
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <url value="http://posithera.de/fhir/StructureDefinition/BloodPressure" />
+  <version value="0.0.1" />
+  <name value="PosiTheraBloodPressure" />
+  <title value="Blood Pressure" />
+  <status value="draft" />
+  <description value="A profile to document the systolic and diastolic blood pressure." />
+  <fhirVersion value="4.0.0" />
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="Observation" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Observation" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Observation.code.coding">
+      <path value="Observation.code.coding" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="code" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="Observation.code.coding:loinc">
+      <path value="Observation.code.coding" />
+      <sliceName value="loinc" />
+      <min value="1" />
+      <max value="1" />
+    </element>
+    <element id="Observation.code.coding:loinc.system">
+      <path value="Observation.code.coding.system" />
+      <fixedUri value="http://loinc.org" />
+    </element>
+    <element id="Observation.code.coding:loinc.code">
+      <path value="Observation.code.coding.code" />
+      <fixedCode value="85354-9" />
+    </element>
+    <element id="Observation.code.coding:snomed">
+      <path value="Observation.code.coding" />
+      <sliceName value="snomed" />
+      <min value="1" />
+      <max value="1" />
+    </element>
+    <element id="Observation.code.coding:snomed.system">
+      <path value="Observation.code.coding.system" />
+      <fixedUri value="http://snomed.info/sct" />
+    </element>
+    <element id="Observation.code.coding:snomed.code">
+      <path value="Observation.code.coding.code" />
+      <fixedCode value="75367002" />
+    </element>
+    <element id="Observation.value[x]">
+      <path value="Observation.value[x]" />
+      <max value="0" />
+    </element>
+    <element id="Observation.component">
+      <path value="Observation.component" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="code.coding.code" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="Observation.component:SystolicBP">
+      <path value="Observation.component" />
+      <sliceName value="SystolicBP" />
+    </element>
+    <element id="Observation.component:SystolicBP.code">
+      <path value="Observation.component.code" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="coding.code" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="Observation.component:SystolicBP.code.coding.system">
+      <path value="Observation.component.code.coding.system" />
+      <fixedUri value="http://snomed.info/sct" />
+    </element>
+    <element id="Observation.component:SystolicBP.code:loinc">
+      <path value="Observation.component.code" />
+      <sliceName value="loinc" />
+      <min value="1" />
+    </element>
+    <element id="Observation.component:SystolicBP.code:loinc.coding.system">
+      <path value="Observation.component.code.coding.system" />
+      <fixedUri value="http://loinc.org" />
+    </element>
+    <element id="Observation.component:SystolicBP.code:loinc.coding.code">
+      <path value="Observation.component.code.coding.code" />
+      <fixedCode value="123" />
+    </element>
+    <element id="Observation.component:SystolicBP.code:snomed">
+      <path value="Observation.component.code" />
+      <sliceName value="snomed" />
+      <min value="1" />
+    </element>
+    <element id="Observation.component:SystolicBP.code:snomed.coding.system">
+      <path value="Observation.component.code.coding.system" />
+      <fixedUri value="http://snomed.info/sct" />
+    </element>
+    <element id="Observation.component:SystolicBP.code:snomed.coding.code">
+      <path value="Observation.component.code.coding.code" />
+      <fixedCode value="123" />
+    </element>
+    <element id="Observation.component:SystolicBP.value[x]">
+      <path value="Observation.component.valueQuantity" />
+      <type>
+        <code value="Quantity" />
+      </type>
+    </element>
+    <element id="Observation.component:DiastolicBP">
+      <path value="Observation.component" />
+      <sliceName value="DiastolicBP" />
+    </element>
+    <element id="Observation.component:DiastolicBP.code">
+      <path value="Observation.component.code" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="coding.code" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="Observation.component:DiastolicBP.code.coding.system">
+      <path value="Observation.component.code.coding.system" />
+      <fixedUri value="http://snomed.info/sct" />
+    </element>
+    <element id="Observation.component:DiastolicBP.code:loinc">
+      <path value="Observation.component.code" />
+      <sliceName value="loinc" />
+      <min value="1" />
+    </element>
+    <element id="Observation.component:DiastolicBP.code:loinc.coding.system">
+      <path value="Observation.component.code.coding.system" />
+      <fixedUri value="http://loinc.org" />
+    </element>
+    <element id="Observation.component:DiastolicBP.code:loinc.coding.code">
+      <path value="Observation.component.code.coding.code" />
+      <fixedCode value="123" />
+    </element>
+    <element id="Observation.component:DiastolicBP.code:snomed">
+      <path value="Observation.component.code" />
+      <sliceName value="snomed" />
+      <min value="1" />
+    </element>
+    <element id="Observation.component:DiastolicBP.code:snomed.coding.system">
+      <path value="Observation.component.code.coding.system" />
+      <fixedUri value="http://snomed.info/sct" />
+    </element>
+    <element id="Observation.component:DiastolicBP.code:snomed.coding.code">
+      <path value="Observation.component.code.coding.code" />
+      <fixedCode value="123" />
+    </element>
+    <element id="Observation.component:DiastolicBP.value[x]">
+      <path value="Observation.component.valueQuantity" />
+      <type>
+        <code value="Quantity" />
+      </type>
+    </element>
+  </differential>
+</StructureDefinition>

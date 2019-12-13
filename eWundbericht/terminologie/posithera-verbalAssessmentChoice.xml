@@ -1,0 +1,71 @@
+﻿<ValueSet xmlns="http://hl7.org/fhir">
+  <text>
+    <status value="generated" />
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <h2>PosiThera - Inhalte verbaler Angaben</h2>
+      <tt>https://posithera.de/fhir/valueSet/contentVerbalAssessment</tt>
+      <p>Inhalte verbaler Angaben</p>
+    </div>
+  </text>
+  <url value="https://posithera.de/fhir/valueSet/contentVerbalAssessment" />
+  <name value="PosiThera - Inhalte verbaler Angaben" />
+  <status value="draft" />
+  <publisher value="Forschungsgruppe Informatik im Gesundheitswesen, Hochschule Osnabrück, Deutschland" />
+  <contact>
+    <name value="Mareike Przysucha" />
+    <telecom>
+      <system value="email" />
+      <value value="m.przysucha@hs-osnabrueck.de" />
+    </telecom>
+  </contact>
+  <description value="Ulcusrelevante Medikamente" />
+  <compose>
+    <include>
+      <system value="http://loinc.org" />
+  <concept>
+    <code value="11345-6" />
+    <display value="Other social factors" />
+  </concept>
+  <concept>
+    <code value="72284-3" />
+    <display value="Skin Assessment Panel" />
+  </concept>
+  <concept>
+    <code value="..." />
+    <display value="Therapieakzeptanz, Therapieeinhaltung" />
+  </concept>
+  <concept>
+    <code value="..." />
+    <display value="Lebensstil und Fähigkeiten, Selbstpflegefähigkeit" />
+  </concept>
+  <concept>
+    <code value="28189-9" />
+    <display value="Physical mobility impairment" />
+  </concept>
+  <concept>
+    <code value="..." />
+    <display value="Schmerzen" />
+  </concept>
+  <concept>
+    <code value="..." />
+    <display value="Empfindungsbeeinträchtigungen" />
+  </concept>
+  <concept>
+    <code value="..." />
+    <display value="Beeinträchtigung der Lebensqualität, soziale und berufliche Teilhabe" />
+  </concept>
+  <concept>
+    <code value="..." />
+    <display value="Leiden unter den Symptomen" />
+  </concept>
+  <concept>
+    <code value="..." />
+    <display value="spezifische Hygieneanforderungen" />
+  </concept>
+  <concept>
+    <code value="..." />
+    <display value="Versorgungsdetails potenziell infektiöser Patienten" />
+  </concept>
+    </include>
+  </compose>
+</ValueSet>

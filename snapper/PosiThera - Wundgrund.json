@@ -1,0 +1,51 @@
+﻿{
+  "resourceType": "ValueSet",
+  "url": "https://posithera.de/ValueSet/Wundgrund",
+  "name": "PosiThera - Wundgrund",
+  "status": "draft",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "email",
+          "value": "m.przysucha@hs-osnabrueck.de"
+        }
+      ],
+      "name": "Mareike Przysucha"
+    }
+  ],
+  "compose": {
+    "include": [
+      {
+        "system": "https://posithera.de/CodeSystem/NKDUC",
+        "concept": [
+          {
+            "code": "C040301",
+            "display": "Sehne"
+          },
+          {
+            "code": "C040302",
+            "display": "Knochen"
+          },
+          {
+            "code": "C040303",
+            "display": "Muskel"
+          },
+          {
+            "code": "C040304",
+            "display": "Fettgewebe"
+          },
+          {
+            "code": "C040305",
+            "display": "Dermis"
+          }        ]
+      }
+    ]
+  },
+  "description": "Wundbelag",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>PosiThera - Wundbelag</h2><tt>https://posithera.de/ValueSet/Wundgrund</tt><p>Wundgrund</p></div>"
+  },
+  "publisher": "Forschungsgruppe Informatik im Gesundheitswesen, Hochschule Osnabrück, Deutschland"
+}

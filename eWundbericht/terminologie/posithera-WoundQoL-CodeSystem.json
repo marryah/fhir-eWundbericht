@@ -1,0 +1,144 @@
+﻿{
+  "resourceType": "CodeSystem",
+  "name": "WoundQoL-CodeSystem",
+  "url": "http://posithera.de/codesystem/WoundQoL",
+  "status": "draft",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "email",
+          "value": "m.przysucha@hs-osnabrueck.de"
+        }
+      ],
+      "name": "Mareike Przysucha"
+    }
+  ],
+  "description": "Codesystem for the Wound Quality of Life",
+  "compositional": false,
+  "content": "complete",
+  "concept": [
+    {
+      "code": "A0001",
+      "display": "not at all",
+      "definition": "statement does not fit at all"
+    },
+    {
+      "code": "A0002",
+      "display": "a little",
+      "definition": "statement fits a little"
+    },
+    {
+      "code": "A0003",
+      "display": "moderately",
+      "definition": "statement fits moderately"
+    },
+    {
+      "code": "A0004",
+      "display": "quite a lot",
+      "definition": "statement fits quite a lot"
+    },
+    {
+      "code": "A0005",
+      "display": "very much",
+      "definition": "statement fits very much"
+    },
+    {
+      "code": "Q0001",
+      "display": "In the last seven days my wound hurt.",
+      "definition": "In the last seven days my wound hurt."
+    },
+    {
+      "code": "Q0002",
+      "display": "In the last seven days my wound had a bad smell.",
+      "definition": "In the last seven days my wound had a bad smell."
+    },
+    {
+      "code": "Q0003",
+      "display": "In the last seven days there was a disturbing discharge from the wound.",
+      "definition": "In the last seven days there was a disturbing discharge from the wound."
+    },
+    {
+      "code": "Q0004",
+      "display": "In the last seven days the wound has affected my sleep.",
+      "definition": "In the last seven days the wound has affected my sleep."
+    },
+    {
+      "code": "Q0005",
+      "display": "In the last seven daysthe treatment of the wound has been a burden.",
+      "definition": "In the last seven days the treatment of the wound has been a burden."
+    },
+    {
+      "code": "Q0006",
+      "display": "In the last seven days the wound has made me unhappy.",
+      "definition": "In the last seven days the wound has made me unhappy."
+    },
+    {
+      "display": "In the last seven days I have felt frustrated because the wound is taking so long to heal.",
+      "code": "Q0007",
+      "definition": "In the last seven days I have felt frustrated because the wound is taking so long to heal."
+    },
+    {
+      "display": "In the last seven days I have worried about my wound.",
+      "code": "Q0008",
+      "definition": "In the last seven days I have worried about my wound."
+    },
+    {
+      "code": "Q0009",
+      "display": "In the last seven days I have been afraid of the wound getting worse or of new wounds.",
+      "definition": "In the last seven days I have been afraid of the wound getting worse or of new wounds."
+    },
+    {
+      "code": "Q0010",
+      "display": "In the last seven days I have been afraid of knocking the wound.",
+      "definition": "In the last seven days I have been afraid of knocking the wound."
+    },
+    {
+      "code": "Q0011",
+      "display": "In the last seven days I have had trouble moving because of the wound.",
+      "definition": "In the last seven days I have had trouble moving because of the wound."
+    },
+    {
+      "code": "Q0012",
+      "display": "In the last seven days climbing stairs has been difficult because of the wound.",
+      "definition": "In the last seven days climbing stairs has been difficult because of the wound."
+    },
+    {
+      "code": "Q0013",
+      "display": "In the last seven days I have had trouble the day-to-day activities.",
+      "definition": "In the last seven days I have had trouble the day-to-day activities."
+    },
+    {
+      "code": "Q0014",
+      "display": "In the last seven days the wound has limited my leisure activities.",
+      "definition": "In the last seven days the wound has limited my leisure activities."
+    },
+    {
+      "code": "Q0015",
+      "display": "In the last seven days the wound has forced me to limit my activities with others.",
+      "definition": "In the last seven days the wound has forced me to limit my activities with others."
+    },
+    {
+      "code": "Q0016",
+      "display": "In the last seven days I have felt dependent on help from others because of the wound.",
+      "definition": "In the last seven days I have felt dependent on help from others because of the wound."
+    },
+    {
+      "code": "Q0017",
+      "display": "In the last seven days the wound has been a financial burden to me.",
+      "definition": "In the last seven days the wound has been a financial burden to me."
+    },
+    {
+      "code": "00001",
+      "display": "Wound-QoL",
+      "definition": "Wound Quality of Life"
+    }
+  ],
+  "count": 24,
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>WoundQoL-CodeSystem</h2><tt>http://posithera.de/codesystem/WoundQoL</tt><p>Codesystem for the Wound Quality of Life</p></div>"
+  },
+  "date": "2019-05-24",
+  "publisher": "Forschungsgruppe Informatik im Gesundheitswesen, Hochschule Osnabrück, Deutschland"
+}

@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<QuestionnaireResponse xmlns="http://hl7.org/fhir">
+    <!--<questionnaire value=".../..."/> -->
+    <status value="completed"/>
+    <item>
+        <linkId value="Q01"/>
+        <answer>
+            <valueCoding>
+                <code value="A0002"/>
+                <system value="https://posithera.de/fhir/codesystem/WoundQoL"/>
+                <display value="statement fits a little"/>
+            </valueCoding>
+        </answer>
+    </item>
+    <item>
+        <linkId value="Q02"/>
+        <answer>
+            <valueCoding>
+                <code value="A0002"/>
+                <system value="https://posithera.de/fhir/codesystem/WoundQoL"/>
+                <display value="statement fits a little"/>
+            </valueCoding>
+        </answer>
+    </item>
+    <item>
+        <linkId value="Q03"/>
+        <answer>
+            <valueCoding>
+                <code value="A0002"/>
+                <system value="https://posithera.de/fhir/codesystem/WoundQoL"/>
+                <display value="statement fits a little"/>
+            </valueCoding>
+        </answer>
+    </item>
+    <item>
+        <linkId value="Q04"/>
+        <answer>
+            <valueCoding>
+                <code value="A0002"/>
+                <system value="https://posithera.de/fhir/codesystem/WoundQoL"/>
+                <display value="statement fits a little"/>
+            </valueCoding>
+        </answer>
+    </item>
+    <item>
+        <linkId value="Q05"/>
+        <answer>
+            <valueCoding>
+                <code value="A0002"/>
+                <system value="https://posithera.de/fhir/codesystem/WoundQoL"/>
+                <display value="statement fits a little"/>
+            </valueCoding>
+        </answer>
+    </item>
+    <item>
+        <linkId value="Q06"/>
+        <answer>
+            <valueCoding>
+                <code value="A0002"/>
+                <system value="https://posithera.de/fhir/codesystem/WoundQoL"/>
+                <display value="statement fits a little"/>
+            </valueCoding>
+        </answer>
+    </item>
+    <item>
+        <linkId value="Q07"/>
+        <answer>
+            <valueCoding>
+                <code value="A0002"/>
+                <system value="https://posithera.de/fhir/codesystem/WoundQoL"/>
+                <display value="statement fits a little"/>
+            </valueCoding>
+        </answer>
+    </item>
+    <item>
+        <linkId value="Q08"/>
+        <answer>
+            <valueCoding>
+                <code value="A0002"/>
+                <system value="https://posithera.de/fhir/codesystem/WoundQoL"/>
+                <display value="statement fits a little"/>
+            </valueCoding>
+        </answer>
+    </item>
+    <item>
+        <linkId value="Q09"/>
+        <answer>
+            <valueCoding>
+                <code value="A0002"/>
+                <system value="https://posithera.de/fhir/codesystem/WoundQoL"/>
+                <display value="statement fits a little"/>
+            </valueCoding>
+        </answer>
+    </item>
+    <item>
+        <linkId value="Q10"/>
+        <answer>
+            <valueCoding>
+                <code value="A0002"/>
+                <system value="https://posithera.de/fhir/codesystem/WoundQoL"/>
+                <display value="statement fits a little"/>
+            </valueCoding>
+        </answer>
+    </item>
+    <item>
+        <linkId value="Q11"/>
+        <answer>
+            <valueCoding>
+                <code value="A0002"/>
+                <system value="https://posithera.de/fhir/codesystem/WoundQoL"/>
+                <display value="statement fits a little"/>
+            </valueCoding>
+        </answer>
+    </item>
+    <item>
+        <linkId value="Q12"/>
+        <answer>
+            <valueCoding>
+                <code value="A0002"/>
+                <system value="https://posithera.de/fhir/codesystem/WoundQoL"/>
+                <display value="statement fits a little"/>
+            </valueCoding>
+        </answer>
+    </item>
+    <item>
+        <linkId value="Q13"/>
+        <answer>
+            <valueCoding>
+                <code value="A0002"/>
+                <system value="https://posithera.de/fhir/codesystem/WoundQoL"/>
+                <display value="statement fits a little"/>
+            </valueCoding>
+        </answer>
+    </item>
+    <item>
+        <linkId value="Q14"/>
+        <answer>
+            <valueCoding>
+                <code value="A0002"/>
+                <system value="https://posithera.de/fhir/codesystem/WoundQoL"/>
+                <display value="statement fits a little"/>
+            </valueCoding>
+        </answer>
+    </item>
+    <item>
+        <linkId value="Q15"/>
+        <answer>
+            <valueCoding>
+                <code value="A0002"/>
+                <system value="https://posithera.de/fhir/codesystem/WoundQoL"/>
+                <display value="statement fits a little"/>
+            </valueCoding>
+        </answer>
+    </item>
+    <item>
+        <linkId value="Q16"/>
+        <answer>
+            <valueCoding>
+                <code value="A0002"/>
+                <system value="https://posithera.de/fhir/codesystem/WoundQoL"/>
+                <display value="statement fits a little"/>
+            </valueCoding>
+        </answer>
+    </item>
+    <item>
+        <linkId value="Q17"/>
+        <answer>
+            <valueCoding>
+                <code value="A0002"/>
+                <system value="https://posithera.de/fhir/codesystem/WoundQoL"/>
+                <display value="statement fits a little"/>
+            </valueCoding>
+        </answer>
+    </item>
+</QuestionnaireResponse>

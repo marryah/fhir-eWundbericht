@@ -1,0 +1,47 @@
+﻿{
+  "resourceType": "ValueSet",
+  "url": "https://posithera.de/ValueSet/Wundbelag",
+  "name": "PosiThera - Wundbelag",
+  "status": "draft",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "email",
+          "value": "m.przysucha@hs-osnabrueck.de"
+        }
+      ],
+      "name": "Mareike Przysucha"
+    }
+  ],
+  "compose": {
+    "include": [
+      {
+        "system": "https://posithera.de/CodeSystem/NKDUC",
+        "concept": [
+          {
+            "code": "C040200",
+            "display": "kein Wundbelag"
+          },
+          {
+            "code": "C040201",
+            "display": "Nekrose"
+          },
+          {
+            "code": "C040202",
+            "display": "Fibrin"
+          },
+          {
+            "code": "C040203",
+            "display": "Nekrose und Fibrin"
+          }        ]
+      }
+    ]
+  },
+  "description": "Wundbelag",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>PosiThera - Wundbelag</h2><tt>https://posithera.de/ValueSet/Wundbelag</tt><p>Wundbelag</p></div>"
+  },
+  "publisher": "Forschungsgruppe Informatik im Gesundheitswesen, Hochschule Osnabrück, Deutschland"
+}

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet  xmlns="http://hl7.org/fhir">
+    <url value="https://eNursingSummary.de/fhir/ValueSet/SchulungQuadrant"/>
+    <status value="draft" />
+    <compose>
+        <include>
+            <system value="https://eNursingSummary.de/fhir/CodeSystem/SchulungQuadrant"/>
+            <!-- 
+            <concept>
+                <code value="alpha" />
+                <display value="Alpha Quadarant"/>
+            </concept>
+            <concept>
+                <code value="beta" />
+                <display value="Beta Quadarant"/>
+            </concept>
+            <concept>
+                <code value="gamma" />
+                <display value="Gamma Quadarant"/>
+            </concept>
+            <concept>
+                <code value="delta" />
+                <display value="Delta Quadarant"/>
+            </concept>
+            -->
+        </include>
+    </compose>
+    <expansion>
+        <identifier value="..." />
+        <timestamp value="2019-10-25"/>
+        <total value="4"/>
+        <contains>
+            <system value="https://eNursingSummary.de/fhir/CodeSystem/SchulungQuadrant"/>
+            <code value="alpha" />
+            <display value="Alpha Quadarant"/>
+        </contains>
+        <contains>
+            <system value="https://eNursingSummary.de/fhir/CodeSystem/SchulungQuadrant"/>
+            <code value="beta" />
+            <display value="Beta Quadarant"/>
+        </contains>
+        <contains>
+            <system value="https://eNursingSummary.de/fhir/CodeSystem/SchulungQuadrant"/>
+            <code value="gamma" />
+            <display value="Gamma Quadarant"/>
+        </contains>
+        <contains>
+            <system value="https://eNursingSummary.de/fhir/CodeSystem/SchulungQuadrant"/>
+            <code value="delta" />
+            <display value="Delta Quadarant"/>
+        </contains>
+    </expansion>
+</ValueSet>

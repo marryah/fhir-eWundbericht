@@ -1,0 +1,969 @@
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <text>
+    <status value="generated" />
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <h2>PosiThera - German National Consensus for documentation of leg ulcera</h2>
+      <tt>https://posithera.de/fhir/CodeSystem/NKDUC</tt>
+      <p>German National Consensus for documentation of leg ulcera</p>
+    </div>
+  </text>
+  <url value="https://posithera.de/fhir/CodeSystem/NKDUC" />
+  <name value="PosiTheraGermanNationalConsensusForDocumentationOfLegUlcera" />
+  <title value="PosiThera - German National Consensus for documentation of leg ulcera" />
+  <status value="draft" />
+  <publisher value="Forschungsgruppe Informatik im Gesundheitswesen, Hochschule Osnabrück, Deutschland" />
+  <contact>
+    <name value="Mareike Przysucha" />
+    <telecom>
+      <system value="email" />
+      <value value="m.przysucha@hs-osnabrueck.de" />
+    </telecom>
+  </contact>
+  <description value="German National Consensus for documentation of leg ulcera / Nationaler Konsensus zur Dokumentation des Ulcus cruris" />
+  <caseSensitive value="false" />
+  <hierarchyMeaning value="grouped-by" />
+  <compositional value="false" />
+  <versionNeeded value="false" />
+  <content value="complete" />
+  <count value="177" />
+  <concept>
+    <code value="C0106" />
+    <display value="Schulbildung" />
+    <concept>
+      <code value="C010601" />
+      <display value="ohne Abschluss" />
+    </concept>
+    <concept>
+      <code value="C010602" />
+      <display value="Hauptschulabschluss" />
+    </concept>
+    <concept>
+      <code value="C010603" />
+      <display value="Realschulabschluss (mittlere Reife)" />
+    </concept>
+    <concept>
+      <code value="C010604" />
+      <display value="Fachhochschulreife" />
+    </concept>
+    <concept>
+      <code value="C010605" />
+      <display value="Allgemeine Hochschulreife (Abitur)" />
+    </concept>
+    <concept>
+      <code value="C010606" />
+      <display value="anderer Schulabschluss" />
+    </concept>
+  </concept>
+  <concept>
+    <code value="C0107" />
+    <display value="Berufstätigkeit" />
+    <concept>
+      <code value="C010701" />
+      <display value="erwerbstätig" />
+    </concept>
+    <concept>
+      <code value="C010702" />
+      <display value="längere Beurlaubung, Freistellung (z.B. Elternzeit)" />
+    </concept>
+    <concept>
+      <code value="C010703" />
+      <display value="Auszubildende/r (Azubi), freiwillige/r Zivildienstleistende/r oder Wehrdienstleistender, freiwilliges soziales Jahr" />
+    </concept>
+    <concept>
+      <code value="C010704" />
+      <display value="in Rente, Pension, Vorruhestand (nicht aufgrund der Erkrankung)" />
+    </concept>
+    <concept>
+      <code value="C010705" />
+      <display value="in Frührente, erwerbsunfähig (wegen der Erkrankung)" />
+    </concept>
+    <concept>
+      <code value="C010706" />
+      <display value="Hausfrau/Hausmann" />
+    </concept>
+    <concept>
+      <code value="C010707" />
+      <display value="Schüler/in, Student/in" />
+    </concept>
+    <concept>
+      <code value="C010708" />
+      <display value="Empfänger von Arbeitslosengeld I oder II" />
+    </concept>
+    <concept>
+      <code value="C010709" />
+      <display value="Sonstige Berufstätigkeit" />
+    </concept>
+  </concept>
+  <concept>
+    <code value="C0202" />
+    <display value="Ulcusrelevante Begleiterkrankungen" />
+    <concept>
+      <code value="C020201" />
+      <display value="Herz-Kreislauf-Erkrankungen" />
+      <concept>
+        <code value="C02020101" />
+        <display value="Arterielle Hypertonie" />
+      </concept>
+      <concept>
+        <code value="C02020102" />
+        <display value="Herzinsuffizienz" />
+      </concept>
+      <concept>
+        <code value="C02020103" />
+        <display value="Koronare Herzkrankheit" />
+      </concept>
+      <concept>
+        <code value="C02020104" />
+        <display value="Gerinnungsstörung" />
+      </concept>
+      <concept>
+        <code value="C02020105" />
+        <display value="Zustand nach Thrombose" />
+      </concept>
+    </concept>
+    <concept>
+      <code value="C020202" />
+      <display value="Pulmonale Erkrankungen" />
+      <concept>
+        <code value="C02020201" />
+        <display value="Asthma bronchiale" />
+      </concept>
+      <concept>
+        <code value="C02020202" />
+        <display value="Chronische Bronchitis" />
+      </concept>
+    </concept>
+    <concept>
+      <code value="C020203" />
+      <display value="Stoffwechselstörungen" />
+      <concept>
+        <code value="C02020301" />
+        <display value="Diabetes mellitus" />
+      </concept>
+      <concept>
+        <code value="C02020304" />
+        <display value="Hyperurikämie" />
+      </concept>
+      <concept>
+        <code value="C02020305" />
+        <display value="Lipidstoffwechselstörung" />
+      </concept>
+      <concept>
+        <code value="C02020306" />
+        <display value="Mangelernährung" />
+      </concept>
+    </concept>
+    <concept>
+      <code value="C020204" />
+      <display value="Infektionskrankheit" />
+      <concept>
+        <code value="C02020401" />
+        <display value="Tuberkulose" />
+      </concept>
+      <concept>
+        <code value="C02020402" />
+        <display value="Hepatitis" />
+      </concept>
+      <concept>
+        <code value="C02020403" />
+        <display value="HIV-Infektion" />
+      </concept>
+      <concept>
+        <code value="C02020404" />
+        <display value="Sonstige Infektionserkrankung" />
+      </concept>
+    </concept>
+    <concept>
+      <code value="C020205" />
+      <display value="Lebererkrankungen" />
+      <concept>
+        <code value="C02020501" />
+        <display value="Leberzirrhose" />
+      </concept>
+      <concept>
+        <code value="C02020502" />
+        <display value="Steatosis hepatis" />
+      </concept>
+      <concept>
+        <code value="C02020503" />
+        <display value="Chronischer Leberschaden" />
+      </concept>
+    </concept>
+    <concept>
+      <code value="C020206" />
+      <display value="Dermatologisch-allergologische Erkrankung" />
+      <concept>
+        <code value="C02020601" />
+        <display value="Kontaktekzem" />
+      </concept>
+    </concept>
+    <concept>
+      <code value="C020207" />
+      <display value="Nierenerkrankungen" />
+      <concept>
+        <code value="C02020701" />
+        <display value="Niereninsuffizienz" />
+      </concept>
+    </concept>
+    <concept>
+      <code value="C020208" />
+      <display value="Rheumatologische und immunologischer Erkrankung" />
+      <concept>
+        <code value="C02020801" />
+        <display value="Rheumatoide Arthritis" />
+      </concept>
+      <concept>
+        <code value="C02020802" />
+        <display value="Andere rheumatologische Erkrankungen" />
+      </concept>
+    </concept>
+    <concept>
+      <code value="C020209" />
+      <display value="Psychische und Suchterkrankungen" />
+      <concept>
+        <code value="C02020901" />
+        <display value="Depression" />
+      </concept>
+      <concept>
+        <code value="C02020902" />
+        <display value="Raucher" />
+      </concept>
+      <concept>
+        <code value="C02020903" />
+        <display value="Exraucher" />
+      </concept>
+      <concept>
+        <code value="C02020904" />
+        <display value="Alkoholabusus" />
+      </concept>
+      <concept>
+        <code value="C02020905" />
+        <display value="Andere Drogen" />
+      </concept>
+      <concept>
+        <code value="C02020906" />
+        <display value="i.v. Drogenabusus" />
+      </concept>
+    </concept>
+    <concept>
+      <code value="C020210" />
+      <display value="Maligne Tumore" />
+    </concept>
+    <concept>
+      <code value="C020211" />
+      <display value="Neurologische Erkrankungen" />
+      <concept>
+        <code value="C02021101" />
+        <display value="Multiple Sklerose" />
+      </concept>
+      <concept>
+        <code value="C02021102" />
+        <display value="Periphere Polyneuropathie" />
+      </concept>
+      <concept>
+        <code value="C02021103" />
+        <display value="Morbus Parkinson" />
+      </concept>
+    </concept>
+    <concept>
+      <code value="C020212" />
+      <display value="Weitere Erkrankungen" />
+      <concept>
+        <code value="C02021201" />
+        <display value="Lipödem" />
+      </concept>
+      <concept>
+        <code value="C02021202" />
+        <display value="Lymphödem" />
+      </concept>
+    </concept>
+    <concept>
+      <code value="C020213" />
+      <display value="Sonstige" />
+    </concept>
+  </concept>
+  <concept>
+    <code value="C0203" />
+    <display value="Ulcusrelevante Medikamentenanamnese" />
+    <concept>
+      <code value="C020301" />
+      <display value="Schmerztherapie (WHO I)" />
+    </concept>
+    <concept>
+      <code value="C020302" />
+      <display value="Schmerztherapie (WHO II)" />
+    </concept>
+    <concept>
+      <code value="C020303" />
+      <display value="Schmerztherapie (WHO III)" />
+    </concept>
+    <concept>
+      <code value="C020304" />
+      <display value="Antibiotikatherapie" />
+    </concept>
+    <concept>
+      <code value="C020305" />
+      <display value="Immunsuppresiva" />
+    </concept>
+    <concept>
+      <code value="C020306" />
+      <display value="Antikoagulanzien" />
+    </concept>
+    <concept>
+      <code value="C020307" />
+      <display value="Diuretika" />
+    </concept>
+  </concept>
+  <concept>
+    <code value="C0204" />
+    <display value="Ernährungsstatus" />
+    <concept>
+      <code value="C020401" />
+      <display value="über" />
+    </concept>
+    <concept>
+      <code value="C020402" />
+      <display value="unter" />
+    </concept>
+    <concept>
+      <code value="C020403" />
+      <display value="normal" />
+    </concept>
+  </concept>
+  <concept>
+    <code value="C0302" />
+    <display value="Wundart" />
+    <concept>
+      <code value="C030201" />
+      <display value="Ulcus cruris venosum" />
+    </concept>
+    <concept>
+      <code value="C030202" />
+      <display value="Ulcus cruris arteriosum" />
+    </concept>
+    <concept>
+      <code value="C030203" />
+      <display value="Ulcus cruris mixtum" />
+    </concept>
+    <concept>
+      <code value="C030204" />
+      <display value="vaskulitisch/immunologisch" />
+    </concept>
+    <concept>
+      <code value="C030205" />
+      <display value="medikamentös" />
+    </concept>
+    <concept>
+      <code value="C030206" />
+      <display value="maligne" />
+    </concept>
+    <concept>
+      <code value="C030207" />
+      <display value="sonstige Wundart" />
+    </concept>
+  </concept>
+  <concept>
+    <code value="C0303" />
+    <display value="Wundlokalisation" />
+    <concept>
+      <code value="C030301" />
+      <display value="Oberschenkel rechts" />
+    </concept>
+    <concept>
+      <code value="C030302" />
+      <display value="Oberschenkel links" />
+    </concept>
+    <concept>
+      <code value="C030303" />
+      <display value="Knie rechts" />
+    </concept>
+    <concept>
+      <code value="C030304" />
+      <display value="Knie links" />
+    </concept>
+    <concept>
+      <code value="C030305" />
+      <display value="Unterschenkel rechts" />
+    </concept>
+    <concept>
+      <code value="C030306" />
+      <display value="Unterschenkel links" />
+    </concept>
+    <concept>
+      <code value="C030307" />
+      <display value="Sprunggelenk rechts" />
+    </concept>
+    <concept>
+      <code value="C030308" />
+      <display value="Sprunggelenk links" />
+    </concept>
+    <concept>
+      <code value="C030309" />
+      <display value="Fußrücken rechts" />
+    </concept>
+    <concept>
+      <code value="C030310" />
+      <display value="Fußrücken links" />
+    </concept>
+    <concept>
+      <code value="C030311" />
+      <display value="Ferse rechts (nicht Fußsohle)" />
+    </concept>
+    <concept>
+      <code value="C030312" />
+      <display value="Ferse links (nicht Fußsohle)" />
+    </concept>
+    <concept>
+      <code value="C030313" />
+      <display value="Fußsohle rechts" />
+    </concept>
+    <concept>
+      <code value="C030314" />
+      <display value="Fußsohle links" />
+    </concept>
+    <concept>
+      <code value="C030315" />
+      <display value="Zehen rechts" />
+    </concept>
+    <concept>
+      <code value="C030316" />
+      <display value="Zehen links" />
+    </concept>
+    <concept>
+      <code value="C030317" />
+      <display value="Sonstige Lokalisation" />
+    </concept>
+  </concept>
+  <concept>
+    <code value="C0402" />
+    <display value="Wundbelag" />
+    <concept>
+      <code value="C040200" />
+      <display value="kein Wundbelag" />
+    </concept>
+    <concept>
+      <code value="C040201" />
+      <display value="Nekrose" />
+    </concept>
+    <concept>
+      <code value="C040202" />
+      <display value="Fibrin" />
+    </concept>
+    <concept>
+      <code value="C040203" />
+      <display value="Nekrose und Fibrin" />
+    </concept>
+  </concept>
+  <concept>
+    <code value="C0403" />
+    <display value="Wundgrund" />
+    <concept>
+      <code value="C040301" />
+      <display value="Sehne" />
+    </concept>
+    <concept>
+      <code value="C040302" />
+      <display value="Knochen" />
+    </concept>
+    <concept>
+      <code value="C040303" />
+      <display value="Muskel" />
+    </concept>
+    <concept>
+      <code value="C040304" />
+      <display value="Fettgewebe" />
+    </concept>
+    <concept>
+      <code value="C040305" />
+      <display value="Dermis" />
+    </concept>
+  </concept>
+  <concept>
+    <code value="C0404" />
+    <display value="Granulation" />
+    <concept>
+      <code value="C040400" />
+      <display value="keine Granulation" />
+    </concept>
+    <concept>
+      <code value="C040401" />
+      <display value="teilweise Granulation" />
+    </concept>
+    <concept>
+      <code value="C040402" />
+      <display value="komplette Granulation" />
+    </concept>
+  </concept>
+  <concept>
+    <code value="C0405" />
+    <display value="Epithelisierung" />
+    <concept>
+      <code value="C040500" />
+      <display value="keine Epithelisierung" />
+    </concept>
+    <concept>
+      <code value="C040501" />
+      <display value="teilweise Epithelisierung" />
+    </concept>
+    <concept>
+      <code value="C040502" />
+      <display value="komplette Epithelisierung" />
+    </concept>
+  </concept>
+  <concept>
+    <code value="C0406" />
+    <display value="Exsudatmenge" />
+    <concept>
+      <code value="C040600" />
+      <display value="kein Exsudat" />
+    </concept>
+    <concept>
+      <code value="C040601" />
+      <display value="mäßige Exsudatmenge" />
+    </concept>
+    <concept>
+      <code value="C040602" />
+      <display value="viel Exsudat" />
+    </concept>
+  </concept>
+  <concept>
+    <code value="C0407" />
+    <display value="Beschaffenheit des Exsudats" />
+    <concept>
+      <code value="C040701" />
+      <display value="klares Exsudat" />
+    </concept>
+    <concept>
+      <code value="C040702" />
+      <display value="blutiges Exsudat" />
+    </concept>
+    <concept>
+      <code value="C040703" />
+      <display value="grünes/braunes/gelbes Exsudat" />
+    </concept>
+  </concept>
+  <concept>
+    <code value="C0409" />
+    <display value="Abheilungsstatus" />
+    <concept>
+      <code value="C040901" />
+      <display value="geheilt" />
+    </concept>
+    <concept>
+      <code value="C040902" />
+      <display value="verbessert" />
+    </concept>
+    <concept>
+      <code value="C040903" />
+      <display value="unverändert" />
+    </concept>
+    <concept>
+      <code value="C040904" />
+      <display value="verschlechtert" />
+    </concept>
+  </concept>
+  <concept>
+    <code value="C0410" />
+    <display value="Wundrand / Hautumgebung" />
+    <concept>
+      <code value="C041001" />
+      <display value="reizlos" />
+    </concept>
+    <concept>
+      <code value="C041002" />
+      <display value="gerötet" />
+    </concept>
+    <concept>
+      <code value="C041003" />
+      <display value="ödematös" />
+    </concept>
+    <concept>
+      <code value="C041004" />
+      <display value="mazeriert" />
+    </concept>
+    <concept>
+      <code value="C041005" />
+      <display value="livide" />
+    </concept>
+    <concept>
+      <code value="C041006" />
+      <display value="nekrotisch" />
+    </concept>
+    <concept>
+      <code value="C041007" />
+      <display value="schuppend, hyperkeratotisch/terminiert" />
+    </concept>
+  </concept>
+  <concept>
+    <code value="C0501" />
+    <display value="Gehstreckenverminderung" />
+  </concept>
+  <concept>
+    <code value="C0601" />
+    <display value="Lokaltherapie" />
+    <concept>
+      <code value="C060101" />
+      <display value="Debridement" />
+      <concept>
+        <code value="C06010101" />
+        <display value="mechanisches Debridement" />
+      </concept>
+      <concept>
+        <code value="C06010102" />
+        <display value="chirurgisches Debridement" />
+      </concept>
+      <concept>
+        <code value="C06010103" />
+        <display value="Debridement mit Ultraschall" />
+      </concept>
+      <concept>
+        <code value="C06010104" />
+        <display value="autolytisches Debridement" />
+      </concept>
+      <concept>
+        <code value="C06010105" />
+        <display value="enzymatisches Debridement" />
+      </concept>
+      <concept>
+        <code value="C06010106" />
+        <display value="Debridement mit Biochirurgie (Maden)" />
+      </concept>
+      <concept>
+        <code value="C06010107" />
+        <display value="Sonstiges Debridement" />
+      </concept>
+    </concept>
+    <concept>
+      <code value="C060102" />
+      <display value="Wundspülung" />
+      <concept>
+        <code value="C06010201" />
+        <display value="keine Wundspülung" />
+      </concept>
+      <concept>
+        <code value="C06010202" />
+        <display value="Ringer-Lösung" />
+      </concept>
+      <concept>
+        <code value="C06010203" />
+        <display value="NaCl 0,9%" />
+      </concept>
+      <concept>
+        <code value="C06010204" />
+        <display value="Polyhexanid als Wundspülung" />
+      </concept>
+      <concept>
+        <code value="C06010205" />
+        <display value="Octenidin als Wundspülung" />
+      </concept>
+      <concept>
+        <code value="C06010206" />
+        <display value="nasszierender Sauerstoff" />
+      </concept>
+      <concept>
+        <code value="C06010207" />
+        <display value="Sonstige Wundspülung" />
+      </concept>
+    </concept>
+    <concept>
+      <code value="C060103" />
+      <display value="Wundantiseptik" />
+      <concept>
+        <code value="C06010301" />
+        <display value="keine Wundantiseptik" />
+      </concept>
+      <concept>
+        <code value="C06010302" />
+        <display value="Octenidin als Wundantiseptik" />
+      </concept>
+      <concept>
+        <code value="C06010303" />
+        <display value="PVP-Jod" />
+      </concept>
+      <concept>
+        <code value="C06010304" />
+        <display value="Polyhexanid als Wundantiseptik" />
+      </concept>
+    </concept>
+    <concept>
+      <code value="C060104" />
+      <display value="Wundumgebungsschutz" />
+    </concept>
+    <concept>
+      <code value="C060105" />
+      <display value="primärer Wundverband" />
+    </concept>
+    <concept>
+      <code value="C060106" />
+      <display value="sekundärer Wundverband" />
+    </concept>
+    <concept>
+      <code value="C060107" />
+      <display value="lokale Unterdrucktherapie" />
+    </concept>
+    <concept>
+      <code value="C060108" />
+      <display value="Elektrostimulation" />
+    </concept>
+    <concept>
+      <code value="C060109" />
+      <display value="Sonstige Lokaltherapie" />
+    </concept>
+  </concept>
+  <concept>
+    <code value="C0602" />
+    <display value="Kausal orientierte Therapie" />
+    <concept>
+      <code value="C060201" />
+      <display value="Kompression" />
+      <concept>
+        <code value="C06020101" />
+        <display value="Kompressionsmaterial" />
+        <concept>
+          <code value="C0602010101" />
+          <display value="Kurzzugbinden" />
+        </concept>
+        <concept>
+          <code value="C0602010102" />
+          <display value="Langzugbinden" />
+        </concept>
+        <concept>
+          <code value="C0602010103" />
+          <display value="Strumpf" />
+          <concept>
+            <code value="C060201010301" />
+            <display value="Ulkusstrumpf" />
+          </concept>
+          <concept>
+            <code value="C060201010302" />
+            <display value="Kompressionsstrumpf nach Maß" />
+          </concept>
+        </concept>
+        <concept>
+          <code value="C0602010104" />
+          <display value="Mehrkomponentensysteme" />
+        </concept>
+        <concept>
+          <code value="C0602010105" />
+          <display value="Sonstige Kompressionsmaterialien" />
+        </concept>
+        <concept>
+          <code value="C06020108" />
+          <display value="Anziehhilfe" />
+        </concept>
+      </concept>
+    </concept>
+    <concept>
+      <code value="C060202" />
+      <display value="operative Therapie" />
+      <concept>
+        <code value="C06020201" />
+        <display value="Varizenstripping V. saphena magna oder parva" />
+      </concept>
+      <concept>
+        <code value="C06020202" />
+        <display value="Seitenaststripping" />
+      </concept>
+      <concept>
+        <code value="C06020203" />
+        <display value="interventionelle Venenoperation, Laser oder Schaumsklerosierung der V. saphena magna oder parva" />
+      </concept>
+      <concept>
+        <code value="C06020204" />
+        <display value="sonstige Venenverfahren, z.B. Heiß-Dampf-Therapie" />
+      </concept>
+      <concept>
+        <code value="C06020205" />
+        <display value="Bypass bei pAVK" />
+      </concept>
+      <concept>
+        <code value="C06020206" />
+        <display value="Stenteinlage bei pAVK" />
+      </concept>
+      <concept>
+        <code value="C06020207" />
+        <display value="chirurgisches Debridement als operative Therapie" />
+        <concept>
+          <code value="C060202001" />
+          <display value="Setting Chrirugisches Debridement" />
+          <concept>
+            <code value="C0602020011" />
+            <display value="stationäres chirurgisches Debridement" />
+          </concept>
+          <concept>
+            <code value="C0602020012" />
+            <display value="ambulantes chirurgisches Debridement" />
+          </concept>
+        </concept>
+        <concept>
+          <code value="C060202002" />
+          <display value="Narkose Chirurgisches Debridement" />
+        </concept>
+      </concept>
+      <concept>
+        <code value="C06020208" />
+        <display value="Fasziektomie" />
+      </concept>
+      <concept>
+        <code value="C06020209" />
+        <display value="Mesh-/Spalthauttransplantation" />
+      </concept>
+      <concept>
+        <code value="C06020210" />
+        <display value="Spalthaut / Stanztransplantat / Keratinozytentransplantation" />
+      </concept>
+      <concept>
+        <code value="C06020211" />
+        <display value="Sonstige Wunddeckungsverfahren" />
+      </concept>
+    </concept>
+    <concept>
+      <code value="C060203" />
+      <display value="Immunsuppresive Therapie" />
+    </concept>
+    <concept>
+      <code value="C060204" />
+      <display value="Lymphdrainage" />
+    </concept>
+    <concept>
+      <code value="C060205" />
+      <display value="physikalische Therapie" />
+    </concept>
+    <concept>
+      <code value="C060206" />
+      <display value="interventionelle Therapie" />
+    </concept>
+    <concept>
+      <code value="C060207" />
+      <display value="rheologische Therapie" />
+    </concept>
+    <concept>
+      <code value="C060208" />
+      <display value="Sonstige kausal orientierte Therapie" />
+    </concept>
+  </concept>
+  <concept>
+    <code value="C0603" />
+    <display value="Den Verbandswechsel durchführende Profession" />
+    <concept>
+      <code value="C060301" />
+      <display value="Pflegefachkraft" />
+    </concept>
+    <concept>
+      <code value="C060302" />
+      <display value="Arzt/Ärztin" />
+    </concept>
+    <concept>
+      <code value="C060303" />
+      <display value="medizinische/r Fachangestellte/r" />
+    </concept>
+    <concept>
+      <code value="C060304" />
+      <display value="Lymphtherapeut/in" />
+    </concept>
+    <concept>
+      <code value="C060305" />
+      <display value="Sonstige Profession" />
+    </concept>
+  </concept>
+  <concept>
+    <code value="C0604" />
+    <display value="Behandlungsziele" />
+    <concept>
+      <code value="C060401" />
+      <display value="beschleunigter Wundschluss" />
+    </concept>
+    <concept>
+      <code value="C060402" />
+      <display value="Wundbettkonditionierung für die Defektabdeckung" />
+    </concept>
+    <concept>
+      <code value="C060403" />
+      <display value="Vermeidung von Wundinfektion" />
+    </concept>
+    <concept>
+      <code value="C060404" />
+      <display value="verbesserte Wundreinigung" />
+    </concept>
+    <concept>
+      <code value="C060405" />
+      <display value="Exsudatmanagement" />
+    </concept>
+    <concept>
+      <code value="C060406" />
+      <display value="Wundschutz" />
+    </concept>
+    <concept>
+      <code value="C060407" />
+      <display value="Volumen-/Flächenreduktion" />
+    </concept>
+    <concept>
+      <code value="C060408" />
+      <display value="Transplantatsicherung" />
+    </concept>
+    <concept>
+      <code value="C060409" />
+      <display value="Reduktion von Wundödemen" />
+    </concept>
+    <concept>
+      <code value="C060410" />
+      <display value="Förderung von Granulation und Epithelisierung" />
+    </concept>
+    <concept>
+      <code value="C060411" />
+      <display value="Föderung der Angiogenesen" />
+    </concept>
+    <concept>
+      <code value="C060412" />
+      <display value="Schmerzreduktion" />
+    </concept>
+    <concept>
+      <code value="C060413" />
+      <display value="Geruchsminimierung" />
+    </concept>
+    <concept>
+      <code value="C060414" />
+      <display value="Sonstige Behandlungsziele" />
+    </concept>
+  </concept>
+  <concept>
+    <code value="C0702" />
+    <display value="Zufriedenheit (Versorgung, Therapie)" />
+    <concept>
+      <code value="C070201" />
+      <display value="Wie zufrieden sind Sie insgesamt mit der Versorgung Ihrer Erkrankung" />
+    <concept>
+      <code value="C07020101" />
+      <display value="sehr zufrieden" />
+      </concept>
+      <concept>
+        <code value="C07020102" />
+        <display value="eher zufrieden" />
+      </concept>
+      <concept>
+        <code value="C07020103" />
+        <display value="teils, teils" />
+      </concept>
+      <concept>
+        <code value="C07020104" />
+        <display value="eher unzufrieden" />
+      </concept>
+      <concept>
+        <code value="C07020105" />
+        <display value="sehr unzufrieden" />
+      </concept>
+    </concept>
+  </concept>
+  <concept>
+    <code value="C090101" />
+    <display value="Patientenedukation" />
+    <concept>
+      <code value="C09010101" />
+      <display value="Bedarf nach Unterstützung" />
+    </concept>
+    <concept>
+      <code value="C09010102" />
+      <display value="Patient ausreichend Informationen übermittelt" />
+    </concept>
+  </concept>
+</CodeSystem>

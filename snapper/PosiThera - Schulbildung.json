@@ -1,0 +1,56 @@
+{
+  "resourceType": "ValueSet",
+  "url": "https://posithera.de/ValueSet/Schulbildung",
+  "name": "PosiThera - Schulbildung",
+  "status": "draft",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "email",
+          "value": "m.przysucha@hs-osnabrueck.de"
+        }
+      ],
+      "name": "Mareike Przysucha"
+    }
+  ],
+  "compose": {
+    "include": [
+      {
+        "system": "https://posithera.de/CodeSystem/NKDUC",
+        "concept": [
+          {
+            "code": "C010601",
+            "display": "ohne Abschluss"
+          },
+          {
+            "code": "C010602",
+            "display": "Hauptschulabschluss"
+          },
+          {
+            "code": "C010603",
+            "display": "Realschulabschluss (mittlere Reife)"
+          },
+          {
+            "code": "C010604",
+            "display": "Fachhochschulreife"
+          },
+          {
+            "code": "C010605",
+            "display": "Allgemeine Hochschulreife (Abitur)"
+          },
+          {
+            "code": "C010606",
+            "display": "anderer Schulabschluss"
+          }
+        ]
+      }
+    ]
+  },
+  "description": "Schulbildung des Patienten, wichtig im Zusammenhang mit der Patientenaufklärung",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>PosiThera - Schulbildung</h2><tt>https://posithera.de/ValueSet/Schulbildung</tt><p>Schulbildung des Patienten, wichtig im Zusammenhang mit der Patientenaufklärung</p></div>"
+  },
+  "publisher": "Forschungsgruppe Informatik im Gesundheitswesen, Hochschule Osnabrück, Deutschland"
+}

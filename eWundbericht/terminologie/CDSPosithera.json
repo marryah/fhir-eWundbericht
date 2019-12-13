@@ -1,0 +1,346 @@
+{
+  "resourceType": "CodeSystem",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>CDS-PosiThera - CodeSystem for Clinical Decision Support</h2><tt>https://posithera.de/fhir/codeSystem/CDS_Posithera</tt><p>Clinical Decision support in PosiThera</p></div>"
+  },
+  "url": "https://posithera.de/fhir/codeSystem/CDS_Posithera",
+  "name": "CDS-PosiThera - CodeSystem for Clinical Decision Support",
+  "status": "draft",
+  "publisher": "Forschungsgruppe Informatik im Gesundheitswesen, Hochschule Osnabrück, Deutschland",
+  "contact": [
+    {
+      "name": "Mareike Przysucha",
+      "telecom": [
+        {
+          "system": "email",
+          "value": "m.przysucha@hs-osnabrueck.de"
+        }
+      ]
+    }
+  ],
+  "description": "CDS-PosiThera - CodeSystem for Clinical Decision Support",
+  "caseSensitive": false,
+  "hierarchyMeaning": "grouped-by",
+  "compositional": false,
+  "versionNeeded": false,
+  "content": "complete",
+  "concept": [
+    {
+      "code": "P0202",
+      "display": "Ulcusrelevante Begleiterkrankungen"
+    },
+    {
+      "code": "P020201",
+      "display": "Herz-Kreislauf-Erkrankungen"
+    },
+    {
+      "code": "P02020106",
+      "display": "CVI"
+    },
+    {
+      "code": "P02020107",
+      "display": "PAVK"
+    },
+    {
+      "code": "P02020108",
+      "display": "oberflächliche oder tiefe Venenthrombose"
+    },
+    {
+      "code": "P02020109",
+      "display": "Postthrombotisches Syndrom"
+    },
+    {
+      "code": "P02021203",
+      "display": "Ekzeme"
+    },
+    {
+      "code": "P02021204",
+      "display": "Sklerose"
+    },
+    {
+      "code": "P0205",
+      "display": "Symptome wundbezogener Erkrankungen"
+    },
+    {
+      "code": "P020501",
+      "display": "Nekrosen an den Zehen"
+    },
+    {
+      "code": "P020502",
+      "display": "Gangrän an den Zehen"
+    },
+    {
+      "code": "P020503",
+      "display": "Nekrosen"
+    },
+    {
+      "code": "P020504",
+      "display": "Zehennägel verdickt"
+    },
+    {
+      "code": "P020505",
+      "display": "Purpura jaune d'ocre"
+    },
+    {
+      "code": "P020506",
+      "display": "Corona phlebetica paraplantaris - Warnvenen"
+    },
+    {
+      "code": "P020507",
+      "display": "Kratzspuren"
+    },
+    {
+      "code": "P020508",
+      "display": "Varikose"
+    },
+    {
+      "code": "P020509",
+      "display": "Venenklappeninsuffizienz"
+    },
+    {
+      "code": "P020510",
+      "display": "Hyperpigmentierung"
+    },
+    {
+      "code": "P020511",
+      "display": "Dermatosklerose"
+    },
+    {
+      "code": "P020512",
+      "display": "Athrophoie blanche"
+    },
+    {
+      "code": "P020513",
+      "display": "Besenreiser"
+    },
+    {
+      "code": "P020514",
+      "display": "Retikuläre Varizen"
+    },
+    {
+      "code": "P020515",
+      "display": "Teleangiektasie"
+    },
+    {
+      "code": "P020516",
+      "display": "Lipodermatosklerose"
+    },
+    {
+      "code": "P020517",
+      "display": "Tastbarkeit Fußpulse"
+    },
+    {
+      "code": "P02051701",
+      "display": "Fußpulse gut tastbar"
+    },
+    {
+      "code": "P02051702",
+      "display": "Fußpulse schlecht tastbar"
+    },
+    {
+      "code": "P02051703",
+      "display": "Fußpulse nicht tastbar"
+    },
+    {
+      "code": "P0303",
+      "display": "Wundlokalisation"
+    },
+    {
+      "code": "P0303",
+      "display": "Wundlokalisation"
+    },
+    {
+      "code": "P030317",
+      "display": "Sonstige Lokalisation"
+    },
+    {
+      "code": "P03031701",
+      "display": "Unterschenkel Außenseite rechts"
+    },
+    {
+      "code": "P03031702",
+      "display": "Unterschenkel Außenseite links"
+    },
+    {
+      "code": "P03031703",
+      "display": "Tibiaregion rechts"
+    },
+    {
+      "code": "P03031704",
+      "display": "Tibiaregion links"
+    },
+    {
+      "code": "P03031705",
+      "display": "Malleolus laterialis rechts"
+    },
+    {
+      "code": "P03031706",
+      "display": "Malleolus laterialis links"
+    },
+    {
+      "code": "P03031707",
+      "display": "Innenknöchel rechts"
+    },
+    {
+      "code": "P03031708",
+      "display": "Innenknöchel links"
+    },
+    {
+      "code": "P03031709",
+      "display": "distaler Unterschenkel über Malleolus medialis rechts"
+    },
+    {
+      "code": "P03031710",
+      "display": "distaler Unterschenkel über Malleolus medialis links"
+    },
+    {
+      "code": "P03031711",
+      "display": "Gamaschenulcus Unterschenkel umrundet rechts"
+    },
+    {
+      "code": "P03031712",
+      "display": "Gamaschenulcus Unterschenkel umrundet links"
+    },
+    {
+      "code": "P03031713",
+      "display": "distaler Unterschenkel um Malleolus medialis rechts"
+    },
+    {
+      "code": "P03031714",
+      "display": "distaler Unterschenkel um Malleolus medialis links"
+    },
+    {
+      "code": "P03031715",
+      "display": "Manschettenulcus Unterschenkel umrundet rechts"
+    },
+    {
+      "code": "P03031716",
+      "display": "Manschettenulcus Unterschenkel umrundet links"
+    },
+    {
+      "code": "P040306",
+      "display": "Erscheinung"
+    },
+    {
+      "code": "P04030601",
+      "display": "feucht glänzend"
+    },
+    {
+      "code": "P04030602",
+      "display": "Fibrin"
+    },
+    {
+      "code": "P0410",
+      "display": "Wundrand / Hautumgebung"
+    },
+    {
+      "code": "P0410A",
+      "display": "Wundrand"
+    },
+    {
+      "code": "P0410A01",
+      "display": "diffus"
+    },
+    {
+      "code": "P0410A02",
+      "display": "klar abgegrenzt"
+    },
+    {
+      "code": "P0410B01",
+      "display": "blass"
+    },
+    {
+      "code": "P0410B02",
+      "display": "weiß marmoriert"
+    },
+    {
+      "code": "P0410B03",
+      "display": "bläulich"
+    },
+    {
+      "code": "P0410B04",
+      "display": "livide verfärbt"
+    },
+    {
+      "code": "P0410B05",
+      "display": "glänzend"
+    },
+    {
+      "code": "P0410B06",
+      "display": "haarlos"
+    },
+    {
+      "code": "P0410B07",
+      "display": "kühl"
+    },
+    {
+      "code": "P0410B08",
+      "display": "atroph"
+    },
+    {
+      "code": "P0410B09",
+      "display": "Haut trocken"
+    },
+    {
+      "code": "P0410B10",
+      "display": "Haut schuppig"
+    },
+    {
+      "code": "P0410B09",
+      "display": "Haut warm"
+    },
+    {
+      "code": "P0415",
+      "display": "Weitere Angaben Schmerz"
+    },
+    {
+      "code": "P041501",
+      "display": "Intensität"
+    },
+    {
+      "code": "P041502",
+      "display": "Setting"
+    },
+    {
+      "code": "P04150201",
+      "display": "in Ruhe"
+    },
+    {
+      "code": "P04150202",
+      "display": "bei Hochlagerung der Beine"
+    },
+    {
+      "code": "P04150203",
+      "display": "Wadenschmerzen nach kurzer Gehstrecke"
+    },
+    {
+      "code": "P04150204",
+      "display": "Wadenkrämpfe nach kurzer Gehstrecke"
+    },
+    {
+      "code": "P041503",
+      "display": "Linderungsmaßnahme"
+    },
+    {
+      "code": "P04150301",
+      "display": "Stehenbleiben"
+    },
+    {
+      "code": "P041504",
+      "display": "Ergebnis"
+    },
+    {
+      "code": "P04150401",
+      "display": "Schmerz lässt nach oder verschwindet"
+    },
+    {
+      "code": "P04150402",
+      "display": "Schmerz bleibt gleich"
+    },
+    {
+      "code": "P04150403",
+      "display": "Schmerz nimmt zu"
+    }
+  ]
+}

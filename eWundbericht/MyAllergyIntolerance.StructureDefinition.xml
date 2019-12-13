@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <url value="https://posithera.de/fhir/StructureDefinition/PosiTheraAllergyIntolerance" />
+  <name value="PosiTheraAllergyIntolerance" />
+  <status value="draft" />
+  <fhirVersion value="4.0.0" />
+  <mapping>
+    <identity value="rim" />
+    <uri value="http://hl7.org/v3" />
+    <name value="RIM Mapping" />
+  </mapping>
+  <mapping>
+    <identity value="w5" />
+    <uri value="http://hl7.org/fhir/fivews" />
+    <name value="FiveWs Pattern Mapping" />
+  </mapping>
+  <mapping>
+    <identity value="v2" />
+    <uri value="http://hl7.org/v2" />
+    <name value="HL7 v2 Mapping" />
+  </mapping>
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="AllergyIntolerance" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/AllergyIntolerance" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="AllergyIntolerance.code.coding">
+      <path value="AllergyIntolerance.code.coding" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="system" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="AllergyIntolerance.code.coding:SNOMED">
+      <path value="AllergyIntolerance.code.coding" />
+      <sliceName value="SNOMED" />
+      <binding>
+        <strength value="example" />
+        <valueSet value="https://posithera.de/fhir/ValueSet/allergy-code" />
+      </binding>
+    </element>
+    <element id="AllergyIntolerance.code.coding:SNOMED.system">
+      <path value="AllergyIntolerance.code.coding.system" />
+      <fixedUri value="http://snomed.info/sct" />
+    </element>
+    <element id="AllergyIntolerance.reaction.substance.extension">
+      <path value="AllergyIntolerance.reaction.substance.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="AllergyIntolerance.reaction.substance.extension:substanceReference">
+      <path value="AllergyIntolerance.reaction.substance.extension" />
+      <sliceName value="substanceReference" />
+      <type>
+        <code value="Extension" />
+        <profile value="https://posithera.de/fhir/StructureDefinition/PosiTheraAllergySubstance" />
+      </type>
+    </element>
+    <element id="AllergyIntolerance.reaction.substance.extension:substanceReference.value[x]">
+      <path value="AllergyIntolerance.reaction.substance.extension.value[x]" />
+      <min value="1" />
+    </element>
+    <element id="AllergyIntolerance.reaction.manifestation.extension">
+      <path value="AllergyIntolerance.reaction.manifestation.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="AllergyIntolerance.reaction.manifestation.extension:manifestationReference">
+      <path value="AllergyIntolerance.reaction.manifestation.extension" />
+      <sliceName value="manifestationReference" />
+      <type>
+        <code value="Extension" />
+        <profile value="https://posithera.de/fhir/StructureDefinition/PosiTheraAllergyManifestation" />
+      </type>
+    </element>
+    <element id="AllergyIntolerance.reaction.manifestation.extension:manifestationReference.value[x]">
+      <path value="AllergyIntolerance.reaction.manifestation.extension.value[x]" />
+      <min value="1" />
+    </element>
+  </differential>
+</StructureDefinition>

@@ -1,0 +1,68 @@
+{
+  "resourceType": "ValueSet",
+  "url": "https://posithera.de/ValueSet/berufstaetigkeit",
+  "name": "PosiThera - Berufstätigkeit",
+  "status": "draft",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "email",
+          "value": "m.przysucha@hs-osnabrueck.de"
+        }
+      ],
+      "name": "Mareike Przysucha"
+    }
+  ],
+  "compose": {
+    "include": [
+      {
+        "system": "https://posithera.de/CodeSystem/NKDUC",
+        "concept": [
+          {
+            "code": "C010701",
+            "display": "erwerbstätig"
+          },
+          {
+            "code": "C010702",
+            "display": "längere Beurlaubung, Freistellung (z.B. Elternzeit)"
+          },
+          {
+            "code": "C010703",
+            "display": "Auszubildende/r (Azubi), freiwillige/r Zivildienstleistende/r oder Wehrdienstleistender, freiwilliges soziales Jahr"
+          },
+          {
+            "code": "C010704",
+            "display": "in Rente, Pension, Vorruhestand (nicht aufgrund der Erkrankung)"
+          },
+          {
+            "code": "C010705",
+            "display": "in Frührente, erwerbsunfähig (wegen der Erkrankung)"
+          },
+          {
+            "code": "C010706",
+            "display": "Hausfrau/Hausmann"
+          },
+          {
+            "code": "C010707",
+            "display": "Schüler/in, Student/in"
+          },
+          {
+            "code": "C010708",
+            "display": "Empfänger von Arbeitslosengeld I oder II"
+          },
+          {
+            "code": "C010709",
+            "display": "Sonstige Berufstätigkeit"
+          }
+        ]
+      }
+    ]
+  },
+  "description": "Berufstätigkeit des Patienten",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>PosiThera - Berufstätigkeit</h2><tt>https://posithera.de/ValueSet/berufstaetigkeit</tt><p>Berufstätigkeit des Patienten</p></div>"
+  },
+  "publisher": "Forschungsgruppe Informatik im Gesundheitswesen, Hochschule Osnabrück, Deutschland"
+}
