@@ -1,37 +1,41 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <url value="http://posithera.de/fhir/StructureDefinition/Procedure/PosiTheraPatientEducation" />
-  <name value="PosiTheraPatientEducation" />
+  <url value="https://posithera.de/fhir/StructureDefinition/PosiTheraEducation" />
+  <name value="PosiTheraEducation" />
   <status value="draft" />
   <fhirVersion value="4.0.0" />
+  <mapping>
+    <identity value="workflow" />
+    <uri value="http://hl7.org/fhir/workflow" />
+    <name value="Workflow Pattern" />
+  </mapping>
+  <mapping>
+    <identity value="rim" />
+    <uri value="http://hl7.org/v3" />
+    <name value="RIM Mapping" />
+  </mapping>
+  <mapping>
+    <identity value="w5" />
+    <uri value="http://hl7.org/fhir/fivews" />
+    <name value="FiveWs Pattern Mapping" />
+  </mapping>
+  <mapping>
+    <identity value="v2" />
+    <uri value="http://hl7.org/v2" />
+    <name value="HL7 v2 Mapping" />
+  </mapping>
   <kind value="resource" />
   <abstract value="false" />
   <type value="Procedure" />
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Procedure" />
   <derivation value="constraint" />
   <differential>
-    <element id="Procedure.code.coding">
-      <path value="Procedure.code.coding" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="system" />
-        </discriminator>
-        <ordered value="false" />
-        <rules value="open" />
-      </slicing>
-    </element>
-    <element id="Procedure.code.coding:OPS">
-      <path value="Procedure.code.coding" />
-      <sliceName value="OPS" />
-    </element>
-    <element id="Procedure.subject">
-      <path value="Procedure.subject" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="http://fhir.de/StructureDefinition/patient-de-basis/" />
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Group" />
-      </type>
+    <element id="Procedure.code">
+      <path value="Procedure.code" />
+      <binding>
+        <strength value="example" />
+        <valueSet value="https://posithera.de/fhir/ValueSet/education-code" />
+      </binding>
     </element>
     <element id="Procedure.performed[x]">
       <path value="Procedure.performed[x]" />
@@ -41,35 +45,24 @@
       <type>
         <code value="Period" />
       </type>
-    </element>
-    <element id="Procedure.performer">
-      <path value="Procedure.performer" />
-      <min value="1" />
-    </element>
-    <element id="Procedure.performer.actor">
-      <path value="Procedure.performer.actor" />
       <type>
-        <code value="Reference" />
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/PractitionerRole" />
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Organization" />
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/RelatedPerson" />
-        <targetProfile value="http://fhir.de/StructureDefinition/practitioner-de-basis/" />
+        <code value="string" />
       </type>
-    </element>
-    <element id="Procedure.reasonReference">
-      <path value="Procedure.reasonReference" />
       <type>
-        <code value="Reference" />
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Condition" />
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/DiagnosticReport" />
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/DocumentReference" />
-        <targetProfile value="http://fhir.de/StructureDefinition/observation-de-basis" />
-        <targetProfile value="http://fhir.de/StructureDefinition/procedure-de-basis" />
+        <code value="Range" />
       </type>
     </element>
     <element id="Procedure.bodySite">
       <path value="Procedure.bodySite" />
       <max value="0" />
+    </element>
+    <element id="Procedure.report">
+      <path value="Procedure.report" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/DocumentReference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Composition" />
+      </type>
     </element>
     <element id="Procedure.complication">
       <path value="Procedure.complication" />
@@ -79,22 +72,9 @@
       <path value="Procedure.complicationDetail" />
       <max value="0" />
     </element>
-    <element id="Procedure.note">
-      <path value="Procedure.note" />
-      <min value="1" />
-    </element>
     <element id="Procedure.focalDevice">
       <path value="Procedure.focalDevice" />
       <max value="0" />
-    </element>
-    <element id="Procedure.usedReference">
-      <path value="Procedure.usedReference" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Device" />
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Substance" />
-        <targetProfile value="http://fhir.de/StructureDefinition/medication-de-basis" />
-      </type>
     </element>
   </differential>
 </StructureDefinition>
