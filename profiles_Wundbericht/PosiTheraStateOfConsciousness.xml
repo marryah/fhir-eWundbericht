@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <url value="https://posithera.de/fhir/StructureDefinition/PosiTheraStateOfConsciousness" />
+  <url value="https://posithera.de/fhir/StructureDefinition/StateOfConsciousness" />
   <name value="PosiTheraStateOfConsciousness" />
   <status value="draft" />
   <fhirVersion value="4.0.0" />

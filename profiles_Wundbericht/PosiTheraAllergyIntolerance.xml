@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <url value="https://posithera.de/fhir/StructureDefinition/PosiTheraAllergyIntolerance" />
+  <url value="https://posithera.de/fhir/StructureDefinition/AllergyIntolerance" />
   <name value="PosiTheraAllergyIntolerance" />
   <status value="draft" />
   <fhirVersion value="4.0.0" />
@@ -62,7 +62,7 @@
       <sliceName value="substanceReference" />
       <type>
         <code value="Extension" />
-        <profile value="https://posithera.de/fhir/StructureDefinition/PosiTheraAllergySubstance" />
+        <profile value="https://posithera.de/fhir/StructureDefinition/AllergySubstance" />
       </type>
     </element>
     <element id="AllergyIntolerance.reaction.substance.extension:substanceReference.value[x]">
@@ -84,7 +84,7 @@
       <sliceName value="manifestationReference" />
       <type>
         <code value="Extension" />
-        <profile value="https://posithera.de/fhir/StructureDefinition/PosiTheraAllergyManifestation" />
+        <profile value="https://posithera.de/fhir/StructureDefinition/AllergyManifestation" />
       </type>
     </element>
     <element id="AllergyIntolerance.reaction.manifestation.extension:manifestationReference.value[x]">

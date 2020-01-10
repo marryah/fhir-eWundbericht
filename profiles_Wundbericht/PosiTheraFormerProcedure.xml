@@ -1,5 +1,5 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <url value="https://posithera.de/fhir/StructureDefinition/PosiTheraFormerProcedure" />
+  <url value="https://posithera.de/fhir/StructureDefinition/FormerProcedure" />
   <name value="PosiTheraFormerProcedure" />
   <status value="draft" />
   <fhirVersion value="4.0.0" />

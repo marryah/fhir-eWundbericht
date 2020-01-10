@@ -4,7 +4,7 @@
   <meta>
     <lastUpdated value="2019-05-06T16:52:10.2604949+00:00" />
   </meta>
-  <url value="https://posithera.de/fhir/StructureDefinition/PosiTheraNKDUCWound" />
+  <url value="https://posithera.de/fhir/StructureDefinition/NKDUCWound" />
   <name value="PosiTheraNKDUCWound" />
   <title value="PosiTheraWound for NKDUC" />
   <status value="draft" />

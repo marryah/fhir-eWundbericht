@@ -1,5 +1,5 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <url value="https://posithera.de/fhir/StructureDefinition/PosiTheraGoalOfTreatment" />
+  <url value="https://posithera.de/fhir/StructureDefinition/GoalOfTreatment" />
   <name value="PosiTheraGoalOfTreatment" />
   <status value="draft" />
   <fhirVersion value="4.0.0" />

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <url value="https://posithera.de/fhir/StructureDefinition/PosiTheraEWoundSummary" />
+  <url value="https://posithera.de/fhir/StructureDefinition/EWoundSummary" />
   <name value="PosiTheraEWoundSummary" />
   <status value="draft" />
   <fhirVersion value="4.0.0" />
@@ -172,7 +172,7 @@
         <targetProfile value="https://posithera.de/fhir/StructureDefinition/SignOfInfection" />
         <targetProfile value="https://posithera.de/fhir/StructureDefinition/RiskOfInfection" />
         <targetProfile value="https://posithera.de/fhir/StructureDefinition/WoundEdema" />
-        <targetProfile value="https://posithera.de/fhir/StructureDefinition/PosiTheraWoundRelatedPain" />
+        <targetProfile value="https://posithera.de/fhir/StructureDefinition/WoundRelatedPain" />
         <targetProfile value="https://posithera.de/fhir/StructureDefinition/PeriWound" />
         <targetProfile value="https://posithera.de/fhir/StructureDefinition/WoundDescription" />
       </type>
@@ -205,7 +205,7 @@
         <targetProfile value="https://posithera.de/fhir/StructureDefinition/GeneralState" />
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/Procedure" />
         <targetProfile value="https://posithera.de/fhir/StructureDefinition/EWSNutritionStatus" />
-        <targetProfile value="https://posithera.de/fhir/StructureDefinition/PosiTheraImmuneStatus" />
+        <targetProfile value="https://posithera.de/fhir/StructureDefinition/ImmuneStatus" />
       </type>
     </element>
     <element id="Composition.section:anamnese.section:aktuellerStatus.section">
@@ -486,7 +486,7 @@
       <path value="Composition.section.section.entry" />
       <type>
         <code value="Reference" />
-        <targetProfile value="https://posithera.de/fhir/StructureDefinition/PosiTheraScore" />
+        <targetProfile value="https://posithera.de/fhir/StructureDefinition/Score" />
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/Condition" />
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/Observation" />
       </type>
@@ -532,7 +532,7 @@
       <path value="Composition.section.section.entry" />
       <type>
         <code value="Reference" />
-        <targetProfile value="https://posithera.de/fhir/StructureDefinition/PosiTheraGoalOfTreatment" />
+        <targetProfile value="https://posithera.de/fhir/StructureDefinition/GoalOfTreatment" />
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/Goal" />
       </type>
     </element>
@@ -763,7 +763,7 @@
       <path value="Composition.section.section.entry" />
       <type>
         <code value="Reference" />
-        <targetProfile value="https://posithera.de/fhir/StructureDefinition/PosiTheraScore" />
+        <targetProfile value="https://posithera.de/fhir/StructureDefinition/Score" />
       </type>
     </element>
     <element id="Composition.section:therapie.section:therapieverlauf.section">
@@ -897,7 +897,7 @@
       <type>
         <code value="Reference" />
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/Resource" />
-        <targetProfile value="https://posithera.de/fhir/StructureDefinition/PosiTheraEducation" />
+        <targetProfile value="https://posithera.de/fhir/StructureDefinition/Education" />
       </type>
     </element>
     <element id="Composition.section:therapie.section:patientenedukation.section">

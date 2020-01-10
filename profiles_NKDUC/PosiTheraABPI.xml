@@ -1,6 +1,6 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <url value="https://posithera.de/fhir/StructureDefinition/PosiTheraABPI" />
-  <name value="ABPI" />
+  <url value="https://posithera.de/fhir/StructureDefinition/ABPI" />
+  <name value="PosiTheraABPI" />
   <status value="draft" />
   <description value="An Profile on the Ankle Brachial Pressure Index (ABPI) which is a clinical performance indicator of lower leg blood supply.&#xD;&#xA;The indicator is often used as a diagnostic test to detect peripheral arterial disease (PAD) (German: PAVK).&#xD;&#xA;" />
   <fhirVersion value="4.0.0" />

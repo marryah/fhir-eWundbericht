@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <url value="http://posithera.de/fhir/StructureDefinition/PosiTheraTherapyProcedure" />
+  <url value="http://posithera.de/fhir/StructureDefinition/TherapyProcedure" />
   <name value="PosiTheraTherapyProcedure" />
   <status value="draft" />
   <fhirVersion value="4.0.0" />

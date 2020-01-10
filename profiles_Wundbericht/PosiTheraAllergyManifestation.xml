@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <url value="https://posithera.de/fhir/StructureDefinition/PosiTheraAllergyManifestation" />
+  <url value="https://posithera.de/fhir/StructureDefinition/AllergyManifestation" />
   <name value="PosiTheraAllergyManifestation" />
   <status value="draft" />
   <fhirVersion value="4.0.0" />
@@ -21,7 +21,7 @@
   <differential>
     <element id="Extension.url">
       <path value="Extension.url" />
-      <fixedUri value="https://posithera.de/fhir/StructureDefinition/PosiTheraAllergyManifestation" />
+      <fixedUri value="https://posithera.de/fhir/StructureDefinition/AllergyManifestation" />
     </element>
     <element id="Extension.value[x]">
       <path value="Extension.value[x]" />
