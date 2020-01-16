@@ -27,6 +27,30 @@
   <content value="complete" />
   <count value="177" />
   <concept>
+    <code value="C0103" />
+    <display value="Versichertenstatus" />
+    <concept>
+      <code value="C010301" />
+      <display value="GKV ohne Zusatzversicherung" />
+    </concept>
+    <concept>
+      <code value="C010302" />
+      <display value="GKV mit staatl. Zusatzversicherung" />
+    </concept>
+    <concept>
+      <code value="C010303" />
+      <display value="PKV" />
+    </concept>
+    <concept>
+      <code value="C010304" />
+      <display value="nicht krankversichert" />
+    </concept>
+    <concept>
+      <code value="C010305" />
+      <display value="anders krankenversichert" />
+    </concept>
+  </concept>
+  <concept>
     <code value="C0106" />
     <display value="Schulbildung" />
     <concept>

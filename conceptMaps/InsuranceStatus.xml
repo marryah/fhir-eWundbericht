@@ -1,0 +1,56 @@
+<ConceptMap>
+    <meta>
+        <profile value="http://hl7.org/fhir/StructureDefinition/ConceptMap" />
+    </meta>
+    <url value="https://posithera.de/fhir/ConceptMap/NKDUC2VersicherungsartDeBasis"/>
+    <name value="NKDUC2VersicherungsartDeBasis"/>
+    <title value="Mapping von NKDUC-Vorgaben für den Verbandswechsel und das FHIR-System für Practitioner-role"/>
+    <status value="draft"/>
+    <date value="2020-01-10"/>
+    <version value="0.1"/>
+    <sourceCanonical value="https://posithera.de/fhir/CodeSystem/NKDUC"/>
+    <targetCanonical value="http://fhir.de/CodeSystem/versicherungsart-de-basis"/>
+    <group>
+        <element>
+            <code value="C010301"/>
+            <display value="GKV ohne Zusatzversicherung"/>
+            <target>
+                <code value="GKV"/>
+                <display value="gesetzliche Krankenversicherung"/>
+                <equivalence value="subsumes"/>
+            </target>
+        </element>
+        <element>
+            <code value="C060302"/>
+            <display value="GKV mit staatl. Zusatzversicherung"/>
+            <target>
+                <code value="GKV"/>
+                <display value="gesetzliche Krankenversicherung"/>
+                <equivalence value="subsumes"/>
+            </target>
+        </element>
+        <element>
+            <code value="C060303"/>
+            <display value="PKV"/>
+            <target>
+                <code value="PKV"/>
+                <display value="private Krankenversicherung"/>
+                <equivalence value="equivalent"/>
+            </target>
+        </element>
+        <element>
+            <code value="C060304"/>
+            <display value="nicht krankversichert"/>
+            <target>
+                <equivalence value="unmatched"/> <!-- relatedto | equivalent | equal | wider | subsumes | narrower | specializes | inexact | unmatched | disjoint-->
+            </target>
+        </element>
+        <element>
+            <code value="C060305"/>
+            <display value="anders krankenversichert"/>
+            <target>
+                <equivalence value="unmatched"/> <!-- relatedto | equivalent | equal | wider | subsumes | narrower | specializes | inexact | unmatched | disjoint-->
+            </target>
+        </element>
+    </group>
+</ConceptMap>

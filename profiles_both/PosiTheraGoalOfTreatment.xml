@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <url value="https://posithera.de/fhir/StructureDefinition/GoalOfTreatment" />
   <name value="PosiTheraGoalOfTreatment" />
@@ -11,8 +12,19 @@
   <differential>
     <element id="Goal.description.coding">
       <path value="Goal.description.coding" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="system" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="Goal.description.coding:nkduc">
+      <path value="Goal.description.coding" />
+      <sliceName value="nkduc" />
       <binding>
-        <strength value="preferred" />
+        <strength value="required" />
         <valueSet value="https://posithera.de/fhir/ValueSet/Behandlungsziele" />
       </binding>
     </element>

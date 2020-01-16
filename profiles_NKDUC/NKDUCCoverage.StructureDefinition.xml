@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <url value="https://posithera.de/fhir/StructureDefinition/Coverage" />
+  <name value="NKDUCCoverage" />
+  <status value="draft" />
+  <fhirVersion value="4.0.0" />
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="Coverage" />
+  <baseDefinition value="http://fhir.de/StructureDefinition/coverage-de-basis" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Coverage.type.coding">
+      <path value="Coverage.type.coding" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="system" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="Coverage.type.coding:basisprofil">
+      <path value="Coverage.type.coding" />
+      <sliceName value="basisprofil" />
+      <binding>
+        <strength value="required" />
+        <valueSet value="http://fhir.de/ValueSet/versicherungsart-de-basis" />
+      </binding>
+    </element>
+    <element id="Coverage.type.coding:nkduc">
+      <path value="Coverage.type.coding" />
+      <sliceName value="nkduc" />
+      <min value="1" />
+      <max value="1" />
+      <binding>
+        <strength value="required" />
+        <valueSet value="https://posithera.de/fhir/ValueSet/insurance-status" />
+      </binding>
+    </element>
+  </differential>
+</StructureDefinition>
