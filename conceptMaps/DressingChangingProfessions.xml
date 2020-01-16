@@ -1,0 +1,60 @@
+<ConceptMap>
+    <meta>
+        <profile value="http://hl7.org/fhir/StructureDefinition/ConceptMap" />
+    </meta>
+    <url value="https://posithera.de/fhir/ConceptMap/NKDUC2participant-role"/>
+    <name value="NKDUC2participant-role"/>
+    <title value="Mapping von NKDUC-Vorgaben für den Verbandswechsel und das FHIR-System für Practitioner-role"/>
+    <status value="draft"/>
+    <date value="2020-01-10"/>
+    <version value="0.1"/>
+    <sourceCanonical value="https://posithera.de/fhir/CodeSystem/NKDUC"/>
+    <targetCanonical value="http://snomed.info/sct"/>
+    <group>
+        <element>
+            <code value="C060301"/>
+            <display value="Pflegefachkraft"/>
+            <target>
+                <code value="106292003"/>
+                <display value="Professional nurse (occupation)"/>
+                <equivalence value="equal"/>
+            </target>
+        </element>
+        <element>
+            <code value="C060302"/>
+            <display value="Arzt/Ärtzin"/>
+            <target>
+                <code value="309343006"/>
+                <display value="Physician (occupation)"/>
+                <equivalence value="equal"/>
+            </target>
+        </element>
+        <element>
+            <code value="C060303"/>
+            <display value="medizinische/r Fachangestellte/r"/>
+            <target>
+                <code value="22515006"/>
+                <display value="Medical assistant (occupation)"/>
+                <equivalence value="equivalent"/>
+            </target>
+        </element>
+        <element>
+            <code value="C060304"/> <!-- Lymphtherapeut/in-->
+            <display value="Lymphtherapeut/in"/>
+            <target>
+                <code value="309436004"/><!--Lymphedema nurse-->
+                <display value="Lymphedema nurse"/>
+                <equivalence value="inexact"/> <!-- relatedto | equivalent | equal | wider | subsumes | narrower | specializes | inexact | unmatched | disjoint-->
+            </target>
+        </element>
+        <element>
+            <code value="C060305"/>
+            <display value="Sonstige Profession"/>
+            <target>
+                <code value="223366009"/>
+                <display value="Healthcare professional (occupation)"/>
+                <equivalence value="subsumes"/>
+            </target>
+        </element>
+    </group>
+</ConceptMap>

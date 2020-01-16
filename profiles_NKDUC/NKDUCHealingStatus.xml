@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <url value="https://posithera.de/fhir/StructureDefinition/HealingStatus" />
+  <name value="NKDUCHealingStatus" />
+  <status value="draft" />
+  <fhirVersion value="4.0.0" />
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="Observation" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Observation" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Observation.focus">
+      <path value="Observation.focus" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Resource" />
+        <targetProfile value="https://posithera.de/fhir/StructureDefinition/BodyStructure" />
+        <targetProfile value="https://posithera.de/fhir/StructureDefinition/NKDUCWound" />
+      </type>
+    </element>
+    <element id="Observation.value[x]">
+      <path value="Observation.value[x]" />
+      <type>
+        <code value="CodeableConcept" />
+      </type>
+    </element>
+    <element id="Observation.value[x].coding">
+      <path value="Observation.value[x].coding" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="system" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="Observation.value[x].coding:NKDUC">
+      <path value="Observation.value[x].coding" />
+      <sliceName value="NKDUC" />
+      <binding>
+        <strength value="required" />
+        <valueSet value="https://posithera.de/fhir/ValueSet/HealingStatus" />
+      </binding>
+    </element>
+  </differential>
+</StructureDefinition>

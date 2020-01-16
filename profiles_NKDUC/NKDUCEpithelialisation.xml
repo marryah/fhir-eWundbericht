@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <url value="http://posithera.de/fhir/Observation/PosiTheraEpithelialisation" />
-  <name value="PosiTheraEpithelialisation" />
+  <url value="http://posithera.de/fhir/StructureDefinition/Epithelialisation" />
+  <name value="NKDUCEpithelialisation" />
   <status value="draft" />
   <fhirVersion value="4.0.0" />
   <kind value="resource" />
@@ -15,8 +15,8 @@
       <type>
         <code value="Reference" />
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/Resource" />
-        <targetProfile value="https://posithera.de/fhir/StructureDefinition/condition/wound" />
-        <targetProfile value="https://posithera.de/fhir/StructureDefinition/BodyStructure/PosiTheraBodyStructure" />
+        <targetProfile value="https://posithera.de/fhir/StructureDefinition/NKDUCWound" />
+        <targetProfile value="https://posithera.de/fhir/StructureDefinition/BodyStructure" />
       </type>
     </element>
     <element id="Observation.value[x]">
@@ -24,8 +24,22 @@
       <type>
         <code value="CodeableConcept" />
       </type>
+    </element>
+    <element id="Observation.value[x].coding">
+      <path value="Observation.value[x].coding" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="system" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="Observation.value[x].coding:NKDUC">
+      <path value="Observation.value[x].coding" />
+      <sliceName value="NKDUC" />
       <binding>
-        <strength value="preferred" />
+        <strength value="required" />
         <valueSet value="https://posithera.de/ValueSet/Epithelisierung" />
       </binding>
     </element>
