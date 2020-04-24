@@ -1,121 +1,98 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <url value="https://posithera.de/fhir/StructureDefinition/Education" />
-  <name value="PosiTheraEducation" />
+  <url value="http://posithera.de/fhir/StructureDefinition/PosiTheraDressing" />
+  <name value="PosiTheraDressing" />
   <status value="draft" />
   <fhirVersion value="4.0.1" />
-  <mapping>
-    <identity value="workflow" />
-    <uri value="http://hl7.org/fhir/workflow" />
-    <name value="Workflow Pattern" />
-  </mapping>
   <mapping>
     <identity value="rim" />
     <uri value="http://hl7.org/v3" />
     <name value="RIM Mapping" />
   </mapping>
   <mapping>
+    <identity value="orim" />
+    <uri value="http://hl7.org/orim" />
+    <name value="Ontological RIM Mapping" />
+  </mapping>
+  <mapping>
     <identity value="w5" />
     <uri value="http://hl7.org/fhir/fivews" />
     <name value="FiveWs Pattern Mapping" />
   </mapping>
-  <mapping>
-    <identity value="v2" />
-    <uri value="http://hl7.org/v2" />
-    <name value="HL7 v2 Mapping" />
-  </mapping>
   <kind value="resource" />
   <abstract value="false" />
-  <type value="Procedure" />
-  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Procedure" />
+  <type value="Substance" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Substance" />
   <derivation value="constraint" />
   <differential>
-    <element id="Procedure.code">
+    <element id="Substance.category.coding.system">
       <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
         <valueCode value="normative" />
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
         <valueCode value="4.0.0" />
       </extension>
-      <path value="Procedure.code" />
+      <path value="Substance.category.coding.system" />
+      <fixedUri value="http://hl7.org/fhir/ValueSet/substance-category" />
+    </element>
+    <element id="Substance.category.coding.code">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
+      <path value="Substance.category.coding.code" />
+      <fixedCode value="material" />
+    </element>
+    <element id="Substance.code.coding">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
+      <path value="Substance.code.coding" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="system" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="Substance.code.coding:loinc">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
+      <path value="Substance.code.coding" />
+      <sliceName value="loinc" />
       <binding>
         <strength value="example" />
-        <valueSet value="https://posithera.de/fhir/ValueSet/education-code" />
+        <valueSet value="https://fhir.loinc.org/ValueSet/?url=http://loinc.org/vs/LL2339-1" />
       </binding>
     </element>
-    <element id="Procedure.performed[x]">
+    <element id="Substance.code.coding:loinc.system">
       <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
         <valueCode value="normative" />
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
         <valueCode value="4.0.0" />
       </extension>
-      <path value="Procedure.performed[x]" />
-      <type>
-        <code value="dateTime" />
-      </type>
-      <type>
-        <code value="Period" />
-      </type>
-      <type>
-        <code value="string" />
-      </type>
-      <type>
-        <code value="Range" />
-      </type>
+      <path value="Substance.code.coding.system" />
+      <fixedUri value="http://loinc.org" />
     </element>
-    <element id="Procedure.bodySite">
+    <element id="Substance.ingredient">
       <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
         <valueCode value="normative" />
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
         <valueCode value="4.0.0" />
       </extension>
-      <path value="Procedure.bodySite" />
-      <max value="0" />
-    </element>
-    <element id="Procedure.report">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
-      <path value="Procedure.report" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/DocumentReference" />
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Composition" />
-      </type>
-    </element>
-    <element id="Procedure.complication">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
-      <path value="Procedure.complication" />
-      <max value="0" />
-    </element>
-    <element id="Procedure.complicationDetail">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
-      <path value="Procedure.complicationDetail" />
-      <max value="0" />
-    </element>
-    <element id="Procedure.focalDevice">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
-      <path value="Procedure.focalDevice" />
+      <path value="Substance.ingredient" />
       <max value="0" />
     </element>
   </differential>

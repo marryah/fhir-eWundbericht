@@ -4,7 +4,7 @@
   <name value="NKDUCOccupation" />
   <status value="draft" />
   <description value="TODO: Code für die Component" />
-  <fhirVersion value="4.0.0" />
+  <fhirVersion value="4.0.1" />
   <mapping>
     <identity value="workflow" />
     <uri value="http://hl7.org/fhir/workflow" />
@@ -42,6 +42,12 @@
   <derivation value="constraint" />
   <differential>
     <element id="Observation.code.coding">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="Observation.code.coding" />
       <slicing>
         <discriminator>
@@ -53,6 +59,12 @@
       <min value="1" />
     </element>
     <element id="Observation.code.coding:loinc">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="Observation.code.coding" />
       <sliceName value="loinc" />
       <min value="1" />
@@ -64,18 +76,42 @@
       </fixedCoding>
     </element>
     <element id="Observation.code.coding:@default">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="Observation.code.coding" />
       <sliceName value="@default" />
     </element>
     <element id="Observation.code.coding:@default.system">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="Observation.code.coding.system" />
       <min value="1" />
     </element>
     <element id="Observation.code.coding:@default.code">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="Observation.code.coding.code" />
       <min value="1" />
     </element>
     <element id="Observation.value[x]">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="Observation.value[x]" />
       <type>
         <code value="CodeableConcept" />
@@ -85,6 +121,7 @@
         <severity value="warning" />
         <human value="If code:loinc.coding.value != C010701, the number of working hours per week must not be given in the component" />
         <xpath value="code:loinc.coding.value=C010701 or component.valueQuantity.exists()" />
+        <source value="Observation" />
       </constraint>
       <binding>
         <strength value="required" />
@@ -92,24 +129,57 @@
       </binding>
     </element>
     <element id="Observation.component">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="Observation.component" />
       <max value="1" />
     </element>
     <element id="Observation.component.value[x]">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="Observation.component.value[x]" />
       <type>
         <code value="Quantity" />
       </type>
     </element>
     <element id="Observation.component.value[x].unit">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
       <path value="Observation.component.value[x].unit" />
       <fixedString value="hours per week" />
     </element>
     <element id="Observation.component.value[x].system">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="Observation.component.value[x].system" />
       <fixedUri value="https://unitsofmeasure.org/" />
     </element>
     <element id="Observation.component.value[x].code">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="Observation.component.value[x].code" />
       <code>
         <system value="http://unitsofmeasure.org" />

@@ -3,7 +3,7 @@
   <url value="https://posithera.de/fhir/StructureDefinition/AllergyIntolerance" />
   <name value="PosiTheraAllergyIntolerance" />
   <status value="draft" />
-  <fhirVersion value="4.0.0" />
+  <fhirVersion value="4.0.1" />
   <mapping>
     <identity value="rim" />
     <uri value="http://hl7.org/v3" />
@@ -26,6 +26,12 @@
   <derivation value="constraint" />
   <differential>
     <element id="AllergyIntolerance.code.coding">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="AllergyIntolerance.code.coding" />
       <slicing>
         <discriminator>
@@ -36,6 +42,12 @@
       </slicing>
     </element>
     <element id="AllergyIntolerance.code.coding:SNOMED">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="AllergyIntolerance.code.coding" />
       <sliceName value="SNOMED" />
       <binding>
@@ -44,6 +56,12 @@
       </binding>
     </element>
     <element id="AllergyIntolerance.code.coding:SNOMED.system">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="AllergyIntolerance.code.coding.system" />
       <fixedUri value="http://snomed.info/sct" />
     </element>
@@ -58,6 +76,12 @@
       </slicing>
     </element>
     <element id="AllergyIntolerance.reaction.substance.extension:substanceReference">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="AllergyIntolerance.reaction.substance.extension" />
       <sliceName value="substanceReference" />
       <type>
@@ -66,6 +90,12 @@
       </type>
     </element>
     <element id="AllergyIntolerance.reaction.substance.extension:substanceReference.value[x]">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="AllergyIntolerance.reaction.substance.extension.value[x]" />
       <min value="1" />
     </element>
@@ -80,6 +110,12 @@
       </slicing>
     </element>
     <element id="AllergyIntolerance.reaction.manifestation.extension:manifestationReference">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="AllergyIntolerance.reaction.manifestation.extension" />
       <sliceName value="manifestationReference" />
       <type>
@@ -88,6 +124,12 @@
       </type>
     </element>
     <element id="AllergyIntolerance.reaction.manifestation.extension:manifestationReference.value[x]">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="AllergyIntolerance.reaction.manifestation.extension.value[x]" />
       <min value="1" />
     </element>

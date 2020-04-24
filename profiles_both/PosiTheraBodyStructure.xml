@@ -1,8 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <url value="https://posithera.de/fhir/StructureDefinition/BodyStructure" />
   <name value="PosiTheraBodyStructure" />
   <status value="draft" />
-  <fhirVersion value="4.0.0" />
+  <fhirVersion value="4.0.1" />
   <kind value="resource" />
   <abstract value="false" />
   <type value="BodyStructure" />
@@ -10,6 +11,12 @@
   <derivation value="constraint" />
   <differential>
     <element id="BodyStructure.location">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="BodyStructure.location" />
       <binding>
         <strength value="extensible" />
@@ -17,19 +24,17 @@
       </binding>
     </element>
     <element id="BodyStructure.locationQualifier">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="BodyStructure.locationQualifier" />
       <binding>
         <strength value="extensible" />
         <valueSet value="https://posithera.de/ValueSet/Laterality" />
       </binding>
-    </element>
-    <element id="BodyStructure.patient">
-      <path value="BodyStructure.patient" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Patient" />
-        <targetProfile value="http://fhir.de/StructureDefinition/patient-de-basis/0.2" />
-      </type>
     </element>
   </differential>
 </StructureDefinition>

@@ -1,8 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <url value="https://posithera.de/fhir/StructureDefinition/FormerProcedure" />
   <name value="PosiTheraFormerProcedure" />
   <status value="draft" />
-  <fhirVersion value="4.0.0" />
+  <fhirVersion value="4.0.1" />
   <mapping>
     <identity value="workflow" />
     <uri value="http://hl7.org/fhir/workflow" />
@@ -30,6 +31,12 @@
   <derivation value="constraint" />
   <differential>
     <element id="Procedure.basedOn">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="Procedure.basedOn" />
       <min value="1" />
       <type>
@@ -38,6 +45,12 @@
       </type>
     </element>
     <element id="Procedure.status">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="Procedure.status" />
       <fixedCode value="completed" />
     </element>

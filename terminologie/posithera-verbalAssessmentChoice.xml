@@ -66,6 +66,10 @@
     <code value="..." />
     <display value="Versorgungsdetails potenziell infektiöser Patienten" />
   </concept>
+  <concept>
+    <code value="..." />
+    <display value="Beschreibung des Heilungs- und Therapieverlaufs"/>
+  </concept>
     </include>
   </compose>
 </ValueSet>

@@ -1,0 +1,48 @@
+<ValueSet xmlns="http://hl7.org/fhir">
+  <text>
+    <status value="generated" />
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <h2>PosiThera - Antiseptik</h2>
+      <tt>https://posithera.de/fhir/ValueSet/AgreementAnswers</tt>
+      <p>Antiseptik</p>
+    </div>
+  </text>
+  <url value="https://posithera.de/fhir/ValueSet/AgreementAnswers" />
+  <name value="PosiTheraAgreementAnswers" />
+  <title value="PosiThera - Zufriedenheit - Antworten" />
+  <status value="draft" />
+  <publisher value="Forschungsgruppe Informatik im Gesundheitswesen, Hochschule Osnabrück, Deutschland" />
+  <contact>
+    <name value="Mareike Przysucha" />
+    <telecom>
+      <system value="email" />
+      <value value="m.przysucha@hs-osnabrueck.de" />
+    </telecom>
+  </contact>
+  <description value="Antiseptik" />
+  <compose>
+    <include>
+      <system value="https://posithera.de/fhir/CodeSystem/NKDUC" />
+      <concept>
+        <code value="C07020101" />
+        <display value="sehr zufrieden" />
+      </concept>
+      <concept>
+        <code value="C07020102" />
+        <display value="eher zufrieden" />
+      </concept>
+      <concept>
+        <code value="C07020103" />
+        <display value="teils, teils" />
+      </concept>
+      <concept>
+        <code value="C07020104" />
+        <display value="eher unzufrieden" />
+      </concept>
+      <concept>
+        <code value="C07020105" />
+        <display value="sehr unzufrieden" />
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

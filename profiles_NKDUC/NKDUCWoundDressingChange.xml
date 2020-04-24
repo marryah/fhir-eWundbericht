@@ -3,7 +3,7 @@
   <url value="https://posithera.de/fhir/StructureDefinition/WoundDressingChange" />
   <name value="NKDUCWoundDressingChange" />
   <status value="draft" />
-  <fhirVersion value="4.0.0" />
+  <fhirVersion value="4.0.1" />
   <mapping>
     <identity value="workflow" />
     <uri value="http://hl7.org/fhir/workflow" />
@@ -36,12 +36,24 @@
   <derivation value="constraint" />
   <differential>
     <element id="ServiceRequest.occurrence[x]">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="ServiceRequest.occurrence[x]" />
       <type>
         <code value="Timing" />
       </type>
     </element>
     <element id="ServiceRequest.performerType.coding">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="ServiceRequest.performerType.coding" />
       <slicing>
         <discriminator>
@@ -52,6 +64,12 @@
       </slicing>
     </element>
     <element id="ServiceRequest.performerType.coding:nkduc">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="ServiceRequest.performerType.coding" />
       <sliceName value="nkduc" />
       <min value="1" />
@@ -61,6 +79,12 @@
       </binding>
     </element>
     <element id="ServiceRequest.performer">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="ServiceRequest.performer" />
       <slicing>
         <discriminator>
@@ -82,6 +106,12 @@
       </type>
     </element>
     <element id="ServiceRequest.performer:practitioner-type">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="ServiceRequest.performer" />
       <sliceName value="practitioner-type" />
       <min value="1" />

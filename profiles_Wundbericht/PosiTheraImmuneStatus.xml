@@ -3,7 +3,7 @@
   <url value="https://posithera.de/fhir/StructureDefinition/ImmuneStatus" />
   <name value="PosiTheraImmuneStatus" />
   <status value="draft" />
-  <fhirVersion value="4.0.0" />
+  <fhirVersion value="4.0.1" />
   <mapping>
     <identity value="workflow" />
     <uri value="http://hl7.org/fhir/workflow" />
@@ -41,6 +41,12 @@
   <derivation value="constraint" />
   <differential>
     <element id="Observation.subject">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="Observation.subject" />
       <type>
         <code value="Reference" />
@@ -48,12 +54,27 @@
       </type>
     </element>
     <element id="Observation.value[x]">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="Observation.value[x]" />
+      <type>
+        <code value="CodeableConcept" />
+      </type>
       <type>
         <code value="string" />
       </type>
     </element>
     <element id="Observation.specimen">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="Observation.specimen" />
       <max value="0" />
     </element>

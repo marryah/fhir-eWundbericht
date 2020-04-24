@@ -3,7 +3,7 @@
   <url value="https://posithera.de/fhir/StructureDefinition/Coverage" />
   <name value="NKDUCCoverage" />
   <status value="draft" />
-  <fhirVersion value="4.0.0" />
+  <fhirVersion value="4.0.1" />
   <kind value="resource" />
   <abstract value="false" />
   <type value="Coverage" />
@@ -11,6 +11,12 @@
   <derivation value="constraint" />
   <differential>
     <element id="Coverage.type.coding">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="Coverage.type.coding" />
       <slicing>
         <discriminator>
@@ -21,6 +27,12 @@
       </slicing>
     </element>
     <element id="Coverage.type.coding:basisprofil">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="Coverage.type.coding" />
       <sliceName value="basisprofil" />
       <binding>
@@ -29,6 +41,12 @@
       </binding>
     </element>
     <element id="Coverage.type.coding:nkduc">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="Coverage.type.coding" />
       <sliceName value="nkduc" />
       <min value="1" />

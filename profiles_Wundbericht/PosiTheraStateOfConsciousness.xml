@@ -3,7 +3,7 @@
   <url value="https://posithera.de/fhir/StructureDefinition/StateOfConsciousness" />
   <name value="PosiTheraStateOfConsciousness" />
   <status value="draft" />
-  <fhirVersion value="4.0.0" />
+  <fhirVersion value="4.0.1" />
   <mapping>
     <identity value="workflow" />
     <uri value="http://hl7.org/fhir/workflow" />
@@ -41,6 +41,12 @@
   <derivation value="constraint" />
   <differential>
     <element id="Observation.code.coding">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="Observation.code.coding" />
       <slicing>
         <discriminator>
@@ -51,6 +57,12 @@
       </slicing>
     </element>
     <element id="Observation.code.coding:loinc">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="Observation.code.coding" />
       <sliceName value="loinc" />
       <min value="1" />
@@ -61,15 +73,45 @@
         <display value="Level of Consciousness" />
       </fixedCoding>
     </element>
+    <element id="Observation.value[x]">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
+      <path value="Observation.value[x]" />
+      <type>
+        <code value="string" />
+      </type>
+    </element>
     <element id="Observation.bodySite">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="Observation.bodySite" />
       <max value="0" />
     </element>
     <element id="Observation.specimen">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="Observation.specimen" />
       <max value="0" />
     </element>
     <element id="Observation.component">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="Observation.component" />
       <slicing>
         <discriminator>
@@ -81,10 +123,22 @@
       <max value="2" />
     </element>
     <element id="Observation.component:quantity">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="Observation.component" />
       <sliceName value="quantity" />
     </element>
     <element id="Observation.component:quantity.code.coding">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="Observation.component.code.coding" />
       <slicing>
         <discriminator>
@@ -97,20 +151,44 @@
       <max value="1" />
     </element>
     <element id="Observation.component:quantity.code.coding.system">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="Observation.component.code.coding.system" />
       <fixedUri value="http://loinc.org" />
     </element>
     <element id="Observation.component:quantity.value[x]">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="Observation.component.value[x]" />
       <type>
         <code value="CodeableConcept" />
       </type>
     </element>
     <element id="Observation.component:quality">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="Observation.component" />
       <sliceName value="quality" />
     </element>
     <element id="Observation.component:quality.code.coding">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="Observation.component.code.coding" />
       <slicing>
         <discriminator>
@@ -123,10 +201,22 @@
       <max value="1" />
     </element>
     <element id="Observation.component:quality.code.coding.system">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="Observation.component.code.coding.system" />
       <fixedUri value="http://loinc.org" />
     </element>
     <element id="Observation.component:quality.value[x]">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="Observation.component.value[x]" />
       <type>
         <code value="CodeableConcept" />

@@ -9,21 +9,13 @@
         Informationen zur Lizensierung sind unter <a href="https://www.wound-qol.com/download/">https://www.wound-qol.com/download/</a> verfügbar
     </div>
   </text>
-  <identifier>
-    <use value="usual" />
-    <system value="..." />
-    <value value="1" />
-    <period>
-      <start value="2019-09-04" />
-    </period>
-  </identifier>
   <name value="Wound-QoL" />
   <title value="Wound-Quality of Life" />
   <status value="active" />
   <code>
     <system value="https://posithera.de/fhir/codesystem/WoundQoL" />
     <code value="00001" />
-    <value value="Wound Quality of Life" />
+    <display value="Wound Quality of Life" />
   </code>
   <item>
     <linkId value="Q01" />

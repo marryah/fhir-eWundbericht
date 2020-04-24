@@ -1,8 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <url value="https://posithera.de/fhir/StructureDefinition/UlceraRelatedCondition" />
   <name value="PosiTheraUlceraRelatedCondition" />
   <status value="draft" />
-  <fhirVersion value="4.0.0" />
+  <fhirVersion value="4.0.1" />
   <kind value="resource" />
   <abstract value="false" />
   <type value="Condition" />
@@ -10,6 +11,12 @@
   <derivation value="constraint" />
   <differential>
     <element id="Condition.code">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="Condition.code" />
       <binding>
         <strength value="preferred" />
