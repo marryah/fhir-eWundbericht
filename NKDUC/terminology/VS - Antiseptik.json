@@ -1,0 +1,49 @@
+{
+  "resourceType": "ValueSet",
+  "url": "https://posithera.de/fhir/ValueSet/Antiseptics",
+  "name": "PosiTheraAntiseptics",
+  "title": "PosiThera - Antiseptik",
+  "status": "draft",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "email",
+          "value": "m.przysucha@hs-osnabrueck.de"
+        }
+      ],
+      "name": "Mareike Przysucha"
+    }
+  ],
+  "compose": {
+    "include": [
+      {
+        "system": "https://posithera.de/fhir/CodeSystem/NKDUC",
+        "concept": [
+          {
+            "code": "C06010301",
+            "display": "keine Wundantiseptik"
+          },
+          {
+            "code": "C06010302",
+            "display": "Octenidin als Wundantiseptik"
+          },
+          {
+            "code": "C06010303",
+            "display": "PVP-Jod"
+          },
+          {
+            "code": "C06010304",
+            "display": "Polyhexanid als Wundantiseptik"
+          }
+        ]
+      }
+    ]
+  },
+  "description": "Antiseptik",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>PosiThera - Antiseptik</h2><tt>https://posithera.de/fhir/ValueSet/Antiseptics</tt><p>Antiseptik</p></div>"
+  },
+  "publisher": "Forschungsgruppe Informatik im Gesundheitswesen, Hochschule Osnabrück, Deutschland"
+}

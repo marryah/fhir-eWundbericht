@@ -1,0 +1,101 @@
+<Observation xmlns="http://hl7.org/fhir">
+  <meta>
+    <profile value="https://posithera.de/StructureDefinition/observation/woundSize" />
+  </meta>
+  <status value="final" />
+  <category>
+    <coding>
+      <system value="http://hl7.org/fhir/ValueSet/observation-category" />
+      <code value="exam" />
+    </coding>
+  </category>
+  <code>
+    <coding>
+      <system value="http://loinc.org" />
+      <code value="72287-6" />
+      <display value="Wound size panel" />
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/example" />
+  </subject>
+  <focus>
+    <reference value="Condition/woundExample" />
+  </focus>
+  <effectiveDateTime value="2019-08-21" />
+  <component>
+    <code>
+      <coding>
+        <system value="http://loinc.org" />
+        <code value="39126-8" />
+        <display value="Length of Wound" />
+      </coding>
+      <coding>
+        <system value="http://snomed.info/sct" />
+        <code value="401238003" />
+        <display value="Length of Wound" />
+      </coding>
+    </code>
+    <valueQuantity>
+      <value value="3.5" />
+      <unit value="cm" />
+      <system value="http://unitsofmeasure.org" />
+      <code value="cm" />
+    </valueQuantity>
+  </component>
+  <component>
+    <code>
+      <coding>
+        <system value="http://loinc.org" />
+        <code value="39125-0" />
+        <display value="Width of Wound" />
+      </coding>
+      <coding>
+        <system value="http://snomed.info/sct" />
+        <code value="401239006" />
+        <display value="Width of wound" />
+      </coding>
+    </code>
+    <valueQuantity>
+      <value value="2.5" />
+      <unit value="cm" />
+      <system value="http://unitsofmeasure.org" />
+      <code value="cm" />
+    </valueQuantity>
+  </component>
+  <component>
+    <code>
+      <coding>
+        <system value="http://loinc.org" />
+        <code value="39114-4" />
+        <display value="Depth of wound" />
+      </coding>
+      <coding>
+        <system value="http://snomed.info/sct" />
+        <code value="425094009" />
+        <display value="Depth of wound" />
+      </coding>
+    </code>
+    <valueQuantity>
+      <value value="1.3" />
+      <unit value="cm" />
+      <system value="http://unitsofmeasure.org" />
+      <code value="cm" />
+    </valueQuantity>
+  </component>
+  <component>
+    <code>
+      <coding>
+        <system value="http://loinc.org" />
+        <code value="89260-4" />
+        <display value="Area of Wound" />
+      </coding>
+    </code>
+    <valueQuantity>
+      <value value="7.0" />
+      <unit value="cm^2" />
+      <system value="http://unitsofmeasure.org" />
+      <code value="cm2" />
+    </valueQuantity>
+  </component>
+</Observation>

@@ -1,0 +1,46 @@
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="c52f0132-b7d8-4718-a9f7-1340385067aa" />
+  <meta>
+    <lastUpdated value="2019-05-06T16:56:56.6237172+00:00" />
+  </meta>
+  <text>
+    <status value="generated" />
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <h2>PosiThera-Laterality</h2>
+      <tt>sciphy-stats.de/posithera-laterality</tt>
+      <p>A ValueSet specifing the laterality of a condition (e.g. wound finding).
+
+In this project we aim to develop a system to share information about the specific use case of Ulcus Cruris. 
+
+This is why this laterality valueset only includes legs laterality.</p>
+    </div>
+  </text>
+  <url value="https://posithera.de/fhir/eWundbericht/ValueSet/Laterality" />
+  <name value="PosiTheraLaterality" />
+  <title value="PosiThera - Laterality" />
+  <status value="draft" />
+  <experimental value="true" />
+  <date value="2019-05-06T16:56:56.5317989+00:00" />
+  <publisher value="Forschungsgruppe Informatik im Gesundheitswesen Hochschule Osnabrück" />
+  <contact>
+    <name value="Jens Hüsers" />
+    <telecom>
+      <system value="email" />
+      <value value="j.huesers@hs-osnabrueck.de" />
+    </telecom>
+  </contact>
+  <description value="A ValueSet specifing the laterality of a condition (e.g. wound finding).&#xA;&#xA;In this project we aim to develop a system to share information about the specific use case of Ulcus Cruris. &#xA;&#xA;This is why this laterality valueset only includes legs laterality." />
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct" />
+      <concept>
+        <code value="48979004" />
+        <display value="Left leg" />
+      </concept>
+      <concept>
+        <code value="32696007" />
+        <display value="Right leg" />
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

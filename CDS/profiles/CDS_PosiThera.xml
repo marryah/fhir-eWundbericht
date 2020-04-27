@@ -1,0 +1,372 @@
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <text>
+    <status value="generated" />
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <h2>CDS-PosiThera - CodeSystem for Clinical Decision Support</h2>
+      <tt>https://posithera.de/fhir/CodeSystem/CDS_Posithera</tt>
+      <p>Clinical Decision support in PosiThera</p>
+    </div>
+  </text>
+  <url value="https://posithera.de/fhir/CodeSystem/CDS_Posithera" />
+  <title value="CDS-PosiThera - CodeSystem for Clinical Decision Support" />
+  <name value="CDS-PosiTheraCodeSystemClinicalDecisionSupport" />
+  <status value="draft" />
+  <publisher value="Forschungsgruppe Informatik im Gesundheitswesen, Hochschule Osnabrück, Deutschland" />
+  <contact>
+    <name value="Mareike Przysucha" />
+    <telecom>
+      <system value="email" />
+      <value value="m.przysucha@hs-osnabrueck.de" />
+    </telecom>
+  </contact>
+  <description value="CDS-PosiThera - CodeSystem for Clinical Decision Support" />
+  <caseSensitive value="false" />
+  <hierarchyMeaning value="grouped-by" />
+  <compositional value="false" />
+  <versionNeeded value="false" />
+  <content value="complete" />
+  <concept>
+    <code value="P0202" />
+    <display value="Ulcusrelevante Begleiterkrankungen" />
+    <concept>
+      <code value="P020201" />
+      <display value="Herz-Kreislauf-Erkrankungen" />
+      <concept>
+        <code value="P02020106" />
+        <display value="CVI" />
+      </concept>
+      <concept>
+        <code value="P02020107" />
+        <display value="PAVK" />
+      </concept>
+      <concept>
+        <code value="P02020108" />
+        <display value="oberflächliche oder tiefe Venenthrombose" />
+      </concept>
+      <concept>
+        <code value="P02020109" />
+        <display value="Postthrombotisches Syndrom" />
+      </concept>
+    </concept>
+    <concept>
+      <code value="P020212" />
+      <display value="Weitere Erkrankungen" />
+      <concept>
+        <code value="P0202120X01" />
+        <display value="Lokalisation Lymph- oder Lipödem" />
+        <concept>
+          <code value="P0202120X0101" />
+          <display value="am Knöchel" />
+        </concept>
+        <concept>
+          <code value="P0202120X0102" />
+          <display value="am Unterschenkel" />
+        </concept>
+        <concept>
+          <code value="P0202120X0103" />
+          <display value="an einem anderen Ort" />
+        </concept>
+      </concept>
+      <concept>
+        <code value="P02021203" />
+        <display value="Ekzeme" />
+      </concept>
+      <concept>
+        <code value="P02021204" />
+        <display value="Sklerose" />
+      </concept>
+    </concept>
+  </concept>
+  <concept>
+    <code value="P0205" />
+    <display value="Symptome wundbezogener Erkrankungen" />
+    <concept>
+      <code value="P020501" />
+      <display value="Nekrosen an den Zehen" />
+    </concept>
+    <concept>
+      <code value="P020502" />
+      <display value="Gangrän an den Zehen" />
+    </concept>
+    <concept>
+      <code value="P020503" />
+      <display value="Nekrosen" />
+    </concept>
+    <concept>
+      <code value="P020504" />
+      <display value="Zehennägel verdickt" />
+    </concept>
+    <concept>
+      <code value="P020505" />
+      <display value="Purpura jaune d'ocre" />
+    </concept>
+    <concept>
+      <code value="P020506" />
+      <display value="Corona phlebetica paraplantaris - Warnvenen" />
+    </concept>
+    <concept>
+      <code value="P020507" />
+      <display value="Kratzspuren" />
+    </concept>
+    <concept>
+      <code value="P020508" />
+      <display value="Varikose" />
+    </concept>
+    <concept>
+      <code value="P020509" />
+      <display value="Venenklappeninsuffizienz" />
+    </concept>
+    <concept>
+      <code value="P020510" />
+      <display value="Hyperpigmentierung" />
+    </concept>
+    <concept>
+      <code value="P020511" />
+      <display value="Dermatosklerose" />
+    </concept>
+    <concept>
+      <code value="P020512" />
+      <display value="Athrophoie blanche" />
+    </concept>
+    <concept>
+      <code value="P020513" />
+      <display value="Besenreiser" />
+    </concept>
+    <concept>
+      <code value="P020514" />
+      <display value="Retikuläre Varizen" />
+    </concept>
+    <concept>
+      <code value="P020515" />
+      <display value="Teleangiektasie" />
+    </concept>
+    <concept>
+      <code value="P020516" />
+      <display value="Lipodermatosklerose" />
+    </concept>
+    <concept>
+      <code value="P020517" />
+      <display value="Tastbarkeit Fußpulse" />
+      <concept>
+        <code value="P02051701" />
+        <display value="Fußpulse gut tastbar" />
+      </concept>
+      <concept>
+        <code value="P02051702" />
+        <display value="Fußpulse schlecht tastbar" />
+      </concept>
+      <concept>
+        <code value="P02051703" />
+        <display value="Fußpulse nicht tastbar" />
+      </concept>
+    </concept>
+    <concept>
+      <code value="P020518" />
+      <display value="dick gestaute Beine" />
+    </concept>
+  </concept>
+  <concept>
+    <code value="P0303" />
+    <display value="Wundlokalisation" />
+    <concept>
+      <code value="P030317" />
+      <display value="Sonstige Lokalisation" />
+      <concept>
+        <code value="P03031701" />
+        <display value="Unterschenkel Außenseite rechts" />
+      </concept>
+      <concept>
+        <code value="P03031702" />
+        <display value="Unterschenkel Außenseite links" />
+      </concept>
+      <concept>
+        <code value="P03031703" />
+        <display value="Tibiaregion rechts" />
+      </concept>
+      <concept>
+        <code value="P03031704" />
+        <display value="Tibiaregion links" />
+      </concept>
+      <concept>
+        <code value="P03031705" />
+        <display value="Malleolus laterialis rechts" />
+      </concept>
+      <concept>
+        <code value="P03031706" />
+        <display value="Malleolus laterialis links" />
+      </concept>
+      <concept>
+        <code value="P03031707" />
+        <display value="Innenknöchel rechts" />
+      </concept>
+      <concept>
+        <code value="P03031708" />
+        <display value="Innenknöchel links" />
+      </concept>
+      <concept>
+        <code value="P03031709" />
+        <display value="distaler Unterschenkel über Malleolus medialis rechts" />
+      </concept>
+      <concept>
+        <code value="P03031710" />
+        <display value="distaler Unterschenkel über Malleolus medialis links" />
+      </concept>
+      <concept>
+        <code value="P03031711" />
+        <display value="Gamaschenulcus Unterschenkel umrundet rechts" />
+      </concept>
+      <concept>
+        <code value="P03031712" />
+        <display value="Gamaschenulcus Unterschenkel umrundet links" />
+      </concept>
+      <concept>
+        <code value="P03031713" />
+        <display value="distaler Unterschenkel um Malleolus medialis rechts" />
+      </concept>
+      <concept>
+        <code value="P03031714" />
+        <display value="distaler Unterschenkel um Malleolus medialis links" />
+      </concept>
+      <concept>
+        <code value="P03031715" />
+        <display value="Manschettenulcus Unterschenkel umrundet rechts" />
+      </concept>
+      <concept>
+        <code value="P03031716" />
+        <display value="Manschettenulcus Unterschenkel umrundet links" />
+      </concept>
+    </concept>
+  </concept>
+  <concept>
+    <code value="P040306" />
+    <display value="Erscheinung" />
+    <concept>
+      <code value="P04030601" />
+      <display value="feucht glänzend" />
+    </concept>
+    <concept>
+      <code value="P04030602" />
+      <display value="Fibrin" />
+    </concept>
+    <concept>
+      <code value="P040307" />
+      <display value="Sichtbares Gewebe" />
+    </concept>
+  </concept>
+  <concept>
+    <code value="P0410" />
+    <display value="Wundrand / Hautumgebung" />
+    <concept>
+      <code value="P0410A" />
+      <display value="Wundrand" />
+      <concept>
+        <code value="P0410A01" />
+        <display value="diffus" />
+      </concept>
+      <concept>
+        <code value="P0410A02" />
+        <display value="klar abgegrenzt" />
+      </concept>
+    </concept>
+    <concept>
+      <code value="P0410B" />
+      <display value="Hautumgebung" />
+      <concept>
+        <code value="P0410B01" />
+        <display value="blass" />
+      </concept>
+      <concept>
+        <code value="P0410B02" />
+        <display value="weiß marmoriert" />
+      </concept>
+      <concept>
+        <code value="P0410B03" />
+        <display value="bläulich" />
+      </concept>
+      <concept>
+        <code value="P0410B04" />
+        <display value="livide verfärbt" />
+      </concept>
+      <concept>
+        <code value="P0410B05" />
+        <display value="glänzend" />
+      </concept>
+      <concept>
+        <code value="P0410B06" />
+        <display value="haarlos" />
+      </concept>
+      <concept>
+        <code value="P0410B07" />
+        <display value="kühl" />
+      </concept>
+      <concept>
+        <code value="P0410B08" />
+        <display value="atroph" />
+      </concept>
+      <concept>
+        <code value="P0410B09" />
+        <display value="Haut trocken" />
+      </concept>
+      <concept>
+        <code value="P0410B10" />
+        <display value="Haut schuppig" />
+      </concept>
+      <concept>
+        <code value="P0410B11" />
+        <display value="Haut warm" />
+      </concept>
+    </concept>
+  </concept>
+  <concept>
+    <code value="P0415" />
+    <display value="Weitere Angaben Schmerz" />
+    <concept>
+      <code value="P041501" />
+      <display value="Intensität" />
+    </concept>
+    <concept>
+      <code value="P041502" />
+      <display value="Setting" />
+      <concept>
+        <code value="P04150201" />
+        <display value="in Ruhe" />
+      </concept>
+      <concept>
+        <code value="P04150202" />
+        <display value="bei Hochlagerung der Beine" />
+      </concept>
+      <concept>
+        <code value="P04150203" />
+        <display value="Wadenschmerzen nach kurzer Gehstrecke" />
+      </concept>
+      <concept>
+        <code value="P04150204" />
+        <display value="Wadenkrämpfe nach kurzer Gehstrecke" />
+      </concept>
+    </concept>
+    <concept>
+      <code value="P041503" />
+      <display value="Linderungsmaßnahme" />
+      <concept>
+        <code value="P04150301" />
+        <display value="Stehenbleiben" />
+      </concept>
+    </concept>
+    <concept>
+      <code value="P041504" />
+      <display value="Ergebnis" />
+      <concept>
+        <code value="P04150401" />
+        <display value="Schmerz lässt nach oder verschwindet" />
+      </concept>
+      <concept>
+        <code value="P04150402" />
+        <display value="Schmerz bleibt gleich" />
+      </concept>
+      <concept>
+        <code value="P04150403" />
+        <display value="Schmerz nimmt zu" />
+      </concept>
+    </concept>
+  </concept>
+</CodeSystem>

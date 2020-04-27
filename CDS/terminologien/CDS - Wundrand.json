@@ -1,0 +1,74 @@
+{
+  "resourceType": "ValueSet",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>CDS - Wundrand</h2><tt>https://posithera.de/fhir/ValueSet/CDS_Wundrand</tt><p>Wundrand</p></div>"
+  },
+  "url": "https://posithera.de/fhir/ValueSet/CDS_Wundrand",
+  "name": "CDSWundrand",
+  "status": "draft",
+  "publisher": "Forschungsgruppe Informatik im Gesundheitswesen, Hochschule Osnabrück, Deutschland",
+  "contact": [
+    {
+      "name": "Mareike Przysucha",
+      "telecom": [
+        {
+          "system": "email",
+          "value": "m.przysucha@hs-osnabrueck.de"
+        }
+      ]
+    }
+  ],
+  "description": "Wundrand aus NKDUC und CDS",
+  "compose": {
+    "include": [
+      {
+        "system": "https://posithera.de/fhir/CodeSystem/NKDUC",
+        "concept": [
+          {
+            "code": "C041001",
+            "display": "reizlos"
+          },
+          {
+            "code": "C041002",
+            "display": "gerötet"
+          },
+          {
+            "code": "C041003",
+            "display": "ödematös"
+          },
+          {
+            "code": "C041004",
+            "display": "mazeriert"
+          },
+          {
+            "code": "C041005",
+            "display": "livide"
+          },
+          {
+            "code": "C041006",
+            "display": "nekrotisch"
+          },
+          {
+            "code": "C041007",
+            "display": "schuppend, hyperkeratotisch/terminiert"
+          }
+        ]
+      },
+      {
+        "concept": [
+          {
+            "code": "P0410A01",
+            "display": "diffus"
+          },
+          {
+            "code": "P0410A02",
+            "display": "klar abgegrenzt"
+          }
+        ],
+        "system": "https://posithera.de/fhir/CodeSystem/CDS_Posithera"
+      }
+    ]
+  },
+  "title": "Wundrand aus NKDUC und Entscheidungsunterstützung"
+}

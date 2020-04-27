@@ -1,0 +1,26 @@
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <url value="https://posithera.de/fhir/StructureDefinition/CompressionMaterial" />
+  <name value="PosiTheraCompressionMaterial" />
+  <status value="draft" />
+  <fhirVersion value="4.0.1" />
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="DeviceDefinition" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/DeviceDefinition" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="DeviceDefinition.type">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
+      <path value="DeviceDefinition.type" />
+      <binding>
+        <strength value="preferred" />
+        <valueSet value="https://posithera.de/fhir/ValueSet/Kompressionsmaterial" />
+      </binding>
+    </element>
+  </differential>
+</StructureDefinition>

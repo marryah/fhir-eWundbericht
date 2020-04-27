@@ -1,0 +1,57 @@
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <url value="https://posithera.de/fhir/StructureDefinition/GoalOfTreatment" />
+  <name value="PosiTheraGoalOfTreatment" />
+  <status value="draft" />
+  <fhirVersion value="4.0.1" />
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="Goal" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Goal" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Goal.description.coding">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
+      <path value="Goal.description.coding" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="system" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="Goal.description.coding:nkduc">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
+      <path value="Goal.description.coding" />
+      <sliceName value="nkduc" />
+      <binding>
+        <strength value="required" />
+        <valueSet value="https://posithera.de/fhir/ValueSet/Behandlungsziele" />
+      </binding>
+    </element>
+    <element id="Goal.addresses">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
+      <path value="Goal.addresses" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Condition" />
+        <targetProfile value="https://posithera.de/fhir/StructureDefinition/Wound" />
+      </type>
+    </element>
+  </differential>
+</StructureDefinition>

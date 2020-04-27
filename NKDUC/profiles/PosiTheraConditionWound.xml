@@ -1,0 +1,131 @@
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="e5682133-da3a-4088-9039-4ed7174205b5" />
+  <meta>
+    <lastUpdated value="2019-05-06T16:52:10.2604949+00:00" />
+  </meta>
+  <url value="https://posithera.de/fhir/StructureDefinition/Wound" />
+  <name value="PosiTheraNKDUCWound" />
+  <title value="PosiTheraWound for NKDUC" />
+  <status value="draft" />
+  <description value="Wound Profile on Condition used in the PosiThera project" />
+  <fhirVersion value="4.0.0" />
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="Condition" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Condition" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Condition.clinicalStatus">
+      <path value="Condition.clinicalStatus" />
+      <min value="1" />
+    </element>
+    <element id="Condition.code">
+      <path value="Condition.code" />
+      <min value="1" />
+    </element>
+    <element id="Condition.code.coding">
+      <path value="Condition.code.coding" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="system" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="Condition.code.coding:ICD10">
+      <path value="Condition.code.coding" />
+      <sliceName value="ICD10" />
+    </element>
+    <element id="Condition.code.coding:ICD10.system">
+      <path value="Condition.code.coding.system" />
+      <fixedUri value="http://fhir.de/CodeSystem/dimdi/icd-10-gm" />
+    </element>
+    <element id="Condition.code.coding:SNOMED">
+      <path value="Condition.code.coding" />
+      <sliceName value="SNOMED" />
+    </element>
+    <element id="Condition.code.coding:SNOMED.system">
+      <path value="Condition.code.coding.system" />
+      <fixedUri value="http://snomed.info/sct" />
+    </element>
+    <element id="Condition.code.coding:NKDUC">
+      <path value="Condition.code.coding" />
+      <sliceName value="NKDUC" />
+    </element>
+    <element id="Condition.code.coding:NKDUC.code">
+      <path value="Condition.code.coding.code" />
+      <binding>
+        <strength value="required" />
+        <valueSet value="https://posithera.de/fhir/ValueSet/WoundType" />
+      </binding>
+    </element>
+    <element id="Condition.bodySite">
+      <path value="Condition.bodySite" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="coding.system" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+      <short value="Anatomical location of lower leg" />
+      <definition value="The anatomical location where this condition manifests itself. It only allows loctions of lower leg. The ValueSet has been created in accordance to the &quot;Nationaler Konsensus zur Dokumentation des Ulcus Cruris&quot;" />
+    </element>
+    <element id="Condition.bodySite:laterality">
+      <path value="Condition.bodySite" />
+      <sliceName value="laterality" />
+      <min value="1" />
+      <max value="1" />
+    </element>
+    <element id="Condition.bodySite:laterality.coding">
+      <path value="Condition.bodySite.coding" />
+      <binding>
+        <strength value="example" />
+        <valueSet value="https://posithera.de/fhir/ValueSet/Laterality" />
+      </binding>
+    </element>
+    <element id="Condition.bodySite:bodySite">
+      <path value="Condition.bodySite" />
+      <sliceName value="bodySite" />
+      <min value="1" />
+      <max value="1" />
+    </element>
+    <element id="Condition.bodySite:bodySite.coding">
+      <path value="Condition.bodySite.coding" />
+      <binding>
+        <strength value="example" />
+        <valueSet value="https://posithera.de/fhir/ValueSet/LowerLegBodyStructure" />
+      </binding>
+    </element>
+    <element id="Condition.subject">
+      <path value="Condition.subject" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Patient" />
+      </type>
+    </element>
+    <element id="Condition.onset[x]">
+      <path value="Condition.onset[x]" />
+      <slicing>
+        <discriminator>
+          <type value="type" />
+          <path value="$this" />
+        </discriminator>
+        <rules value="closed" />
+      </slicing>
+    </element>
+    <element id="Condition.onset[x]:onsetDateTime">
+      <path value="Condition.onset[x]" />
+      <sliceName value="onsetDateTime" />
+      <min value="1" />
+      <type>
+        <code value="dateTime" />
+      </type>
+    </element>
+    <element id="Condition.recordedDate">
+      <path value="Condition.recordedDate" />
+      <min value="1" />
+    </element>
+  </differential>
+</StructureDefinition>

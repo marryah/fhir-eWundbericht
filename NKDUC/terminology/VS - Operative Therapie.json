@@ -1,0 +1,77 @@
+{
+  "resourceType": "ValueSet",
+  "url": "https://posithera.de/fhir/ValueSet/SurgicalTherapy",
+  "name": "PosiTheraOperativeTherapy",
+  "title": "PosiThera - Operative Therapie",
+  "status": "draft",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "email",
+          "value": "m.przysucha@hs-osnabrueck.de"
+        }
+      ],
+      "name": "Mareike Przysucha"
+    }
+  ],
+  "compose": {
+    "include": [
+      {
+        "system": "https://posithera.de/fhir/CodeSystem/NKDUC",
+        "concept": [
+          {
+            "code": "C06020201",
+            "display": "Varizenstripping V. saphena magna oder parva"
+          },
+          {
+            "code": "C06020202",
+            "display": "Seitenaststripping"
+          },
+          {
+            "code": "C06020203",
+            "display": "interventionelle Venenoperation, Laser oder Schaumsklerosierung der V. saphena magna oder parva"
+          },
+          {
+            "code": "C06020204",
+            "display": "sonstige Venenverfahren, z.B. Heiß-Dampf-Therapie"
+          },
+          {
+            "code": "C06020205",
+            "display": "Bypass bei pAVK"
+          },
+          {
+            "code": "C06020206",
+            "display": "Stenteinlage bei pAVK"
+          },
+          {
+            "code": "C06020207",
+            "display": "chirurgisches Debridement als operative Therapie"
+          },
+          {
+            "code": "C06020208",
+            "display": "Fasziektomie"
+          },
+          {
+            "code": "C06020209",
+            "display": "Mesh-/Spalthauttransplantation"
+          },
+          {
+            "code": "C06020210",
+            "display": "Spalthaut / Stanztransplantat / Keratinozytentransplantation"
+          },
+          {
+            "code": "C06020211",
+            "display": "Sonstige Wunddeckungsverfahren"
+          }
+        ]
+      }
+    ]
+  },
+  "description": "Operative Therapie",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>PosiThera - Operative Therapie</h2><tt>https://posithera.de/fhir/ValueSet/SurgicalTherapy</tt><p>Operative Therapie</p></div>"
+  },
+  "publisher": "Forschungsgruppe Informatik im Gesundheitswesen, Hochschule Osnabrück, Deutschland"
+}

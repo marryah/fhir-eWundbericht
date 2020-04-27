@@ -1,0 +1,142 @@
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <text>
+    <status value="generated" />
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <h2>PosiThera - WoundQoL</h2>
+      <tt>https://posithera.de/fhir/CodeSystem/WoundQoL</tt>
+      <p>Codesystem for the Wound Quality of Life</p>
+    </div>
+  </text>
+  <url value="https://posithera.de/fhir/CodeSystem/WoundQoL" />
+  <name value="PosiTheraWoundQoL" />
+  <title value="PosiThera - WoundQoL" />
+  <status value="draft" />
+  <date value="2019-05-24" />
+  <publisher value="Forschungsgruppe Informatik im Gesundheitswesen, Hochschule Osnabrück, Deutschland" />
+  <contact>
+    <name value="Mareike Przysucha" />
+    <telecom>
+      <system value="email" />
+      <value value="m.przysucha@hs-osnabrueck.de" />
+    </telecom>
+  </contact>
+  <description value="Codesystem for the Wound Quality of Life" />
+  <compositional value="false" />
+  <content value="complete" />
+  <count value="24" />
+  <concept>
+    <code value="A0001" />
+    <display value="not at all" />
+    <definition value="statement does not fit at all" />
+  </concept>
+  <concept>
+    <code value="A0002" />
+    <display value="a little" />
+    <definition value="statement fits a little" />
+  </concept>
+  <concept>
+    <code value="A0003" />
+    <display value="moderately" />
+    <definition value="statement fits moderately" />
+  </concept>
+  <concept>
+    <code value="A0004" />
+    <display value="quite a lot" />
+    <definition value="statement fits quite a lot" />
+  </concept>
+  <concept>
+    <code value="A0005" />
+    <display value="very much" />
+    <definition value="statement fits very much" />
+  </concept>
+  <concept>
+    <code value="Q0001" />
+    <display value="In the last seven days my wound hurt." />
+    <definition value="In the last seven days my wound hurt." />
+  </concept>
+  <concept>
+    <code value="Q0002" />
+    <display value="In the last seven days my wound had a bad smell." />
+    <definition value="In the last seven days my wound had a bad smell." />
+  </concept>
+  <concept>
+    <code value="Q0003" />
+    <display value="In the last seven days there was a disturbing discharge from the wound." />
+    <definition value="In the last seven days there was a disturbing discharge from the wound." />
+  </concept>
+  <concept>
+    <code value="Q0004" />
+    <display value="In the last seven days the wound has affected my sleep." />
+    <definition value="In the last seven days the wound has affected my sleep." />
+  </concept>
+  <concept>
+    <code value="Q0005" />
+    <display value="In the last seven daysthe treatment of the wound has been a burden." />
+    <definition value="In the last seven days the treatment of the wound has been a burden." />
+  </concept>
+  <concept>
+    <code value="Q0006" />
+    <display value="In the last seven days the wound has made me unhappy." />
+    <definition value="In the last seven days the wound has made me unhappy." />
+  </concept>
+  <concept>
+    <code value="Q0007" />
+    <display value="In the last seven days I have felt frustrated because the wound is taking so long to heal." />
+    <definition value="In the last seven days I have felt frustrated because the wound is taking so long to heal." />
+  </concept>
+  <concept>
+    <code value="Q0008" />
+    <display value="In the last seven days I have worried about my wound." />
+    <definition value="In the last seven days I have worried about my wound." />
+  </concept>
+  <concept>
+    <code value="Q0009" />
+    <display value="In the last seven days I have been afraid of the wound getting worse or of new wounds." />
+    <definition value="In the last seven days I have been afraid of the wound getting worse or of new wounds." />
+  </concept>
+  <concept>
+    <code value="Q0010" />
+    <display value="In the last seven days I have been afraid of knocking the wound." />
+    <definition value="In the last seven days I have been afraid of knocking the wound." />
+  </concept>
+  <concept>
+    <code value="Q0011" />
+    <display value="In the last seven days I have had trouble moving because of the wound." />
+    <definition value="In the last seven days I have had trouble moving because of the wound." />
+  </concept>
+  <concept>
+    <code value="Q0012" />
+    <display value="In the last seven days climbing stairs has been difficult because of the wound." />
+    <definition value="In the last seven days climbing stairs has been difficult because of the wound." />
+  </concept>
+  <concept>
+    <code value="Q0013" />
+    <display value="In the last seven days I have had trouble the day-to-day activities." />
+    <definition value="In the last seven days I have had trouble the day-to-day activities." />
+  </concept>
+  <concept>
+    <code value="Q0014" />
+    <display value="In the last seven days the wound has limited my leisure activities." />
+    <definition value="In the last seven days the wound has limited my leisure activities." />
+  </concept>
+  <concept>
+    <code value="Q0015" />
+    <display value="In the last seven days the wound has forced me to limit my activities with others." />
+    <definition value="In the last seven days the wound has forced me to limit my activities with others." />
+  </concept>
+  <concept>
+    <code value="Q0016" />
+    <display value="In the last seven days I have felt dependent on help from others because of the wound." />
+    <definition value="In the last seven days I have felt dependent on help from others because of the wound." />
+  </concept>
+  <concept>
+    <code value="Q0017" />
+    <display value="In the last seven days the wound has been a financial burden to me." />
+    <definition value="In the last seven days the wound has been a financial burden to me." />
+  </concept>
+  <concept>
+    <code value="00001" />
+    <display value="Wound-QoL" />
+    <definition value="Wound Quality of Life" />
+  </concept>
+</CodeSystem>

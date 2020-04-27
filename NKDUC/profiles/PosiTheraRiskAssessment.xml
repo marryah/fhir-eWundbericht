@@ -1,0 +1,101 @@
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <url value="https://posithera.de/fhir/StructureDefinition/RiskAssessment" />
+  <version value="0.0.1" />
+  <name value="PosiTheraRiskAssessment" />
+  <status value="draft" />
+  <fhirVersion value="4.0.1" />
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="RiskAssessment" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/RiskAssessment" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="RiskAssessment.code.coding">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
+      <path value="RiskAssessment.code.coding" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="code" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+      <min value="1" />
+      <max value="1" />
+    </element>
+    <element id="RiskAssessment.code.coding:generalRiskAssessment">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
+      <path value="RiskAssessment.code.coding" />
+      <sliceName value="generalRiskAssessment" />
+    </element>
+    <element id="RiskAssessment.code.coding:generalRiskAssessment.system">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
+      <path value="RiskAssessment.code.coding.system" />
+      <fixedUri value="http://loinc.org" />
+    </element>
+    <element id="RiskAssessment.code.coding:generalRiskAssessment.code">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
+      <path value="RiskAssessment.code.coding.code" />
+      <fixedCode value="71482-4" />
+    </element>
+    <element id="RiskAssessment.code.coding:generalRiskAssessment.display">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="RiskAssessment.code.coding.display" />
+      <fixedString value="Risk assessment" />
+    </element>
+    <element id="RiskAssessment.subject">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
+      <path value="RiskAssessment.subject" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Patient" />
+      </type>
+    </element>
+    <element id="RiskAssessment.condition">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
+      <path value="RiskAssessment.condition" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="https://posithera.de/fhir/StructureDefinition/Wound" />
+      </type>
+    </element>
+  </differential>
+</StructureDefinition>

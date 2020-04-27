@@ -1,0 +1,45 @@
+{
+  "resourceType": "ValueSet",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>CDS - Tastbarkeit Fußpulse</h2><tt>https://posithera.de/fhir/ValueSet/CDS_TastbarkeitFusspulse</tt><p>Tastbarkeit Fußpulse</p></div>"
+  },
+  "url": "https://posithera.de/fhir/ValueSet/CDS_TastbarkeitFusspulse",
+  "name": "CDSTastbarkeitFusspulse",
+  "status": "draft",
+  "publisher": "Forschungsgruppe Informatik im Gesundheitswesen, Hochschule Osnabrück, Deutschland",
+  "contact": [
+    {
+      "name": "Mareike Przysucha",
+      "telecom": [
+        {
+          "system": "email",
+          "value": "m.przysucha@hs-osnabrueck.de"
+        }
+      ]
+    }
+  ],
+  "description": "Tastbarkeit Fußpulse für CDS",
+  "compose": {
+    "include": [
+      {
+        "concept": [
+          {
+            "code": "P02051701",
+            "display": "Fußpulse gut tastbar"
+          },
+          {
+            "code": "P02051702",
+            "display": "Fußpulse schlecht tastbar"
+          },
+          {
+            "code": "P02051703",
+            "display": "Fußpulse nicht tastbar"
+          }
+        ],
+        "system": "https://posithera.de/fhir/CodeSystem/CDS_Posithera"
+      }
+    ]
+  },
+  "title": "Tastbarkeit Fußpulse"
+}

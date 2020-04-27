@@ -1,0 +1,38 @@
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="allergie-code" />
+  <meta>
+    <profile value="https://posithera.de/fhir/StructureDefinition/shareablevalueset" />
+  </meta>
+  <url value="https://posithera.de/fhir/ValueSet/insurance-status" />
+  <version value="4.0.0" />
+  <name value="NKDUCInsuranceStatus" />
+  <title value="Insurance Status" />
+  <status value="draft" />
+  <experimental value="false" />
+  <date value="2019-11-22" />
+  <compose>
+    <include>
+      <system value="https://posithera.de/fhir/CodeSystem/NKDUC" />
+      <concept>
+        <code value="C010301" />
+        <display value="GKV ohne Zusatzversicherung" />
+      </concept>
+      <concept>
+        <code value="C010302" />
+        <display value="GKV mit staatl. Zusatzversicherung" />
+      </concept>
+      <concept>
+        <code value="C010303" />
+        <display value="PKV" />
+      </concept>
+      <concept>
+        <code value="C010304" />
+        <display value="nicht krankversichert" />
+      </concept>
+      <concept>
+        <code value="C010305" />
+        <display value="anders krankenversichert" />
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

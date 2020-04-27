@@ -1,0 +1,49 @@
+<ValueSet xmlns="http://hl7.org/fhir">
+  <text>
+    <status value="generated" />
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <h2>PosiThera - Ausrüstung</h2>
+      <tt>https://posithera.de/fhir/eWundbericht/ValueSet/Supply</tt>
+      <p>Ausrüstung</p>
+    </div>
+  </text>
+  <url value="https://posithera.de/fhir/eWundbericht/ValueSet/Supply" />
+  <name value="Supply" />
+  <title value="PosiThera - Ausrüstung" />
+  <status value="draft" />
+  <publisher value="Forschungsgruppe Informatik im Gesundheitswesen, Hochschule Osnabrück, Deutschland" />
+  <contact>
+    <name value="Mareike Przysucha" />
+    <telecom>
+      <system value="email" />
+      <value value="m.przysucha@hs-osnabrueck.de" />
+    </telecom>
+  </contact>
+  <description value="Ausrüstung" />
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct" />
+      <filter>
+        <property value="concept" />
+        <op value="is-a" />
+        <value value="17207004" />
+      </filter>
+    </include>
+    <include>
+      <system value="http://snomed.info/sct" />
+      <filter>
+        <property value="concept" />
+        <op value="is-a" />
+        <value value="706699008" />
+      </filter>
+    </include>
+    <include>
+      <system value="http://snomed.info/sct" />
+      <filter>
+        <property value="concept" />
+        <op value="is-a" />
+        <value value="705402006" />
+      </filter>
+    </include>
+  </compose>
+</ValueSet>

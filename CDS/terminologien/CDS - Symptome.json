@@ -1,0 +1,98 @@
+{
+  "resourceType": "ValueSet",
+  "url": "https://posithera.de/fhir/ValueSet/CDS_Symptome",
+  "title": "CDS - Symptome",
+  "name": "CDSSymptome",
+  "status": "draft",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "email"
+        }
+      ]
+    }
+  ],
+  "compose": {
+    "include": [
+      {
+        "system": "https://posithera.de/fhir/CodeSystem/CDS_Posithera",
+        "concept": [
+          {
+            "code": "P020501",
+            "display": "Nekrosen an den Zehen"
+          },
+          {
+            "code": "P020502",
+            "display": "Gangrän an den Zehen"
+          },
+          {
+            "code": "P020503",
+            "display": "Nekrosen"
+          },
+          {
+            "code": "P020504",
+            "display": "Zehennägel verdickt"
+          },
+          {
+            "code": "P020505",
+            "display": "Purpura jaune d'ocre"
+          },
+          {
+            "code": "P020506",
+            "display": "Corona phlebetica paraplantaris - Warnvenen"
+          },
+          {
+            "code": "P020507",
+            "display": "Kratzspuren"
+          },
+          {
+            "code": "P020508",
+            "display": "Varikose"
+          },
+          {
+            "code": "P020509",
+            "display": "Venenklappeninsuffizienz"
+          },
+          {
+            "code": "P020510",
+            "display": "Hyperpigmentierung"
+          },
+          {
+            "code": "P020511",
+            "display": "Dermatosklerose"
+          },
+          {
+            "code": "P020512",
+            "display": "Athrophoie blanche"
+          },
+          {
+            "code": "P020513",
+            "display": "Besenreiser"
+          },
+          {
+            "code": "P020514",
+            "display": "Retikuläre Varizen"
+          },
+          {
+            "code": "P020515",
+            "display": "Teleangiektasie"
+          },
+          {
+            "code": "P020516",
+            "display": "Lipodermatosklerose"
+          },
+          {
+            "code": "P020517",
+            "display": "Tastbarkeit Fußpulse"
+          }
+        ]
+      }
+    ]
+  },
+  "description": "Symptome, die für die Entscheidungsunterstützung relevant sind",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>CDS - Symptome</h2><tt>https://posithera.de/fhir/ValueSet/CDS_Symptome</tt><p>Symptome, die für die Entscheidungsunterstützung relevant sind</p></div>"
+  }
+}

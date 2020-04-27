@@ -1,0 +1,43 @@
+<ValueSet xmlns="http://hl7.org/fhir">
+  <text>
+    <status value="generated" />
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <h2>CDS - Wundlokalisation</h2>
+      <tt>https://posithera.de/fhir/ValueSet/CDS_Schmerzsetting</tt>
+      <p>ValueSet für das Setting, in dem Schmerz auftritt</p>
+    </div>
+  </text>
+  <url value="https://posithera.de/fhir/ValueSet/CDS_Schmerzsetting" />
+  <name value="CDSSchmerzsetting" />
+  <title value="CDS - Schmerzsetting" />
+  <status value="draft" />
+  <publisher value="Forschungsgruppe Informatik im Gesundheitswesen, Hochschule Osnabrück, Deutschland" />
+  <contact>
+    <telecom>
+      <system value="email" />
+      <value value="m.przysucha@hs-osnabrueck.de" />
+    </telecom>
+  </contact>
+  <description value="ValueSet für das Setting, in dem Schmerz auftritt" />
+  <compose>
+    <include>
+      <system value="https://posithera.de/fhir/CodeSystem/CDS_Posithera" />
+      <concept>
+        <code value="P04150201" />
+        <display value="in Ruhe" />
+      </concept>
+      <concept>
+        <code value="P04150202" />
+        <display value="bei Hochlagerung der Beine" />
+      </concept>
+      <concept>
+        <code value="P04150203" />
+        <display value="Wadenschmerzen nach kurzer Gehstrecke" />
+      </concept>
+      <concept>
+        <code value="P04150204" />
+        <display value="Wadenkrämpfe nach kurzer Gehstrecke" />
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

@@ -1,0 +1,45 @@
+{
+  "resourceType": "ValueSet",
+  "url": "https://posithera.de/fhir/ValueSet/CDS_PainManagementResults",
+  "name": "CDSErgebnisSchmerzbezogeneMaßnahmen",
+  "title": "CDS - Ergebnis durch Schmerzbezogene Maßnahmen",
+  "status": "draft",
+  "experimental": true,
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "email",
+          "value": "m.przysucha@hs-osnabrueck.de"
+        }
+      ]
+    }
+  ],
+  "publisher": "Hochschule Osnabrück",
+  "compose": {
+    "include": [
+      {
+        "system": "https://posithera.de/fhir/CodeSystem/CDS_Posithera",
+        "concept": [
+          {
+            "code": "P04150401",
+            "display": "Schmerz lässt nach oder verschwindet"
+          },
+          {
+            "code": "P04150402",
+            "display": "Schmerz bleibt gleich"
+          },
+          {
+            "code": "P04150403",
+            "display": "Schmerz nimmt zu"
+          }
+        ]
+      }
+    ]
+  },
+  "description": "Ergebnis durch Schmerzbezogene Maßnahmen",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>CDS - Ergebnis durch Schmerzbezogene Maßnahmen</h2><tt>https://posithera.de/fhir/ValueSet/CDS_Symptome</tt><p>Ergebnis durch Schmerzbezogene Maßnahmen</p></div>"
+  }
+}

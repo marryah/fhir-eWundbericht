@@ -1,0 +1,72 @@
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <url value="https://posithera.de/fhir/eWundbericht/StructureDefinition/VerbalAssessments" />
+  <name value="PosiTheraVerbalAssessments" />
+  <status value="draft" />
+  <description value="Profil für alle Umstände des eWundberichts, die verbal beschrieben werden. Dazu gehören u.a. das Hygieneassessment, soziale Faktoren, Therapieakzeptanz und der Lebensstil samt Fähigkeiten. Die genaue Unterscheidung, was inhaltlich angegeben wird, wird über den Code festgelegt.&#xD;&#xA;&#xD;&#xA;Profile for content of the eWoundSummary which is described via text. Examples are the hygiene assessment, social factors and compliance. A further distinction of the content is given by the code." />
+  <fhirVersion value="4.0.1" />
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="Observation" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Observation" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Observation.code">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
+      <path value="Observation.code" />
+      <binding>
+        <strength value="extensible" />
+        <valueSet value="https://posithera.de/fhir/eWundbericht/ValueSet/ContentVerbalAssessment" />
+      </binding>
+    </element>
+    <element id="Observation.subject">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
+      <path value="Observation.subject" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Patient" />
+      </type>
+    </element>
+    <element id="Observation.value[x]">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
+      <path value="Observation.value[x]" />
+      <type>
+        <code value="string" />
+      </type>
+    </element>
+    <element id="Observation.interpretation">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
+      <path value="Observation.interpretation" />
+      <max value="0" />
+    </element>
+    <element id="Observation.component">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
+      <path value="Observation.component" />
+      <max value="0" />
+    </element>
+  </differential>
+</StructureDefinition>

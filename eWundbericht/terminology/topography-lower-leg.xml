@@ -1,0 +1,81 @@
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="21fb22e8-ab95-4d76-972a-3fb54d55a33b" />
+  <meta>
+    <lastUpdated value="2019-05-06T16:54:59.381433+00:00" />
+    <profile value="http://hl7.org/fhir/StructureDefinition/shareablevalueset" />
+  </meta>
+  <text>
+    <status value="additional" />
+    <div xmlns="http://www.w3.org/1999/xhtml">This ValueSet implements the options how to document the location of a ulcus cruris as suggested by the German National Consensus Ulcus Cruris, an initative to standardize documention for Ulcus Cruris.
+
+Note, that the used codes are not validated by the community but rather represent my indivudual choice of the mapping between proposed locations and SNOMED CT.
+
+German code:
+
+1. Oberschenkel (Thigh)
+2. Knie (Knee)
+3. Unterschenkel (Lower Leg)
+4. Sprunggelenk (Ankle)
+5. Fußrücken (Dorsum of Foot)
+6. Ferse (Heel)
+7. Fußsohle (Sole of Foot)
+8. Zehen (Toes)
+
+Furthermore, please note, that the original aggreement was to encode the laterality of ulcer location was included in the single options. 
+However, I propose to encode the laterality of an ulcer seperatly using the FHIR Core ValueSet Laterality (http://hl7.org/fhir/ValueSet/bodysite-laterality).
+In this context, it may be a good idea to restrict the above mentioned ValueSet Laterality to left and right while excluding bilateral.</div>
+  </text>
+  <url value="https://posithera.de/fhir/eWundbericht/ValueSet/LowerLegBodyStructure" />
+  <version value="20190417" />
+  <name value="PosiTheraLowerLegBodyStructures" />
+  <title value="Location of Ulcer" />
+  <status value="draft" />
+  <experimental value="true" />
+  <date value="2019-05-06T16:54:59.2916105+00:00" />
+  <publisher value="Forschungsgruppe Informatik im Gesundheitswesen Hochschule Osnabrück" />
+  <contact>
+    <name value="Jens Hüsers" />
+    <telecom>
+      <system value="email" />
+      <value value="j.huesers@hs-osnabrueck.de" />
+    </telecom>
+  </contact>
+  <description value="This ValueSet is an example of how to use filters along with ValueSets.&#xA;&#xA;I created this ValueSet for illustration purposes only. &#xA;&#xA;We plan to develop this ValueSet further in future projects." />
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct" />
+      <concept>
+        <code value="68367000" />
+        <display value="Thigh structure" />
+      </concept>
+      <concept>
+        <code value="72696002" />
+        <display value="Knee region structure" />
+      </concept>
+      <concept>
+        <code value="30021000" />
+        <display value="Lower leg structure" />
+      </concept>
+      <concept>
+        <code value="344001" />
+        <display value="Ankle region structure" />
+      </concept>
+      <concept>
+        <code value="2402003" />
+        <display value="Structure of dorsum of foot" />
+      </concept>
+      <concept>
+        <code value="76853006" />
+        <display value="Heel structure" />
+      </concept>
+      <concept>
+        <code value="57999000" />
+        <display value="Structure of sole of foot" />
+      </concept>
+      <concept>
+        <code value="29707007" />
+        <display value="Toe structure" />
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

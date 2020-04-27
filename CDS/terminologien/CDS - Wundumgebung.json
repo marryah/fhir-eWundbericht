@@ -1,0 +1,110 @@
+{
+  "resourceType": "ValueSet",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>CDS - Ulcusrelevante Begleiterkrankungen</h2><tt>https://posithera.de/fhir/ValueSet/CDS_Wundumgebung</tt><p>Ulcusrelevante Begleiterkrankungen</p></div>"
+  },
+  "url": "https://posithera.de/fhir/ValueSet/CDS_Wundumgebung",
+  "name": "CDSWundumgebung",
+  "status": "draft",
+  "publisher": "Forschungsgruppe Informatik im Gesundheitswesen, Hochschule Osnabrück, Deutschland",
+  "contact": [
+    {
+      "name": "Mareike Przysucha",
+      "telecom": [
+        {
+          "system": "email",
+          "value": "m.przysucha@hs-osnabrueck.de"
+        }
+      ]
+    }
+  ],
+  "description": "Wundumgebung aus NKDUC und CDS",
+  "compose": {
+    "include": [
+      {
+        "system": "https://posithera.de/fhir/CodeSystem/NKDUC",
+        "concept": [
+          {
+            "code": "C041001",
+            "display": "reizlos"
+          },
+          {
+            "code": "C041002",
+            "display": "gerötet"
+          },
+          {
+            "code": "C041003",
+            "display": "ödematös"
+          },
+          {
+            "code": "C041004",
+            "display": "mazeriert"
+          },
+          {
+            "code": "C041005",
+            "display": "livide"
+          },
+          {
+            "code": "C041006",
+            "display": "nekrotisch"
+          },
+          {
+            "code": "C041007",
+            "display": "schuppend, hyperkeratotisch/terminiert"
+          }
+        ]
+      },
+      {
+        "concept": [
+          {
+            "code": "P0410B01",
+            "display": "blass"
+          },
+          {
+            "code": "P0410B02",
+            "display": "weiß marmoriert"
+          },
+          {
+            "code": "P0410B03",
+            "display": "bläulich"
+          },
+          {
+            "code": "P0410B04",
+            "display": "livide verfärbt"
+          },
+          {
+            "code": "P0410B05",
+            "display": "glänzend"
+          },
+          {
+            "code": "P0410B06",
+            "display": "haarlos"
+          },
+          {
+            "code": "P0410B07",
+            "display": "kühl"
+          },
+          {
+            "code": "P0410B08",
+            "display": "atroph"
+          },
+          {
+            "code": "P0410B09",
+            "display": "Haut trocken"
+          },
+          {
+            "code": "P0410B10",
+            "display": "Haut schuppig"
+          },
+          {
+            "code": "P0410B11",
+            "display": "Haut warm"
+          }
+        ],
+        "system": "https://posithera.de/fhir/CodeSystem/CDS_Posithera"
+      }
+    ]
+  },
+  "title": "Wundumgebung aus NKDUC und Entscheidungsunterstützung"
+}

@@ -1,0 +1,61 @@
+{
+  "resourceType": "ValueSet",
+  "url": "https://posithera.de/fhir/ValueSet/WoundRinse",
+  "name": "PosiTheraWoundRinse",
+  "title": "PosiThera - Wundspülung",
+  "status": "draft",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "email",
+          "value": "m.przysucha@hs-osnabrueck.de"
+        }
+      ],
+      "name": "Mareike Przysucha"
+    }
+  ],
+  "compose": {
+    "include": [
+      {
+        "system": "https://posithera.de/fhir/CodeSystem/NKDUC",
+        "concept": [
+          {
+            "code": "C06010201",
+            "display": "keine Wundspülung"
+          },
+          {
+            "code": "C06010202",
+            "display": "Ringer-Lösung"
+          },
+          {
+            "code": "C06010203",
+            "display": "NaCl 0,9%"
+          },
+          {
+            "code": "C06010204",
+            "display": "Polyhexanid als Wundspülung"
+          },
+          {
+            "code": "C06010205",
+            "display": "Octenidin als Wundspülung"
+          },
+          {
+            "code": "C06010206",
+            "display": "nasszierender Sauerstoff"
+          },
+          {
+            "code": "C06010207",
+            "display": "Sonstige Wundspülung"
+          }
+        ]
+      }
+    ]
+  },
+  "description": "Wundspülung",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>PosiThera - Wundspülung</h2><tt>https://posithera.de/fhir/ValueSet/WoundRinse</tt><p>Wundspülung</p></div>"
+  },
+  "publisher": "Forschungsgruppe Informatik im Gesundheitswesen, Hochschule Osnabrück, Deutschland"
+}

@@ -1,0 +1,49 @@
+{
+  "resourceType": "ValueSet",
+  "url": "https://posithera.de/fhir/ValueSet/HealingStatus",
+  "name": "PosiTheraHealingStatus",
+  "title": "PosiThera - Abheilungsstatus",
+  "status": "draft",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "email",
+          "value": "m.przysucha@hs-osnabrueck.de"
+        }
+      ],
+      "name": "Mareike Przysucha"
+    }
+  ],
+  "compose": {
+    "include": [
+      {
+        "system": "https://posithera.de/fhir/CodeSystem/NKDUC",
+        "concept": [
+          {
+            "code": "C040901",
+            "display": "geheilt"
+          },
+          {
+            "code": "C040902",
+            "display": "verbessert"
+          },
+          {
+            "code": "C040903",
+            "display": "unverändert"
+          },
+          {
+            "code": "C040904",
+            "display": "verschlechtert"
+          }
+        ]
+      }
+    ]
+  },
+  "description": "Abheilungsstatus",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>PosiThera - Abheilungsstatus</h2><tt>https://posithera.de/fhir/ValueSet/HealingStatus</tt><p>Abheilungsstatus</p></div>"
+  },
+  "publisher": "Forschungsgruppe Informatik im Gesundheitswesen, Hochschule Osnabrück, Deutschland"
+}

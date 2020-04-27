@@ -1,0 +1,41 @@
+{
+  "resourceType": "ValueSet",
+  "url": "https://posithera.de/fhir/ValueSet/SettingSurgicalDebridement",
+  "name": "PosiTheraSettingSurgicalDebridement",
+  "title": "PosiThera - Setting des chirurgischen Debridement",
+  "status": "draft",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "email",
+          "value": "m.przysucha@hs-osnabrueck.de"
+        }
+      ],
+      "name": "Mareike Przysucha"
+    }
+  ],
+  "compose": {
+    "include": [
+      {
+        "system": "https://posithera.de/fhir/CodeSystem/NKDUC",
+        "concept": [
+          {
+            "code": "C0602020011",
+            "display": "stationäres chirurgisches Debridement"
+          },
+          {
+            "code": "C0602020012",
+            "display": "ambulantes chirurgisches Debridement"
+          }
+        ]
+      }
+    ]
+  },
+  "description": "Setting des chirurgischen Debridement",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>PosiThera - Setting des chirurgischen Debridement</h2><tt>https://posithera.de/fhir/ValueSet/SettingSurgicalDebridement</tt><p>Setting des chirurgischen Debridement</p></div>"
+  },
+  "publisher": "Forschungsgruppe Informatik im Gesundheitswesen, Hochschule Osnabrück, Deutschland"
+}

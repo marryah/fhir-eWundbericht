@@ -1,0 +1,246 @@
+{
+  "resourceType": "ValueSet",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>CDS - Ulcusrelevante Begleiterkrankungen</h2><tt>https://posithera.de/fhir/ValueSet/CDS_UlkusrelevanteBegleiterkrankungen</tt><p>Ulkusrelevante Begleiterkrankungen</p></div>"
+  },
+  "url": "https://posithera.de/fhir/ValueSet/CDS_UlkusrelevanteBegleiterkrankungen",
+  "name": "CDSUlcusrelevanteBegleiterkrankungen",
+  "status": "draft",
+  "publisher": "Forschungsgruppe Informatik im Gesundheitswesen, Hochschule Osnabrück, Deutschland",
+  "contact": [
+    {
+      "name": "Mareike Przysucha",
+      "telecom": [
+        {
+          "system": "email",
+          "value": "m.przysucha@hs-osnabrueck.de"
+        }
+      ]
+    }
+  ],
+  "description": "Ulkusrelevante Begleiterkrankungen",
+  "compose": {
+    "include": [
+      {
+        "system": "https://posithera.de/fhir/CodeSystem/NKDUC",
+        "concept": [
+          {
+            "code": "C020201",
+            "display": "Herz-Kreislauf-Erkrankungen"
+          },
+          {
+            "code": "C02020101",
+            "display": "Arterielle Hypertonie"
+          },
+          {
+            "code": "C02020102",
+            "display": "Herzinsuffizienz"
+          },
+          {
+            "code": "C02020103",
+            "display": "Koronare Herzkrankheit"
+          },
+          {
+            "code": "C02020104",
+            "display": "Gerinnungsstörung"
+          },
+          {
+            "code": "C02020105",
+            "display": "Zustand nach Thrombose"
+          },
+          {
+            "code": "C020202",
+            "display": "Pulmonale Erkrankungen"
+          },
+          {
+            "code": "C02020201",
+            "display": "Asthma bronchiale"
+          },
+          {
+            "code": "C02020202",
+            "display": "Chronische Bronchitis"
+          },
+          {
+            "code": "C020203",
+            "display": "Stoffwechselstörungen"
+          },
+          {
+            "code": "C02020301",
+            "display": "Diabetes mellitus"
+          },
+          {
+            "code": "C02020304",
+            "display": "Hyperurikämie"
+          },
+          {
+            "code": "C02020305",
+            "display": "Lipidstoffwechselstörung"
+          },
+          {
+            "code": "C02020306",
+            "display": "Mangelernährung"
+          },
+          {
+            "code": "C020204",
+            "display": "Infektionskrankheit"
+          },
+          {
+            "code": "C02020401",
+            "display": "Tuberkulose"
+          },
+          {
+            "code": "C02020402",
+            "display": "Hepatitis"
+          },
+          {
+            "code": "C02020403",
+            "display": "HIV-Infektion"
+          },
+          {
+            "code": "C02020404",
+            "display": "Sonstige Infektionserkrankung"
+          },
+          {
+            "code": "C020205",
+            "display": "Lebererkrankungen"
+          },
+          {
+            "code": "C02020501",
+            "display": "Leberzirrhose"
+          },
+          {
+            "code": "C02020502",
+            "display": "Steatosis hepatis"
+          },
+          {
+            "code": "C02020503",
+            "display": "Chronischer Leberschaden"
+          },
+          {
+            "code": "C020206",
+            "display": "Dermatologisch-allergologische Erkrankung"
+          },
+          {
+            "code": "C02020601",
+            "display": "Kontaktekzem"
+          },
+          {
+            "code": "C020207",
+            "display": "Nierenerkrankungen"
+          },
+          {
+            "code": "C02020701",
+            "display": "Niereninsuffizienz"
+          },
+          {
+            "code": "C020208",
+            "display": "Rheumatologische und immunologischer Erkrankung"
+          },
+          {
+            "code": "C02020801",
+            "display": "Rheumatoide Arthritis"
+          },
+          {
+            "code": "C02020802",
+            "display": "Andere rheumatologische Erkrankungen"
+          },
+          {
+            "code": "C020209",
+            "display": "Psychische und Suchterkrankungen"
+          },
+          {
+            "code": "C02020901",
+            "display": "Depression"
+          },
+          {
+            "code": "C02020902",
+            "display": "Raucher"
+          },
+          {
+            "code": "C02020903",
+            "display": "Exraucher"
+          },
+          {
+            "code": "C02020904",
+            "display": "Alkoholabusus"
+          },
+          {
+            "code": "C02020905",
+            "display": "Andere Drogen"
+          },
+          {
+            "code": "C02020906",
+            "display": "i.v. Drogenabusus"
+          },
+          {
+            "code": "C020210",
+            "display": "Maligne Tumore"
+          },
+          {
+            "code": "C020211",
+            "display": "Neurologische Erkrankungen"
+          },
+          {
+            "code": "C02021101",
+            "display": "Multiple Sklerose"
+          },
+          {
+            "code": "C02021102",
+            "display": "Periphere Polyneuropathie"
+          },
+          {
+            "code": "C02021103",
+            "display": "Morbus Parkinson"
+          },
+          {
+            "code": "C020212",
+            "display": "Weitere Erkrankungen"
+          },
+          {
+            "code": "C02021201",
+            "display": "Lipödem"
+          },
+          {
+            "code": "C02021202",
+            "display": "Lymphödem"
+          },
+          {
+            "code": "C020213",
+            "display": "Sonstige"
+          }
+        ]
+      },
+      {
+        "concept": [
+          {
+            "code": "P02020106",
+            "display": "CVI"
+          },
+          {
+            "code": "P02020107",
+            "display": "PAVK"
+          },
+          {
+            "display": "oberflächliche oder tiefe Venenthrombose",
+            "code": "P02020108"
+          },
+          {
+            "code": "P02020109",
+            "display": "Postthrombotisches Syndrom"
+          },
+          {
+            "code": "P02021203",
+            "display": "Ekzeme"
+          },
+          {
+            "code": "P02021204",
+            "display": "Sklerose"
+          }
+        ],
+        "system": "https://posithera.de/fhir/CodeSystem/CDS_Posithera"
+      }
+    ]
+  },
+  "title": "Ulkusrelevante Begleiterkrankungen aus NKDUC und Entscheidungsunterstützung"
+}

@@ -1,0 +1,39 @@
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <url value="https://posithera.de/fhir/eWundbericht/StructureDefinition/BodyStructure" />
+  <name value="PosiTheraBodyStructure" />
+  <status value="draft" />
+  <fhirVersion value="4.0.1" />
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="BodyStructure" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/BodyStructure" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="BodyStructure.location">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
+      <path value="BodyStructure.location" />
+      <binding>
+        <strength value="extensible" />
+        <valueSet value="https://posithera.de/fhir/eWundbericht/ValueSet/Lower-leg-body-structure" />
+      </binding>
+    </element>
+    <element id="BodyStructure.locationQualifier">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
+      <path value="BodyStructure.locationQualifier" />
+      <binding>
+        <strength value="extensible" />
+        <valueSet value="https://posithera.de/fhir/eWundbericht/ValueSet/Laterality" />
+      </binding>
+    </element>
+  </differential>
+</StructureDefinition>

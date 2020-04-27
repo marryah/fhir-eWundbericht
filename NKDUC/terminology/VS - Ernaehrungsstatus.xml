@@ -1,0 +1,40 @@
+<ValueSet xmlns="http://hl7.org/fhir">
+  <text>
+    <status value="generated" />
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <h2>PosiThera - Ernährungsstatus</h2>
+      <tt>https://posithera.de/fhir/ValueSet/NutritionStatus</tt>
+      <p>Abheilungsstatus</p>
+    </div>
+  </text>
+  <url value="https://posithera.de/fhir/ValueSet/NutritionStatus" />
+  <name value="PosiTheraNutritionStatus" />
+  <title value="PosiThera - Ernährungsstatus" />
+  <status value="draft" />
+  <publisher value="Forschungsgruppe Informatik im Gesundheitswesen, Hochschule Osnabrück, Deutschland" />
+  <contact>
+    <name value="Mareike Przysucha" />
+    <telecom>
+      <system value="email" />
+      <value value="m.przysucha@hs-osnabrueck.de" />
+    </telecom>
+  </contact>
+  <description value="Ernährungsstatus" />
+  <compose>
+    <include>
+      <system value="https://posithera.de/fhir/CodeSystem/NKDUC" />
+      <concept>
+        <code value="C020401" />
+        <display value="über" />
+      </concept>
+      <concept>
+        <code value="C020402" />
+        <display value="unter" />
+      </concept>
+      <concept>
+        <code value="C020403" />
+        <display value="normal" />
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

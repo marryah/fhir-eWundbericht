@@ -1,0 +1,45 @@
+{
+  "resourceType": "ValueSet",
+  "url": "https://posithera.de/fhir/ValueSet/CDS_LokalisationOedem",
+  "name": "CDSLokalisationLymphLipoedem",
+  "title": "CDS - Lokalisation eines Lymph- oder eines Lipödems",
+  "status": "draft",
+  "publisher": "Forschungsgruppe Informatik im Gesundheitswesen, Hochschule Osnabrück, Deutschland",
+  "contact": [
+    {
+      "name": "Mareike Przysucha",
+      "telecom": [
+        {
+          "system": "email",
+          "value": "m.przysucha@hs-osnabrueck.de"
+        }
+      ]
+    }
+  ],
+  "compose": {
+    "include": [
+      {
+        "system": "https://posithera.de/fhir/CodeSystem/CDS_Posithera",
+        "concept": [
+          {
+            "code": "P0202120X0101",
+            "display": "am Knöchel"
+          },
+          {
+            "code": "P0202120X0102",
+            "display": "am Unterschenkel"
+          },
+          {
+            "code": "P0202120X0103",
+            "display": "an einem anderen Ort"
+          }
+        ]
+      }
+    ]
+  },
+  "description": "Lokalisation eines Lymph- oder eines Lipödems",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>CDS - Lokalisation eines Lymph- oder eines Lipödems</h2><tt>https://posithera.de/fhir/ValueSet/CDS_LokalisationOedem</tt><p>CDS - Lokalisation eines Lymph- oder eines Lipödems</p></div>"
+  }
+}
