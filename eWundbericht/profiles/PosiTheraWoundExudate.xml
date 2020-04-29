@@ -1,5 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <url value="https://posithera.de/fhir/eWundbericht/StructureDefinition/WoundExudateNKDUC" />
+  <url value="https://posithera.de/fhir/eWundbericht/StructureDefinition/WoundExudate" />
   <name value="PosiTheraWoundExudate" />
   <status value="draft" />
   <fhirVersion value="4.0.1" />
@@ -235,13 +236,13 @@
       <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
         <valueCode value="4.0.0" />
       </extension>
-      <path value="Observation.component.value[x]" />
+      <path value="Observation.component.valueCodeableConcept" />
       <sliceName value="valueCodeableConcept" />
       <type>
         <code value="CodeableConcept" />
       </type>
       <binding>
-        <strength value="required" />
+        <strength value="example" />
         <valueSet value="https://posithera.de/ValueSet/Exsudatmenge" />
       </binding>
     </element>
@@ -328,13 +329,13 @@
       <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
         <valueCode value="4.0.0" />
       </extension>
-      <path value="Observation.component.value[x]" />
+      <path value="Observation.component.valueCodeableConcept" />
       <sliceName value="valueCodeableConcept" />
       <type>
         <code value="CodeableConcept" />
       </type>
       <binding>
-        <strength value="required" />
+        <strength value="example" />
         <valueSet value="https://posithera.de/ValueSet/Exsudatbeschaffenheit" />
       </binding>
     </element>

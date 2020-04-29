@@ -30,7 +30,7 @@
       </ul>
     </div>
   </text>
-  <url value="https://posithera.de/fhir/eWundbericht/ValueSet/education-code" />
+  <url value="https://posithera.de/fhir/eWundbericht/ValueSet/EducationCode" />
   <version value="4.0.0" />
   <name value="EducationCode" />
   <title value="Edukation Code" />

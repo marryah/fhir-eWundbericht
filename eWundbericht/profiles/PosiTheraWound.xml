@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="e5682133-da3a-4088-9039-4ed7174205b5" />
   <meta>
@@ -170,6 +171,7 @@
       <type>
         <code value="Reference" />
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/Patient" />
+        <targetProfile value="https://posithera.de/fhir/eWundbericht/StructureDefinition/Patient" />
       </type>
     </element>
     <element id="Condition.onset[x]">
@@ -180,26 +182,12 @@
         <valueCode value="4.0.0" />
       </extension>
       <path value="Condition.onset[x]" />
-      <slicing>
-        <discriminator>
-          <type value="type" />
-          <path value="$this" />
-        </discriminator>
-        <rules value="closed" />
-      </slicing>
-    </element>
-    <element id="Condition.onset[x]:onsetDateTime">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
-      <path value="Condition.onset[x]" />
-      <sliceName value="onsetDateTime" />
       <min value="1" />
       <type>
         <code value="dateTime" />
+      </type>
+      <type>
+        <code value="Period" />
       </type>
     </element>
     <element id="Condition.recordedDate">

@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <url value="https://posithera.de/fhir/eWundbericht/StructureDefinition/BodyStructure" />
   <name value="PosiTheraBodyStructure" />
@@ -19,7 +20,7 @@
       <path value="BodyStructure.location" />
       <binding>
         <strength value="extensible" />
-        <valueSet value="https://posithera.de/fhir/eWundbericht/ValueSet/Lower-leg-body-structure" />
+        <valueSet value="https://posithera.de/fhir/eWundbericht/ValueSet/LowerLegBodyStructure" />
       </binding>
     </element>
     <element id="BodyStructure.locationQualifier">

@@ -1,6 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <url value="https://posithera.de/fhir/eWundbericht/eWundbericht/StructureDefinition/EWSNutritionStatus" />
-  <name value="PosiTheraNutritionStatusEWS" />
+  <url value="https://posithera.de/fhir/eWundbericht/StructureDefinition/NutritionStatus" />
+  <name value="PosiTheraNutritionStatus" />
   <status value="draft" />
   <fhirVersion value="4.0.1" />
   <kind value="resource" />
@@ -76,6 +77,19 @@
       </extension>
       <path value="Observation.code.coding.code" />
       <fixedCode value="75305-3" />
+    </element>
+    <element id="Observation.subject">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
+      <path value="Observation.subject" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Patient" />
+      </type>
     </element>
     <element id="Observation.value[x]">
       <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">

@@ -1,5 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <url value="http://posithera.de/fhir/eWundbericht/StructureDefinition/WoundSummaryBundle" />
+  <url value="https://posithera.de/fhir/eWundbericht/StructureDefinition/Bundle" />
   <name value="PosiTheraWoundSummaryBundle" />
   <status value="draft" />
   <fhirVersion value="4.0.1" />
@@ -76,123 +77,6 @@
         <profile value="https://posithera.de/fhir/eWundbericht/StructureDefinition/EWoundSummary" />
       </type>
     </element>
-    <element id="Bundle.entry:composition.resource.type.coding">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
-      <path value="Bundle.entry.resource.type.coding" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="system" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
-      <min value="1" />
-    </element>
-    <element id="Bundle.entry:composition.resource.category.coding">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
-      <path value="Bundle.entry.resource.category.coding" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="system" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
-      <min value="1" />
-    </element>
-    <element id="Bundle.entry:composition.resource.section:anamnese">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name">
-        <valueString value="Section" />
-      </extension>
-      <path value="Bundle.entry.resource.section" />
-      <sliceName value="anamnese" />
-    </element>
-    <element id="Bundle.entry:composition.resource.section:anamnese.section">
-      <path value="Bundle.entry.resource.section.section" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="code.coding.code" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
-    </element>
-    <element id="Bundle.entry:composition.resource.section:diagnose">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name">
-        <valueString value="Section" />
-      </extension>
-      <path value="Bundle.entry.resource.section" />
-      <sliceName value="diagnose" />
-    </element>
-    <element id="Bundle.entry:composition.resource.section:diagnose.section">
-      <path value="Bundle.entry.resource.section.section" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="code.coding.code" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
-    </element>
-    <element id="Bundle.entry:composition.resource.section:therapie">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name">
-        <valueString value="Section" />
-      </extension>
-      <path value="Bundle.entry.resource.section" />
-      <sliceName value="therapie" />
-    </element>
-    <element id="Bundle.entry:composition.resource.section:therapie.section">
-      <path value="Bundle.entry.resource.section.section" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="code.coding.code" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
-    </element>
-    <element id="Bundle.entry:composition.resource.section:therapie.section:behandlungsplan">
-      <path value="Bundle.entry.resource.section.section" />
-      <sliceName value="behandlungsplan" />
-    </element>
-    <element id="Bundle.entry:composition.resource.section:therapie.section:behandlungsplan.section">
-      <path value="Bundle.entry.resource.section.section.section" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="code.coding.code" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
-    </element>
     <element id="Bundle.entry:patient">
       <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
         <valueCode value="normative" />
@@ -211,7 +95,7 @@
       <max value="1" />
       <type>
         <code value="Resource" />
-        <profile value="http://hl7.org/fhir/StructureDefinition/Patient" />
+        <profile value="https://posithera.de/fhir/eWundbericht/StructureDefinition/Patient" />
       </type>
     </element>
     <element id="Bundle.entry:resource">

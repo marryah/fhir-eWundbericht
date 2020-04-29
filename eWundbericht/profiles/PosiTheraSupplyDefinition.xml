@@ -1,5 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <url value="http://posithera.de/fhir/eWundbericht/StructureDefinition/PosiTheraSupplyDefinition" />
+  <url value="https://posithera.de/fhir/eWundbericht/StructureDefinition/PosiTheraSupplyDefinition" />
   <name value="PosiTheraSupplyDefinition" />
   <status value="draft" />
   <fhirVersion value="4.0.1" />

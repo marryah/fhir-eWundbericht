@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="ad8cf332-0409-4a14-8099-6b7685b8e0c4" />
   <meta>
@@ -49,8 +50,8 @@
       <path value="Observation.code.coding" />
       <slicing>
         <discriminator>
-          <type value="pattern" />
-          <path value="$this" />
+          <type value="value" />
+          <path value="system" />
         </discriminator>
         <rules value="open" />
       </slicing>
@@ -188,6 +189,21 @@
       <min value="1" />
       <max value="1" />
     </element>
+    <element id="Observation.component:WoundLength.code">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
+      <path value="Observation.component.code" />
+      <patternCodeableConcept>
+        <coding>
+          <system value="http://loinc.org" />
+          <code value="39126-8" />
+        </coding>
+      </patternCodeableConcept>
+    </element>
     <element id="Observation.component:WoundLength.code.coding">
       <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
         <valueCode value="normative" />
@@ -204,6 +220,10 @@
         <rules value="open" />
       </slicing>
       <min value="1" />
+      <patternCoding>
+        <system value="http://loinc.org" />
+        <code value="39126-8" />
+      </patternCoding>
     </element>
     <element id="Observation.component:WoundLength.code.coding:loinc">
       <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
@@ -237,7 +257,7 @@
       </extension>
       <path value="Observation.component.code.coding.code" />
       <min value="1" />
-      <patternCode value="39126-8" />
+      <fixedCode value="39126-8" />
     </element>
     <element id="Observation.component:WoundLength.value[x]">
       <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
@@ -330,6 +350,21 @@
       <min value="1" />
       <max value="1" />
     </element>
+    <element id="Observation.component:WoundWidth.code">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
+      <path value="Observation.component.code" />
+      <patternCodeableConcept>
+        <coding>
+          <system value="http://loinc.org" />
+          <code value="39125-0" />
+        </coding>
+      </patternCodeableConcept>
+    </element>
     <element id="Observation.component:WoundWidth.code.coding">
       <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
         <valueCode value="normative" />
@@ -346,6 +381,13 @@
         <rules value="open" />
       </slicing>
       <min value="1" />
+      <example>
+        <label value="WoundWidth" />
+        <valueCoding>
+          <system value="http://loinc.org" />
+          <code value="39125-0" />
+        </valueCoding>
+      </example>
     </element>
     <element id="Observation.component:WoundWidth.code.coding:loinc">
       <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
@@ -379,7 +421,7 @@
       </extension>
       <path value="Observation.component.code.coding.code" />
       <min value="1" />
-      <patternCode value="39125-0" />
+      <fixedCode value="39125-0" />
     </element>
     <element id="Observation.component:WoundWidth.value[x]">
       <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
@@ -470,6 +512,21 @@
       <sliceName value="WoundDepth" />
       <max value="1" />
     </element>
+    <element id="Observation.component:WoundDepth.code">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
+      <path value="Observation.component.code" />
+      <patternCodeableConcept>
+        <coding>
+          <system value="http://loinc.org" />
+          <code value="39114-4" />
+        </coding>
+      </patternCodeableConcept>
+    </element>
     <element id="Observation.component:WoundDepth.code.coding">
       <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
         <valueCode value="normative" />
@@ -519,7 +576,7 @@
       </extension>
       <path value="Observation.component.code.coding.code" />
       <min value="1" />
-      <patternCode value="39114-4" />
+      <fixedCode value="39114-4" />
     </element>
     <element id="Observation.component:WoundDepth.value[x]">
       <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
@@ -550,6 +607,21 @@
       <sliceName value="WoundArea" />
       <min value="1" />
       <max value="1" />
+    </element>
+    <element id="Observation.component:WoundArea.code">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
+      <path value="Observation.component.code" />
+      <patternCodeableConcept>
+        <coding>
+          <system value="http://loinc.org" />
+          <code value="89260-4" />
+        </coding>
+      </patternCodeableConcept>
     </element>
     <element id="Observation.component:WoundArea.code.coding">
       <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
@@ -600,7 +672,7 @@
       </extension>
       <path value="Observation.component.code.coding.code" />
       <min value="1" />
-      <patternCode value="89260-4" />
+      <fixedCode value="89260-4" />
     </element>
     <element id="Observation.component:WoundArea.value[x]">
       <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
