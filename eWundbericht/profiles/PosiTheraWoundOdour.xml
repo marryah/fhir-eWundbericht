@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <url value="https://posithera.de/fhir/eWundbericht/StructureDefinition/WoundOdor" />
   <name value="PosiTheraWoundOdour" />
@@ -100,7 +101,7 @@
       <path value="Observation.subject" />
       <type>
         <code value="Reference" />
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Patient" />
+        <targetProfile value="https://posithera.de/fhir/eWundbericht/StructureDefinition/Patient" />
       </type>
     </element>
     <element id="Observation.focus">

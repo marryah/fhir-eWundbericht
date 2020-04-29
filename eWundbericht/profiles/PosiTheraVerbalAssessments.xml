@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <url value="https://posithera.de/fhir/eWundbericht/StructureDefinition/VerbalAssessments" />
   <name value="PosiTheraVerbalAssessments" />
@@ -31,9 +32,10 @@
         <valueCode value="4.0.0" />
       </extension>
       <path value="Observation.subject" />
+      <min value="1" />
       <type>
         <code value="Reference" />
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Patient" />
+        <targetProfile value="https://posithera.de/fhir/eWundbericht/StructureDefinition/Patient" />
       </type>
     </element>
     <element id="Observation.value[x]">

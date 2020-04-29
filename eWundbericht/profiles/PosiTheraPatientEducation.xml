@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <url value="https://posithera.de/fhir/eWundbericht/StructureDefinition/Education" />
   <name value="PosiTheraEducation" />
@@ -41,6 +42,19 @@
         <strength value="example" />
         <valueSet value="https://posithera.de/fhir/eWundbericht/ValueSet/education-code" />
       </binding>
+    </element>
+    <element id="Procedure.subject">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
+      <path value="Procedure.subject" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="https://posithera.de/fhir/eWundbericht/StructureDefinition/Patient" />
+      </type>
     </element>
     <element id="Procedure.performed[x]">
       <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">

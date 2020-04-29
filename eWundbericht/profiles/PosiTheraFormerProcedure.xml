@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <url value="https://posithera.de/fhir/eWundbericht/StructureDefinition/FormerProcedure" />
   <name value="PosiTheraFormerProcedure" />
@@ -52,6 +53,19 @@
       </extension>
       <path value="Procedure.status" />
       <fixedCode value="completed" />
+    </element>
+    <element id="Procedure.subject">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
+      <path value="Procedure.subject" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="https://posithera.de/fhir/eWundbericht/StructureDefinition/Patient" />
+      </type>
     </element>
   </differential>
 </StructureDefinition>

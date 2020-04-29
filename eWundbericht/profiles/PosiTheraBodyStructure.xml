@@ -36,5 +36,18 @@
         <valueSet value="https://posithera.de/fhir/eWundbericht/ValueSet/Laterality" />
       </binding>
     </element>
+    <element id="BodyStructure.patient">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
+      <path value="BodyStructure.patient" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="https://posithera.de/fhir/eWundbericht/StructureDefinition/Patient" />
+      </type>
+    </element>
   </differential>
 </StructureDefinition>
