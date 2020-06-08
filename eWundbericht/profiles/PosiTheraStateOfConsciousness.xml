@@ -144,6 +144,7 @@
       </extension>
       <path value="Observation.component" />
       <sliceName value="quantity" />
+      <max value="1" />
     </element>
     <element id="Observation.component:quantity.code.coding">
       <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
@@ -185,6 +186,19 @@
         <code value="CodeableConcept" />
       </type>
     </element>
+    <element id="Observation.component:quantity.value[x].coding">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
+      <path value="Observation.component.value[x].coding" />
+      <binding>
+        <strength value="preferred" />
+        <valueSet value="https://posithera.de/fhir/eWundbericht/ValueSet/Bewusstseinslevel_quantitativ" />
+      </binding>
+    </element>
     <element id="Observation.component:quality">
       <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
         <valueCode value="normative" />
@@ -194,6 +208,7 @@
       </extension>
       <path value="Observation.component" />
       <sliceName value="quality" />
+      <max value="1" />
     </element>
     <element id="Observation.component:quality.code.coding">
       <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
@@ -234,6 +249,10 @@
       <type>
         <code value="CodeableConcept" />
       </type>
+      <binding>
+        <strength value="preferred" />
+        <valueSet value="https://posithera.de/fhir/eWundbericht/ValueSet/Bewusstseinslevel_qualitativ" />
+      </binding>
     </element>
   </differential>
 </StructureDefinition>

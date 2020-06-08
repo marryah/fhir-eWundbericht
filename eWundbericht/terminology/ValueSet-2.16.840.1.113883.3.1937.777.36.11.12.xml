@@ -1,0 +1,29 @@
+<ValueSet xmlns="http://hl7.org/fhir">
+    <meta>
+        <profile value="http://hl7.org/fhir/StructureDefinition/shareablevalueset"/><!--<profile value="http://hl7.org/fhir/4.0/StructureDefinition/ValueSet"/>-->
+    </meta>
+    <url value="https://posithera.de/fhir/eWundbericht/ValueSet/Wundrand"/>
+    <identifier>
+        <use value="official"/>
+        <system value="http://art-decor.org/ns/oids/vs"/>
+        <value value="2.16.840.1.113883.3.1937.777.36.11.12"/>
+    </identifier>
+    <version value="2019-10-07T08:17:17"/>
+    <name value="WoundEdge"/>
+    <title value="Wundrand"/>
+    <status value="draft"/>
+    <experimental value="false"/>
+    <publisher value="Hochschule Osnabrück"/>
+    <description value="Wundrand"/>
+    <immutable value="false"/>
+    <compose>
+        <include>
+            <system value="urn:oid:2.16.840.1.1138836.96"/>
+            <filter>
+                <property value="concept"/>
+                <op value="is-a"/>
+                <value value="449747006"/>
+            </filter>
+        </include>
+    </compose>
+</ValueSet>

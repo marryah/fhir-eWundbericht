@@ -1,0 +1,102 @@
+<ValueSet xmlns="http://hl7.org/fhir">
+    <meta>
+        <profile value="http://hl7.org/fhir/StructureDefinition/shareablevalueset"/><!--<profile value="http://hl7.org/fhir/4.0/StructureDefinition/ValueSet"/>-->
+    </meta>
+    <url value="https://posithera.de/fhir/eWundbericht/ValueSet/Wundschmerz"/>
+    <identifier>
+        <use value="official"/>
+        <system value="http://art-decor.org/ns/oids/vs"/>
+        <value value="2.16.840.1.113883.3.1937.777.36.11.16"/>
+    </identifier>
+    <version value="2019-11-05T11:20:05"/>
+    <name value="woundrelatedPainVAS"/>
+    <title value="Wundbezogener Schmerz (VAS, SNOMED)"/>
+    <status value="draft"/>
+    <experimental value="false"/>
+    <publisher value="Hochschule Osnabrück"/>
+    <description value="Wundbezogener Schmerz (VAS, SNOMED)"/>
+    <immutable value="false"/>
+    <copyright value="This artefact includes content from SNOMED Clinical Terms® (SNOMED CT®) which is copyright of the International Health Terminology Standards Development Organisation (IHTSDO). Implementers of these artefacts must have the appropriate SNOMED CT Affiliate license - for more information contact http://www.snomed.org/snomed-ct/getsnomed-ct or info@snomed.org."/>
+    <compose>
+        <include>
+            <system value="http://snomed.info/sct"/>
+            <concept>
+                <extension url="http://hl7.org/fhir/StructureDefinition/valueset-ordinalValue">
+                    <valueDecimal value="0"/>
+                </extension>
+                <code value="258317007"/>
+                <display value="0"/>
+            </concept>
+            <concept>
+                <extension url="http://hl7.org/fhir/StructureDefinition/valueset-ordinalValue">
+                    <valueDecimal value="1"/>
+                </extension>
+                <code value="38112003"/>
+                <display value="1"/>
+            </concept>
+            <concept>
+                <extension url="http://hl7.org/fhir/StructureDefinition/valueset-ordinalValue">
+                    <valueDecimal value="2"/>
+                </extension>
+                <code value="19338005"/>
+                <display value="2"/>
+            </concept>
+            <concept>
+                <extension url="http://hl7.org/fhir/StructureDefinition/valueset-ordinalValue">
+                    <valueDecimal value="3"/>
+                </extension>
+                <code value="79605009"/>
+                <display value="3"/>
+            </concept>
+            <concept>
+                <extension url="http://hl7.org/fhir/StructureDefinition/valueset-ordinalValue">
+                    <valueDecimal value="4"/>
+                </extension>
+                <code value="9362000"/>
+                <display value="4"/>
+            </concept>
+            <concept>
+                <extension url="http://hl7.org/fhir/StructureDefinition/valueset-ordinalValue">
+                    <valueDecimal value="5"/>
+                </extension>
+                <code value="34001005"/>
+                <display value="5"/>
+            </concept>
+            <concept>
+                <extension url="http://hl7.org/fhir/StructureDefinition/valueset-ordinalValue">
+                    <valueDecimal value="6"/>
+                </extension>
+                <code value="68244004"/>
+                <display value="6"/>
+            </concept>
+            <concept>
+                <extension url="http://hl7.org/fhir/StructureDefinition/valueset-ordinalValue">
+                    <valueDecimal value="7"/>
+                </extension>
+                <code value="65607009"/>
+                <display value="7"/>
+            </concept>
+            <concept>
+                <extension url="http://hl7.org/fhir/StructureDefinition/valueset-ordinalValue">
+                    <valueDecimal value="8"/>
+                </extension>
+                <code value="7319005"/>
+                <display value="8"/>
+            </concept>
+            <concept>
+                <extension url="http://hl7.org/fhir/StructureDefinition/valueset-ordinalValue">
+                    <valueDecimal value="9"/>
+                </extension>
+                <code value="36987007"/>
+                <display value="9"/>
+            </concept>
+            <concept>
+                <extension url="http://hl7.org/fhir/StructureDefinition/valueset-ordinalValue">
+                    <valueDecimal value="10"/>
+                </extension>
+                <code value="3445001"/>
+                <display value="10"/>
+            </concept>
+        </include>
+    </compose>
+</ValueSet>

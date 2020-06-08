@@ -285,12 +285,16 @@
       <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
         <valueCode value="4.0.0" />
       </extension>
-      <path value="Observation.component.value[x]" />
+      <path value="Observation.component.valueQuantity" />
       <sliceName value="valueQuantity" />
       <min value="1" />
       <type>
         <code value="Quantity" />
       </type>
+      <binding>
+        <strength value="required" />
+        <valueSet value="https://posithera.de/fhir/eWundebericht/ValueSet/Wundgroesseneinheit" />
+      </binding>
     </element>
     <element id="Observation.component:WoundLength.value[x]:valueQuantity.value">
       <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
@@ -299,7 +303,7 @@
       <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
         <valueCode value="4.0.0" />
       </extension>
-      <path value="Observation.component.value[x].value" />
+      <path value="Observation.component.valueQuantity.value" />
       <min value="1" />
     </element>
     <element id="Observation.component:WoundLength.value[x]:valueQuantity.unit">
@@ -312,7 +316,7 @@
       <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
         <valueBoolean value="true" />
       </extension>
-      <path value="Observation.component.value[x].unit" />
+      <path value="Observation.component.valueQuantity.unit" />
       <min value="1" />
       <fixedString value="cm" />
     </element>
@@ -323,7 +327,7 @@
       <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
         <valueCode value="4.0.0" />
       </extension>
-      <path value="Observation.component.value[x].system" />
+      <path value="Observation.component.valueQuantity.system" />
       <min value="1" />
       <fixedUri value="http://unitsofmeasure.org" />
     </element>
@@ -334,7 +338,7 @@
       <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
         <valueCode value="4.0.0" />
       </extension>
-      <path value="Observation.component.value[x].code" />
+      <path value="Observation.component.valueQuantity.code" />
       <min value="1" />
       <fixedCode value="cm" />
     </element>
@@ -449,12 +453,16 @@
       <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
         <valueCode value="4.0.0" />
       </extension>
-      <path value="Observation.component.value[x]" />
+      <path value="Observation.component.valueQuantity" />
       <sliceName value="valueQuantity" />
       <min value="1" />
       <type>
         <code value="Quantity" />
       </type>
+      <binding>
+        <strength value="required" />
+        <valueSet value="https://posithera.de/fhir/eWundebericht/ValueSet/Wundgroesseneinheit" />
+      </binding>
     </element>
     <element id="Observation.component:WoundWidth.value[x]:valueQuantity.value">
       <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
@@ -463,7 +471,7 @@
       <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
         <valueCode value="4.0.0" />
       </extension>
-      <path value="Observation.component.value[x].value" />
+      <path value="Observation.component.valueQuantity.value" />
       <min value="1" />
     </element>
     <element id="Observation.component:WoundWidth.value[x]:valueQuantity.unit">
@@ -476,7 +484,7 @@
       <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
         <valueBoolean value="true" />
       </extension>
-      <path value="Observation.component.value[x].unit" />
+      <path value="Observation.component.valueQuantity.unit" />
       <min value="1" />
       <fixedString value="cm" />
     </element>
@@ -487,7 +495,7 @@
       <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
         <valueCode value="4.0.0" />
       </extension>
-      <path value="Observation.component.value[x].system" />
+      <path value="Observation.component.valueQuantity.system" />
       <min value="1" />
       <fixedUri value="http://unitsofmeasure.org" />
     </element>
@@ -498,7 +506,7 @@
       <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
         <valueCode value="4.0.0" />
       </extension>
-      <path value="Observation.component.value[x].code" />
+      <path value="Observation.component.valueQuantity.code" />
       <fixedCode value="cm" />
     </element>
     <element id="Observation.component:WoundDepth">
@@ -595,6 +603,10 @@
       <type>
         <code value="string" />
       </type>
+      <binding>
+        <strength value="required" />
+        <valueSet value="https://posithera.de/fhir/eWundebericht/ValueSet/Wundgroesseneinheit" />
+      </binding>
     </element>
     <element id="Observation.component:WoundArea">
       <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
@@ -700,44 +712,15 @@
       <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
         <valueCode value="4.0.0" />
       </extension>
-      <path value="Observation.component.value[x]" />
+      <path value="Observation.component.valueQuantity" />
       <sliceName value="valueQuantity" />
       <type>
         <code value="Quantity" />
       </type>
-    </element>
-    <element id="Observation.component:WoundArea.value[x]:valueQuantity.unit">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Observation.component.value[x].unit" />
-      <fixedString value="cm2" />
-    </element>
-    <element id="Observation.component:WoundArea.value[x]:valueQuantity.system">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
-      <path value="Observation.component.value[x].system" />
-      <fixedUri value="http://unitsofmeasure.org" />
-    </element>
-    <element id="Observation.component:WoundArea.value[x]:valueQuantity.code">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
-      <path value="Observation.component.value[x].code" />
-      <fixedCode value="cm2" />
+      <binding>
+        <strength value="required" />
+        <valueSet value="https://posithera.de/fhir/eWundbericht/ValueSet/Flaecheneinheit" />
+      </binding>
     </element>
   </differential>
 </StructureDefinition>

@@ -1,0 +1,40 @@
+<ValueSet xmlns="http://hl7.org/fhir">
+    <meta>
+        <profile value="http://hl7.org/fhir/StructureDefinition/shareablevalueset"/>
+    </meta>
+    <url value="https://posithera.de/fhir/eWundbericht/ValueSet/Wunddauereinheit"/>
+    <identifier>
+        <use value="official"/>
+        <system value="http://art-decor.org/ns/oids/vs"/>
+        <value value="2.16.840.1.113883.3.1937.777.36.11.3"/>
+    </identifier>
+    <version value="0.0.1"/>
+    <name value="Wunddauereinheiten"/>
+    <title value="Wunddauereinheiten"/>
+    <status value="draft"/>
+    <experimental value="false"/>
+    <publisher value="Hochschule Osnabrück"/>
+    <description value="Wunddauereinheiten"/>
+    <immutable value="false"/>
+    <compose>
+        <include>
+            <system value="http://unitsofmeasure.org"/>
+            <concept>
+                <code value="d"/>
+                <display value="Day"/>
+            </concept>
+            <concept>
+                <code value="wk"/>
+                <display value="Week"/>
+            </concept>
+            <concept>
+                <code value="mo"/>
+                <display value="Month"/>
+            </concept>
+            <concept>
+                <code value="a"/>
+                <display value="Year"/>
+            </concept>
+        </include>
+    </compose>
+</ValueSet>

@@ -122,7 +122,7 @@
       </type>
       <binding>
         <strength value="example" />
-        <valueSet value="https://posithera.de/fhir/ValueSet/Wundrand" />
+        <valueSet value="https://posithera.de/fhir/eWundbericht/ValueSet/Wundrand" />
       </binding>
     </element>
     <element id="Observation.component">

@@ -1,0 +1,36 @@
+<ValueSet xmlns="http://hl7.org/fhir">
+    <meta>
+        <profile value="http://hl7.org/fhir/StructureDefinition/shareablevalueset"/>    
+    </meta>
+    <url value="https://posithera.de/fhir/eWundebericht/ValueSet/Wundgroesseneinheit"/>
+    <identifier>
+        <use value="official"/>
+        <system value="http://art-decor.org/ns/oids/vs"/>
+        <value value="2.16.840.1.113883.3.1937.777.36.11.1"/>
+    </identifier>
+    <version value="0.0.1"/>
+    <name value="Wundgrößeneinheiten"/>
+    <title value="Längeneinheiten"/>
+    <status value="draft"/>
+    <experimental value="false"/>
+    <publisher value="Hochschule Osnabrück"/>
+    <description value="Längeneinheiten"/>
+    <immutable value="false"/>
+    <compose>
+        <include>
+            <system value="http://unitsofmeasure.org"/>
+            <concept>
+                <code value="mm"/>
+                <display value="millimeter"/>
+            </concept>
+            <concept>
+                <code value="cm"/>
+                <display value="centimeter"/>
+            </concept>
+            <concept>
+                <code value="dm"/>
+                <display value="decimeter"/>
+            </concept>
+        </include>
+    </compose>
+</ValueSet>

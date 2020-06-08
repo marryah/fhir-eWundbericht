@@ -133,7 +133,7 @@
       </type>
       <binding>
         <strength value="preferred" />
-        <valueSet value="https://posithera.de/fhir/eWundbericht/ValueSet/Wundrand" />
+        <valueSet value="https://posithera.de/fhir/eWundbericht/ValueSet/Wundumgebung" />
       </binding>
     </element>
   </differential>

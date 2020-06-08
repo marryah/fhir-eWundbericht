@@ -1,0 +1,53 @@
+<ValueSet xmlns="http://hl7.org/fhir">
+    <meta>
+        <profile value="http://hl7.org/fhir/StructureDefinition/shareablevalueset"/><!--<profile value="http://hl7.org/fhir/4.0/StructureDefinition/ValueSet"/>-->
+    </meta>
+    <url value="https://posithera.de/fhir/eWundbericht/ValueSet/Wundgrund"/>
+    <identifier>
+        <use value="official"/>
+        <system value="http://art-decor.org/ns/oids/vs"/>
+        <value value="2.16.840.1.113883.3.1937.777.36.11.11"/>
+    </identifier>
+    <version value="0.1.0"/>
+    <name value="Woundbase"/>
+    <title value="Wundgrund (SNOMED)"/>
+    <status value="draft"/>
+    <experimental value="false"/>
+    <publisher value="Hochschule Osnabrück"/>
+    <description value="Dieses Valueset ist ein Beispiel, wie der Wundgrund mit SNOMED CT codiert werden kann.Fettgewebe fehlt (SNOMED-Code?)"/>
+    <immutable value="false"/>
+    <compose>
+        <include>
+            <system value="urn:oid:2.16.840.1.1138836.96"/>
+            <filter>
+                <property value="concept"/>
+                <op value="is-a"/>
+                <value value="53534000"/>
+            </filter>
+        </include>
+        <include>
+            <system value="urn:oid:2.16.840.1.1138836.96"/>
+            <filter>
+                <property value="concept"/>
+                <op value="is-a"/>
+                <value value="71616004"/>
+            </filter>
+        </include>
+        <include>
+            <system value="urn:oid:2.16.840.1.1138836.96"/>
+            <filter>
+                <property value="concept"/>
+                <op value="is-a"/>
+                <value value="3024002"/>
+            </filter>
+        </include>
+        <include>
+            <system value="urn:oid:2.16.840.1.1138836.96"/>
+            <filter>
+                <property value="concept"/>
+                <op value="is-a"/>
+                <value value="272673000"/>
+            </filter>
+        </include>
+    </compose>
+</ValueSet>

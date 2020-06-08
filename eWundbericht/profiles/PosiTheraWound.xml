@@ -81,6 +81,10 @@
       </extension>
       <path value="Condition.code.coding" />
       <sliceName value="SNOMED" />
+      <binding>
+        <strength value="extensible" />
+        <valueSet value="https://posithera.de/fhir/eWundbericht/ValueSet/Wundart" />
+      </binding>
     </element>
     <element id="Condition.code.coding:SNOMED.system">
       <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
@@ -158,6 +162,23 @@
       <binding>
         <strength value="example" />
         <valueSet value="https://posithera.de/fhir/eWundbericht/ValueSet/LowerLegBodyStructure" />
+      </binding>
+    </element>
+    <element id="Condition.bodySite:snomed">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
+      <path value="Condition.bodySite" />
+      <sliceName value="snomed" />
+      <binding>
+        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+          <valueString value="BodySite" />
+        </extension>
+        <strength value="extensible" />
+        <valueSet value="https://posithera.de/fhir/eWundbericht/ValueSet/Wundlokalisation" />
       </binding>
     </element>
     <element id="Condition.subject">

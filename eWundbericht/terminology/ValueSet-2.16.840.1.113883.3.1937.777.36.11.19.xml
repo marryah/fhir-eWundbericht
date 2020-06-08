@@ -1,0 +1,38 @@
+<ValueSet xmlns="http://hl7.org/fhir">
+    <meta>
+        <profile value="http://hl7.org/fhir/StructureDefinition/shareablevalueset"/><!--<profile value="http://hl7.org/fhir/4.0/StructureDefinition/ValueSet"/>-->
+    </meta>
+    <url value="https://posithera.de/fhir/eWundbericht/ValueSet/Verbandszweck"/>
+    <identifier>
+        <use value="official"/>
+        <system value="http://art-decor.org/ns/oids/vs"/>
+        <value value="2.16.840.1.113883.3.1937.777.36.11.19"/>
+    </identifier>
+    <version value="2020-03-09T14:07:57"/>
+    <name value="Verbandszweck"/>
+    <title value="Verbandszweck"/>
+    <status value="draft"/>
+    <experimental value="false"/>
+    <publisher value="Hochschule Osnabrück"/>
+    <description value="Verbandszweck"/>
+    <immutable value="false"/>
+    <compose>
+        <include>
+            <system value="http://loinc.org"/>
+            <concept>
+                <extension url="http://hl7.org/fhir/StructureDefinition/valueset-concept-comments">
+                    <valueString value="Primärverband"/>
+                </extension>
+                <code value="LA19070-4"/>
+                <display value="Primary dressing"/>
+            </concept>
+            <concept>
+                <extension url="http://hl7.org/fhir/StructureDefinition/valueset-concept-comments">
+                    <valueString value="Sekundärverband"/>
+                </extension>
+                <code value="LA19071-2"/>
+                <display value="Secondary dressing"/>
+            </concept>
+        </include>
+    </compose>
+</ValueSet>

@@ -236,14 +236,14 @@
       <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
         <valueCode value="4.0.0" />
       </extension>
-      <path value="Observation.component.value[x]" />
+      <path value="Observation.component.valueCodeableConcept" />
       <sliceName value="valueCodeableConcept" />
       <type>
         <code value="CodeableConcept" />
       </type>
       <binding>
         <strength value="example" />
-        <valueSet value="https://posithera.de/ValueSet/Exsudatmenge" />
+        <valueSet value="https://posithera.de/fhir/eWundbericht/ValueSet/Exsudatmenge" />
       </binding>
     </element>
     <element id="Observation.component:amountOfExudate.interpretation">
@@ -329,14 +329,14 @@
       <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
         <valueCode value="4.0.0" />
       </extension>
-      <path value="Observation.component.value[x]" />
+      <path value="Observation.component.valueCodeableConcept" />
       <sliceName value="valueCodeableConcept" />
       <type>
         <code value="CodeableConcept" />
       </type>
       <binding>
         <strength value="example" />
-        <valueSet value="https://posithera.de/ValueSet/Exsudatbeschaffenheit" />
+        <valueSet value="https://posithera.de/fhir/eWundbericht/ValueSet/Exsudatfarbe" />
       </binding>
     </element>
     <element id="Observation.component:qualityOfExudate.interpretation">
