@@ -41,12 +41,6 @@
   <derivation value="constraint" />
   <differential>
     <element id="Observation.code.coding">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Observation.code.coding" />
       <binding>
         <strength value="preferred" />
@@ -54,12 +48,6 @@
       </binding>
     </element>
     <element id="Observation.subject">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Observation.subject" />
       <type>
         <code value="Reference" />
@@ -67,12 +55,6 @@
       </type>
     </element>
     <element id="Observation.focus">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="trial-use" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Observation.focus" />
       <type>
         <code value="Reference" />
@@ -82,12 +64,6 @@
       </type>
     </element>
     <element id="Observation.value[x]">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Observation.value[x]" />
       <type>
         <code value="CodeableConcept" />
@@ -98,12 +74,6 @@
       </binding>
     </element>
     <element id="Observation.specimen">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Observation.specimen" />
       <max value="0" />
     </element>

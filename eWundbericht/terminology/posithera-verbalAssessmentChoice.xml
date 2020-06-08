@@ -15,13 +15,17 @@
     <name value="Mareike Przysucha" />
     <telecom>
       <system value="email" />
-      <value value="m.przysucha@hs-osnabrueck.de" />
+      <value value="ewundbericht@hs-osnabrueck.de" />
     </telecom>
   </contact>
-  <description value="Ulcusrelevante Medikamente" />
+  <description value="LOINC-Codes für die verbal beschriebenen Einschätzungen" />
   <compose>
     <include>
       <system value="http://loinc.org" />
+      <concept>
+      	<code value="11323-3"/>
+      	<display value="General health"/>
+      </concept>
       <concept>
         <code value="11345-6" />
         <display value="Other social factors" />

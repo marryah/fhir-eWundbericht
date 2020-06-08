@@ -1,0 +1,35 @@
+<Observation xmlns="http://hl7.org/fhir">
+	<meta>
+		<profile
+			value="https://posithera.de/fhir/eWundbericht/StructureDefinition/WoundRelatedPain" />
+	</meta>
+	<status value="final" />
+	<category>
+		<coding>
+			<system
+				value="http://hl7.org/fhir/ValueSet/observation-category" />
+			<code value="exam" />
+		</coding>
+	</category>
+	<code>
+		<coding>
+			<system value="http://snomed.info/sct" />
+			<code value="443394008" />
+			<display value="Visual analog scale pain score" />
+		</coding>
+	</code>
+	<subject>
+		<reference value="Patient/example" />
+	</subject>
+	<focus>
+		<reference value="Condition/woundExample" />
+	</focus>
+	<effectiveDateTime value="2019-08-21" />
+	<valueCodeableConcept>
+		<coding>
+			<system value="http://snomed.info/sct" />
+			<code value="19338005" />
+			<display value="2" />
+		</coding>
+	</valueCodeableConcept>
+</Observation>

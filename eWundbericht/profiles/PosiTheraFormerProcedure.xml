@@ -31,12 +31,6 @@
   <derivation value="constraint" />
   <differential>
     <element id="Procedure.basedOn">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Procedure.basedOn" />
       <min value="1" />
       <type>
@@ -45,26 +39,21 @@
       </type>
     </element>
     <element id="Procedure.status">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Procedure.status" />
       <fixedCode value="completed" />
     </element>
     <element id="Procedure.subject">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Procedure.subject" />
       <type>
         <code value="Reference" />
         <targetProfile value="https://posithera.de/fhir/eWundbericht/StructureDefinition/Patient" />
+      </type>
+    </element>
+    <element id="Procedure.reasonReference">
+      <path value="Procedure.reasonReference" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="https://posithera.de/fhir/eWundbericht/StructureDefinition/PosiTheraWound" />
       </type>
     </element>
   </differential>

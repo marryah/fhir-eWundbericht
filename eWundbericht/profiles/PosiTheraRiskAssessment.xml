@@ -12,12 +12,6 @@
   <derivation value="constraint" />
   <differential>
     <element id="RiskAssessment.code.coding">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="RiskAssessment.code.coding" />
       <slicing>
         <discriminator>
@@ -30,42 +24,18 @@
       <max value="1" />
     </element>
     <element id="RiskAssessment.code.coding:generalRiskAssessment">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="RiskAssessment.code.coding" />
       <sliceName value="generalRiskAssessment" />
     </element>
     <element id="RiskAssessment.code.coding:generalRiskAssessment.system">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="RiskAssessment.code.coding.system" />
       <fixedUri value="http://loinc.org" />
     </element>
     <element id="RiskAssessment.code.coding:generalRiskAssessment.code">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="RiskAssessment.code.coding.code" />
       <fixedCode value="71482-4" />
     </element>
     <element id="RiskAssessment.code.coding:generalRiskAssessment.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
         <valueBoolean value="true" />
       </extension>
@@ -73,12 +43,6 @@
       <fixedString value="Risk assessment" />
     </element>
     <element id="RiskAssessment.subject">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="RiskAssessment.subject" />
       <type>
         <code value="Reference" />
@@ -86,12 +50,6 @@
       </type>
     </element>
     <element id="RiskAssessment.condition">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="RiskAssessment.condition" />
       <type>
         <code value="Reference" />

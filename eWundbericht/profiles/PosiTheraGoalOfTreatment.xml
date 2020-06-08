@@ -11,12 +11,6 @@
   <derivation value="constraint" />
   <differential>
     <element id="Goal.description.coding">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Goal.description.coding" />
       <slicing>
         <discriminator>
@@ -27,12 +21,6 @@
       </slicing>
     </element>
     <element id="Goal.description.coding:nkduc">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Goal.description.coding" />
       <sliceName value="nkduc" />
       <binding>
@@ -41,12 +29,6 @@
       </binding>
     </element>
     <element id="Goal.subject">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Goal.subject" />
       <type>
         <code value="Reference" />
@@ -54,12 +36,6 @@
       </type>
     </element>
     <element id="Goal.addresses">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Goal.addresses" />
       <type>
         <code value="Reference" />

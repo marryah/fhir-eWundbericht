@@ -17,32 +17,14 @@
   <derivation value="constraint" />
   <differential>
     <element id="Condition.clinicalStatus">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Condition.clinicalStatus" />
       <min value="1" />
     </element>
     <element id="Condition.code">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Condition.code" />
       <min value="1" />
     </element>
     <element id="Condition.code.coding">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Condition.code.coding" />
       <slicing>
         <discriminator>
@@ -53,32 +35,14 @@
       </slicing>
     </element>
     <element id="Condition.code.coding:ICD10">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Condition.code.coding" />
       <sliceName value="ICD10" />
     </element>
     <element id="Condition.code.coding:ICD10.system">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Condition.code.coding.system" />
       <fixedUri value="http://fhir.de/CodeSystem/dimdi/icd-10-gm" />
     </element>
     <element id="Condition.code.coding:SNOMED">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Condition.code.coding" />
       <sliceName value="SNOMED" />
       <binding>
@@ -87,22 +51,10 @@
       </binding>
     </element>
     <element id="Condition.code.coding:SNOMED.system">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Condition.code.coding.system" />
       <fixedUri value="http://snomed.info/sct" />
     </element>
     <element id="Condition.bodySite">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Condition.bodySite" />
       <slicing>
         <discriminator>
@@ -115,24 +67,12 @@
       <definition value="The anatomical location where this condition manifests itself. It only allows loctions of lower leg. The ValueSet has been created in accordance to the &quot;Nationaler Konsensus zur Dokumentation des Ulcus Cruris&quot;" />
     </element>
     <element id="Condition.bodySite:laterality">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Condition.bodySite" />
       <sliceName value="laterality" />
       <min value="1" />
       <max value="1" />
     </element>
     <element id="Condition.bodySite:laterality.coding">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Condition.bodySite.coding" />
       <binding>
         <strength value="example" />
@@ -140,24 +80,12 @@
       </binding>
     </element>
     <element id="Condition.bodySite:bodySite">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Condition.bodySite" />
       <sliceName value="bodySite" />
       <min value="1" />
       <max value="1" />
     </element>
     <element id="Condition.bodySite:bodySite.coding">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Condition.bodySite.coding" />
       <binding>
         <strength value="example" />
@@ -165,12 +93,6 @@
       </binding>
     </element>
     <element id="Condition.bodySite:snomed">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Condition.bodySite" />
       <sliceName value="snomed" />
       <binding>
@@ -182,12 +104,6 @@
       </binding>
     </element>
     <element id="Condition.subject">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Condition.subject" />
       <type>
         <code value="Reference" />
@@ -195,12 +111,6 @@
       </type>
     </element>
     <element id="Condition.onset[x]">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Condition.onset[x]" />
       <min value="1" />
       <type>
@@ -211,12 +121,6 @@
       </type>
     </element>
     <element id="Condition.recordedDate">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Condition.recordedDate" />
       <min value="1" />
     </element>
