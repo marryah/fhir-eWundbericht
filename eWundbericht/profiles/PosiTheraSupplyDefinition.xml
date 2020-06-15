@@ -21,16 +21,10 @@
   <derivation value="constraint" />
   <differential>
     <element id="DeviceDefinition.type.coding">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="DeviceDefinition.type.coding" />
       <binding>
         <strength value="example" />
-        <valueSet value="https://posithera.de/fhir/eWundbericht/ValueSet/Supply" />
+        <valueSet value="https://posithera.de/fhir/eWundbericht/ValueSet/Hilfsmittel" />
       </binding>
     </element>
   </differential>

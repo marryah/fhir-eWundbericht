@@ -1,4 +1,5 @@
 <ValueSet xmlns="http://hl7.org/fhir">
+    <id value="2.16.840.1.113883.3.1937.777.36.11.4--20190712075059"/>
     <meta>
         <profile value="http://hl7.org/fhir/StructureDefinition/shareablevalueset"/><!--<profile value="http://hl7.org/fhir/4.0/StructureDefinition/ValueSet"/>-->
     </meta>
@@ -14,15 +15,29 @@
     <status value="draft"/>
     <experimental value="false"/>
     <publisher value="Hochschule Osnabrück"/>
-    <description value="ValueSet für die wundbezogenen Hilfsmittel, die im&#160;Wundbericht adressiert werden"/>
+    <description value="ValueSet für die wundbezogenen Hilfsmittel, die im&#160;Wundbericht adressiert werden&#xA;"/>
     <immutable value="false"/>
     <copyright value="This artefact includes content from SNOMED Clinical Terms® (SNOMED CT®) which is copyright of the International Health Terminology Standards Development Organisation (IHTSDO). Implementers of these artefacts must have the appropriate SNOMED CT Affiliate license - for more information contact http://www.snomed.org/snomed-ct/getsnomed-ct or info@snomed.org."/>
     <compose>
         <include>
             <system value="http://snomed.info/sct"/>
             <concept>
+                <extension url="http://hl7.org/fhir/StructureDefinition/valueset-concept-comments">
+                    <valueString value="Stuhl zur Druckentlastung"/>
+                </extension>
+                <code value="700669008+360902009"/>
+                <display value="Chair (physical object) and Pressure relief equipment (physical object)"/>
+            </concept>
+            <concept>
                 <code value="462451003"/>
                 <display value="Patient transfer system, manual (physical object) "/>
+            </concept>
+            <concept>
+                <extension url="http://hl7.org/fhir/StructureDefinition/valueset-concept-comments">
+                    <valueString value="Bettmatratze zur Druckentlastung"/>
+                </extension>
+                <code value="706100001+360902009"/>
+                <display value="Bed mattress (physical object) and Pressure relief equipment (physical object)"/>
             </concept>
         </include>
         <include>
@@ -38,23 +53,7 @@
             <filter>
                 <property value="concept"/>
                 <op value="descendent-of"/>
-                <value value="706100001"/>
-            </filter>
-        </include>
-        <include>
-            <system value="http://snomed.info/sct"/>
-            <filter>
-                <property value="concept"/>
-                <op value="descendent-of"/>
                 <value value="462917008"/>
-            </filter>
-        </include>
-        <include>
-            <system value="http://snomed.info/sct"/>
-            <filter>
-                <property value="concept"/>
-                <op value="descendent-of"/>
-                <value value="360302009"/>
             </filter>
         </include>
     </compose>
