@@ -25,7 +25,7 @@
       <p> This value set includes codes from the following code systems:</p>
       <ul>
         <li> Include codes from 
-          <a href="http://www.snomed.org/"><code> http://snomed.info/sct</code></a>  where concept  is-a  is-a 419199007 (Allergy to substance (finding))
+          <a href="http://www.snomed.org/"><code> http://snomed.info/sct</code></a>  where concept  is-a 419199007 (Allergy to substance (finding))
         </li>
       </ul>
     </div>

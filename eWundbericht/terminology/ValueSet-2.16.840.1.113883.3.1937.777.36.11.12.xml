@@ -18,7 +18,7 @@
     <immutable value="false"/>
     <compose>
         <include>
-            <system value="urn:oid:2.16.840.1.1138836.96"/>
+            <system value="http://snomed.info/sct"/>
             <filter>
                 <property value="concept"/>
                 <op value="is-a"/>

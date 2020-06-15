@@ -25,7 +25,7 @@
       <p> This value set includes codes from the following code systems:</p>
       <ul>
         <li> Include codes from 
-          <a href="http://www.snomed.org/"><code> http://snomed.info/sct</code></a>  where concept  is-a  is-a 311401005 (Patient education (procedure))
+          <a href="http://www.snomed.org/"><code> http://snomed.info/sct</code></a>  where concept is-a 311401005 (Patient education (procedure))
         </li>
       </ul>
     </div>
