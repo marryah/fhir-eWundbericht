@@ -1,7 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <url value="https://posithera.de/fhir/eWundbericht/StructureDefinition/EWoundSummary" />
   <name value="PosiTheraEWoundSummary" />
   <status value="draft" />
+  <publisher value="Hochschule Osnabrück" />
+  <contact>
+    <name value="Mareike Przysucha" />
+    <telecom>
+      <system value="email" />
+      <value value="ewundbericht@hs-osnabrueck.de" />
+      <use value="work" />
+    </telecom>
+    <telecom>
+      <system value="phone" />
+      <value value="+49 541 969 3354" />
+      <use value="work" />
+    </telecom>
+  </contact>
+  <description value="The Composition structures the wound summary. The resources are not contained within the composition, but *only* referenced. In order to obtain the content, the bundle is required." />
+  <copyright value="Forschungsgruppe Informatik im Gesundheitswesen, Fakultät Wirtschafts- und Sozialwissenschaften, Hochschule Osnabrück" />
   <fhirVersion value="4.0.1" />
   <kind value="resource" />
   <abstract value="false" />
@@ -9,13 +26,15 @@
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Composition" />
   <derivation value="constraint" />
   <differential>
+    <element id="Composition.status">
+      <path value="Composition.status" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.type">
+      <path value="Composition.type" />
+      <mustSupport value="true" />
+    </element>
     <element id="Composition.type.coding">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Composition.type.coding" />
       <slicing>
         <discriminator>
@@ -27,221 +46,112 @@
       <min value="1" />
     </element>
     <element id="Composition.type.coding:loinc">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Composition.type.coding" />
       <sliceName value="loinc" />
       <min value="1" />
       <max value="1" />
     </element>
     <element id="Composition.type.coding:loinc.system">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Composition.type.coding.system" />
       <fixedUri value="http://loinc.org" />
     </element>
     <element id="Composition.type.coding:loinc.code">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Composition.type.coding.code" />
       <fixedCode value="XXX" />
     </element>
     <element id="Composition.type.coding:IHE-XDS">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Composition.type.coding" />
       <sliceName value="IHE-XDS" />
       <max value="1" />
     </element>
     <element id="Composition.type.coding:IHE-XDS.system">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Composition.type.coding.system" />
       <fixedUri value="urn:oid:1.3.6.1.4.1.19376.3.276.1.5.9" />
     </element>
     <element id="Composition.type.coding:IHE-XDS.code">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Composition.type.coding.code" />
       <fixedCode value="WUND" />
     </element>
     <element id="Composition.type.coding:dvmd-kdl">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Composition.type.coding" />
       <sliceName value="dvmd-kdl" />
       <max value="1" />
     </element>
     <element id="Composition.type.coding:dvmd-kdl.system">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Composition.type.coding.system" />
       <fixedUri value="http://dvmd.de/fhir/CodeSystem/kdl" />
     </element>
     <element id="Composition.type.coding:dvmd-kdl.code">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Composition.type.coding.code" />
       <fixedCode value="V230199" />
     </element>
     <element id="Composition.category">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Composition.category" />
       <min value="1" />
       <max value="1" />
     </element>
     <element id="Composition.category.coding">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Composition.category.coding" />
       <slicing>
         <discriminator>
-          <type value="value" />
-          <path value="system" />
+          <type value="type" />
+          <path value="$this" />
         </discriminator>
         <rules value="open" />
       </slicing>
       <min value="1" />
+      <mustSupport value="false" />
     </element>
     <element id="Composition.category.coding:loinc">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Composition.category.coding" />
       <sliceName value="loinc" />
       <min value="1" />
       <max value="1" />
     </element>
     <element id="Composition.category.coding:loinc.system">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Composition.category.coding.system" />
       <fixedUri value="http://loinc.org" />
     </element>
     <element id="Composition.category.coding:loinc.code">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Composition.category.coding.code" />
       <fixedCode value="18842-5" />
     </element>
     <element id="Composition.category.coding:IHE-XDS">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Composition.category.coding" />
       <sliceName value="IHE-XDS" />
       <max value="1" />
     </element>
     <element id="Composition.category.coding:IHE-XDS.system">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Composition.category.coding.system" />
       <fixedUri value="http://ihe-d.de/CodeSystems/IHEXDSclassCode" />
     </element>
     <element id="Composition.category.coding:IHE-XDS.code">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Composition.category.coding.code" />
       <fixedCode value="BRI" />
     </element>
     <element id="Composition.subject">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Composition.subject" />
       <min value="1" />
       <type>
         <code value="Reference" />
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/Patient" />
       </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.date">
+      <path value="Composition.date" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.author">
+      <path value="Composition.author" />
+      <mustSupport value="true" />
     </element>
     <element id="Composition.title">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Composition.title" />
       <fixedString value="eWundbericht" />
+      <mustSupport value="true" />
     </element>
     <element id="Composition.section">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name">
         <valueString value="Section" />
       </extension>
@@ -255,12 +165,6 @@
       </slicing>
     </element>
     <element id="Composition.section:anamnese">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name">
         <valueString value="Section" />
       </extension>
@@ -270,22 +174,10 @@
       <max value="1" />
     </element>
     <element id="Composition.section:anamnese.title">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Composition.section.title" />
       <fixedString value="Anamnese" />
     </element>
     <element id="Composition.section:anamnese.entry">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Composition.section.entry" />
       <max value="0" />
     </element>
@@ -305,22 +197,10 @@
       <max value="1" />
     </element>
     <element id="Composition.section:anamnese.section:wundbeurteilung.title">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Composition.section.section.title" />
       <fixedString value="Wundbeurteilung" />
     </element>
     <element id="Composition.section:anamnese.section:wundbeurteilung.entry">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Composition.section.section.entry" />
       <type>
         <code value="Reference" />
@@ -348,42 +228,18 @@
       <max value="1" />
     </element>
     <element id="Composition.section:anamnese.section:aktuellerStatus.title">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Composition.section.section.title" />
       <fixedString value="Aktueller Status" />
     </element>
     <element id="Composition.section:anamnese.section:aktuellerStatus.code.coding.system">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Composition.section.section.code.coding.system" />
       <fixedUri value="http://loinc.org" />
     </element>
     <element id="Composition.section:anamnese.section:aktuellerStatus.code.coding.code">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Composition.section.section.code.coding.code" />
       <fixedCode value="11323-3" />
     </element>
     <element id="Composition.section:anamnese.section:aktuellerStatus.entry">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Composition.section.section.entry" />
       <type>
         <code value="Reference" />
@@ -403,22 +259,10 @@
       <max value="1" />
     </element>
     <element id="Composition.section:anamnese.section:psychosozialeFaktoren.title">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Composition.section.section.title" />
       <fixedString value="Psychosoziale Faktoren" />
     </element>
     <element id="Composition.section:anamnese.section:psychosozialeFaktoren.entry">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Composition.section.section.entry" />
       <type>
         <code value="Reference" />
@@ -435,22 +279,10 @@
       <sliceName value="individuelleRisikofaktoren" />
     </element>
     <element id="Composition.section:anamnese.section:individuelleRisikofaktoren.title">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Composition.section.section.title" />
       <fixedString value="Individuelle Risikofaktoren" />
     </element>
     <element id="Composition.section:anamnese.section:individuelleRisikofaktoren.entry">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Composition.section.section.entry" />
       <type>
         <code value="Reference" />
@@ -467,42 +299,18 @@
       <max value="1" />
     </element>
     <element id="Composition.section:anamnese.section:risikoassessment.title">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Composition.section.section.title" />
       <fixedString value="Risikoassessment" />
     </element>
     <element id="Composition.section:anamnese.section:risikoassessment.code.coding.system">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Composition.section.section.code.coding.system" />
       <fixedUri value="http://loinc.org" />
     </element>
     <element id="Composition.section:anamnese.section:risikoassessment.code.coding.code">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Composition.section.section.code.coding.code" />
       <fixedCode value="71482-4" />
     </element>
     <element id="Composition.section:anamnese.section:risikoassessment.entry">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Composition.section.section.entry" />
       <type>
         <code value="Reference" />
@@ -519,32 +327,14 @@
       <max value="1" />
     </element>
     <element id="Composition.section:anamnese.section:koerperhygiene.title">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Composition.section.section.title" />
       <fixedString value="Hygieneassessment, Koerperhygiene" />
     </element>
     <element id="Composition.section:anamnese.section:koerperhygiene.code.coding.system">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Composition.section.section.code.coding.system" />
       <fixedUri value="http://loinc.org" />
     </element>
     <element id="Composition.section:anamnese.section:koerperhygiene.entry">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Composition.section.section.entry" />
       <type>
         <code value="Reference" />
@@ -561,43 +351,19 @@
       <max value="1" />
     </element>
     <element id="Composition.section:anamnese.section:hautassessment.title">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Composition.section.section.title" />
       <short value="Hautassessment" />
       <fixedString value="Hautassessment: Hautsituation, Einschraenkung der Hautbarrierefunktion" />
     </element>
     <element id="Composition.section:anamnese.section:hautassessment.code.coding.system">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Composition.section.section.code.coding.system" />
       <fixedUri value="http://loinc.org" />
     </element>
     <element id="Composition.section:anamnese.section:hautassessment.code.coding.code">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Composition.section.section.code.coding.code" />
       <fixedCode value="72284-3" />
     </element>
     <element id="Composition.section:anamnese.section:hautassessment.entry">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Composition.section.section.entry" />
       <type>
         <code value="Reference" />
@@ -613,12 +379,6 @@
       <sliceName value="detailsUeberGeheilteWunden" />
     </element>
     <element id="Composition.section:anamnese.section:detailsUeberGeheilteWunden.title">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Composition.section.section.title" />
       <fixedString value="Details ueber geheilte Wunden" />
     </element>
@@ -627,12 +387,6 @@
       <max value="0" />
     </element>
     <element id="Composition.section:anamnese.section:detailsUeberGeheilteWunden.Reference">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Composition.section.section.entry" />
       <type>
         <code value="Reference" />
@@ -649,22 +403,10 @@
       <max value="1" />
     </element>
     <element id="Composition.section:anamnese.section:adhaerenz.title">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Composition.section.section.title" />
       <fixedString value="Gesundheitsrelevantes Verhalten, Adhaerenz" />
     </element>
     <element id="Composition.section:anamnese.section:adhaerenz.entry">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Composition.section.section.entry" />
       <type>
         <code value="Reference" />
@@ -681,22 +423,10 @@
       <max value="1" />
     </element>
     <element id="Composition.section:anamnese.section:koerperlicheBeeintraechtigung.title">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Composition.section.section.title" />
       <fixedString value="Körperliche Beeinträchtigung" />
     </element>
     <element id="Composition.section:anamnese.section:koerperlicheBeeintraechtigung.entry">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Composition.section.section.entry" />
       <type>
         <code value="Reference" />
@@ -713,42 +443,18 @@
       <max value="1" />
     </element>
     <element id="Composition.section:anamnese.section:psychosozialeBeeintraechtigung.title">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Composition.section.section.title" />
       <fixedString value="Psychosoziale Beeinträchtigung" />
     </element>
     <element id="Composition.section:anamnese.section:psychosozialeBeeintraechtigung.code.coding.system">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Composition.section.section.code.coding.system" />
       <fixedUri value="http://loinc.org" />
     </element>
     <element id="Composition.section:anamnese.section:psychosozialeBeeintraechtigung.code.coding.code">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Composition.section.section.code.coding.code" />
       <fixedCode value="46002-2" />
     </element>
     <element id="Composition.section:anamnese.section:psychosozialeBeeintraechtigung.entry">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Composition.section.section.entry" />
       <type>
         <code value="Reference" />
@@ -760,12 +466,6 @@
       <max value="0" />
     </element>
     <element id="Composition.section:diagnose">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name">
         <valueString value="Section" />
       </extension>
@@ -775,12 +475,6 @@
       <max value="1" />
     </element>
     <element id="Composition.section:diagnose.entry">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Composition.section.entry" />
       <max value="0" />
     </element>
@@ -800,22 +494,10 @@
       <max value="1" />
     </element>
     <element id="Composition.section:diagnose.section:wundbezogeneDiagnose.title">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Composition.section.section.title" />
       <fixedString value="Wundbezogene Diagnose" />
     </element>
     <element id="Composition.section:diagnose.section:wundbezogeneDiagnose.entry">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Composition.section.section.entry" />
       <type>
         <code value="Reference" />
@@ -833,42 +515,18 @@
       <max value="1" />
     </element>
     <element id="Composition.section:diagnose.section:medizinischeInformationen.title">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Composition.section.section.title" />
       <fixedString value="Medizinische Informationen" />
     </element>
     <element id="Composition.section:diagnose.section:medizinischeInformationen.code.coding.system">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Composition.section.section.code.coding.system" />
       <fixedUri value="http://loinc.org" />
     </element>
     <element id="Composition.section:diagnose.section:medizinischeInformationen.code.coding.code">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Composition.section.section.code.coding.code" />
       <fixedCode value="28616-1" />
     </element>
     <element id="Composition.section:diagnose.section:medizinischeInformationen.entry">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Composition.section.section.entry" />
       <type>
         <code value="Reference" />
@@ -882,12 +540,6 @@
       <max value="0" />
     </element>
     <element id="Composition.section:therapie">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name">
         <valueString value="Section" />
       </extension>
@@ -912,42 +564,18 @@
       <max value="1" />
     </element>
     <element id="Composition.section:therapie.section:behandlungsziel.title">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Composition.section.section.title" />
       <fixedString value="Behandlungsziele" />
     </element>
     <element id="Composition.section:therapie.section:behandlungsziel.code.coding.system">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Composition.section.section.code.coding.system" />
       <fixedUri value="http://loinc.org" />
     </element>
     <element id="Composition.section:therapie.section:behandlungsziel.code.coding.code">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Composition.section.section.code.coding.code" />
       <fixedCode value="61146-7" />
     </element>
     <element id="Composition.section:therapie.section:behandlungsziel.entry">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Composition.section.section.entry" />
       <type>
         <code value="Reference" />
@@ -965,42 +593,18 @@
       <max value="1" />
     </element>
     <element id="Composition.section:therapie.section:behandlungsplan.title">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Composition.section.section.title" />
       <fixedString value="Behandlungsplan" />
     </element>
     <element id="Composition.section:therapie.section:behandlungsplan.code.coding.system">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Composition.section.section.code.coding.system" />
       <fixedUri value="http://loinc.org" />
     </element>
     <element id="Composition.section:therapie.section:behandlungsplan.code.coding.code">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Composition.section.section.code.coding.code" />
       <fixedCode value="18776-5" />
     </element>
     <element id="Composition.section:therapie.section:behandlungsplan.entry">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Composition.section.section.entry" />
       <type>
         <code value="Reference" />
@@ -1023,42 +627,18 @@
       <max value="1" />
     </element>
     <element id="Composition.section:therapie.section:behandlungsplan.section:wundreinigung.title">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Composition.section.section.section.title" />
       <fixedString value="Wundreinigung" />
     </element>
     <element id="Composition.section:therapie.section:behandlungsplan.section:wundreinigung.code.coding.system">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Composition.section.section.section.code.coding.system" />
       <fixedUri value="http://loinc.org" />
     </element>
     <element id="Composition.section:therapie.section:behandlungsplan.section:wundreinigung.code.coding.code">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Composition.section.section.section.code.coding.code" />
       <fixedCode value="39128-4" />
     </element>
     <element id="Composition.section:therapie.section:behandlungsplan.section:wundreinigung.entry">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Composition.section.section.section.entry" />
       <type>
         <code value="Reference" />
@@ -1075,22 +655,10 @@
       <max value="1" />
     </element>
     <element id="Composition.section:therapie.section:behandlungsplan.section:debridement.title">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Composition.section.section.section.title" />
       <fixedString value="Debridement" />
     </element>
     <element id="Composition.section:therapie.section:behandlungsplan.section:debridement.entry">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Composition.section.section.section.entry" />
       <type>
         <code value="Reference" />
@@ -1107,22 +675,10 @@
       <max value="1" />
     </element>
     <element id="Composition.section:therapie.section:behandlungsplan.section:primaerverband.title">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Composition.section.section.section.title" />
       <fixedString value="Primaerverband" />
     </element>
     <element id="Composition.section:therapie.section:behandlungsplan.section:primaerverband.entry">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Composition.section.section.section.entry" />
       <type>
         <code value="Reference" />
@@ -1140,22 +696,10 @@
       <max value="1" />
     </element>
     <element id="Composition.section:therapie.section:behandlungsplan.section:sekundaerverband.title">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Composition.section.section.section.title" />
       <fixedString value="Sekundaerverband" />
     </element>
     <element id="Composition.section:therapie.section:behandlungsplan.section:sekundaerverband.entry">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Composition.section.section.section.entry" />
       <type>
         <code value="Reference" />
@@ -1173,42 +717,18 @@
       <max value="1" />
     </element>
     <element id="Composition.section:therapie.section:behandlungsplan.section:abwehrreaktionAllergie.title">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Composition.section.section.section.title" />
       <fixedString value="Abwehrreaktion auf Wundprodukte, Allergien" />
     </element>
     <element id="Composition.section:therapie.section:behandlungsplan.section:abwehrreaktionAllergie.code.coding.system">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Composition.section.section.section.code.coding.system" />
       <fixedUri value="http://loinc.org" />
     </element>
     <element id="Composition.section:therapie.section:behandlungsplan.section:abwehrreaktionAllergie.code.coding.code">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Composition.section.section.section.code.coding.code" />
       <fixedCode value="48765-2" />
     </element>
     <element id="Composition.section:therapie.section:behandlungsplan.section:abwehrreaktionAllergie.entry">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Composition.section.section.section.entry" />
       <type>
         <code value="Reference" />
@@ -1226,42 +746,18 @@
       <max value="1" />
     </element>
     <element id="Composition.section:therapie.section:behandlungsplan.section:physikalischeIntervention.title">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Composition.section.section.section.title" />
       <fixedString value="Physikalische Intervention" />
     </element>
     <element id="Composition.section:therapie.section:behandlungsplan.section:physikalischeIntervention.code.coding.system">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Composition.section.section.section.code.coding.system" />
       <fixedUri value="http://loinc.org" />
     </element>
     <element id="Composition.section:therapie.section:behandlungsplan.section:physikalischeIntervention.code.coding.code">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Composition.section.section.section.code.coding.code" />
       <fixedCode value="62387-6" />
     </element>
     <element id="Composition.section:therapie.section:behandlungsplan.section:physikalischeIntervention.entry">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Composition.section.section.section.entry" />
       <type>
         <code value="Reference" />
@@ -1278,32 +774,14 @@
       <max value="1" />
     </element>
     <element id="Composition.section:therapie.section:ausruestungRessourcen.title">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Composition.section.section.title" />
       <fixedString value="Benötigte Ausruestung, Ressourcen" />
     </element>
     <element id="Composition.section:therapie.section:ausruestungRessourcen.code.coding.system">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Composition.section.section.code.coding.system" />
       <fixedUri value="http://loinc.org" />
     </element>
     <element id="Composition.section:therapie.section:ausruestungRessourcen.code.coding.code">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Composition.section.section.code.coding.code" />
       <fixedCode value="81635-5" />
     </element>
@@ -1317,42 +795,18 @@
       <max value="1" />
     </element>
     <element id="Composition.section:therapie.section:therapieverlauf.title">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Composition.section.section.title" />
       <fixedString value="Therapieverlauf" />
     </element>
     <element id="Composition.section:therapie.section:therapieverlauf.code.coding.system">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Composition.section.section.code.coding.system" />
       <fixedUri value="http://loinc.org" />
     </element>
     <element id="Composition.section:therapie.section:therapieverlauf.code.coding.code">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Composition.section.section.code.coding.code" />
       <fixedCode value="89821-3" />
     </element>
     <element id="Composition.section:therapie.section:therapieverlauf.entry">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Composition.section.section.entry" />
       <type>
         <code value="Reference" />
@@ -1369,42 +823,18 @@
       <max value="1" />
     </element>
     <element id="Composition.section:therapie.section:schmerzmanagement.title">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Composition.section.section.title" />
       <fixedString value="Schmerzmanagement" />
     </element>
     <element id="Composition.section:therapie.section:schmerzmanagement.code.coding.system">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Composition.section.section.code.coding.system" />
       <fixedUri value="http://loinc.org" />
     </element>
     <element id="Composition.section:therapie.section:schmerzmanagement.code.coding.code">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Composition.section.section.code.coding.code" />
       <fixedCode value="54557-4" />
     </element>
     <element id="Composition.section:therapie.section:schmerzmanagement.entry">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Composition.section.section.entry" />
       <type>
         <code value="Reference" />
@@ -1424,22 +854,10 @@
       <max value="1" />
     </element>
     <element id="Composition.section:therapie.section:hygienemassnahmen.title">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Composition.section.section.title" />
       <fixedString value="Hygienemassnahmen" />
     </element>
     <element id="Composition.section:therapie.section:hygienemassnahmen.entry">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Composition.section.section.entry" />
       <type>
         <code value="Reference" />
@@ -1456,22 +874,10 @@
       <max value="1" />
     </element>
     <element id="Composition.section:therapie.section:wundrandUmgebungsschutz.title">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Composition.section.section.title" />
       <fixedString value="Wundrand- und -umgebungsschutz" />
     </element>
     <element id="Composition.section:therapie.section:wundrandUmgebungsschutz.entry">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Composition.section.section.entry" />
       <type>
         <code value="Reference" />
@@ -1491,42 +897,18 @@
       <max value="1" />
     </element>
     <element id="Composition.section:therapie.section:kausaltherapie.title">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Composition.section.section.title" />
       <fixedString value="Kausaltherapie" />
     </element>
     <element id="Composition.section:therapie.section:kausaltherapie.code.coding.system">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Composition.section.section.code.coding.system" />
       <fixedUri value="http://loinc.org" />
     </element>
     <element id="Composition.section:therapie.section:kausaltherapie.code.coding.code">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Composition.section.section.code.coding.code" />
       <fixedCode value="62387-6" />
     </element>
     <element id="Composition.section:therapie.section:kausaltherapie.entry">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Composition.section.section.entry" />
       <type>
         <code value="Reference" />
@@ -1546,42 +928,18 @@
       <max value="1" />
     </element>
     <element id="Composition.section:therapie.section:patientenedukation.title">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Composition.section.section.title" />
       <fixedString value="Patientenedukation" />
     </element>
     <element id="Composition.section:therapie.section:patientenedukation.code.coding.system">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Composition.section.section.code.coding.system" />
       <fixedUri value="http://loinc.org" />
     </element>
     <element id="Composition.section:therapie.section:patientenedukation.code.coding.code">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Composition.section.section.code.coding.code" />
       <fixedCode value="34895-3" />
     </element>
     <element id="Composition.section:therapie.section:patientenedukation.entry">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Composition.section.section.entry" />
       <type>
         <code value="Reference" />
@@ -1599,22 +957,10 @@
       <max value="1" />
     </element>
     <element id="Composition.section:therapie.section:behandlungsergebnisse.title">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Composition.section.section.title" />
       <fixedString value="Bisherige Ergebnisse der Behandlung" />
     </element>
     <element id="Composition.section:therapie.section:behandlungsergebnisse.entry">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Composition.section.section.entry" />
       <type>
         <code value="Reference" />

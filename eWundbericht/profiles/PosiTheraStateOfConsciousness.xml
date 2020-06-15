@@ -3,6 +3,22 @@
   <url value="https://posithera.de/fhir/eWundbericht/StructureDefinition/StateOfConsciousness" />
   <name value="PosiTheraStateOfConsciousness" />
   <status value="draft" />
+  <publisher value="Hochschule Osnabrück" />
+  <contact>
+    <name value="Mareike Przysucha" />
+    <telecom>
+      <system value="email" />
+      <value value="ewundbericht@hs-osnabrueck.de" />
+      <use value="work" />
+    </telecom>
+    <telecom>
+      <system value="phone" />
+      <value value="+49 541 969 3354" />
+      <use value="work" />
+    </telecom>
+  </contact>
+  <description value="Profile for the state of consciousness. The state can be given in quantity or quality." />
+  <copyright value="Forschungsgruppe Informatik im Gesundheitswesen, Fakultät Wirtschafts- und Sozialwissenschaften, Hochschule Osnabrück" />
   <fhirVersion value="4.0.1" />
   <mapping>
     <identity value="workflow" />
@@ -62,12 +78,6 @@
       </fixedCoding>
     </element>
     <element id="Observation.code.coding:snomed">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Observation.code.coding" />
       <sliceName value="snomed" />
       <max value="1" />
@@ -130,12 +140,6 @@
       <max value="1" />
     </element>
     <element id="Observation.component:quantity.code.coding:loinc">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Observation.component.code.coding" />
       <sliceName value="loinc" />
       <min value="1" />
@@ -146,12 +150,6 @@
       <fixedUri value="http://loinc.org" />
     </element>
     <element id="Observation.component:quantity.code.coding:snomed">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Observation.component.code.coding" />
       <sliceName value="snomed" />
       <max value="1" />
@@ -169,6 +167,7 @@
       <type>
         <code value="CodeableConcept" />
       </type>
+      <mustSupport value="true" />
       <binding>
         <strength value="preferred" />
         <valueSet value="https://posithera.de/fhir/eWundbericht/ValueSet/Bewusstseinslevel_quantitativ" />
@@ -199,12 +198,6 @@
       <max value="1" />
     </element>
     <element id="Observation.component:quality.code.coding:loinc">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Observation.component.code.coding" />
       <sliceName value="loinc" />
       <min value="1" />
@@ -215,12 +208,6 @@
       <fixedUri value="http://loinc.org" />
     </element>
     <element id="Observation.component:quality.code.coding:snomed">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Observation.component.code.coding" />
       <sliceName value="snomed" />
       <max value="1" />
@@ -238,6 +225,7 @@
       <type>
         <code value="CodeableConcept" />
       </type>
+      <mustSupport value="true" />
       <binding>
         <strength value="preferred" />
         <valueSet value="https://posithera.de/fhir/eWundbericht/ValueSet/Bewusstseinslevel_qualitativ" />

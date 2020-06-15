@@ -3,6 +3,22 @@
   <url value="https://posithera.de/fhir/eWundbericht/StructureDefinition/Education" />
   <name value="PosiTheraEducation" />
   <status value="draft" />
+  <publisher value="Hochschule Osnabrück" />
+  <contact>
+    <name value="Mareike Przysucha" />
+    <telecom>
+      <system value="email" />
+      <value value="ewundbericht@hs-osnabrueck.de" />
+      <use value="work" />
+    </telecom>
+    <telecom>
+      <system value="phone" />
+      <value value="+49 541 969 3354" />
+      <use value="work" />
+    </telecom>
+  </contact>
+  <description value="Profile about the patient's education about his/her wound." />
+  <copyright value="Forschungsgruppe Informatik im Gesundheitswesen, Fakultät Wirtschafts- und Sozialwissenschaften, Hochschule Osnabrück" />
   <fhirVersion value="4.0.1" />
   <mapping>
     <identity value="workflow" />
@@ -30,26 +46,20 @@
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Procedure" />
   <derivation value="constraint" />
   <differential>
+    <element id="Procedure.status">
+      <path value="Procedure.status" />
+      <mustSupport value="true" />
+    </element>
     <element id="Procedure.code">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Procedure.code" />
+      <min value="1" />
+      <mustSupport value="true" />
       <binding>
         <strength value="example" />
         <valueSet value="https://posithera.de/fhir/eWundbericht/ValueSet/education-code" />
       </binding>
     </element>
     <element id="Procedure.subject">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Procedure.subject" />
       <type>
         <code value="Reference" />
@@ -57,12 +67,6 @@
       </type>
     </element>
     <element id="Procedure.performed[x]">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Procedure.performed[x]" />
       <type>
         <code value="dateTime" />
@@ -78,22 +82,10 @@
       </type>
     </element>
     <element id="Procedure.bodySite">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Procedure.bodySite" />
       <max value="0" />
     </element>
     <element id="Procedure.report">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Procedure.report" />
       <type>
         <code value="Reference" />
@@ -102,32 +94,14 @@
       </type>
     </element>
     <element id="Procedure.complication">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Procedure.complication" />
       <max value="0" />
     </element>
     <element id="Procedure.complicationDetail">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Procedure.complicationDetail" />
       <max value="0" />
     </element>
     <element id="Procedure.focalDevice">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Procedure.focalDevice" />
       <max value="0" />
     </element>

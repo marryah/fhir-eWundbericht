@@ -3,6 +3,22 @@
   <url value="https://posithera.de/fhir/eWundbericht/StructureDefinition/WoundRelatedPain" />
   <name value="PosiTheraWoundRelatedPain" />
   <status value="draft" />
+  <publisher value="Hochschule Osnabrück" />
+  <contact>
+    <name value="Mareike Przysucha" />
+    <telecom>
+      <system value="email" />
+      <value value="ewundbericht@hs-osnabrueck.de" />
+      <use value="work" />
+    </telecom>
+    <telecom>
+      <system value="phone" />
+      <value value="+49 541 969 3354" />
+      <use value="work" />
+    </telecom>
+  </contact>
+  <description value="This observation contains information about the wound related pain, e.g. its strength." />
+  <copyright value="Forschungsgruppe Informatik im Gesundheitswesen, Fakultät Wirtschafts- und Sozialwissenschaften, Hochschule Osnabrück" />
   <fhirVersion value="4.0.1" />
   <mapping>
     <identity value="workflow" />
@@ -63,11 +79,16 @@
         <targetProfile value="https://posithera.de/fhir/eWundbericht/StructureDefinition/BodyStructure" />
       </type>
     </element>
+    <element id="Observation.effective[x]">
+      <path value="Observation.effective[x]" />
+      <mustSupport value="true" />
+    </element>
     <element id="Observation.value[x]">
       <path value="Observation.value[x]" />
       <type>
         <code value="CodeableConcept" />
       </type>
+      <mustSupport value="true" />
       <binding>
         <strength value="example" />
         <valueSet value="https://posithera.de/fhir/eWundbericht/ValueSet/Wundschmerz" />

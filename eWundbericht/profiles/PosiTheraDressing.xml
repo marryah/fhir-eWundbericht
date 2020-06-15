@@ -3,6 +3,22 @@
   <url value="https://posithera.de/fhir/eWundbericht/StructureDefinition/PosiTheraDressing" />
   <name value="PosiTheraDressing" />
   <status value="draft" />
+  <publisher value="Hochschule Osnabrück" />
+  <contact>
+    <name value="Mareike Przysucha" />
+    <telecom>
+      <system value="email" />
+      <value value="ewundbericht@hs-osnabrueck.de" />
+      <use value="work" />
+    </telecom>
+    <telecom>
+      <system value="phone" />
+      <value value="+49 541 969 3354" />
+      <use value="work" />
+    </telecom>
+  </contact>
+  <description value="Profile for the dressing of wounds." />
+  <copyright value="Forschungsgruppe Informatik im Gesundheitswesen, Fakultät Wirtschafts- und Sozialwissenschaften, Hochschule Osnabrück" />
   <fhirVersion value="4.0.1" />
   <mapping>
     <identity value="rim" />
@@ -26,32 +42,14 @@
   <derivation value="constraint" />
   <differential>
     <element id="Substance.category.coding.system">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Substance.category.coding.system" />
       <fixedUri value="http://hl7.org/fhir/ValueSet/substance-category" />
     </element>
     <element id="Substance.category.coding.code">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Substance.category.coding.code" />
       <fixedCode value="material" />
     </element>
     <element id="Substance.code.coding">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Substance.code.coding" />
       <slicing>
         <discriminator>
@@ -60,38 +58,21 @@
         </discriminator>
         <rules value="open" />
       </slicing>
+      <mustSupport value="true" />
     </element>
     <element id="Substance.code.coding:loinc">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Substance.code.coding" />
       <sliceName value="loinc" />
       <binding>
         <strength value="example" />
-        <valueSet value="https://fhir.loinc.org/ValueSet/?url=http://loinc.org/vs/LL2339-1" />
+        <valueSet value="http://loinc.org/vs/LL2339-1" />
       </binding>
     </element>
     <element id="Substance.code.coding:loinc.system">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Substance.code.coding.system" />
       <fixedUri value="http://loinc.org" />
     </element>
     <element id="Substance.ingredient">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Substance.ingredient" />
       <max value="0" />
     </element>

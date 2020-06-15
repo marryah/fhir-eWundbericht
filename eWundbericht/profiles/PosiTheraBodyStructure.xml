@@ -3,6 +3,22 @@
   <url value="https://posithera.de/fhir/eWundbericht/StructureDefinition/BodyStructure" />
   <name value="PosiTheraBodyStructure" />
   <status value="draft" />
+  <publisher value="Hochschule Osnabrück" />
+  <contact>
+    <name value="Mareike Przysucha" />
+    <telecom>
+      <system value="email" />
+      <value value="ewundbericht@hs-osnabrueck.de" />
+      <use value="work" />
+    </telecom>
+    <telecom>
+      <system value="phone" />
+      <value value="+49 541 969 3354" />
+      <use value="work" />
+    </telecom>
+  </contact>
+  <description value="Profile for the body structure where the wound is located." />
+  <copyright value="Forschungsgruppe Informatik im Gesundheitswesen, Fakultät Wirtschafts- und Sozialwissenschaften, Hochschule Osnabrück" />
   <fhirVersion value="4.0.1" />
   <kind value="resource" />
   <abstract value="false" />
@@ -11,38 +27,28 @@
   <derivation value="constraint" />
   <differential>
     <element id="BodyStructure.location">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="BodyStructure.location" />
       <binding>
         <strength value="extensible" />
         <valueSet value="https://posithera.de/fhir/eWundbericht/ValueSet/LowerLegBodyStructure" />
       </binding>
     </element>
+    <element id="BodyStructure.location.coding">
+      <path value="BodyStructure.location.coding" />
+      <mustSupport value="true" />
+    </element>
     <element id="BodyStructure.locationQualifier">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="BodyStructure.locationQualifier" />
       <binding>
         <strength value="extensible" />
         <valueSet value="https://posithera.de/fhir/eWundbericht/ValueSet/Laterality" />
       </binding>
     </element>
+    <element id="BodyStructure.locationQualifier.coding">
+      <path value="BodyStructure.locationQualifier.coding" />
+      <mustSupport value="true" />
+    </element>
     <element id="BodyStructure.patient">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="BodyStructure.patient" />
       <type>
         <code value="Reference" />

@@ -4,6 +4,22 @@
   <version value="0.0.1" />
   <name value="PosiTheraRiskAssessment" />
   <status value="draft" />
+  <publisher value="Hochschule Osnabrück" />
+  <contact>
+    <name value="Mareike Przysucha" />
+    <telecom>
+      <system value="email" />
+      <value value="ewundbericht@hs-osnabrueck.de" />
+      <use value="work" />
+    </telecom>
+    <telecom>
+      <system value="phone" />
+      <value value="+49 541 969 3354" />
+      <use value="work" />
+    </telecom>
+  </contact>
+  <description value="Profile for a riskassessment which results in prediction about the occurence." />
+  <copyright value="Forschungsgruppe Informatik im Gesundheitswesen, Fakultät Wirtschafts- und Sozialwissenschaften, Hochschule Osnabrück" />
   <fhirVersion value="4.0.1" />
   <kind value="resource" />
   <abstract value="false" />
@@ -15,8 +31,8 @@
       <path value="RiskAssessment.code.coding" />
       <slicing>
         <discriminator>
-          <type value="value" />
-          <path value="code" />
+          <type value="pattern" />
+          <path value="this()" />
         </discriminator>
         <rules value="open" />
       </slicing>
@@ -33,7 +49,7 @@
     </element>
     <element id="RiskAssessment.code.coding:generalRiskAssessment.code">
       <path value="RiskAssessment.code.coding.code" />
-      <fixedCode value="71482-4" />
+      <patternCode value="71482-4" />
     </element>
     <element id="RiskAssessment.code.coding:generalRiskAssessment.display">
       <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
@@ -49,12 +65,20 @@
         <targetProfile value="https://posithera.de/fhir/eWundbericht/StructureDefinition/Patient" />
       </type>
     </element>
+    <element id="RiskAssessment.occurrence[x]">
+      <path value="RiskAssessment.occurrence[x]" />
+      <mustSupport value="true" />
+    </element>
     <element id="RiskAssessment.condition">
       <path value="RiskAssessment.condition" />
       <type>
         <code value="Reference" />
         <targetProfile value="https://posithera.de/fhir/eWundbericht/StructureDefinition/PosiTheraWound" />
       </type>
+    </element>
+    <element id="RiskAssessment.prediction">
+      <path value="RiskAssessment.prediction" />
+      <mustSupport value="true" />
     </element>
   </differential>
 </StructureDefinition>

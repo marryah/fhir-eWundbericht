@@ -3,6 +3,22 @@
   <url value="https://posithera.de/fhir/eWundbericht/StructureDefinition/Bundle" />
   <name value="PosiTheraWoundSummaryBundle" />
   <status value="draft" />
+  <publisher value="Hochschule Osnabrück" />
+  <contact>
+    <name value="Mareike Przysucha" />
+    <telecom>
+      <system value="email" />
+      <value value="ewundbericht@hs-osnabrueck.de" />
+      <use value="work" />
+    </telecom>
+    <telecom>
+      <system value="phone" />
+      <value value="+49 541 969 3354" />
+      <use value="work" />
+    </telecom>
+  </contact>
+  <description value="The Bundle contains the resources for the wound summary. First content is the composition, the next entry is the patient followed by the remaining resources." />
+  <copyright value="Forschungsgruppe Informatik im Gesundheitswesen, Fakultät Wirtschafts- und Sozialwissenschaften, Hochschule Osnabrück" />
   <fhirVersion value="4.0.1" />
   <mapping>
     <identity value="v2" />
@@ -31,22 +47,10 @@
   <derivation value="constraint" />
   <differential>
     <element id="Bundle.type">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Bundle.type" />
       <fixedCode value="document" />
     </element>
     <element id="Bundle.entry">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Bundle.entry" />
       <slicing>
         <discriminator>
@@ -58,12 +62,6 @@
       <min value="2" />
     </element>
     <element id="Bundle.entry:composition">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Bundle.entry" />
       <sliceName value="composition" />
       <min value="1" />
@@ -78,12 +76,6 @@
       </type>
     </element>
     <element id="Bundle.entry:patient">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Bundle.entry" />
       <sliceName value="patient" />
       <min value="1" />
@@ -92,19 +84,12 @@
     <element id="Bundle.entry:patient.resource">
       <path value="Bundle.entry.resource" />
       <min value="1" />
-      <max value="1" />
       <type>
         <code value="Resource" />
         <profile value="https://posithera.de/fhir/eWundbericht/StructureDefinition/Patient" />
       </type>
     </element>
     <element id="Bundle.entry:resource">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Bundle.entry" />
       <sliceName value="resource" />
     </element>

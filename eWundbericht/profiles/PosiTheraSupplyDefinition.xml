@@ -3,6 +3,22 @@
   <url value="https://posithera.de/fhir/eWundbericht/StructureDefinition/PosiTheraSupplyDefinition" />
   <name value="PosiTheraSupplyDefinition" />
   <status value="draft" />
+  <publisher value="Hochschule Osnabrück" />
+  <contact>
+    <name value="Mareike Przysucha" />
+    <telecom>
+      <system value="email" />
+      <value value="ewundbericht@hs-osnabrueck.de" />
+      <use value="work" />
+    </telecom>
+    <telecom>
+      <system value="phone" />
+      <value value="+49 541 969 3354" />
+      <use value="work" />
+    </telecom>
+  </contact>
+  <description value="Profile for a supply definition." />
+  <copyright value="Forschungsgruppe Informatik im Gesundheitswesen, Fakultät Wirtschafts- und Sozialwissenschaften, Hochschule Osnabrück" />
   <fhirVersion value="4.0.1" />
   <mapping>
     <identity value="w5" />
@@ -20,6 +36,10 @@
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/DeviceDefinition" />
   <derivation value="constraint" />
   <differential>
+    <element id="DeviceDefinition.type">
+      <path value="DeviceDefinition.type" />
+      <mustSupport value="true" />
+    </element>
     <element id="DeviceDefinition.type.coding">
       <path value="DeviceDefinition.type.coding" />
       <binding>
