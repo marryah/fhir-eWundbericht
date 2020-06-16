@@ -17,6 +17,19 @@
     <description value="Bewusstseinslevel - qualitativ (SNOMED)"/>
     <immutable value="false"/>
     <copyright value="This artefact includes content from SNOMED Clinical Terms® (SNOMED CT®) which is copyright of the International Health Terminology Standards Development Organisation (IHTSDO). Implementers of these artefacts must have the appropriate SNOMED CT Affiliate license - for more information contact http://www.snomed.org/snomed-ct/getsnomed-ct or info@snomed.org."/>
+	<contact>
+		<name value="Mareike Przysucha" />
+		<telecom>
+			<system value="email" />
+			<value value="ewundbericht@hs-osnabrueck.de" />
+			<use value="work" />
+		</telecom>
+		<telecom>
+			<system value="url" />
+			<value value="https://www.hs-osnabrueck.de/forschungsgruppe-informatik-im-gesundheitswesen/" />
+			<use value="work" />
+		</telecom>
+	</contact>
     <compose>
         <include>
             <system value="http://snomed.info/sct"/>

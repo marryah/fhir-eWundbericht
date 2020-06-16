@@ -11,13 +11,19 @@
   <name value="PosiThera - Inhalte verbaler Angaben" />
   <status value="draft" />
   <publisher value="Forschungsgruppe Informatik im Gesundheitswesen, Hochschule Osnabrück, Deutschland" />
-  <contact>
-    <name value="Mareike Przysucha" />
-    <telecom>
-      <system value="email" />
-      <value value="ewundbericht@hs-osnabrueck.de" />
-    </telecom>
-  </contact>
+	<contact>
+		<name value="Mareike Przysucha" />
+		<telecom>
+			<system value="email" />
+			<value value="ewundbericht@hs-osnabrueck.de" />
+			<use value="work" />
+		</telecom>
+		<telecom>
+			<system value="url" />
+			<value value="https://www.hs-osnabrueck.de/forschungsgruppe-informatik-im-gesundheitswesen/" />
+			<use value="work" />
+		</telecom>
+	</contact>
   <description value="LOINC-Codes für die verbal beschriebenen Einschätzungen" />
   <compose>
     <include>

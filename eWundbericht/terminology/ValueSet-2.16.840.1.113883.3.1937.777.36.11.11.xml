@@ -91,6 +91,19 @@
 	<description
 		value="Dieses Valueset ist ein Beispiel, wie der Wundgrund mit SNOMED CT codiert werden kann." />
 	<immutable value="false" />
+	<contact>
+		<name value="Mareike Przysucha" />
+		<telecom>
+			<system value="email" />
+			<value value="ewundbericht@hs-osnabrueck.de" />
+			<use value="work" />
+		</telecom>
+		<telecom>
+			<system value="url" />
+			<value value="https://www.hs-osnabrueck.de/forschungsgruppe-informatik-im-gesundheitswesen/" />
+			<use value="work" />
+		</telecom>
+	</contact>
 	<compose>
 		<include>
 			<system value="http://snomed.info/sct" />

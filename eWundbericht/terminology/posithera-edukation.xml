@@ -1,52 +1,87 @@
 <ValueSet xmlns="http://hl7.org/fhir">
-  <id value="allergie-code" />
-  <meta>
-    <profile value="http://hl7.org/fhir/StructureDefinition/shareablevalueset" />
-  </meta>
-  <text>
-    <status value="generated" />
-    <div xmlns="http://www.w3.org/1999/xhtml">
-      <h2> Allergie Code</h2>
-      <div>
-        <p> This value set contains concept codes for specific substances. It includes codes from
-           
-          <a href="http://snomed.info/sct">SNOMED</a>  where concept is-a 311401005 (Patient education (procedure))
-        </p>
-      </div>
-      <p>
-        <b> Copyright Statement:</b>
-      </p>
-      <div>
-        <p> This resource includes content from SNOMED Clinical Terms® (SNOMED CT®) which is copyright
-           of the International Health Terminology Standards Development Organisation (IHTSDO). Implementers
-           of these specifications must have the appropriate SNOMED CT Affiliate license - for more
-           information contact http://www.snomed.org/snomed-ct/get-snomed-ct or info@snomed.org</p>
-      </div>
-      <p> This value set includes codes from the following code systems:</p>
-      <ul>
-        <li> Include codes from 
-          <a href="http://www.snomed.org/"><code> http://snomed.info/sct</code></a>  where concept is-a 311401005 (Patient education (procedure))
-        </li>
-      </ul>
-    </div>
-  </text>
-  <url value="https://posithera.de/fhir/eWundbericht/ValueSet/EducationCode" />
-  <version value="4.0.0" />
-  <name value="EducationCode" />
-  <title value="Edukation Code" />
-  <status value="draft" />
-  <experimental value="false" />
-  <date value="2019-11-22" />
-  <description value="This value set contains concept codes for specific substances. It includes codes from    [SNOMED](http://snomed.info/sct) where concept is-a is-a 311401005 (Patient education (procedure))" />
-  <copyright value="This resource includes content from SNOMED Clinical Terms® (SNOMED CT®) which is copyright    of the International Health Terminology Standards Development Organisation (IHTSDO). Implementers    of these specifications must have the appropriate SNOMED CT Affiliate license - for more    information contact http://www.snomed.org/snomed-ct/get-snomed-ct or info@snomed.org" />
-  <compose>
-    <include>
-      <system value="http://snomed.info/sct" />
-      <filter>
-        <property value="concept" />
-        <op value="is-a" />
-        <value value="311401005" />
-      </filter>
-    </include>
-  </compose>
+	<id value="allergie-code" />
+	<meta>
+		<profile
+			value="http://hl7.org/fhir/StructureDefinition/shareablevalueset" />
+	</meta>
+	<text>
+		<status value="generated" />
+		<div xmlns="http://www.w3.org/1999/xhtml">
+			<h2> Allergie Code</h2>
+			<div>
+				<p>
+					This value set contains concept codes for specific substances. It
+					includes codes from
+
+					<a href="http://snomed.info/sct">SNOMED</a>
+					where concept is-a 311401005 (Patient education (procedure))
+				</p>
+			</div>
+			<p>
+				<b> Copyright Statement:</b>
+			</p>
+			<div>
+				<p> This resource includes content from SNOMED Clinical Terms®
+					(SNOMED CT®) which is copyright
+					of the International Health
+					Terminology Standards Development
+					Organisation (IHTSDO).
+					Implementers
+					of these specifications must have the appropriate
+					SNOMED CT Affiliate
+					license - for more
+					information contact
+					http://www.snomed.org/snomed-ct/get-snomed-ct or
+					info@snomed.org
+				</p>
+			</div>
+			<p> This value set includes codes from the following code systems:
+			</p>
+			<ul>
+				<li>
+					Include codes from
+					<a href="http://www.snomed.org/">
+						<code> http://snomed.info/sct</code>
+					</a>
+					where concept is-a 311401005 (Patient education (procedure))
+				</li>
+			</ul>
+		</div>
+	</text>
+	<contact>
+		<name value="Mareike Przysucha" />
+		<telecom>
+			<system value="email" />
+			<value value="ewundbericht@hs-osnabrueck.de" />
+			<use value="work" />
+		</telecom>
+		<telecom>
+			<system value="url" />
+			<value
+				value="https://www.hs-osnabrueck.de/forschungsgruppe-informatik-im-gesundheitswesen/" />
+			<use value="work" />
+		</telecom>
+	</contact>
+	<url
+		value="https://posithera.de/fhir/eWundbericht/ValueSet/EducationCode" />
+	<version value="4.0.0" />
+	<name value="EducationCode" />
+	<title value="Edukation Code" />
+	<status value="draft" />
+	<experimental value="false" />
+	<date value="2019-11-22" />
+	<description
+		value="This value set contains concept codes for specific substances. It includes codes from    [SNOMED](http://snomed.info/sct) where concept is-a is-a 311401005 (Patient education (procedure))" />
+	<copyright
+		value="This resource includes content from SNOMED Clinical Terms® (SNOMED CT®) which is copyright    of the International Health Terminology Standards Development Organisation (IHTSDO). Implementers    of these specifications must have the appropriate SNOMED CT Affiliate license - for more    information contact http://www.snomed.org/snomed-ct/get-snomed-ct or info@snomed.org" />
+	<compose>
+		<include>
+			<system value="http://snomed.info/sct" />
+			<filter>
+				<property value="concept" />
+				<op value="is-a" />
+				<value value="311401005" />
+			</filter>
+		</include>
+	</compose>
 </ValueSet>

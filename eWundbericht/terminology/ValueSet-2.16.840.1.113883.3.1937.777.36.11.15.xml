@@ -10,7 +10,8 @@
 			<h2> Wundschmerz-Skalen</h2>
 			<div>
 				<p>
-					This value set contains concept codes for the coding of pain scores.
+					This value set contains concept codes for the coding of pain
+					scores.
 				</p>
 			</div>
 			<b> Copyright Statement:</b>
@@ -34,13 +35,14 @@
 			<p> This value set includes codes from the following code systems:
 			</p>
 			<ul>
-			<li>425401001 (Pain intensity rating scale (assessment scale))</li>
+				<li>425401001 (Pain intensity rating scale (assessment scale))</li>
 				<li>
 					Include codes from
 					<a href="http://www.snomed.org/">
 						<code> http://snomed.info/sct</code>
 					</a>
-					where concept descendent-of 225908003 (Pain score (observable entity))
+					where concept descendent-of 225908003 (Pain score (observable
+					entity))
 				</li>
 			</ul>
 		</div>
@@ -62,6 +64,19 @@
 	<immutable value="false" />
 	<copyright
 		value="This artefact includes content from SNOMED Clinical Terms® (SNOMED CT®) which is copyright of the International Health Terminology Standards Development Organisation (IHTSDO). Implementers of these artefacts must have the appropriate SNOMED CT Affiliate license - for more information contact http://www.snomed.org/snomed-ct/getsnomed-ct or info@snomed.org." />
+	<contact>
+		<name value="Mareike Przysucha" />
+		<telecom>
+			<system value="email" />
+			<value value="ewundbericht@hs-osnabrueck.de" />
+			<use value="work" />
+		</telecom>
+		<telecom>
+			<system value="url" />
+			<value value="https://www.hs-osnabrueck.de/forschungsgruppe-informatik-im-gesundheitswesen/" />
+			<use value="work" />
+		</telecom>
+	</contact>
 	<compose>
 		<include>
 			<system value="http://snomed.info/sct" />
