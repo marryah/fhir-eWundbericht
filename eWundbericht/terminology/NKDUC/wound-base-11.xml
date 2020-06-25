@@ -1,0 +1,134 @@
+<ValueSet xmlns="http://hl7.org/fhir">
+	<meta>
+		<profile
+			value="http://hl7.org/fhir/StructureDefinition/shareablevalueset" />
+	</meta>
+	<text>
+		<status value="generated" />
+		<div xmlns="http://www.w3.org/1999/xhtml">
+			<h2> Wundgrund / Wound base</h2>
+			<div>
+				<p>
+					This value set contains concept codes for the description of the
+					wound base.
+				</p>
+			</div>
+			<b> Copyright Statement:</b>
+			<p>
+			</p>
+			<div>
+				<p> This resource includes content from SNOMED Clinical Terms®
+					(SNOMED CT®) which is copyright
+					of the International Health
+					Terminology Standards Development
+					Organisation (IHTSDO).
+					Implementers
+					of these specifications must have the appropriate
+					SNOMED CT Affiliate
+					license - for more
+					information contact
+					http://www.snomed.org/snomed-ct/get-snomed-ct or
+					info@snomed.org
+				</p>
+			</div>
+			<p> This value set includes codes from the following code systems:
+			</p>
+			<ul>
+				<li>
+					Include codes from
+					<a href="http://www.snomed.org/">
+						<code> http://snomed.info/sct</code>
+					</a>
+					where concept is-a 53534000 (Dermis structure (body structure))
+				</li>
+				<li>
+					Include codes from
+					<a href="http://www.snomed.org/">
+						<code> http://snomed.info/sct</code>
+					</a>
+					where concept is-a 71616004 (Skeletal and/or smooth muscle
+					structure (body structure))
+				</li>
+				<li>
+					Include codes from
+					<a href="http://www.snomed.org/">
+						<code> http://snomed.info/sct</code>
+					</a>
+					where concept is-a 13024002 (Tendon structure (body structure))
+				</li>
+				<li>
+					Include codes from
+					<a href="http://www.snomed.org/">
+						<code> http://snomed.info/sct</code>
+					</a>
+					where concept is-a 272673000 (Bone structure (body structure))
+				</li>
+				<li>
+					Include codes from
+					<a href="http://www.snomed.org/">
+						<code> http://snomed.info/sct</code>
+					</a>
+					where concept is-a 67769002
+					(Subcutaneous fatty tissue (body
+					structure))
+				</li>
+			</ul>
+		</div>
+	</text>
+	<url
+		value="https://posithera.de/fhir/eWundbericht/ValueSet/Wundgrund" />
+	<identifier>
+		<use value="official" />
+		<system value="http://art-decor.org/ns/oids/vs" />
+		<value value="2.16.840.1.113883.3.1937.777.36.11.11" />
+	</identifier>
+	<version value="0.1.0" />
+	<name value="Woundbase" />
+	<title value="Wundgrund (SNOMED)" />
+	<status value="draft" />
+	<experimental value="false" />
+	<publisher value="Hochschule Osnabrück" />
+	<description
+		value="Dieses Valueset ist ein Beispiel, wie der Wundgrund mit SNOMED CT codiert werden kann." />
+	<immutable value="false" />
+	<contact>
+		<name value="Mareike Przysucha" />
+		<telecom>
+			<system value="email" />
+			<value value="ewundbericht@hs-osnabrueck.de" />
+			<use value="work" />
+		</telecom>
+		<telecom>
+			<system value="url" />
+			<value value="https://www.hs-osnabrueck.de/forschungsgruppe-informatik-im-gesundheitswesen/" />
+			<use value="work" />
+		</telecom>
+	</contact>
+	<compose>
+		<include>
+			<system value="http://snomed.info/sct" />
+			<concept>
+				<display value="Dermis structure (body structure)" />
+				<value value="53534000" />
+			</concept>
+			<concept>
+				<code value="13024002" />
+				<display value="Tendon structure (body structure)"/>
+			</concept>
+<!--
+			<concept>
+				<display value="Muskel" />
+				<code value="272673000" />
+			</concept>
+-->
+			<concept>
+				<display value="Bone structure (body structure)" />
+				<code value="272673000" />
+			</concept>
+			<concept>
+				<display value="Adipose tissue (body structure)" />
+				<value value="55603005" />
+			</concept>
+		</include>
+	</compose>
+</ValueSet>

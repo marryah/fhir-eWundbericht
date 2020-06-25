@@ -1,0 +1,2020 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ConceptMap xmlns="http://hl7.org/fhir">
+	<id value="101" />
+	<url value="" />
+	<version value="4.0.1" />
+	<name value="" />
+	<title value="" />
+	<status value="draft" />
+	<experimental value="true" />
+	<date value="2020-06-22" />
+	<publisher value="Hochschule Osnabrück" />
+	<contact>
+		<name value="Jens Hüsers" />
+		<telecom>
+			<system value="email" />
+			<value value="j.huesers@hs-osnabrueck.de" />
+			<use value="work" />
+		</telecom>
+		<telecom>
+			<system value="url" />
+			<value
+				value="https://www.hs-osnabrueck.de/forschungsgruppe-informatik-im-gesundheitswesen/" />
+			<use value="work" />
+		</telecom>
+	</contact>
+	<contact>
+		<name value="Mareike Przysucha" />
+		<telecom>
+			<system value="email" />
+			<value value="ewundbericht@hs-osnabrueck.de" />
+			<use value="work" />
+		</telecom>
+		<telecom>
+			<system value="url" />
+			<value
+				value="https://www.hs-osnabrueck.de/forschungsgruppe-informatik-im-gesundheitswesen/" />
+			<use value="work" />
+		</telecom>
+	</contact>
+	<sourceUri
+		value="https://posithera.de/fhir/nkduc/CodeSystem/NKDUC" />
+	<targetUri value="http://snomed.info/sct" />
+	<group>
+		<source
+			value="https://posithera.de/fhir/nkduc/CodeSystem/NKDUC" />
+		<target value="http://snomed.info/sct" />
+
+
+		<element>
+			<code value="C0101" />
+			<display value="Geburtsdatum - ddmmyyyy" />
+			<target>
+				<code value="184099003" />
+				<display value="DOB - Date of birth (observable entry)" />
+				<equivalence value="equal" />
+			</target>
+		</element>
+		<element>
+			<code value="C010201" />
+			<display value="männlich" />
+			<target>
+				<code value="248153007" />
+				<display value="Male (finding)" />
+				<equivalence value="equal" />
+			</target>
+		</element>
+		<element>
+			<code value="C010202" />
+			<display value="weiblich" />
+			<target>
+				<code value="248152002" />
+				<display value="Female (finding)" />
+				<equivalence value="equal" />
+			</target>
+		</element>
+		<element>
+			<code value="C0102" />
+			<display value="Geschlecht" />
+			<target>
+				<code value="263495000" />
+				<display value="Gender (observable entity)" />
+				<equivalence value="equal" />
+			</target>
+		</element>
+		<element>
+			<code value="C0103" />
+			<display value="Versichertenstatus" />
+			<target>
+				<code value="419808006" />
+				<display
+					value="Finding related to health insurance issues (finding)" />
+				<equivalence value="wider" />
+			</target>
+		</element>
+		<element>
+			<code value="C010303" />
+			<display value="PKV" />
+			<target>
+				<code value="185952002" />
+				<display value="Private health insurance held (finding)" />
+				<equivalence value="equivalent" />
+			</target>
+		</element>
+		<element>
+			<code value="C010304" />
+			<display value="nicht krankversichert" />
+			<target>
+				<code value="424553001" />
+				<display value="Uninsured medical expenses (finding)" />
+				<equivalence value="equivalent" />
+			</target>
+		</element>
+
+		<element>
+			<code value="C0105" />
+			<display value="Familienstand" />
+			<target>
+				<code value="224083004" />
+				<display
+					value="Marital or partnership status (observable entity)" />
+				<equivalence value="equivalent" />
+			</target>
+		</element>
+		<element>
+			<code value="C010501" />
+			<display value="feste Partnerschaft" />
+			<target>
+				<code value="430618002" />
+				<display value="Domestic partnership (finding)" />
+				<equivalence value="equivalent" />
+			</target>
+		</element>
+		<element>
+			<code value="C010502" />
+			<display value="verheiratet" />
+			<target>
+				<code value="87915002" />
+				<display value="Married (finding)" />
+				<equivalence value="equal" />
+			</target>
+		</element>
+		<element>
+			<code value="C010503" />
+			<display value="geschieden" />
+			<target>
+				<code value="20295000" />
+				<display value="Divorced (finding)" />
+				<equivalence value="equal" />
+			</target>
+		</element>
+		<element>
+			<code value="C010504" />
+			<display value="verwitwet" />
+			<target>
+				<code value="33553000" />
+				<display value="Widowed (finding)" />
+				<equivalence value="equal" />
+			</target>
+		</element>
+		<element>
+			<code value="C010505" />
+			<display value="ledig" />
+			<target>
+				<code value="125725006" />
+				<display
+					value="Marital status: single, never married (finding)" />
+				<equivalence value="equivalent" />
+			</target>
+		</element>
+		<element>
+			<code value="C0106" />
+			<display value="Schulbildung" />
+			<target>
+				<code value="276031006" />
+				<display value="Details of education (observable entity)" />
+				<equivalence value="wider" />
+			</target>
+		</element>
+		<element>
+			<code value="C0107" />
+			<display value="Berufstätigkeit" />
+			<target>
+				<code value="224362002" />
+				<display value="Employment status (observable entity)" />
+				<equivalence value="equivalent" />
+			</target>
+		</element>
+		<element>
+			<code value="C010701" />
+			<display value="erwerbstätig mit |__|__| Stunden pro Woche" />
+			<target>
+				<code value="224363007" />
+				<display value="Employed (finding)" />
+				<equivalence value="wider" />
+			</target>
+		</element>
+		<element>
+			<code value="C010702" />
+			<display
+				value="längere Beurlaubung, Freistellung (z. B. Elternzeit)" />
+			<target>
+				<code value="700149001" />
+				<display value="On parental leave (finding)" />
+				<equivalence value="narrower" />
+			</target>
+		</element>
+		<element>
+			<code value="C010704" />
+			<display
+				value="in Rente, Pension, Vorruhestand (nicht aufgrund der Erkrankung)" />
+			<target>
+				<code value="105493001" />
+				<display value="Retired, life event (finding)" />
+				<equivalence value="wider" />
+			</target>
+		</element>
+		<element>
+			<code value="C010705" />
+			<display
+				value="in Frührente, erwerbsunfähig (wegen der Erkrankung)" />
+			<target>
+				<code value="160898008" />
+				<display value="Medically retired, life event (finding)" />
+				<equivalence value="equivalent" />
+			</target>
+		</element>
+		<element>
+			<code value="C010707" />
+			<display value="Schüler/in, Student/in" />
+			<target>
+				<code value="65853000" />
+				<display value="Student (occupation)" />
+				<equivalence value="equivalent" />
+			</target>
+		</element>
+		<element>
+			<code value="C010708" />
+			<display value="Empfänger von Arbeitslosengeld I oder II" />
+			<target>
+				<code value="73438004" />
+				<display value="Unemployed (finding)" />
+				<equivalence value="equivalent" />
+			</target>
+		</element>
+
+		<element>
+			<code value="C020103" />
+			<display value="bmi" />
+			<target>
+				<code value="60621009" />
+				<display value="Body mass index (observable entity)" />
+				<equivalence value="equal" />
+			</target>
+		</element>
+		<element>
+			<code value="C020101" />
+			<display value="Größe in cm" />
+			<target>
+				<code value="50373000" />
+				<display value="Body height measure (observable entity)" />
+				<equivalence value="equal" />
+			</target>
+		</element>
+		<element>
+			<code value="C020102" />
+			<display value="Gewicht in kg" />
+			<target>
+				<code value="27113001" />
+				<display value="Body weight (observable entity)" />
+				<equivalence value="equal" />
+			</target>
+		</element>
+		<element>
+			<code value="C020201" />
+			<display value="Herz-Kreislauf-Erkrankungen" />
+			<target>
+				<code value="49601007" />
+				<display
+					value="Disorder of cardiovascular system (disorder)" />
+				<equivalence value="equal" />
+			</target>
+		</element>
+		<element>
+			<code value="C02020101" />
+			<display value="Arterielle Hypertonie" />
+			<target>
+				<code value="38341003" />
+				<display
+					value="Hypertensive disorder, systemic arterial (disorder)" />
+				<equivalence value="equivalent" />
+			</target>
+		</element>
+		<element>
+			<code value="C02020102" />
+			<display value="Herzinsuffizienz" />
+			<target>
+				<code value="84114007" />
+				<display value="Heart failure (disorder)" />
+				<equivalence value="equivalent" />
+			</target>
+		</element>
+		<element>
+			<code value="C02020103" />
+			<display value="Koronare Herzkrankheit" />
+			<target>
+				<code value="53741008" />
+				<display value="Coronary arteriosclerosis (disorder)" />
+				<equivalence value="equivalent" />
+			</target>
+		</element>
+		<element>
+			<code value="C02020104" />
+			<display value="Gerinnungsstörung" />
+			<target>
+				<code value="64779008" />
+				<display value="Blood coagulation disorder (disorder)" />
+				<equivalence value="equal" />
+			</target>
+		</element>
+		<element>
+			<code value="C02020105" />
+			<display value="Zustand nach Thrombose" />
+			<target>
+				<code value="275546001" />
+				<display value="History of thrombosis (situation)" />
+				<equivalence value="equal" />
+			</target>
+		</element>
+		<element>
+			<code value="C020202" />
+			<display value="Pulmonale Erkrankungen" />
+			<target>
+				<code value="19829001" />
+				<display value="Disorder of lung (disorder)" />
+				<equivalence value="equivalent" />
+			</target>
+		</element>
+		<element>
+			<code value="C02020201" />
+			<display value="Asthma bronchiale" />
+			<target>
+				<code value="195967001" />
+				<display value="Asthma (disorder)" />
+				<equivalence value="equal" />
+			</target>
+		</element>
+		<element>
+			<code value="C02020202" />
+			<display value="Chronische Bronchitis" />
+			<target>
+				<code value="63480004" />
+				<display value="Chronic bronchitis (disorder)" />
+				<equivalence value="equal" />
+			</target>
+		</element>
+		<element>
+			<code value="C020203" />
+			<display value="Stoffwechselstörungen" />
+			<target>
+				<code value="75934005" />
+				<display value="Metabolic disease (disorder)" />
+				<equivalence value="equal" />
+			</target>
+		</element>
+		<element>
+			<code value="C02020301" />
+			<display value="Diabetes mellitus" />
+			<target>
+				<code value="73211009" />
+				<display value="Diabetes mellitus (disorder)" />
+				<equivalence value="equal" />
+			</target>
+		</element>
+		<element>
+			<code value="C0202030101" />
+			<display value="Diabetes mellitus Typ 1" />
+			<target>
+				<code value="46635009" />
+				<display value="Diabetes mellitus type 1 (disorder)" />
+				<equivalence value="equal" />
+			</target>
+		</element>
+		<element>
+			<code value="C0202030102" />
+			<display value="Diabetes mellitus Typ 2" />
+			<target>
+				<code value="44054006" />
+				<display value="Diabetes mellitus type 2 (disorder)" />
+				<equivalence value="equal" />
+			</target>
+		</element>
+		<element>
+			<code value="C02020304" />
+			<display value="Hyperurikämie" />
+			<target>
+				<code value="35885006" />
+				<display value="Hyperuricemia (disorder)" />
+				<equivalence value="equal" />
+			</target>
+		</element>
+		<element>
+			<code value="C02020305" />
+			<display value="Lipidstoffwechselstörung" />
+			<target>
+				<code value="267431006" />
+				<display value="Disorder of lipid metabolism (disorder)" />
+				<equivalence value="equal" />
+			</target>
+		</element>
+		<element>
+			<code value="C02020306" />
+			<display value="Mangelernährung" />
+			<target>
+				<code value="2492009" />
+				<display value="Nutritional disorder (disorder)" />
+				<equivalence value="wider" />
+			</target>
+		</element>
+		<element>
+			<code value="C020204" />
+			<display value="Infektionskrankheiten" />
+			<target>
+				<code value="40733004" />
+				<display value="Infectious disease (disorder)" />
+				<equivalence value="equal" />
+			</target>
+		</element>
+		<element>
+			<code value="C02020401" />
+			<display value="Tuberkulose" />
+			<target>
+				<code value="56717001" />
+				<display value="Tuberculosis (disorder)" />
+				<equivalence value="equal" />
+			</target>
+		</element>
+		<element>
+			<code value="C02020402" />
+			<display value="Hepatitis" />
+			<target>
+				<code value="128241005" />
+				<display value="Inflammatory disease of liver (disorder)" />
+				<equivalence value="equivalent" />
+			</target>
+		</element>
+		<element>
+			<code value="C0202040202" />
+			<display value="Hepatitis A" />
+			<target>
+				<code value="40468003" />
+				<display value="Viral hepatitis, type A (disorder)" />
+				<equivalence value="equivalent" />
+			</target>
+		</element>
+		<element>
+			<code value="C0202040203" />
+			<display value="Hepatitis B" />
+			<target>
+				<code value="66071002" />
+				<display value="Viral hepatitis type B (disorder)" />
+				<equivalence value="equivalent" />
+			</target>
+		</element>
+		<element>
+			<code value="C0202040204" />
+			<display value="Hepatitis C" />
+			<target>
+				<code value="50711007" />
+				<display value="Viral hepatitis type C (disorder)" />
+				<equivalence value="equivalent" />
+			</target>
+		</element>
+		<element>
+			<code value="C02020403" />
+			<display value="HIV-Infektion" />
+			<target>
+				<code value="86406008" />
+				<display
+					value="Human immunodeficiency virus infection (disorder)" />
+				<equivalence value="equal" />
+			</target>
+		</element>
+		<element>
+			<code value="C020205" />
+			<display value="Lebererkrankungen" />
+			<target>
+				<code value="235856003" />
+				<display value="Disorder of liver (disorder)" />
+				<equivalence value="equal" />
+			</target>
+		</element>
+		<element>
+			<code value="C02020501" />
+			<display value="Leberzirrhose" />
+			<target>
+				<code value="19943007" />
+				<display value="Cirrhosis of liver (disorder)" />
+				<equivalence value="equal" />
+			</target>
+		</element>
+		<element>
+			<code value="C02020502" />
+			<display value="Steatosis hepatis" />
+			<target>
+				<code value="197321007" />
+				<display value="Steatosis of liver (disorder)" />
+				<equivalence value="equal" />
+			</target>
+		</element>
+		<element>
+			<code value="C02020503" />
+			<display value="Chronischer Leberschaden" />
+			<target>
+				<code value="243978007" />
+				<display value="Liver damage (disorder)" />
+				<equivalence value="wider" />
+			</target>
+		</element>
+		<element>
+			<code value="C020206" />
+			<display value="Dermatologisch-allergologische Erkrankung" />
+			<target>
+				<code value="422290000" />
+				<display value="Allergic disorder of skin (disorder)" />
+				<equivalence value="equivalent" />
+			</target>
+		</element>
+		<element>
+			<code value="C02020601" />
+			<display value="Kontaktekzem" />
+			<target>
+				<code value="40275004" />
+				<display value="Contact dermatitis (disorder)" />
+				<equivalence value="equivalent" />
+			</target>
+		</element>
+		<element>
+			<code value="C020207" />
+			<display value="Nierenerkrankungen" />
+			<target>
+				<code value="90708001" />
+				<display value="Kidney disease (disorder)" />
+				<equivalence value="equal" />
+			</target>
+		</element>
+		<element>
+			<code value="C02020701" />
+			<display value="Niereninsuffizienz" />
+			<target>
+				<code value="723188008" />
+				<display value="Renal insufficiency (disorder)" />
+				<equivalence value="equal" />
+			</target>
+		</element>
+		<element>
+			<code value="C020208" />
+			<display
+				value="Rheumatologische und immunologische Erkrankung" />
+			<target>
+				<code value="396332003" />
+				<display value="Rheumatism (disorder)" />
+				<equivalence value="narrower" />
+			</target>
+		</element>
+		<element>
+			<code value="C02020801" />
+			<display value="Rheumatoide Arthritis" />
+			<target>
+				<code value="69896004" />
+				<display value="Rheumatoid arthritis (disorder)" />
+				<equivalence value="equal" />
+			</target>
+		</element>
+		<element>
+			<code value="C020209" />
+			<display value="Psychische und Suchterkrankungen" />
+			<target>
+				<code value="74732009" />
+				<display value="Mental disorder (disorder)" />
+				<equivalence value="narrower" />
+			</target>
+		</element>
+		<element>
+			<code value="C02020901" />
+			<display value="Depression" />
+			<target>
+				<code value="35489007" />
+				<display value="Depressive disorder (disorder)" />
+				<equivalence value="equivalent" />
+			</target>
+		</element>
+		<element>
+			<code value="C0202090200" />
+			<display value="Nichtraucher" />
+			<target>
+				<code value="8392000" />
+				<display value="Non-smoker (finding)" />
+				<equivalence value="equal" />
+			</target>
+		</element>
+		<element>
+			<code value="C0202090201" />
+			<display value="Raucher" />
+			<target>
+				<code value="77176002" />
+				<display value="Smoker (finding)" />
+				<equivalence value="equal" />
+			</target>
+		</element>
+		<element>
+			<code value="C0202090301" />
+			<display value="Ex-Raucher" />
+			<target>
+				<code value="8517006" />
+				<display value="Ex-smoker (finding)" />
+				<equivalence value="equal" />
+			</target>
+		</element>
+		<element>
+			<code value="C02020904" />
+			<display value="Alkoholabusus" />
+			<target>
+				<code value="15167005" />
+				<display value="Alcohol abuse (disorder)" />
+				<equivalence value="equal" />
+			</target>
+		</element>
+		<element>
+			<code value="C02020905" />
+			<display value="Andere Drogen" />
+			<target>
+				<code value="26416006" />
+				<display value="Drug abuse (disorder)" />
+				<equivalence value="equivalent" />
+			</target>
+		</element>
+
+		<!-- <element> -->
+		<!-- <code value="C02020906" /> -->
+		<!-- <display value="i. v. Drogenabusus" /> -->
+		<!-- <target> -->
+		<!-- <code value="162591001" /> -->
+		<!-- <display value="Suspected drug abuse -->
+		<!-- (situation)" /> -->
+		<!-- <equivalence value="unmatched" /> -->
+		<!-- </target> -->
+		<!-- </element> -->
+
+		<element>
+			<code value="C020210" />
+			<display value="Maligne Tumoren" />
+			<target>
+				<code value="363346000" />
+				<display value="Malignant neoplastic disease (disorder)" />
+				<equivalence value="equivalent" />
+			</target>
+		</element>
+		<element>
+			<code value="C020211" />
+			<display value="Neurologische Erkrankungen" />
+			<target>
+				<code value="118940003" />
+				<display value="Disorder of nervous system (disorder)" />
+				<equivalence value="equal" />
+			</target>
+		</element>
+		<element>
+			<code value="C02021101" />
+			<display value="Multiple Sklerose" />
+			<target>
+				<code value="24700007" />
+				<display value="Multiple sclerosis (disorder)" />
+				<equivalence value="equal" />
+			</target>
+		</element>
+		<element>
+			<code value="C02021102" />
+			<display value="Periphere Polyneuropathie" />
+			<target>
+				<code value="42345000" />
+				<display value="Polyneuropathy (disorder)" />
+				<equivalence value="equivalent" />
+			</target>
+		</element>
+		<element>
+			<code value="C02021103" />
+			<display value="Morbus Parkinson" />
+			<target>
+				<code value="49049000" />
+				<display value="Parkinson's disease (disorder)" />
+				<equivalence value="equal" />
+			</target>
+		</element>
+		<element>
+			<code value="C02021201" />
+			<display value="Lipödem" />
+			<target>
+				<code value="234102003" />
+				<display value="Lipedema (disorder)" />
+				<equivalence value="equal" />
+			</target>
+		</element>
+		<element>
+			<code value="C02021202" />
+			<display value="Lymphödem" />
+			<target>
+				<code value="234097001" />
+				<display value="Lymphedema (disorder)" />
+				<equivalence value="equal" />
+			</target>
+		</element>
+		<element>
+			<code value="C0203" />
+			<display value="Schmerztherapie" />
+			<target>
+				<code value="278414003" />
+				<display value="Pain management (procedure)" />
+				<equivalence value="equivalent" />
+			</target>
+		</element>
+		<element>
+			<code value="C020304" />
+			<display value="Antibiotikatherapie" />
+			<target>
+				<code value="281789004" />
+				<display value="Antibiotic therapy (procedure)" />
+				<equivalence value="equal" />
+			</target>
+		</element>
+		<element>
+			<code value="C020305" />
+			<display value="Immunsuppressiva" />
+			<target>
+				<code value="86553008" />
+				<display value="Immunosuppressive therapy (procedure)" />
+				<equivalence value="equivalent" />
+			</target>
+		</element>
+		<element>
+			<code value="C020306" />
+			<display value="Antikoagulanzien" />
+			<target>
+				<code value="182764009" />
+				<display value="Anticoagulant therapy (procedure)" />
+				<equivalence value="equal" />
+			</target>
+		</element>
+		<element>
+			<code value="C020307" />
+			<display value="Diuretika" />
+			<target>
+				<code value="722048006" />
+				<display value="Diuretic therapy (procedure)" />
+				<equivalence value="equal" />
+			</target>
+		</element>
+		<element>
+			<code value="C020401" />
+			<display value="über" />
+			<target>
+				<code value="238131007" />
+				<display value="Overweight (finding)" />
+				<equivalence value="equal" />
+			</target>
+		</element>
+		<element>
+			<code value="C020402" />
+			<display value="unter" />
+			<target>
+				<code value="248342006" />
+				<display value="Underweight (finding)" />
+				<equivalence value="equal" />
+			</target>
+		</element>
+		<element>
+			<code value="C020403" />
+			<display value="normal" />
+			<target>
+				<code value="43664005" />
+				<display value="Normal weight (finding)" />
+				<equivalence value="equal" />
+			</target>
+		</element>
+		<element>
+			<code value="C0204" />
+			<display value="Ernährungsstatus" />
+			<target>
+				<code value="87276001" />
+				<display value="Nutritional status (observable entity)" />
+				<equivalence value="equal" />
+			</target>
+		</element>
+		<element>
+			<code value="C0301" />
+			<display value="Wundanzahl" />
+			<target>
+				<code value="264893008" />
+				<display value="Number of ulcers (observable entity)" />
+				<equivalence value="equal" />
+			</target>
+		</element>
+		<element>
+			<code value="C030201" />
+			<display value="Ulcus cruris venosum" />
+			<target>
+				<code value="402863005" />
+				<display value="Venous stasis ulcer of leg (disorder)" />
+				<equivalence value="equal" />
+			</target>
+		</element>
+		<element>
+			<code value="C030202" />
+			<display value="Ulcus cruris arteriosum" />
+			<target>
+				<code value="402862000" />
+				<display value="Arteritic leg ulcer (disorder)" />
+				<equivalence value="equivalent" />
+			</target>
+		</element>
+		<element>
+			<code value="C030203" />
+			<display value="Ulcus cruris mixtum" />
+			<target>
+				<code value="238792006" />
+				<display value="Mixed arteriovenous leg ulcer (disorder)" />
+				<equivalence value="equivalent" />
+			</target>
+		</element>
+		<element>
+			<code value="C030204" />
+			<display value="vaskulitisch/immunologisch" />
+			<target>
+				<code value="74578003" />
+				<display value="Pyoderma gangrenosum (disorder)" />
+				<equivalence value="narrower" />
+			</target>
+		</element>
+
+		<!-- <element> -->
+		<!-- <code value="C030206" /> -->
+		<!-- <display value="maligne" /> -->
+		<!-- <target> -->
+		<!-- <code value="21594007" /> -->
+		<!-- <display value="Malignant (qualifier value)" /> -->
+		<!-- <equivalence value="unmatched" /> -->
+		<!-- </target> -->
+		<!-- </element> -->
+
+		<element>
+			<code value="C0305" />
+			<display value="Rezidivulcus" />
+			<target>
+				<code value="42433008" />
+				<display value="Recurrent ulcer (morphologic abnormality)" />
+				<equivalence value="equal" />
+			</target>
+		</element>
+		<element>
+			<code value="C03" />
+			<display value="Wundanamnese" />
+			<target>
+				<code value="364554009" />
+				<display value="Wound observable (observable entity)" />
+				<equivalence value="equivalent" />
+			</target>
+		</element>
+		<element>
+			<code value="C03030106" />
+			<display value="Ferse" />
+			<target>
+				<code value="76853006" />
+				<display value="Heel structure (body structure)" />
+				<equivalence value="equal" />
+			</target>
+		</element>
+		<element>
+			<code value="C03030105" />
+			<display value="Fußrücken" />
+			<target>
+				<code value="2402003" />
+				<display
+					value="Structure of dorsum of foot (body structure)" />
+				<equivalence value="equal" />
+			</target>
+		</element>
+		<element>
+			<code value="C03030107" />
+			<display value="Fußsohle" />
+			<target>
+				<code value="57999000" />
+				<display value="Structure of sole of foot (body structure)" />
+				<equivalence value="equivalent" />
+			</target>
+		</element>
+		<element>
+			<code value="C03030102" />
+			<display value="Knie" />
+			<target>
+				<code value="72696002" />
+				<display value="Knee region structure (body structure)" />
+				<equivalence value="equal" />
+			</target>
+		</element>
+		<element>
+			<code value="C03030101" />
+			<display value="Oberschenkel" />
+			<target>
+				<code value="68367000" />
+				<display value="Thigh structure (body structure)" />
+				<equivalence value="equal" />
+			</target>
+		</element>
+		<element>
+			<code value="C03030104" />
+			<display value="Sprunggelenk" />
+			<target>
+				<code value="344001" />
+				<display value="Ankle region structure (body structure)" />
+				<equivalence value="equal" />
+			</target>
+		</element>
+		<element>
+			<code value="C03030103" />
+			<display value="Unterschenkel" />
+			<target>
+				<code value="30021000" />
+				<display
+					value="Structure of lower extremity from knee to ankle (body structure)" />
+				<equivalence value="equivalent" />
+			</target>
+		</element>
+		<element>
+			<code value="C03030108" />
+			<display value="Zehen" />
+			<target>
+				<code value="29707007" />
+				<display value="Toe structure (body structure)" />
+				<equivalence value="equal" />
+			</target>
+		</element>
+		<element>
+			<code value="C0401" />
+			<display value="Standardisierte Fotodokumentation" />
+			<target>
+				<code value="723394009" />
+				<display value="Photographic image record (record artifact)" />
+				<equivalence value="equal" />
+			</target>
+		</element>
+		<element>
+			<code value="C040200" />
+			<display value="kein Wundbelag" />
+			<target>
+				<code value="260413007" />
+				<display value="None (qualifier value)" />
+				<equivalence value="equivalent" />
+			</target>
+		</element>
+		<element>
+			<code value="C040201" />
+			<display value="Nekrose" />
+			<target>
+				<code value="255310005" />
+				<display value="Necrotizing (qualifier value)" />
+				<equivalence value="equivalent" />
+			</target>
+		</element>
+		<element>
+			<code value="C040202" />
+			<display value="Fibrin" />
+			<target>
+				<code value="263753008" />
+				<display value="Fibrinous (qualifier value)" />
+				<equivalence value="equivalent" />
+			</target>
+		</element>
+		<element>
+			<code value="C040203" />
+			<display value="Nekrose und Fibrin" />
+			<target>
+				<code value="52316006" />
+				<display
+					value="Fibrinoid necrosis (morphologic abnormality)" />
+				<equivalence value="equivalent" />
+			</target>
+		</element>
+		<element>
+			<code value="C040301" />
+			<display value="Sehne" />
+			<target>
+				<code value="13024002" />
+				<display value="Tendon structure (body structure)" />
+				<equivalence value="equal" />
+			</target>
+		</element>
+		<element>
+			<code value="C040302" />
+			<display value="Knochen" />
+			<target>
+				<code value="272673000" />
+				<display value="Bone structure (body structure)" />
+				<equivalence value="equal" />
+			</target>
+		</element>
+		<element>
+			<code value="C040303" />
+			<display value="Muskel" />
+			<target>
+				<code value="71616004" />
+				<display
+					value="Skeletal and/or smooth muscle structure (body structure)" />
+				<equivalence value="wider" />
+			</target>
+		</element>
+		<element>
+			<code value="C040304" />
+			<display value="Fettgewebe" />
+			<target>
+				<code value="55603005" />
+				<display value="Adipose tissue (body structure)" />
+				<equivalence value="equal" />
+			</target>
+		</element>
+		<element>
+			<code value="C040305" />
+			<display value="Dermis" />
+			<target>
+				<code value="53534000" />
+				<display value="Dermis structure (body structure)" />
+				<equivalence value="equal" />
+			</target>
+		</element>
+		<element>
+			<code value="C0403" />
+			<display value="Wundgrund" />
+			<target>
+				<code value="441390007" />
+				<display value="Surface area of ulcer (observable entity)" />
+				<equivalence value="equivalent" />
+			</target>
+		</element>
+		<element>
+			<code value="C040400" />
+			<display value="keine" />
+			<target>
+				<code value="260413007" />
+				<display value="None (qualifier value)" />
+				<equivalence value="equal" />
+			</target>
+		</element>
+		<element>
+			<code value="C0404" />
+			<display value="Granulation" />
+			<target>
+				<code value="406214003" />
+				<display value="Wound healing status (observable entity)" />
+				<equivalence value="wider" />
+			</target>
+		</element>
+		<element>
+			<code value="C04050" />
+			<display value="keine" />
+			<target>
+				<code value="260413007" />
+				<display value="None (qualifier value)" />
+				<equivalence value="equal" />
+			</target>
+		</element>
+		<element>
+			<code value="C040600" />
+			<display value="kein" />
+			<target>
+				<code value="260413007" />
+				<display value="None (qualifier value)" />
+				<equivalence value="equal" />
+			</target>
+		</element>
+		<element>
+			<code value="C040601" />
+			<display value="mäßig" />
+			<target>
+				<code value="255508009" />
+				<display value="Medium (qualifier value)" />
+				<equivalence value="equivalent" />
+			</target>
+		</element>
+		<element>
+			<code value="C040602" />
+			<display value="viel" />
+			<target>
+				<code value="255509001" />
+				<display value="Large (qualifier value)" />
+				<equivalence value="equivalent" />
+			</target>
+		</element>
+		<element>
+			<code value="C0406" />
+			<display value="Exsudatmenge" />
+			<target>
+				<code value="441281002" />
+				<display value="Amount of exudate (observable entity)" />
+				<equivalence value="equal" />
+			</target>
+		</element>
+		<element>
+			<code value="C040701" />
+			<display value="klar" />
+			<target>
+				<code value="263707001" />
+				<display value="Clear (qualifier value)" />
+				<equivalence value="equal" />
+			</target>
+		</element>
+		<element>
+			<code value="C040702" />
+			<display value="blutig" />
+			<target>
+				<code value="449762008" />
+				<display value="Sanguineous discharge from wound (finding)" />
+				<equivalence value="equivalent" />
+			</target>
+		</element>
+		<element>
+			<code value="C040703" />
+			<display value="grün" />
+			<target>
+				<code value="54662009" />
+				<display value="Green color (finding)" />
+				<equivalence value="equal" />
+			</target>
+		</element>
+		<element>
+			<code value="C040703" />
+			<display value="braun" />
+			<target>
+				<code value="371254008" />
+				<display value="Brown color (qualifier value)" />
+				<equivalence value="equal" />
+			</target>
+		</element>
+		<element>
+			<code value="C040703" />
+			<display value="gelb" />
+			<target>
+				<code value="371244009" />
+				<display value="Yellow color (qualifier value)" />
+				<equivalence value="equal" />
+			</target>
+		</element>
+		<element>
+			<code value="C0407" />
+			<display value="Beschaffenheit des Exsudats" />
+			<target>
+				<code value="441280001" />
+				<display value="Color of exudate (observable entity)" />
+				<equivalence value="equivalent" />
+			</target>
+		</element>
+		<element>
+			<code value="C040802" />
+			<display value="Breite" />
+			<target>
+				<code value="401239006" />
+				<display value="Width of wound (observable entity)" />
+				<equivalence value="equal" />
+			</target>
+		</element>
+		<element>
+			<code value="C040801" />
+			<display value="Länge" />
+			<target>
+				<code value="401238003" />
+				<display value="Length of wound (observable entity)" />
+				<equivalence value="equal" />
+			</target>
+		</element>
+		<element>
+			<code value="C040901" />
+			<display value="geheilt" />
+			<target>
+				<code value="298006005" />
+				<display value="Wound healed (finding)" />
+				<equivalence value="equal" />
+			</target>
+		</element>
+		<element>
+			<code value="C040902" />
+			<display value="verbessert" />
+			<target>
+				<code value="390771008" />
+				<display value="Improvement of status (qualifier value)" />
+				<equivalence value="equivalent" />
+			</target>
+		</element>
+		<element>
+			<code value="C040903" />
+			<display value="unverändert" />
+			<target>
+				<code value="260388006" />
+				<display value="No status change (qualifier value)" />
+				<equivalence value="equal" />
+			</target>
+		</element>
+		<element>
+			<code value="C040904" />
+			<display value="verschlechtert" />
+			<target>
+				<code value="390772001" />
+				<display value="Deterioration of status (qualifier value)" />
+				<equivalence value="equivalent" />
+			</target>
+		</element>
+		<element>
+			<code value="C0409" />
+			<display value="Abheilungsstatus" />
+			<target>
+				<code value="406214003" />
+				<display value="Wound healing status (observable entity)" />
+				<equivalence value="equal" />
+			</target>
+		</element>
+		<element>
+			<code value="C041002" />
+			<display value="gerötet" />
+			<target>
+				<code value="164424003" />
+				<display value="On examination - skin red (finding)" />
+				<equivalence value="equivalent" />
+			</target>
+		</element>
+		<element>
+			<code value="C041004" />
+			<display value="mazeriert" />
+			<target>
+				<code value="3644009" />
+				<display value="Macerated skin (finding)" />
+				<equivalence value="equal" />
+			</target>
+		</element>
+		<element>
+			<code value="C041005" />
+			<display value="livide" />
+			<target>
+				<code value="13423002" />
+				<display value="Lividity (finding)" />
+				<equivalence value="equal" />
+			</target>
+		</element>
+		<element>
+			<code value="C041006" />
+			<display value="nekrotisch" />
+			<target>
+				<code value="239157004" />
+				<display value="Wound edge necrosis (finding)" />
+				<equivalence value="equal" />
+			</target>
+		</element>
+		<element>
+			<code value="C041007" />
+			<display value="hyperkeratotisch" />
+			<target>
+				<code value="255424008" />
+				<display value="Hyperkeratotic (qualifier value)" />
+				<equivalence value="equal" />
+			</target>
+		</element>
+		<element>
+			<code value="C041008" />
+			<display value="unterminiert" />
+			<target>
+				<code value="449752001" />
+				<display value="Wound tissue undermining (finding)" />
+				<equivalence value="equal" />
+			</target>
+		</element>
+		<element>
+			<code value="C0410" />
+			<display value="Wundrand/ Hautumgebung" />
+			<target>
+				<code value="1121000124105" />
+				<display
+					value="Periwound skin condition (observable entity)" />
+				<equivalence value="narrower" />
+			</target>
+		</element>
+
+
+		<element>
+			<code value="C0411" />
+			<display value="Zeichen der lokalen Wundinfektion" />
+			<target>
+				<code value="76844004" />
+				<display value="Local infection of wound (disorder)" />
+				<equivalence value="equal" />
+			</target>
+		</element>
+		<!-- <element> -->
+		<!-- <code value="C0411" /> -->
+		<!-- <display value="Wundinfektion" /> -->
+		<!-- <target> -->
+		<!-- <code value="405009004" /> -->
+		<!-- <display value="Infection status (observable entity)" /> -->
+		<!-- <equivalence value="wider" /> -->
+		<!-- </target> -->
+		<!-- </element> -->
+		<element>
+			<code value="C0412" />
+			<display value="Geruch" />
+			<target>
+				<code value="445916002" />
+				<display value="Wound odor (finding)" />
+				<equivalence value="equal" />
+			</target>
+		</element>
+		<element>
+			<code value="C0413" />
+			<display
+				value="Wundschmerz VW (letzte 7 Tage) - VAS (visuelle Analogskala)" />
+			<target>
+				<code value="298012000" />
+				<display value="Wound pain (finding)" />
+				<equivalence value="wider" />
+			</target>
+		</element>
+		<element>
+			<code value="C0414" />
+			<display
+				value="Wundschmerz Ruhe (letzte 7 Tage) - VAS (visuelle Analogskala)" />
+			<target>
+				<code value="298012000" />
+				<display value="Wound pain (finding)" />
+				<equivalence value="wider" />
+			</target>
+		</element>
+		<!-- <element> -->
+		<!-- <code value="C0414" /> -->
+		<!-- <display value="Wundschmerz" /> -->
+		<!-- <target> -->
+		<!-- <code value="443394008" /> -->
+		<!-- <display -->
+		<!-- value="Visual analog scale pain score (observable entity)" /> -->
+		<!-- <equivalence value="wider" /> -->
+		<!-- </target> -->
+		<!-- </element> -->
+
+
+		<element>
+			<code value="C0501" />
+			<display value="Gehstreckenverminderung" />
+			<target>
+				<code value="248244005" />
+				<display value="Walking distance reduced (finding)" />
+				<equivalence value="equal" />
+			</target>
+		</element>
+		<!-- <element> <code value="C0501" /> <display value="Gehstreckenverminderung 
+			- Gehstreckenverminderung" /> <target> <code value="165263003" /> <display 
+			value="Walking distance (observable entity)" /> <equivalence value="wider" 
+			/> </target> </element> <element> <code value="05-01" /> <display value="Gehstreckenverminderung 
+			- Gehstreckenverminderung" /> <target> <code value="165263003" /> <display 
+			value="Walking distance (observable entity)" /> <equivalence value="wider" 
+			/> </target> </element> -->
+
+
+		<element>
+			<code value="C0502" />
+			<display value="ABPI - Index" />
+			<target>
+				<code value="446841001" />
+				<display
+					value="Ankle brachial pressure index (observable entity)" />
+				<equivalence value="equal" />
+			</target>
+		</element>
+		<element>
+			<code value="C050201" />
+			<display value="Verschlussdruck" />
+			<target>
+				<code value="444276005" />
+				<display
+					value="Arterial closing pressure (observable entity)" />
+				<equivalence value="equal" />
+			</target>
+		</element>
+		<element>
+			<code value="C0503" />
+			<display value="Duplexsonographie" />
+			<target>
+				<code value="252083003" />
+				<display value="Venous reflux flow (observable entity)" />
+				<equivalence value="equivalent" />
+			</target>
+		</element>
+		<element>
+			<code value="C0504" />
+			<display value="Wundabstrich" />
+			<target>
+				<code value="225997002" />
+				<display value="Taking wound swab (procedure)" />
+				<equivalence value="equivalent" />
+			</target>
+		</element>
+		<element>
+			<code value="C0506" />
+			<display value="Wundbezogene Labordiagnostik" />
+			<target>
+				<code value="15220000" />
+				<display value="Laboratory test (procedure)" />
+				<equivalence value="equivalent" />
+			</target>
+		</element>
+		<element>
+			<code value="C050702" />
+			<display value="CRP" />
+			<target>
+				<code value="61425002" />
+				<display value="C reactive protein (substance)" />
+				<equivalence value="equal" />
+			</target>
+		</element>
+		<element>
+			<code value="C050703" />
+			<display value="Hämoglobin" />
+			<target>
+				<code value="38082009" />
+				<display value="Hemoglobin (substance)" />
+				<equivalence value="equal" />
+			</target>
+		</element>
+		<element>
+			<code value="C050802" />
+			<display value="WAR" />
+			<target>
+				<code value="370782005" />
+				<display
+					value="Assessment of susceptibility for infection (procedure)" />
+				<equivalence value="wider" />
+			</target>
+		</element>
+		<element>
+			<code value="C050801" />
+			<display value="WIRE" />
+			<target>
+				<code value="370782005" />
+				<display
+					value="Assessment of susceptibility for infection (procedure)" />
+				<equivalence value="wider" />
+			</target>
+		</element>
+
+
+
+		<element>
+			<code value="C060101" />
+			<display value="Débridement" />
+			<target>
+				<code value="312732009" />
+				<display value="Debridement of leg ulcer (procedure)" />
+				<equivalence value="equal" />
+			</target>
+		</element>
+		<element>
+			<code value="C060102" />
+			<display value="Wundspülung" />
+			<target>
+				<code value="225116006" />
+				<display value="Irrigation of wound (procedure)" />
+				<equivalence value="equal" />
+			</target>
+		</element>
+		<element>
+			<code value="C060103" />
+			<display value="Wundantiseptik" />
+			<target>
+				<code value="261276004" />
+				<display
+					value="Medicinal product acting as antiseptic agent (product)" />
+				<equivalence value="equivalent" />
+			</target>
+		</element>
+		<element>
+			<code value="C060105" />
+			<display value="primärer Wundverband" />
+			<target>
+				<code value="450964002" />
+				<display value="Primary dressing (physical object)" />
+				<equivalence value="equal" />
+			</target>
+		</element>
+		<element>
+			<code value="C060106" />
+			<display value="sekundärer Wundverband" />
+			<target>
+				<code value="450965001" />
+				<display value="Secondary dressing (physical object)" />
+				<equivalence value="equal" />
+			</target>
+		</element>
+		<element>
+			<code value="C060108" />
+			<display value="Elektrostimulation" />
+			<target>
+				<code value="57942008" />
+				<display
+					value="Therapeutic electrical stimulation (regime/therapy)" />
+				<equivalence value="equivalent" />
+			</target>
+		</element>
+		<element>
+			<code value="C06010101" />
+			<display value="mechanisch" />
+			<target>
+				<code value="261018001" />
+				<display value="Mechanical (qualifier value)" />
+				<equivalence value="equal" />
+			</target>
+		</element>
+		<element>
+			<code value="C06010102" />
+			<display value="chirurgisch" />
+			<target>
+				<code value="83578000" />
+				<display value="Surgical (qualifier value)" />
+				<equivalence value="equal" />
+			</target>
+		</element>
+		<element>
+			<code value="C06010103" />
+			<display value="Ultraschall" />
+			<target>
+				<code value="51797001" />
+				<display value="Ultrasonic wave (physical force)" />
+				<equivalence value="equivalent" />
+			</target>
+		</element>
+		<element>
+			<code value="C06010106" />
+			<display value="Biochirurgie (Maden)" />
+			<target>
+				<code value="404916008" />
+				<display
+					value="Sterile maggot wound debridement (procedure)" />
+				<equivalence value="equal" />
+			</target>
+		</element>
+		<element>
+			<code value="C06010203" />
+			<display value="NaCl 0,9%" />
+			<target>
+				<code value="387390002" />
+				<display value="Sodium chloride (substance)" />
+				<equivalence value="equivalent" />
+			</target>
+		</element>
+		<element>
+			<code value="C06010204" />
+			<display value="Polyhexanid" />
+			<target>
+				<code value="421952002" />
+				<display value="Polihexanide (substance)" />
+				<equivalence value="equal" />
+			</target>
+		</element>
+		<element>
+			<code value="C06010205" />
+			<display value="Octenidin" />
+			<target>
+				<code value="430477008" />
+				<display value="Octenidine (substance)" />
+				<equivalence value="equal" />
+			</target>
+		</element>
+		<element>
+			<code value="C06010302" />
+			<display value="Octenidin" />
+			<target>
+				<code value="430477008" />
+				<display value="Octenidine (substance)" />
+				<equivalence value="equal" />
+			</target>
+		</element>
+		<element>
+			<code value="C06010303" />
+			<display value="PVP-Jod" />
+			<target>
+				<code value="386989006" />
+				<display value="Povidone iodine (substance)" />
+				<equivalence value="equal" />
+			</target>
+		</element>
+		<element>
+			<code value="C06010304" />
+			<display value="Polyhexanid" />
+			<target>
+				<code value="421952002" />
+				<display value="Polihexanide (substance)" />
+				<equivalence value="equal" />
+			</target>
+		</element>
+		<element>
+			<code value="C060105" />
+			<display value="Primärer Wundverband" />
+			<target>
+				<code value="450964002" />
+				<display value="Primary dressing (physical object)" />
+				<equivalence value="wider" />
+			</target>
+		</element>
+
+		<!-- <element> -->
+		<!-- <code value="C060106" /> -->
+		<!-- <display value="Antibakterielle Wundauflage" /> -->
+		<!-- <target> -->
+		<!-- <code value="450964002" /> -->
+		<!-- <display value="Primary dressing (physical object)" /> -->
+		<!-- <equivalence value="wider" /> -->
+		<!-- </target> -->
+		<!-- </element> -->
+
+		<element>
+			<code value="C060107" />
+			<display value="Sekundärer Wundverband" />
+			<target>
+				<code value="450965001" />
+				<display value="Secondary dressing (physical object)" />
+				<equivalence value="equal" />
+			</target>
+		</element>
+		<element>
+			<code value="C060108" />
+			<display value="Elektrostimulation" />
+			<target>
+				<code value="57942008" />
+				<display
+					value="Therapeutic electrical stimulation (regime/therapy)" />
+				<equivalence value="equivalent" />
+			</target>
+		</element>
+		<element>
+			<code value="C060201" />
+			<display value="Kompression" />
+			<target>
+				<code value="413899004" />
+				<display value="Compression bandaging (procedure)" />
+				<equivalence value="equivalent" />
+			</target>
+		</element>
+		<element>
+			<code value="C060202" />
+			<display value="operative Therapie" />
+			<target>
+				<code value="387713003" />
+				<display value="Surgical procedure (procedure)" />
+				<equivalence value="equivalent" />
+			</target>
+		</element>
+		<element>
+			<code value="C060203" />
+			<display value="Immunsuppressive Therapie" />
+			<target>
+				<code value="86553008" />
+				<display value="Immunosuppressive therapy (procedure)" />
+				<equivalence value="equal" />
+			</target>
+		</element>
+		<element>
+			<code value="C060204" />
+			<display value="Lymphdrainage" />
+			<target>
+				<code value="234303003" />
+				<display value="Drainage of lymphatics (procedure)" />
+				<equivalence value="equal" />
+			</target>
+		</element>
+		<element>
+			<code value="C060205" />
+			<display value="physikalische Therapie" />
+			<target>
+				<code value="91251008" />
+				<display value="Physical therapy procedure (regime/therapy)" />
+				<equivalence value="equal" />
+			</target>
+		</element>
+		<element>
+			<code value="C060207" />
+			<display value="rheologische Therapien" />
+			<target>
+				<code value="182764009" />
+				<display value="Anticoagulant therapy (procedure)" />
+				<equivalence value="narrower" />
+			</target>
+		</element>
+		<element>
+			<code value="06-C06020101-01" />
+			<display value="Kompressionstherapie" />
+			<target>
+				<code value="413899004" />
+				<display value="Compression bandaging 
+			(procedure)" />
+				<equivalence value="equivalent" />
+			</target>
+		</element>
+		<element>
+			<code value="C060201" />
+			<display value="Kompressionstherapie" />
+			<target>
+				<code value="413899004" />
+				<display value="Compression bandaging (procedure)" />
+				<equivalence value="equivalent" />
+			</target>
+		</element>
+		<element>
+			<code value="C0602010101" />
+			<display value="Kurzzug" />
+			<target>
+				<code value="335353000" />
+				<display
+					value="Short stretch compression bandage (physical object)" />
+				<equivalence value="equivalent" />
+			</target>
+		</element>
+		<element>
+			<code value="C0602010102" />
+			<display value="Langzug" />
+			<target>
+				<code value="391682002" />
+				<display
+					value="Elastic conforming bandage (physical object)" />
+				<equivalence value="equivalent" />
+			</target>
+		</element>
+		<element>
+			<code value="C0602010103" />
+			<display value="Strumpf" />
+			<target>
+				<code value="467848007" />
+				<display value="Compression stocking (physical object)" />
+				<equivalence value="equal" />
+			</target>
+		</element>
+		<element>
+			<code value="C06020102" />
+			<display value="Kurzzugbinden" />
+			<target>
+				<code value="335353000" />
+				<display
+					value="Short stretch compression bandage (physical object)" />
+				<equivalence value="equivalent" />
+			</target>
+		</element>
+		<element>
+			<code value="C06020103" />
+			<display value="Zinkleimbinden" />
+			<target>
+				<code value="348648002" />
+				<display value="Zinc paste bandage (physical object)" />
+				<equivalence value="equal" />
+			</target>
+		</element>
+		<element>
+			<code value="C060201010301" />
+			<display value="Ulkusstrumpf" />
+			<target>
+				<code value="408118001" />
+				<display
+					value="Venous ulcer compression stocking (physical object)" />
+				<equivalence value="equivalent" />
+			</target>
+		</element>
+		<element>
+			<code value="C060201010302" />
+			<display value="Kompressionsstrumpf nach Maß" />
+			<target>
+				<code value="467848007" />
+				<display value="Compression stocking (physical object)" />
+				<equivalence value="wider" />
+			</target>
+		</element>
+		<element>
+			<code value="C06020108" />
+			<display value="Anziehhilfe" />
+			<target>
+				<code value="467763002" />
+				<display
+					value="Compression stocking applicator (physical object)" />
+				<equivalence value="equivalent" />
+			</target>
+		</element>
+		<element>
+			<code value="C06020201" />
+			<display value="Varizenstripping V. saphena magna oder parva" />
+			<target>
+				<code value="9365003" />
+				<display
+					value="Stripping of lower limb varicose veins (procedure)" />
+				<equivalence value="wider" />
+			</target>
+		</element>
+		<element>
+			<code value="C06020210" />
+			<display value="Spalthaut" />
+			<target>
+				<code value="304040003" />
+				<display value="Grafting to skin (procedure)" />
+				<equivalence value="wider" />
+			</target>
+		</element>
+		<element>
+			<code value="C06020210" />
+			<display value="Stanztransplantat" />
+			<target>
+				<code value="119561005" />
+				<display value="Grafting procedure (procedure)" />
+				<equivalence value="wider" />
+			</target>
+		</element>
+		<element>
+			<code value="C06020202" />
+			<display value="Seitenaststripping" />
+			<target>
+				<code value="233456008" />
+				<display value="Stripping of vein (procedure)" />
+				<equivalence value="wider" />
+			</target>
+		</element>
+		<element>
+			<code value="C06020203" />
+			<display
+				value="interventionelle Venenoperation, Laser oder Schaumsklerosierung der V. saphena magna oder parva" />
+			<target>
+				<code value="274023003" />
+				<display value="Varicose vein operation (procedure)" />
+				<equivalence value="wider" />
+			</target>
+		</element>
+		<element>
+			<code value="C06020205" />
+			<display value="Bypass bei pAVK" />
+			<target>
+				<code value="76580007" />
+				<display value="Peripheral arterial bypass (procedure)" />
+				<equivalence value="wider" />
+			</target>
+		</element>
+		<element>
+			<code value="C06020206" />
+			<display value="Stenteinlage bei pAVK" />
+			<target>
+				<code value="233404000" />
+				<display value="Insertion of arterial stent (procedure)" />
+				<equivalence value="wider" />
+			</target>
+		</element>
+		<element>
+			<code value="C06020207" />
+			<display value="chirurgisches Débridement" />
+			<target>
+				<code value="225148005" />
+				<display value="Surgical debridement of wound (procedure)" />
+				<equivalence value="equal" />
+			</target>
+		</element>
+		<element>
+			<code value="C06020208" />
+			<display value="Fasziektomie" />
+			<target>
+				<code value="74422001" />
+				<display value="Fasciectomy (procedure)" />
+				<equivalence value="equal" />
+			</target>
+		</element>
+		<element>
+			<code value="C06020209" />
+			<display value="Mesh-/Spalthauttransplantation" />
+			<target>
+				<code value="256679004" />
+				<display
+					value="Meshed split thickness graft of skin (substance)" />
+				<equivalence value="equivalent" />
+			</target>
+		</element>
+		<element>
+			<code value="C0602020011" />
+			<display value="stationär" />
+			<target>
+				<code value="255323003" />
+				<display value="Stationary (qualifier value)" />
+				<equivalence value="equal" />
+			</target>
+		</element>
+		<element>
+			<code value="C0602020012" />
+			<display value="ambulant" />
+			<target>
+				<code value="255327002" />
+				<display value="Ambulatory (qualifier value)" />
+				<equivalence value="equal" />
+			</target>
+		</element>
+		<element>
+			<code value="C060203" />
+			<display value="Immunsuppresive Therapie" />
+			<target>
+				<code value="86553008" />
+				<display value="Immunosuppressive therapy (procedure)" />
+				<equivalence value="wider" />
+			</target>
+		</element>
+		<element>
+			<code value="C060204" />
+			<display value="Lymphdrainage" />
+			<target>
+				<code value="234303003" />
+				<display value="Drainage of lymphatics (procedure)" />
+				<equivalence value="equal" />
+			</target>
+		</element>
+		<element>
+			<code value="C060205" />
+			<display value="Physikalische Therapie" />
+			<target>
+				<code value="91251008" />
+				<display value="Physical therapy procedure (regime/therapy)" />
+				<equivalence value="equal" />
+			</target>
+		</element>
+
+		<element>
+			<code value="C06020502" />
+			<display value="Bewegungsübung" />
+			<target>
+				<code value="183302000" />
+				<display value="Active exercise (regime/therapy)" />
+				<equivalence value="wider" />
+			</target>
+		</element>
+		<element>
+			<code value="C0602050101" />
+			<display value="Gangschulung" />
+			<target>
+				<code value="74914000" />
+				<display value="Gait training procedure (procedure)" />
+				<equivalence value="equal" />
+			</target>
+		</element>
+
+		<element>
+			<code value="C060301" />
+			<display value="Pflegefachkraft" />
+			<target>
+				<code value="106292003" />
+				<display value="Professional nurse (occupation)" />
+				<equivalence value="equal" />
+			</target>
+		</element>
+		<element>
+			<code value="C060302" />
+			<display value="Arzt/Ärztin" />
+			<target>
+				<code value="309343006" />
+				<display value="Physician (occupation)" />
+				<equivalence value="equal" />
+			</target>
+		</element>
+		<element>
+			<code value="C060303" />
+			<display value="medizinische/r Fachangestellte/r" />
+			<target>
+				<code value="22515006" />
+				<display value="Medical assistant (occupation)" />
+				<equivalence value="equivalent" />
+			</target>
+		</element>
+		<element>
+			<code value="C060304" />
+			<display value="Lymphtherapeut/in" />
+			<target>
+				<code value="36682004" />
+				<display value="Physiotherapist (occupation)" />
+				<equivalence value="equivalent" />
+			</target>
+		</element>
+		<element>
+			<code value="C0603" />
+			<display value="Berufsgruppe" />
+			<target>
+				<code value="14679004" />
+				<display value="Occupation (occupation)" />
+				<equivalence value="equivalent" />
+			</target>
+		</element>
+		<element>
+			<code value="C030302" />
+			<display value="Lateralität" />
+			<target>
+				<code value="272741003" />
+				<display value="Laterality (attribute)" />
+				<equivalence value="equal" />
+			</target>
+		</element>
+		<element>
+			<code value="C03030201" />
+			<display value="rechts" />
+			<target>
+				<code value="24028007" />
+				<display value="Right (qualifier value)" />
+				<equivalence value="equal" />
+			</target>
+		</element>
+		<element>
+			<code value="C03030202" />
+			<display value="links" />
+			<target>
+				<code value="7771000" />
+				<display value="Left (qualifier value)" />
+				<equivalence value="equal" />
+			</target>
+		</element>
+	</group>
+</ConceptMap> 

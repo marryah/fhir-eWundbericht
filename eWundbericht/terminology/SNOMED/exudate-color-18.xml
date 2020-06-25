@@ -1,0 +1,152 @@
+<ValueSet xmlns="http://hl7.org/fhir">
+	<meta>
+		<profile
+			value="http://hl7.org/fhir/StructureDefinition/shareablevalueset" /><!--<profile 
+			value="http://hl7.org/fhir/4.0/StructureDefinition/ValueSet"/> -->
+	</meta>
+	<text>
+		<status value="generated" />
+		<div xmlns="http://www.w3.org/1999/xhtml">
+			<div>
+				<p>
+					This value set contains concept codes for the color of the wound
+					exudate.
+				</p>
+			</div>
+			<b> Copyright Statement:</b>
+			<p>
+			</p>
+			<div>
+				<p> This resource includes content from SNOMED Clinical Terms®
+					(SNOMED CT®) which is copyright
+					of the International Health
+					Terminology Standards Development
+					Organisation (IHTSDO).
+					Implementers
+					of these specifications must have the appropriate
+					SNOMED CT Affiliate
+					license - for more
+					information contact
+					http://www.snomed.org/snomed-ct/get-snomed-ct or
+					info@snomed.org
+				</p>
+			</div>
+			<p> This value set includes codes from the following code systems:
+			</p>
+			<ul>
+				<li>
+					371258006 (Bronze color (qualifier value))
+				</li>
+				<li>
+					371254008 (Brown color (qualifier value))
+				</li>
+				<li>
+					371256005 (Gold color (qualifier value))
+				</li>
+				<li>
+					371246006 (Green color (qualifier value))
+				</li>
+				<li>
+					371242008 (Orange color (qualifier value))
+				</li>
+				<li>
+					371243003 (Pink color (qualifier value))
+				</li>
+				<li>
+					371240000 (Red color (qualifier value))
+				</li>
+				<li>
+					371251000 (White color (qualifier value))
+				</li>
+				<li>
+					263935005 (Yellow (qualifier value))
+				</li>
+				<li>
+					371248007 (Yellow green color (qualifier value))
+				</li>
+				<li>
+					263716002 (Colorless (qualifier value))
+				</li>
+			</ul>
+		</div>
+	</text>
+	<url
+		value="https://posithera.de/fhir/eWundbericht/ValueSet/Exsudatfarbe" />
+	<identifier>
+		<use value="official" />
+		<system value="http://art-decor.org/ns/oids/vs" />
+		<value value="2.16.840.1.113883.3.1937.777.36.11.18" />
+	</identifier>
+	<version value="2019-11-05T14:12:21" />
+	<name value="ExudateColor" />
+	<title value="Exsudatfarbe (SNOMED)" />
+	<status value="draft" />
+	<experimental value="false" />
+	<publisher value="Hochschule Osnabrück" />
+	<description value="Exsudatfarbe (SNOMED)" />
+	<immutable value="false" />
+	<copyright
+		value="This artefact includes content from SNOMED Clinical Terms® (SNOMED CT®) which is copyright of the International Health Terminology Standards Development Organisation (IHTSDO). Implementers of these artefacts must have the appropriate SNOMED CT Affiliate license - for more information contact http://www.snomed.org/snomed-ct/getsnomed-ct or info@snomed.org." />
+	<contact>
+		<name value="Mareike Przysucha" />
+		<telecom>
+			<system value="email" />
+			<value value="ewundbericht@hs-osnabrueck.de" />
+			<use value="work" />
+		</telecom>
+		<telecom>
+			<system value="url" />
+			<value value="https://www.hs-osnabrueck.de/forschungsgruppe-informatik-im-gesundheitswesen/" />
+			<use value="work" />
+		</telecom>
+	</contact>
+	<compose>
+		<include>
+			<system value="http://snomed.info/sct" />
+			<concept>
+				<code value="371258006" />
+				<display value="Bronze color (qualifier value)" />
+			</concept>
+			<concept>
+				<code value="371254008" />
+				<display value="Brown color (qualifier value)" />
+			</concept>
+			<concept>
+				<code value="371256005" />
+				<display value="Gold color (qualifier value)" />
+			</concept>
+			<concept>
+				<code value="371246006" />
+				<display value="Green color (qualifier value)" />
+			</concept>
+			<concept>
+				<code value="371242008" />
+				<display value="Orange color (qualifier value)" />
+			</concept>
+			<concept>
+				<code value="371243003" />
+				<display value="Pink color (qualifier value)" />
+			</concept>
+			<concept>
+				<code value="371240000" />
+				<display value="Red color (qualifier value)" />
+			</concept>
+			<concept>
+				<code value="371251000" />
+				<display value="White color (qualifier value)" />
+			</concept>
+			<concept>
+				<code value="263935005" />
+				<display value="Yellow (qualifier value) " />
+			</concept>
+			<concept>
+				<code value="371248007" />
+				<display value="Yellow green color (qualifier value)" />
+			</concept>
+			<concept>
+				<code value="263716002" />
+				<display value="Colorless (qualifier value)" />
+			</concept>
+		</include>
+	</compose>
+</ValueSet>

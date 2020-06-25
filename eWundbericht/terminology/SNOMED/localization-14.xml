@@ -1,0 +1,106 @@
+<ValueSet xmlns="http://hl7.org/fhir">
+    <meta>
+        <profile value="http://hl7.org/fhir/StructureDefinition/shareablevalueset"/><!--<profile value="http://hl7.org/fhir/4.0/StructureDefinition/ValueSet"/>-->
+    </meta>
+    <url value="https://posithera.de/fhir/eWundbericht/ValueSet/Wundlokalisation"/>
+    <identifier>
+        <use value="official"/>
+        <system value="http://art-decor.org/ns/oids/vs"/>
+        <value value="2.16.840.1.113883.3.1937.777.36.11.14"/>
+    </identifier>
+    <version value="2019-10-07T08:30:41"/>
+    <name value="Woundlokalization"/>
+    <title value="Lokalisation der Wunde (SNOMED)"/>
+    <status value="draft"/>
+    <experimental value="false"/>
+    <publisher value="Hochschule Osnabrück"/>
+    <description value="Lokalisation der Wunde (SNOMED)"/>
+    <immutable value="false"/>
+    	<contact>
+		<name value="Mareike Przysucha" />
+		<telecom>
+			<system value="email" />
+			<value value="ewundbericht@hs-osnabrueck.de" />
+			<use value="work" />
+		</telecom>
+		<telecom>
+			<system value="url" />
+			<value value="https://www.hs-osnabrueck.de/forschungsgruppe-informatik-im-gesundheitswesen/" />
+			<use value="work" />
+		</telecom>
+	</contact>
+    <compose>
+        <include>
+            <system value="http://snomed.info/sct"/>
+            <filter>
+                <property value="concept"/>
+                <op value="descendent-of"/>
+                <value value="123037004"/>
+            </filter>
+        </include>
+        <exclude>
+            <system value="http://snomed.info/sct"/>
+            <filter>
+                <property value="concept"/>
+                <op value="descendent-of"/>
+                <value value="258331007"/>
+            </filter>
+        </exclude>
+        <exclude>
+            <system value="http://snomed.info/sct"/>
+            <filter>
+                <property value="concept"/>
+                <op value="descendent-of"/>
+                <value value="91832008"/>
+            </filter>
+        </exclude>
+        <exclude>
+            <system value="http://snomed.info/sct"/>
+            <filter>
+                <property value="concept"/>
+                <op value="descendent-of"/>
+                <value value="258331007"/>
+            </filter>
+        </exclude>
+        <exclude>
+            <system value="http://snomed.info/sct"/>
+            <filter>
+                <property value="concept"/>
+                <op value="descendent-of"/>
+                <value value="91832008"/>
+            </filter>
+        </exclude>
+        <exclude>
+            <system value="http://snomed.info/sct"/>
+            <filter>
+                <property value="concept"/>
+                <op value="descendent-of"/>
+                <value value="258331007"/>
+            </filter>
+        </exclude>
+        <exclude>
+            <system value="http://snomed.info/sct"/>
+            <filter>
+                <property value="concept"/>
+                <op value="descendent-of"/>
+                <value value="91832008"/>
+            </filter>
+        </exclude>
+        <exclude>
+            <system value="http://snomed.info/sct"/>
+            <filter>
+                <property value="concept"/>
+                <op value="descendent-of"/>
+                <value value="258331007"/>
+            </filter>
+        </exclude>
+        <exclude>
+            <system value="http://snomed.info/sct"/>
+            <filter>
+                <property value="concept"/>
+                <op value="descendent-of"/>
+                <value value="91832008"/>
+            </filter>
+        </exclude>
+    </compose>
+</ValueSet>

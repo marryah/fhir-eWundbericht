@@ -30,12 +30,11 @@
         <code value="39126-8" />
         <display value="Length of Wound" />
       </coding>
-      <!--      <coding>
+      <coding>
         <system value="http://snomed.info/sct" />
         <code value="401238003" />
         <display value="Length of Wound" />
-      </coding>
-      -->
+      </coding>      
     </code>
     <valueQuantity>
       <value value="3.5" />
@@ -51,12 +50,11 @@
         <code value="39125-0" />
         <display value="Width of Wound" />
       </coding>
-      <!--      <coding>
+      <coding>
         <system value="http://snomed.info/sct" />
         <code value="401239006" />
         <display value="Width of wound" />
       </coding>
-      -->
     </code>
     <valueQuantity>
       <value value="2.5" />
@@ -72,13 +70,11 @@
         <code value="39114-4" />
         <display value="Depth of wound" />
       </coding>
-      <!--
       <coding>
         <system value="http://snomed.info/sct" />
         <code value="425094009" />
         <display value="Depth of wound" />
       </coding>
-      -->
     </code>
     <valueQuantity>
       <value value="1.3" />

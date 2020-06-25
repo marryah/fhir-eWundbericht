@@ -140,32 +140,39 @@
       <path value="Observation.component.code.coding" />
       <slicing>
         <discriminator>
-          <type value="value" />
-          <path value="system" />
+          <type value="pattern" />
+          <path value="$this" />
         </discriminator>
         <rules value="open" />
       </slicing>
       <min value="1" />
-      <patternCoding>
-        <system value="http://loinc.org" />
-        <code value="39126-8" />
-      </patternCoding>
     </element>
     <element id="Observation.component:WoundLength.code.coding:loinc">
       <path value="Observation.component.code.coding" />
       <sliceName value="loinc" />
       <min value="1" />
       <max value="1" />
+      <patternCoding>
+        <system value="http://loinc.org" />
+        <code value="39126-8" />
+      </patternCoding>
     </element>
     <element id="Observation.component:WoundLength.code.coding:loinc.system">
       <path value="Observation.component.code.coding.system" />
       <min value="1" />
-      <fixedUri value="http://loinc.org" />
     </element>
     <element id="Observation.component:WoundLength.code.coding:loinc.code">
       <path value="Observation.component.code.coding.code" />
       <min value="1" />
-      <fixedCode value="39126-8" />
+    </element>
+    <element id="Observation.component:WoundLength.code.coding:snomed">
+      <path value="Observation.component.code.coding" />
+      <sliceName value="snomed" />
+      <patternCoding>
+        <system value="http://snomed.info/sct" />
+        <code value="401238003" />
+        <display value="Length of wound (observable entity)" />
+      </patternCoding>
     </element>
     <element id="Observation.component:WoundLength.value[x]">
       <path value="Observation.component.value[x]" />
@@ -234,35 +241,39 @@
       <path value="Observation.component.code.coding" />
       <slicing>
         <discriminator>
-          <type value="value" />
-          <path value="system" />
+          <type value="pattern" />
+          <path value="$this" />
         </discriminator>
         <rules value="open" />
       </slicing>
       <min value="1" />
-      <example>
-        <label value="WoundWidth" />
-        <valueCoding>
-          <system value="http://loinc.org" />
-          <code value="39125-0" />
-        </valueCoding>
-      </example>
     </element>
     <element id="Observation.component:WoundWidth.code.coding:loinc">
       <path value="Observation.component.code.coding" />
       <sliceName value="loinc" />
       <min value="1" />
       <max value="1" />
+      <patternCoding>
+        <system value="http://loinc.org" />
+        <code value="39125-0" />
+      </patternCoding>
     </element>
     <element id="Observation.component:WoundWidth.code.coding:loinc.system">
       <path value="Observation.component.code.coding.system" />
       <min value="1" />
-      <fixedUri value="http://loinc.org" />
     </element>
     <element id="Observation.component:WoundWidth.code.coding:loinc.code">
       <path value="Observation.component.code.coding.code" />
       <min value="1" />
-      <fixedCode value="39125-0" />
+    </element>
+    <element id="Observation.component:WoundWidth.code.coding:snomed">
+      <path value="Observation.component.code.coding" />
+      <sliceName value="snomed" />
+      <patternCoding>
+        <system value="http://snomed.info/sct" />
+        <code value="401239006" />
+        <display value="Width of wound (observable entity)" />
+      </patternCoding>
     </element>
     <element id="Observation.component:WoundWidth.value[x]">
       <path value="Observation.component.value[x]" />
@@ -329,8 +340,8 @@
       <path value="Observation.component.code.coding" />
       <slicing>
         <discriminator>
-          <type value="value" />
-          <path value="system" />
+          <type value="pattern" />
+          <path value="$this" />
         </discriminator>
         <rules value="open" />
       </slicing>
@@ -341,16 +352,18 @@
       <sliceName value="loinc" />
       <min value="1" />
       <max value="1" />
+      <patternCoding>
+        <system value="http://loinc.org" />
+        <code value="39114-4" />
+      </patternCoding>
     </element>
     <element id="Observation.component:WoundDepth.code.coding:loinc.system">
       <path value="Observation.component.code.coding.system" />
       <min value="1" />
-      <fixedUri value="http://loinc.org" />
     </element>
     <element id="Observation.component:WoundDepth.code.coding:loinc.code">
       <path value="Observation.component.code.coding.code" />
       <min value="1" />
-      <fixedCode value="39114-4" />
     </element>
     <element id="Observation.component:WoundDepth.value[x]">
       <path value="Observation.component.value[x]" />
@@ -388,8 +401,8 @@
       <path value="Observation.component.code.coding" />
       <slicing>
         <discriminator>
-          <type value="value" />
-          <path value="system" />
+          <type value="pattern" />
+          <path value="$this" />
         </discriminator>
         <rules value="open" />
       </slicing>
@@ -400,16 +413,18 @@
       <sliceName value="loinc" />
       <min value="1" />
       <max value="1" />
+      <patternCoding>
+        <system value="http://loinc.org" />
+        <code value="89260-4" />
+      </patternCoding>
     </element>
     <element id="Observation.component:WoundArea.code.coding:loinc.system">
       <path value="Observation.component.code.coding.system" />
       <min value="1" />
-      <fixedUri value="http://loinc.org" />
     </element>
     <element id="Observation.component:WoundArea.code.coding:loinc.code">
       <path value="Observation.component.code.coding.code" />
       <min value="1" />
-      <fixedCode value="89260-4" />
     </element>
     <element id="Observation.component:WoundArea.value[x]">
       <path value="Observation.component.value[x]" />

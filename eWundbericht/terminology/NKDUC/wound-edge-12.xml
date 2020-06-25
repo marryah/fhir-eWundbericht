@@ -1,0 +1,73 @@
+<ValueSet xmlns="http://hl7.org/fhir">
+    <meta>
+        <profile value="http://hl7.org/fhir/StructureDefinition/shareablevalueset"/><!--<profile value="http://hl7.org/fhir/4.0/StructureDefinition/ValueSet"/>-->
+    </meta>
+    <url value="https://posithera.de/fhir/eWundbericht/ValueSet/Wundrand"/>
+    <identifier>
+        <use value="official"/>
+        <system value="http://art-decor.org/ns/oids/vs"/>
+        <value value="2.16.840.1.113883.3.1937.777.36.11.12"/>
+    </identifier>
+    <version value="2019-10-07T08:17:17"/>
+    <name value="WoundEdge"/>
+    <title value="Wundrand"/>
+    <status value="draft"/>
+    <experimental value="false"/>
+    <publisher value="Hochschule Osnabrück"/>
+    <description value="Wundrand"/>
+    <immutable value="false"/>
+	<contact>
+		<name value="Mareike Przysucha" />
+		<telecom>
+			<system value="email" />
+			<value value="ewundbericht@hs-osnabrueck.de" />
+			<use value="work" />
+		</telecom>
+		<telecom>
+			<system value="url" />
+			<value value="https://www.hs-osnabrueck.de/forschungsgruppe-informatik-im-gesundheitswesen/" />
+			<use value="work" />
+		</telecom>
+	</contact>
+    <compose>
+        <include>
+            <system value="http://snomed.info/sct"/>
+<!--
+            <concept>
+                <value value="164424003"/>
+                <display value="On examination - skin red (finding)"/>
+            </concept>
+-->
+            <concept>
+                <value value="164424003"/>
+                <display value="On examination - skin red (finding)"/>
+            </concept>
+<!--
+            <concept>
+                <value value="164424003"/>
+                <display value="On examination - skin red (finding)"/>
+            </concept>
+-->
+            <concept>
+                <value value="3644009"/>
+                <display value="Macerated skin (finding)"/>
+            </concept>
+            <concept>
+                <value value="13423002"/>
+                <display value="Lividity (finding)"/>
+            </concept>
+            <concept>
+                <value value="239157004"/>
+                <display value="Wound edge necrosis (finding)"/>
+            </concept>
+            <concept>
+                <value value="255424008"/>
+                <display value="Hyperkeratotic (qualifier value)"/>
+            </concept>
+            <concept>
+                <value value="449752001"/>
+                <display value="Wound tissue undermining (finding)"/>
+            </concept>
+        </include>
+    </compose>
+</ValueSet>

@@ -1,0 +1,80 @@
+<ValueSet xmlns="http://hl7.org/fhir">
+    <meta>
+        <profile value="http://hl7.org/fhir/StructureDefinition/shareablevalueset"/><!--<profile value="http://hl7.org/fhir/4.0/StructureDefinition/ValueSet"/>-->
+    </meta>
+°   <url value="https://posithera.de/fhir/eWundbericht/ValueSet/Wundart"/>
+    <identifier>
+        <use value="official"/>
+        <system value="http://art-decor.org/ns/oids/vs"/>
+        <value value="2.16.840.1.113883.3.1937.777.36.11.2"/>
+    </identifier>
+    <version value="0.0.1"/>
+    <name value="Wundarten"/>
+    <title value="Wundarten (SNOMED)"/>
+    <status value="draft"/>
+    <experimental value="false"/>
+    <publisher value="Hochschule Osnabrück"/>
+    <description value="Wundarten (SNOMED)"/>
+    <immutable value="false"/>
+    <copyright value="This artefact includes content from SNOMED Clinical Terms® (SNOMED CT®) which is copyright of the International Health Terminology Standards Development Organisation (IHTSDO). Implementers of these artefacts must have the appropriate SNOMED CT Affiliate license - for more information contact http://www.snomed.org/snomed-ct/getsnomed-ct or info@snomed.org."/>
+	<contact>
+		<name value="Mareike Przysucha" />
+		<telecom>
+			<system value="email" />
+			<value value="ewundbericht@hs-osnabrueck.de" />
+			<use value="work" />
+		</telecom>
+		<telecom>
+			<system value="url" />
+			<value value="https://www.hs-osnabrueck.de/forschungsgruppe-informatik-im-gesundheitswesen/" />
+			<use value="work" />
+		</telecom>
+	</contact>
+    <compose>
+        <include>
+            <system value="http://snomed.info/sct"/>
+            <concept>
+                <extension url="http://hl7.org/fhir/StructureDefinition/valueset-concept-comments">
+                    <valueString value="Druckulkus, Dekubitus"/>
+                </extension>
+                <code value="420226006"/>
+                <display value="Pressure ulcer"/>
+            </concept>
+            <concept>
+                <extension url="http://hl7.org/fhir/StructureDefinition/valueset-concept-comments">
+                    <valueString value="Ulcus cruris arteriosum"/>
+                </extension>
+                <code value="402862000"/>
+                <display value="Arteritic leg ulcer"/>
+            </concept>
+            <concept>
+                <extension url="http://hl7.org/fhir/StructureDefinition/valueset-concept-comments">
+                    <valueString value="Ulcus cruris venosum"/>
+                </extension>
+                <code value="402863005"/>
+                <display value="Venous ulcer of leg"/>
+            </concept>
+            <concept>
+                <extension url="http://hl7.org/fhir/StructureDefinition/valueset-concept-comments">
+                    <valueString value="Ulcus cruris mixtum"/>
+                </extension>
+                <code value="238792006"/>
+                <display value="Mixed arteriovenous leg ulcer"/>
+            </concept>
+            <concept>
+                <extension url="http://hl7.org/fhir/StructureDefinition/valueset-concept-comments">
+                    <valueString value="Diabetisches Fußsyndrom"/>
+                </extension>
+                <code value="280137006"/>
+                <display value=" Diabetic foot"/>
+            </concept>
+            <concept>
+                <extension url="http://hl7.org/fhir/StructureDefinition/valueset-concept-comments">
+                    <valueString value="Sonstige"/>
+                </extension>
+                <code value="74964007"/>
+                <display value="Other"/>
+            </concept>
+        </include>
+    </compose>
+</ValueSet>
