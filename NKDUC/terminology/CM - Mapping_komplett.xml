@@ -44,14 +44,29 @@
 		<source
 			value="https://posithera.de/fhir/nkduc/CodeSystem/NKDUC" />
 		<target value="http://snomed.info/sct" />
-
-
+		<element>
+			<code value="C01" />
+			<display value="Stammdaten" />
+			<target>
+				<equivalence value="unmatched" />
+				<comment value="wurde nicht gemapped" />
+			</target>
+		</element>
 		<element>
 			<code value="C0101" />
 			<display value="Geburtsdatum - ddmmyyyy" />
 			<target>
 				<code value="184099003" />
 				<display value="DOB - Date of birth (observable entry)" />
+				<equivalence value="equal" />
+			</target>
+		</element>
+		<element>
+			<code value="C0102" />
+			<display value="Geschlecht" />
+			<target>
+				<code value="263495000" />
+				<display value="Gender (observable entity)" />
 				<equivalence value="equal" />
 			</target>
 		</element>
@@ -74,15 +89,6 @@
 			</target>
 		</element>
 		<element>
-			<code value="C0102" />
-			<display value="Geschlecht" />
-			<target>
-				<code value="263495000" />
-				<display value="Gender (observable entity)" />
-				<equivalence value="equal" />
-			</target>
-		</element>
-		<element>
 			<code value="C0103" />
 			<display value="Versichertenstatus" />
 			<target>
@@ -90,6 +96,20 @@
 				<display
 					value="Finding related to health insurance issues (finding)" />
 				<equivalence value="wider" />
+			</target>
+		</element>
+		<element>
+			<code value="C010301" />
+			<display value="GKV ohne Zusatzversicherung" />
+			<target>
+				<equivalence value="unmatched" />
+			</target>
+		</element>
+		<element>
+			<code value="C010302" />
+			<display value="GKV mit staatl. Zusatzversicherung" />
+			<target>
+				<equivalence value="unmatched" />
 			</target>
 		</element>
 		<element>
@@ -110,7 +130,29 @@
 				<equivalence value="equivalent" />
 			</target>
 		</element>
-
+		<element>
+			<code value="C010305" />
+			<display value="anders krankenversichert" />
+			<target>
+				<equivalence value="unmatched" />
+			</target>
+		</element>
+		<element>
+			<code value="C01031" />
+			<display value="Name der Krankenkasse" />
+			<target>
+				<equivalence value="unmatched" />
+			</target>
+		</element>
+		<element>
+			<code value="C0104" />
+			<display value="PLZ" />
+			<target>
+				<code value="184102003" />
+				<display value="Patient postal code (observable entity)" />
+				<equivalence value="equal" />
+			</target>
+		</element>
 		<element>
 			<code value="C0105" />
 			<display value="Familienstand" />
@@ -177,6 +219,48 @@
 			</target>
 		</element>
 		<element>
+			<code value="C010601" />
+			<display value="ohne Abschluss" />
+			<target>
+				<equivalence value="unmatched" />
+			</target>
+		</element>
+		<element>
+			<code value="C010602" />
+			<display value="Hauptschulabschluss" />
+			<target>
+				<equivalence value="unmatched" />
+			</target>
+		</element>
+		<element>
+			<code value="C010603" />
+			<display value="Realschulabschluss (mittlere Reife)" />
+			<target>
+				<equivalence value="unmatched" />
+			</target>
+		</element>
+		<element>
+			<code value="C010604" />
+			<display value="Fachhochschulreife" />
+			<target>
+				<equivalence value="unmatched" />
+			</target>
+		</element>
+		<element>
+			<code value="C010605" />
+			<display value="Allgemeine Hochschulreife (Abitur)" />
+			<target>
+				<equivalence value="unmatched" />
+			</target>
+		</element>
+		<element>
+			<code value="C010606" />
+			<display value="anderer Schulabschluss" />
+			<target>
+				<equivalence value="unmatched" />
+			</target>
+		</element>
+		<element>
 			<code value="C0107" />
 			<display value="Berufstätigkeit" />
 			<target>
@@ -205,6 +289,14 @@
 			</target>
 		</element>
 		<element>
+			<code value="C010703" />
+			<display
+				value="Auszubildende/r (Azubi), freiwillige/r Zivildienstleistende/r oder Wehrdienstleistender, freiwilliges soziales Jahr" />
+			<target>
+				<equivalence value="unmatched" />
+			</target>
+		</element>
+		<element>
 			<code value="C010704" />
 			<display
 				value="in Rente, Pension, Vorruhestand (nicht aufgrund der Erkrankung)" />
@@ -225,6 +317,13 @@
 			</target>
 		</element>
 		<element>
+			<code value="C010706" />
+			<display value="Hausfrau / Hausmann" />
+			<target>
+				<equivalence value="unmatched" />
+			</target>
+		</element>
+		<element>
 			<code value="C010707" />
 			<display value="Schüler/in, Student/in" />
 			<target>
@@ -242,19 +341,17 @@
 				<equivalence value="equivalent" />
 			</target>
 		</element>
-
 		<element>
-			<code value="C020103" />
-			<display value="bmi" />
+			<code value="C02" />
+			<display value="Allgemeinstatus und -anamnese" />
 			<target>
-				<code value="60621009" />
-				<display value="Body mass index (observable entity)" />
-				<equivalence value="equal" />
+				<equivalence value="unmatched" />
+				<comment value="wurde nicht gemapped" />
 			</target>
 		</element>
 		<element>
 			<code value="C020101" />
-			<display value="Größe in cm" />
+			<display value="Größe" />
 			<target>
 				<code value="50373000" />
 				<display value="Body height measure (observable entity)" />
@@ -263,11 +360,28 @@
 		</element>
 		<element>
 			<code value="C020102" />
-			<display value="Gewicht in kg" />
+			<display value="Gewicht" />
 			<target>
 				<code value="27113001" />
 				<display value="Body weight (observable entity)" />
 				<equivalence value="equal" />
+			</target>
+		</element>
+		<element>
+			<code value="C020103" />
+			<display value="BMI" />
+			<target>
+				<code value="60621009" />
+				<display value="Body mass index (observable entity)" />
+				<equivalence value="equal" />
+			</target>
+		</element>
+		<element>
+			<code value="C0202" />
+			<display value="Ulcusrelevante Begleiterkrankungen" />
+			<target>
+				<equivalence value="unmatched" />
+				<comment value="wurde nicht gemapped" />
 			</target>
 		</element>
 		<element>
@@ -390,6 +504,13 @@
 			</target>
 		</element>
 		<element>
+			<code value="C0202030103" />
+			<display value="Diabetes mellitus Typ 3" />
+			<target>
+				<equivalence value="unmatched" />
+			</target>
+		</element>
+		<element>
 			<code value="C02020304" />
 			<display value="Hyperurikämie" />
 			<target>
@@ -478,6 +599,14 @@
 				<display
 					value="Human immunodeficiency virus infection (disorder)" />
 				<equivalence value="equal" />
+			</target>
+		</element>
+		<element>
+			<code value="C02020404" />
+			<display value="Infektionserkrankung" />
+			<target>
+				<equivalence value="unmatched" />
+				<comment value="wurde nicht gemapped" />
 			</target>
 		</element>
 		<element>
@@ -572,6 +701,14 @@
 			</target>
 		</element>
 		<element>
+			<code value="C02020802" />
+			<display value="Andere rheumatologische Erkrankungen" />
+			<target>
+				<equivalence value="unmatched" />
+				<comment value="wurde nicht gemapped" />
+			</target>
+		</element>
+		<element>
 			<code value="C020209" />
 			<display value="Psychische und Suchterkrankungen" />
 			<target>
@@ -635,16 +772,15 @@
 			</target>
 		</element>
 
-		<!-- <element> -->
-		<!-- <code value="C02020906" /> -->
-		<!-- <display value="i. v. Drogenabusus" /> -->
-		<!-- <target> -->
-		<!-- <code value="162591001" /> -->
-		<!-- <display value="Suspected drug abuse -->
-		<!-- (situation)" /> -->
-		<!-- <equivalence value="unmatched" /> -->
-		<!-- </target> -->
-		<!-- </element> -->
+		<element>
+			<code value="C02020906" />
+			<display value="i. v. Drogenabusus" />
+			<target>
+				<!-- <code value="162591001" /> -->
+				<!-- <display value="Suspected drug abuse (situation)" /> -->
+				<equivalence value="unmatched" />
+			</target>
+		</element>
 
 		<element>
 			<code value="C020210" />
@@ -709,15 +845,15 @@
 				<equivalence value="equal" />
 			</target>
 		</element>
-		<element>
-			<code value="C0203" />
-			<display value="Schmerztherapie" />
-			<target>
-				<code value="278414003" />
-				<display value="Pain management (procedure)" />
-				<equivalence value="equivalent" />
-			</target>
-		</element>
+		<!-- <element> -->
+		<!-- <code value="C0203" /> -->
+		<!-- <display value="Schmerztherapie" /> -->
+		<!-- <target> -->
+		<!-- <code value="278414003" /> -->
+		<!-- <display value="Pain management (procedure)" /> -->
+		<!-- <equivalence value="equivalent" /> -->
+		<!-- </target> -->
+		<!-- </element> -->
 		<element>
 			<code value="C020304" />
 			<display value="Antibiotikatherapie" />
@@ -755,6 +891,15 @@
 			</target>
 		</element>
 		<element>
+			<code value="C0204" />
+			<display value="Ernährungsstatus" />
+			<target>
+				<code value="87276001" />
+				<display value="Nutritional status (observable entity)" />
+				<equivalence value="equal" />
+			</target>
+		</element>
+		<element>
 			<code value="C020401" />
 			<display value="über" />
 			<target>
@@ -782,12 +927,12 @@
 			</target>
 		</element>
 		<element>
-			<code value="C0204" />
-			<display value="Ernährungsstatus" />
+			<code value="C03" />
+			<display value="Wundanamnese" />
 			<target>
-				<code value="87276001" />
-				<display value="Nutritional status (observable entity)" />
-				<equivalence value="equal" />
+				<code value="364554009" />
+				<display value="Wound observable (observable entity)" />
+				<equivalence value="equivalent" />
 			</target>
 		</element>
 		<element>
@@ -797,6 +942,13 @@
 				<code value="264893008" />
 				<display value="Number of ulcers (observable entity)" />
 				<equivalence value="equal" />
+			</target>
+		</element>
+		<element>
+			<code value="C0302" />
+			<display value="Wundart" />
+			<target>
+				<equivalence value="unmatched" />
 			</target>
 		</element>
 		<element>
@@ -835,72 +987,30 @@
 				<equivalence value="narrower" />
 			</target>
 		</element>
+		<element>
+			<code value="C030205" />
+			<display value="medikamentös" />
+			<target>
+				<equivalence value="unmatched" />
+			</target>
+		</element>
+		<element>
+			<code value="C030206" />
+			<display value="maligne" />
+			<target>
+				<!-- <code value="21594007" /> -->
+				<!-- <display value="Malignant (qualifier value)" /> -->
+				<equivalence value="unmatched" />
+			</target>
+		</element>
+		<element>
+			<code value="C0303" />
+			<display value="Wundlokalisation" />
+			<target>
+				<equivalence value="unmatched" />
+			</target>
+		</element>
 
-		<!-- <element> -->
-		<!-- <code value="C030206" /> -->
-		<!-- <display value="maligne" /> -->
-		<!-- <target> -->
-		<!-- <code value="21594007" /> -->
-		<!-- <display value="Malignant (qualifier value)" /> -->
-		<!-- <equivalence value="unmatched" /> -->
-		<!-- </target> -->
-		<!-- </element> -->
-
-		<element>
-			<code value="C0305" />
-			<display value="Rezidivulcus" />
-			<target>
-				<code value="42433008" />
-				<display value="Recurrent ulcer (morphologic abnormality)" />
-				<equivalence value="equal" />
-			</target>
-		</element>
-		<element>
-			<code value="C03" />
-			<display value="Wundanamnese" />
-			<target>
-				<code value="364554009" />
-				<display value="Wound observable (observable entity)" />
-				<equivalence value="equivalent" />
-			</target>
-		</element>
-		<element>
-			<code value="C03030106" />
-			<display value="Ferse" />
-			<target>
-				<code value="76853006" />
-				<display value="Heel structure (body structure)" />
-				<equivalence value="equal" />
-			</target>
-		</element>
-		<element>
-			<code value="C03030105" />
-			<display value="Fußrücken" />
-			<target>
-				<code value="2402003" />
-				<display
-					value="Structure of dorsum of foot (body structure)" />
-				<equivalence value="equal" />
-			</target>
-		</element>
-		<element>
-			<code value="C03030107" />
-			<display value="Fußsohle" />
-			<target>
-				<code value="57999000" />
-				<display value="Structure of sole of foot (body structure)" />
-				<equivalence value="equivalent" />
-			</target>
-		</element>
-		<element>
-			<code value="C03030102" />
-			<display value="Knie" />
-			<target>
-				<code value="72696002" />
-				<display value="Knee region structure (body structure)" />
-				<equivalence value="equal" />
-			</target>
-		</element>
 		<element>
 			<code value="C03030101" />
 			<display value="Oberschenkel" />
@@ -911,11 +1021,11 @@
 			</target>
 		</element>
 		<element>
-			<code value="C03030104" />
-			<display value="Sprunggelenk" />
+			<code value="C03030102" />
+			<display value="Knie" />
 			<target>
-				<code value="344001" />
-				<display value="Ankle region structure (body structure)" />
+				<code value="72696002" />
+				<display value="Knee region structure (body structure)" />
 				<equivalence value="equal" />
 			</target>
 		</element>
@@ -930,12 +1040,100 @@
 			</target>
 		</element>
 		<element>
+			<code value="C03030104" />
+			<display value="Sprunggelenk" />
+			<target>
+				<code value="344001" />
+				<display value="Ankle region structure (body structure)" />
+				<equivalence value="equal" />
+			</target>
+		</element>
+		<element>
+			<code value="C03030105" />
+			<display value="Fußrücken" />
+			<target>
+				<code value="2402003" />
+				<display
+					value="Structure of dorsum of foot (body structure)" />
+				<equivalence value="equal" />
+			</target>
+		</element>
+		<element>
+			<code value="C03030106" />
+			<display value="Ferse" />
+			<target>
+				<code value="76853006" />
+				<display value="Heel structure (body structure)" />
+				<equivalence value="equal" />
+			</target>
+		</element>
+		<element>
+			<code value="C03030107" />
+			<display value="Fußsohle" />
+			<target>
+				<code value="57999000" />
+				<display value="Structure of sole of foot (body structure)" />
+				<equivalence value="equivalent" />
+			</target>
+		</element>
+		<element>
 			<code value="C03030108" />
 			<display value="Zehen" />
 			<target>
 				<code value="29707007" />
 				<display value="Toe structure (body structure)" />
 				<equivalence value="equal" />
+			</target>
+		</element>
+		<element>
+			<code value="C030302" />
+			<display value="Lateralität" />
+			<target>
+				<code value="272741003" />
+				<display value="Laterality (attribute)" />
+				<equivalence value="equal" />
+			</target>
+		</element>
+		<element>
+			<code value="C03030201" />
+			<display value="rechts" />
+			<target>
+				<code value="24028007" />
+				<display value="Right (qualifier value)" />
+				<equivalence value="equal" />
+			</target>
+		</element>
+		<element>
+			<code value="C03030202" />
+			<display value="links" />
+			<target>
+				<code value="7771000" />
+				<display value="Left (qualifier value)" />
+				<equivalence value="equal" />
+			</target>
+		</element>
+		<element>
+			<code value="C0304" />
+			<display value="Wunddauer der Zielwunde" />
+			<target>
+				<equivalence value="unmatched" />
+			</target>
+		</element>
+		<element>
+			<code value="C0305" />
+			<display value="Rezidivulcus" />
+			<target>
+				<code value="42433008" />
+				<display value="Recurrent ulcer (morphologic abnormality)" />
+				<equivalence value="equal" />
+			</target>
+		</element>
+		<element>
+			<code value="C04" />
+			<display value="Wundstatus" />
+			<target>
+				<equivalence value="unmatched" />
+				<comment value="wurde nicht gemapped" />
 			</target>
 		</element>
 		<element>
@@ -948,8 +1146,16 @@
 			</target>
 		</element>
 		<element>
+			<code value="C0402" />
+			<display value="Wundbelag" />
+			<target>
+				<equivalence value="unmatched" />
+			</target>
+		</element>
+		<!-- Belag = slough? (449746002) -->
+		<element>
 			<code value="C040200" />
-			<display value="kein Wundbelag" />
+			<display value="keiner" />
 			<target>
 				<code value="260413007" />
 				<display value="None (qualifier value)" />
@@ -981,6 +1187,15 @@
 				<code value="52316006" />
 				<display
 					value="Fibrinoid necrosis (morphologic abnormality)" />
+				<equivalence value="equivalent" />
+			</target>
+		</element>
+		<element>
+			<code value="C0403" />
+			<display value="Wundgrund" />
+			<target>
+				<code value="441390007" />
+				<display value="Surface area of ulcer (observable entity)" />
 				<equivalence value="equivalent" />
 			</target>
 		</element>
@@ -1030,13 +1245,14 @@
 				<equivalence value="equal" />
 			</target>
 		</element>
+
 		<element>
-			<code value="C0403" />
-			<display value="Wundgrund" />
+			<code value="C0404" />
+			<display value="Granulation" />
 			<target>
-				<code value="441390007" />
-				<display value="Surface area of ulcer (observable entity)" />
-				<equivalence value="equivalent" />
+				<code value="406214003" />
+				<display value="Wound healing status (observable entity)" />
+				<equivalence value="wider" />
 			</target>
 		</element>
 		<element>
@@ -1049,20 +1265,55 @@
 			</target>
 		</element>
 		<element>
-			<code value="C0404" />
-			<display value="Granulation" />
+			<code value="C040401" />
+			<display value="teilweise" />
 			<target>
-				<code value="406214003" />
-				<display value="Wound healing status (observable entity)" />
-				<equivalence value="wider" />
+				<equivalence value="unmatched" />
 			</target>
 		</element>
 		<element>
-			<code value="C04050" />
+			<code value="C040402" />
+			<display value="komplett" />
+			<target>
+				<equivalence value="unmatched" />
+			</target>
+		</element>
+		<element>
+			<code value="C0405" />
+			<display value="Epithelisierung" />
+			<target>
+				<equivalence value="unmatched" />
+			</target>
+		</element>
+		<element>
+			<code value="C040500" />
 			<display value="keine" />
 			<target>
 				<code value="260413007" />
 				<display value="None (qualifier value)" />
+				<equivalence value="equal" />
+			</target>
+		</element>
+		<element>
+			<code value="C040501" />
+			<display value="teilweise" />
+			<target>
+				<equivalence value="unmatched" />
+			</target>
+		</element>
+		<element>
+			<code value="C040502" />
+			<display value="komplett" />
+			<target>
+				<equivalence value="unmatched" />
+			</target>
+		</element>
+		<element>
+			<code value="C0406" />
+			<display value="Exsudatmenge" />
+			<target>
+				<code value="441281002" />
+				<display value="Amount of exudate (observable entity)" />
 				<equivalence value="equal" />
 			</target>
 		</element>
@@ -1094,12 +1345,12 @@
 			</target>
 		</element>
 		<element>
-			<code value="C0406" />
-			<display value="Exsudatmenge" />
+			<code value="C0407" />
+			<display value="Beschaffenheit des Exsudats" />
 			<target>
-				<code value="441281002" />
-				<display value="Amount of exudate (observable entity)" />
-				<equivalence value="equal" />
+				<code value="441280001" />
+				<display value="Color of exudate (observable entity)" />
+				<equivalence value="equivalent" />
 			</target>
 		</element>
 		<element>
@@ -1148,12 +1399,19 @@
 			</target>
 		</element>
 		<element>
-			<code value="C0407" />
-			<display value="Beschaffenheit des Exsudats" />
+			<code value="C0408" />
+			<display value="Wundgröße" />
 			<target>
-				<code value="441280001" />
-				<display value="Color of exudate (observable entity)" />
-				<equivalence value="equivalent" />
+				<equivalence value="unmatched" />
+			</target>
+		</element>
+		<element>
+			<code value="C040801" />
+			<display value="Länge" />
+			<target>
+				<code value="401238003" />
+				<display value="Length of wound (observable entity)" />
+				<equivalence value="equal" />
 			</target>
 		</element>
 		<element>
@@ -1166,11 +1424,18 @@
 			</target>
 		</element>
 		<element>
-			<code value="C040801" />
-			<display value="Länge" />
+			<code value="C040803" />
+			<display value="Fläche" />
 			<target>
-				<code value="401238003" />
-				<display value="Length of wound (observable entity)" />
+				<equivalence value="unmatched" />
+			</target>
+		</element>
+		<element>
+			<code value="C0409" />
+			<display value="Abheilungsstatus" />
+			<target>
+				<code value="406214003" />
+				<display value="Wound healing status (observable entity)" />
 				<equivalence value="equal" />
 			</target>
 		</element>
@@ -1210,13 +1475,15 @@
 				<equivalence value="equivalent" />
 			</target>
 		</element>
+
 		<element>
-			<code value="C0409" />
-			<display value="Abheilungsstatus" />
+			<code value="C0410" />
+			<display value="Wundrand/ Hautumgebung" />
 			<target>
-				<code value="406214003" />
-				<display value="Wound healing status (observable entity)" />
-				<equivalence value="equal" />
+				<code value="1121000124105" />
+				<display
+					value="Periwound skin condition (observable entity)" />
+				<equivalence value="narrower" />
 			</target>
 		</element>
 		<element>
@@ -1273,16 +1540,6 @@
 				<equivalence value="equal" />
 			</target>
 		</element>
-		<element>
-			<code value="C0410" />
-			<display value="Wundrand/ Hautumgebung" />
-			<target>
-				<code value="1121000124105" />
-				<display
-					value="Periwound skin condition (observable entity)" />
-				<equivalence value="narrower" />
-			</target>
-		</element>
 
 
 		<element>
@@ -1294,15 +1551,6 @@
 				<equivalence value="equal" />
 			</target>
 		</element>
-		<!-- <element> -->
-		<!-- <code value="C0411" /> -->
-		<!-- <display value="Wundinfektion" /> -->
-		<!-- <target> -->
-		<!-- <code value="405009004" /> -->
-		<!-- <display value="Infection status (observable entity)" /> -->
-		<!-- <equivalence value="wider" /> -->
-		<!-- </target> -->
-		<!-- </element> -->
 		<element>
 			<code value="C0412" />
 			<display value="Geruch" />
@@ -1343,6 +1591,14 @@
 		<!-- </target> -->
 		<!-- </element> -->
 
+		<element>
+			<code value="C05" />
+			<display value="Diagnostik" />
+			<target>
+				<equivalence value="unmatched" />
+				<comment value="wurde nicht gemapped" />
+			</target>
+		</element>
 
 		<element>
 			<code value="C0501" />
@@ -1353,13 +1609,18 @@
 				<equivalence value="equal" />
 			</target>
 		</element>
-		<!-- <element> <code value="C0501" /> <display value="Gehstreckenverminderung 
-			- Gehstreckenverminderung" /> <target> <code value="165263003" /> <display 
-			value="Walking distance (observable entity)" /> <equivalence value="wider" 
-			/> </target> </element> <element> <code value="05-01" /> <display value="Gehstreckenverminderung 
-			- Gehstreckenverminderung" /> <target> <code value="165263003" /> <display 
-			value="Walking distance (observable entity)" /> <equivalence value="wider" 
-			/> </target> </element> -->
+
+		<!-- <element> -->
+		<!-- <code value="05-01" /> -->
+		<!-- <display -->
+		<!-- value="Gehstreckenverminderung -->
+		<!-- - Gehstreckenverminderung" /> -->
+		<!-- <target> -->
+		<!-- <code value="165263003" /> -->
+		<!-- <display value="Walking distance (observable entity)" /> -->
+		<!-- <equivalence value="wider" /> -->
+		<!-- </target> -->
+		<!-- </element> -->
 
 
 		<element>
@@ -1401,6 +1662,13 @@
 			</target>
 		</element>
 		<element>
+			<code value="C0505" />
+			<display value="Probenexsision" />
+			<target>
+				<equivalence value="unmatched" />
+			</target>
+		</element>
+		<element>
 			<code value="C0506" />
 			<display value="Wundbezogene Labordiagnostik" />
 			<target>
@@ -1409,6 +1677,23 @@
 				<equivalence value="equivalent" />
 			</target>
 		</element>
+
+		<element>
+			<code value="C0507" />
+			<display value="Laborparameter" />
+			<target>
+				<equivalence value="unmatched" />
+				<comment value="wurde nicht gemapped"/>
+			</target>
+		</element>
+		<element>
+			<code value="C050701" />
+			<display value="Leukozyten" />
+			<target>
+				<equivalence value="unmatched" />
+			</target>
+		</element>
+		
 		<element>
 			<code value="C050702" />
 			<display value="CRP" />
@@ -1448,7 +1733,22 @@
 			</target>
 		</element>
 
-
+		<element>
+			<code value="C06" />
+			<display value="Therapie" />
+			<target>
+				<equivalence value="unmatched" />
+				<comment value="wurde nicht gemapped" />
+			</target>
+		</element>
+		<element>
+			<code value="C0601" />
+			<display value="Lokaltherapie" />
+			<target>
+				<equivalence value="unmatched" />
+				<comment value="wurde nicht gemapped" />
+			</target>
+		</element>
 
 		<element>
 			<code value="C060101" />
@@ -1456,6 +1756,59 @@
 			<target>
 				<code value="312732009" />
 				<display value="Debridement of leg ulcer (procedure)" />
+				<equivalence value="equal" />
+			</target>
+		</element>
+		<element>
+			<code value="C06010101" />
+			<display value="mechanisch" />
+			<target>
+				<code value="261018001" />
+				<display value="Mechanical (qualifier value)" />
+				<equivalence value="equal" />
+			</target>
+		</element>
+		<element>
+			<code value="C06010102" />
+			<display value="chirurgisch" />
+			<target>
+				<code value="83578000" />
+				<display value="Surgical (qualifier value)" />
+				<equivalence value="equal" />
+			</target>
+		</element>
+		<element>
+			<code value="C06010103" />
+			<display value="Ultraschall" />
+			<target>
+				<code value="51797001" />
+				<display value="Ultrasonic wave (physical force)" />
+				<equivalence value="equivalent" />
+			</target>
+		</element>
+
+		<element>
+			<code value="C06010104" />
+			<display value="autolytisch" />
+			<target>
+				<equivalence value="unmatched" />
+			</target>
+		</element>
+		<element>
+			<code value="C06010105" />
+			<display value="enzymatisch" />
+			<target>
+				<equivalence value="unmatched" />
+			</target>
+		</element>
+
+		<element>
+			<code value="C06010106" />
+			<display value="Biochirurgie (Maden)" />
+			<target>
+				<code value="404916008" />
+				<display
+					value="Sterile maggot wound debridement (procedure)" />
 				<equivalence value="equal" />
 			</target>
 		</element>
@@ -1504,43 +1857,6 @@
 				<display
 					value="Therapeutic electrical stimulation (regime/therapy)" />
 				<equivalence value="equivalent" />
-			</target>
-		</element>
-		<element>
-			<code value="C06010101" />
-			<display value="mechanisch" />
-			<target>
-				<code value="261018001" />
-				<display value="Mechanical (qualifier value)" />
-				<equivalence value="equal" />
-			</target>
-		</element>
-		<element>
-			<code value="C06010102" />
-			<display value="chirurgisch" />
-			<target>
-				<code value="83578000" />
-				<display value="Surgical (qualifier value)" />
-				<equivalence value="equal" />
-			</target>
-		</element>
-		<element>
-			<code value="C06010103" />
-			<display value="Ultraschall" />
-			<target>
-				<code value="51797001" />
-				<display value="Ultrasonic wave (physical force)" />
-				<equivalence value="equivalent" />
-			</target>
-		</element>
-		<element>
-			<code value="C06010106" />
-			<display value="Biochirurgie (Maden)" />
-			<target>
-				<code value="404916008" />
-				<display
-					value="Sterile maggot wound debridement (procedure)" />
-				<equivalence value="equal" />
 			</target>
 		</element>
 		<element>
@@ -1987,33 +2303,6 @@
 				<code value="14679004" />
 				<display value="Occupation (occupation)" />
 				<equivalence value="equivalent" />
-			</target>
-		</element>
-		<element>
-			<code value="C030302" />
-			<display value="Lateralität" />
-			<target>
-				<code value="272741003" />
-				<display value="Laterality (attribute)" />
-				<equivalence value="equal" />
-			</target>
-		</element>
-		<element>
-			<code value="C03030201" />
-			<display value="rechts" />
-			<target>
-				<code value="24028007" />
-				<display value="Right (qualifier value)" />
-				<equivalence value="equal" />
-			</target>
-		</element>
-		<element>
-			<code value="C03030202" />
-			<display value="links" />
-			<target>
-				<code value="7771000" />
-				<display value="Left (qualifier value)" />
-				<equivalence value="equal" />
 			</target>
 		</element>
 	</group>
